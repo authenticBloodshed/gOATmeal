@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://0n75d8utmol6"]
+[gd_scene load_steps=5 format=3 uid="uid://0n75d8utmol6"]
 
 [ext_resource type="Script" path="res://game.gd" id="1_ottce"]
 [ext_resource type="PackedScene" uid="uid://10ngpxurb116" path="res://transitions.tscn" id="2_rxlpj"]
 [ext_resource type="Script" path="res://closeBreakfast.gd" id="3_u4eoj"]
+[ext_resource type="Texture2D" uid="uid://bwcij4by06nif" path="res://PLACEHOLDER IMAGE.png" id="4_urpfi"]
 
 [node name="Game" type="Node2D"]
 script = ExtResource("1_ottce")
@@ -53,6 +54,12 @@ offset_top = 511.0
 offset_right = 638.0
 offset_bottom = 557.0
 text = "CLOSE NOTES"
+
+[node name="PlaceholderImage" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(512.5, 331.5)
+scale = Vector2(0.309167, 0.250556)
+texture = ExtResource("4_urpfi")
 
 [connection signal="pressed" from="CloseButton" to="." method="_on_close_button_pressed"]
 [connection signal="pressed" from="CloseButton" to="Breakfast" method="_on_close_button_pressed"]

@@ -9,10 +9,12 @@ func _ready():
 	$Breakfast.show()
 	$CloseButton.show()
 	$NotesButton.show()
+	$PlaceholderImage.show()
 
 func _on_close_button_pressed():
 	$Breakfast.hide()
 	$CloseButton.hide()
+	$PlaceholderImage.hide()
 
 func _on_notes_button_pressed():
 	$Notebook.show()
