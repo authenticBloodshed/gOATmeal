@@ -8,7 +8,18 @@ func _ready():
 	$ColorRect.hide()
 	$Breakfast.show()
 	$CloseButton.show()
+	$NotesButton.show()
 
 func _on_close_button_pressed():
 	$Breakfast.hide()
 	$CloseButton.hide()
+
+func _on_notes_button_pressed():
+	$Notebook.show()
+	$NotesButton.hide()
+	$CloseNotes.show()
+
+func _on_close_notes_pressed():
+	$Notebook.hide()
+	$CloseNotes.hide()
+	$NotesButton.show()
