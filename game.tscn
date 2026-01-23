@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://0n75d8utmol6"]
+[gd_scene load_steps=4 format=3 uid="uid://0n75d8utmol6"]
 
 [ext_resource type="Script" path="res://game.gd" id="1_ottce"]
 [ext_resource type="PackedScene" uid="uid://10ngpxurb116" path="res://transitions.tscn" id="2_rxlpj"]
+[ext_resource type="Script" path="res://closeBreakfast.gd" id="3_u4eoj"]
 
 [node name="Game" type="Node2D"]
 script = ExtResource("1_ottce")
@@ -12,3 +13,23 @@ offset_bottom = 660.0
 text = "This is a game."
 
 [node name="ColorRect" parent="." instance=ExtResource("2_rxlpj")]
+
+[node name="Breakfast" type="ColorRect" parent="."]
+visible = false
+offset_left = 314.0
+offset_top = 85.0
+offset_right = 808.0
+offset_bottom = 567.0
+script = ExtResource("3_u4eoj")
+
+[node name="CloseButton" type="Button" parent="."]
+visible = false
+offset_left = 711.0
+offset_top = 102.0
+offset_right = 792.0
+offset_bottom = 141.0
+text = "CLOSE"
+
+[connection signal="pressed" from="CloseButton" to="." method="_on_close_button_pressed"]
+[connection signal="pressed" from="CloseButton" to="Breakfast" method="_on_close_button_pressed"]
+[connection signal="pressed" from="CloseButton" to="CloseButton" method="_on_pressed"]
