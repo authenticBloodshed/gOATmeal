@@ -25,3 +25,11 @@ func _on_close_notes_pressed():
 	$Notebook.hide()
 	$CloseNotes.hide()
 	$NotesButton.show()
+
+
+func _on_prep_station_button_pressed():
+	pass # Replace with function body.
+
+
+func _on_fridge_button_pressed():
+	pass # Replace with function body.

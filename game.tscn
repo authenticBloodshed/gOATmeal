@@ -86,3 +86,5 @@ flip_h = true
 [connection signal="pressed" from="CloseButton" to="CloseButton" method="_on_pressed"]
 [connection signal="pressed" from="NotesButton" to="." method="_on_notes_button_pressed"]
 [connection signal="pressed" from="CloseNotes" to="." method="_on_close_notes_pressed"]
+[connection signal="pressed" from="PrepStationButton" to="." method="_on_prep_station_button_pressed"]
+[connection signal="pressed" from="FridgeButton" to="." method="_on_fridge_button_pressed"]
