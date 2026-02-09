@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://dvueuso1kqybe"]
+[gd_scene load_steps=4 format=3 uid="uid://dvueuso1kqybe"]
 
 [ext_resource type="Script" path="res://Fridge.gd" id="1_12d5g"]
 [ext_resource type="Texture2D" uid="uid://c3gbfji8hjefd" path="res://arrowPlaceholder.png" id="2_m03e5"]
+[ext_resource type="Texture2D" uid="uid://cijb85w87ixut" path="res://Fridge.jpg" id="3_xff3q"]
 
 [node name="Fridge" type="Node2D"]
 script = ExtResource("1_12d5g")
@@ -14,11 +15,80 @@ editable = false
 
 [node name="PantryButton" type="TextureButton" parent="."]
 offset_left = 1012.0
-offset_top = 274.0
+offset_top = 269.0
 offset_right = 1150.0
-offset_bottom = 410.0
+offset_bottom = 405.0
 texture_normal = ExtResource("2_m03e5")
 ignore_texture_size = true
 stretch_mode = 0
 
+[node name="Fridge" type="Sprite2D" parent="."]
+position = Vector2(505, 327.5)
+scale = Vector2(2.48529, 1.06046)
+texture = ExtResource("3_xff3q")
+
+[node name="Item1" type="Button" parent="."]
+offset_left = 76.0
+offset_top = 43.0
+offset_right = 240.0
+offset_bottom = 151.0
+text = "Item"
+
+[node name="Item2" type="Button" parent="."]
+offset_left = 281.0
+offset_top = 151.0
+offset_right = 445.0
+offset_bottom = 259.0
+text = "Item"
+
+[node name="Item3" type="Button" parent="."]
+offset_left = 476.0
+offset_top = 43.0
+offset_right = 640.0
+offset_bottom = 151.0
+text = "Item"
+
+[node name="Item4" type="Button" parent="."]
+offset_left = 669.0
+offset_top = 151.0
+offset_right = 833.0
+offset_bottom = 259.0
+text = "Item"
+
+[node name="Item5" type="Button" parent="."]
+offset_left = 476.0
+offset_top = 269.0
+offset_right = 640.0
+offset_bottom = 377.0
+text = "Item"
+
+[node name="Item6" type="Button" parent="."]
+offset_left = 100.0
+offset_top = 269.0
+offset_right = 264.0
+offset_bottom = 377.0
+text = "Item"
+
+[node name="Item7" type="Button" parent="."]
+offset_left = 281.0
+offset_top = 377.0
+offset_right = 445.0
+offset_bottom = 485.0
+text = "Item"
+
+[node name="Item8" type="Button" parent="."]
+offset_left = 669.0
+offset_top = 377.0
+offset_right = 833.0
+offset_bottom = 485.0
+text = "Item"
+
 [connection signal="pressed" from="PantryButton" to="." method="_on_pantry_button_pressed"]
+[connection signal="pressed" from="Item1" to="." method="_on_item_1_pressed"]
+[connection signal="pressed" from="Item2" to="." method="_on_item_2_pressed"]
+[connection signal="pressed" from="Item3" to="." method="_on_item_3_pressed"]
+[connection signal="pressed" from="Item4" to="." method="_on_item_4_pressed"]
+[connection signal="pressed" from="Item5" to="." method="_on_item_5_pressed"]
+[connection signal="pressed" from="Item6" to="." method="_on_item_6_pressed"]
+[connection signal="pressed" from="Item7" to="." method="_on_item_7_pressed"]
+[connection signal="pressed" from="Item8" to="." method="_on_item_8_pressed"]
