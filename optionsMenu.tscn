@@ -25,4 +25,31 @@ visible = false
 
 [node name="fadeTimer" type="Timer" parent="ColorRect"]
 
+[node name="VolumeSlider" type="HSlider" parent="."]
+offset_left = 193.0
+offset_top = 175.0
+offset_right = 996.0
+offset_bottom = 191.0
+
+[node name="Volume" type="Label" parent="VolumeSlider"]
+layout_mode = 0
+offset_top = -30.0
+offset_right = 58.0
+offset_bottom = -7.0
+text = "volume"
+
+[node name="MuteCheckBox" type="CheckBox" parent="."]
+offset_left = 193.0
+offset_top = 224.0
+offset_right = 301.0
+offset_bottom = 318.0
+
+[node name="Mute" type="Label" parent="MuteCheckBox"]
+layout_mode = 0
+offset_right = 41.0
+offset_bottom = 23.0
+text = "Mute"
+
 [connection signal="pressed" from="ButtonManager/Back" to="." method="_on_button_pressed"]
+[connection signal="value_changed" from="VolumeSlider" to="." method="_on_h_slider_value_changed"]
+[connection signal="toggled" from="MuteCheckBox" to="." method="_on_mute_check_box_toggled"]

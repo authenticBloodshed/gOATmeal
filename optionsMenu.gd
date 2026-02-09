@@ -23,3 +23,9 @@ func _on_button_pressed():
 func _on_fade_timer_timeout():
 	if buttonType == "Back" :
 		get_tree().change_scene_to_file("res://MainMenu.gd")
+
+func _on_h_slider_value_changed(value):
+	AudioServer.set_bus_volume_db(0, value)
+
+func _on_mute_check_box_toggled(toggled_on):
+	AudioServer.set_bus_mute(0, toggled_on)
