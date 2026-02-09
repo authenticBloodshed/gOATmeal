@@ -1,7 +1,9 @@
-[gd_scene load_steps=3 format=3 uid="uid://bn7l7abptit80"]
+[gd_scene load_steps=5 format=3 uid="uid://bn7l7abptit80"]
 
 [ext_resource type="Script" path="res://PrepStation.gd" id="1_5drbj"]
 [ext_resource type="Texture2D" uid="uid://c3gbfji8hjefd" path="res://arrowPlaceholder.png" id="2_7cu24"]
+[ext_resource type="Texture2D" uid="uid://bybfdpbm8kpmy" path="res://CounterPlaceholder.jpg" id="3_iwkko"]
+[ext_resource type="Texture2D" uid="uid://cn7hc2n6fcsmo" path="res://Yogurt Placeholder.png" id="4_21818"]
 
 [node name="PrepStation" type="Node2D"]
 script = ExtResource("1_5drbj")
@@ -9,7 +11,8 @@ script = ExtResource("1_5drbj")
 [node name="TextEdit" type="TextEdit" parent="."]
 offset_right = 1152.0
 offset_bottom = 646.0
-text = "Preperation Station Placeholder"
+text = "Preperation 
+Station "
 editable = false
 
 [node name="TextureButton" type="TextureButton" parent="."]
@@ -20,5 +23,15 @@ texture_normal = ExtResource("2_7cu24")
 ignore_texture_size = true
 stretch_mode = 0
 flip_h = true
+
+[node name="CounterPlaceholder" type="Sprite2D" parent="."]
+position = Vector2(649.5, 322.5)
+scale = Vector2(1.19643, 1.79722)
+texture = ExtResource("3_iwkko")
+
+[node name="YogurtPlaceholder" type="Sprite2D" parent="."]
+position = Vector2(623, 322)
+scale = Vector2(0.810357, 0.774643)
+texture = ExtResource("4_21818")
 
 [connection signal="pressed" from="TextureButton" to="." method="_on_texture_button_pressed"]
