@@ -28,8 +28,8 @@ func _on_close_notes_pressed():
 
 
 func _on_prep_station_button_pressed():
-	pass # Replace with function body.
+	get_tree().change_scene_to_file("res://PrepStation.tscn")
 
 
 func _on_fridge_button_pressed():
-	pass # Replace with function body.
+	get_tree().change_scene_to_file("res://Fridge.tscn")

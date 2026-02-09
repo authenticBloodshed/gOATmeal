@@ -12,7 +12,8 @@ script = ExtResource("1_ottce")
 [node name="TextEdit" type="TextEdit" parent="."]
 offset_right = 1157.0
 offset_bottom = 660.0
-text = "Keuken Pantry Gedeelte"
+text = "Keuken Pantry Placeholder"
+editable = false
 
 [node name="ColorRect" parent="." instance=ExtResource("2_rxlpj")]
 visible = false
