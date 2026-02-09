@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://bn7l7abptit80"]
+[gd_scene load_steps=6 format=3 uid="uid://bn7l7abptit80"]
 
 [ext_resource type="Script" path="res://PrepStation.gd" id="1_5drbj"]
 [ext_resource type="Texture2D" uid="uid://c3gbfji8hjefd" path="res://arrowPlaceholder.png" id="2_7cu24"]
 [ext_resource type="Texture2D" uid="uid://bybfdpbm8kpmy" path="res://CounterPlaceholder.jpg" id="3_iwkko"]
 [ext_resource type="Texture2D" uid="uid://cn7hc2n6fcsmo" path="res://Yogurt Placeholder.png" id="4_21818"]
+[ext_resource type="AudioStream" uid="uid://de83sj2no0dya" path="res://562294-colorscrimsontears-click_mRrswwXk.wav" id="5_liu57"]
 
 [node name="PrepStation" type="Node2D"]
 script = ExtResource("1_5drbj")
@@ -33,5 +34,9 @@ texture = ExtResource("3_iwkko")
 position = Vector2(623, 322)
 scale = Vector2(0.810357, 0.774643)
 texture = ExtResource("4_21818")
+
+[node name="ClickSound" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("5_liu57")
+volume_db = 10.0
 
 [connection signal="pressed" from="TextureButton" to="." method="_on_texture_button_pressed"]

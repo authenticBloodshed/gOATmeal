@@ -29,3 +29,7 @@ func _on_h_slider_value_changed(value):
 
 func _on_mute_check_box_toggled(toggled_on):
 	AudioServer.set_bus_mute(0, toggled_on)
+
+func _input(event):
+	if event is InputEventMouseButton and event.pressed:
+		$ClickSound.play()

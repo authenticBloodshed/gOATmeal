@@ -33,3 +33,7 @@ func _on_prep_station_button_pressed():
 
 func _on_fridge_button_pressed():
 	get_tree().change_scene_to_file("res://Fridge.tscn")
+
+func _input(event):
+	if event is InputEventMouseButton and event.pressed:
+		$ClickSound.play()

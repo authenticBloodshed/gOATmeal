@@ -8,10 +8,6 @@ var hasItem6 = false
 var hasItem7 = false
 var hasItem8 = false
 
-# Called when the node enters the scene tree for the first time.
-func _ready():
-	pass # Replace with function body.
-
 func _on_pantry_button_pressed():
 	get_tree().change_scene_to_file("res://game.tscn")
 
@@ -46,3 +42,7 @@ func _on_item_7_pressed():
 func _on_item_8_pressed():
 	hasItem8 == true
 	$Item8.hide()
+
+func _input(event):
+	if event is InputEventMouseButton and event.pressed:
+		$ClickSound.play()
