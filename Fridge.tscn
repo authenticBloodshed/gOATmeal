@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://dvueuso1kqybe"]
+[gd_scene load_steps=8 format=3 uid="uid://dvueuso1kqybe"]
 
 [ext_resource type="Script" path="res://Fridge.gd" id="1_12d5g"]
 [ext_resource type="Texture2D" uid="uid://dbynhogc1sr6y" path="res://ArrowUnselected.png" id="2_edwff"]
@@ -6,6 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://cijb85w87ixut" path="res://Fridge.jpg" id="3_xff3q"]
 [ext_resource type="Texture2D" uid="uid://dgy2dputb4r37" path="res://ArrowHover.png" id="4_7beto"]
 [ext_resource type="AudioStream" uid="uid://de83sj2no0dya" path="res://562294-colorscrimsontears-click_mRrswwXk.wav" id="4_8qtko"]
+[ext_resource type="Texture2D" uid="uid://cnoa6ywxd7302" path="res://pear.png" id="6_f03ql"]
 
 [node name="Fridge" type="Node2D"]
 script = ExtResource("1_12d5g")
@@ -33,11 +34,12 @@ scale = Vector2(2.29902, 1.06046)
 texture = ExtResource("3_xff3q")
 
 [node name="Item1" type="Button" parent="."]
-offset_left = 76.0
-offset_top = 43.0
-offset_right = 240.0
-offset_bottom = 151.0
-text = "Item"
+offset_left = 119.0
+offset_top = 18.0
+offset_right = 2167.0
+offset_bottom = 2026.0
+scale = Vector2(0.07, 0.07)
+icon = ExtResource("6_f03ql")
 
 [node name="Item2" type="Button" parent="."]
 offset_left = 281.0
