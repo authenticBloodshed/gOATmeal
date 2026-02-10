@@ -1,8 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://dvueuso1kqybe"]
+[gd_scene load_steps=7 format=3 uid="uid://dvueuso1kqybe"]
 
 [ext_resource type="Script" path="res://Fridge.gd" id="1_12d5g"]
-[ext_resource type="Texture2D" uid="uid://c3gbfji8hjefd" path="res://arrowPlaceholder.png" id="2_m03e5"]
+[ext_resource type="Texture2D" uid="uid://dbynhogc1sr6y" path="res://ArrowUnselected.png" id="2_edwff"]
+[ext_resource type="Texture2D" uid="uid://bu3bijha23vjn" path="res://ArrowClick.png" id="3_vp5a0"]
 [ext_resource type="Texture2D" uid="uid://cijb85w87ixut" path="res://Fridge.jpg" id="3_xff3q"]
+[ext_resource type="Texture2D" uid="uid://dgy2dputb4r37" path="res://ArrowHover.png" id="4_7beto"]
 [ext_resource type="AudioStream" uid="uid://de83sj2no0dya" path="res://562294-colorscrimsontears-click_mRrswwXk.wav" id="4_8qtko"]
 
 [node name="Fridge" type="Node2D"]
@@ -15,17 +17,19 @@ text = "Fridge Placeholder"
 editable = false
 
 [node name="PantryButton" type="TextureButton" parent="."]
-offset_left = 1012.0
-offset_top = 269.0
-offset_right = 1150.0
-offset_bottom = 405.0
-texture_normal = ExtResource("2_m03e5")
+offset_left = 984.0
+offset_top = 259.0
+offset_right = 1153.0
+offset_bottom = 424.0
+texture_normal = ExtResource("2_edwff")
+texture_pressed = ExtResource("3_vp5a0")
+texture_hover = ExtResource("4_7beto")
 ignore_texture_size = true
 stretch_mode = 0
 
 [node name="Fridge" type="Sprite2D" parent="."]
-position = Vector2(505, 327.5)
-scale = Vector2(2.48529, 1.06046)
+position = Vector2(467, 327.5)
+scale = Vector2(2.29902, 1.06046)
 texture = ExtResource("3_xff3q")
 
 [node name="Item1" type="Button" parent="."]
