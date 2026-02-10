@@ -1,11 +1,17 @@
-[gd_scene load_steps=4 format=3 uid="uid://bgfic17nc60f4"]
+[gd_scene load_steps=5 format=3 uid="uid://bgfic17nc60f4"]
 
 [ext_resource type="Script" path="res://optionsMenu.gd" id="1_5als8"]
 [ext_resource type="PackedScene" uid="uid://10ngpxurb116" path="res://transitions.tscn" id="2_27tpq"]
 [ext_resource type="AudioStream" uid="uid://de83sj2no0dya" path="res://562294-colorscrimsontears-click_mRrswwXk.wav" id="3_qnfkd"]
+[ext_resource type="Texture2D" uid="uid://2rxfmyccdb2k" path="res://background2.png" id="4_rdsfs"]
 
 [node name="OptionsMenu" type="Node2D"]
 script = ExtResource("1_5als8")
+
+[node name="Background2" type="Sprite2D" parent="."]
+position = Vector2(579, 328.5)
+scale = Vector2(0.583, 0.3285)
+texture = ExtResource("4_rdsfs")
 
 [node name="ButtonManager" type="Control" parent="."]
 layout_mode = 3

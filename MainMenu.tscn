@@ -1,11 +1,17 @@
-[gd_scene load_steps=4 format=3 uid="uid://47yv1o6ecd5y"]
+[gd_scene load_steps=5 format=3 uid="uid://47yv1o6ecd5y"]
 
 [ext_resource type="Script" path="res://MainMenu.gd" id="1_a0sld"]
 [ext_resource type="PackedScene" uid="uid://10ngpxurb116" path="res://transitions.tscn" id="2_f6nk4"]
+[ext_resource type="Texture2D" uid="uid://2rxfmyccdb2k" path="res://background2.png" id="2_iox2c"]
 [ext_resource type="AudioStream" uid="uid://de83sj2no0dya" path="res://562294-colorscrimsontears-click_mRrswwXk.wav" id="3_0rea3"]
 
 [node name="MainMenu" type="Node2D"]
 script = ExtResource("1_a0sld")
+
+[node name="Background2" type="Sprite2D" parent="."]
+position = Vector2(576.5, 330)
+scale = Vector2(0.6115, 0.33)
+texture = ExtResource("2_iox2c")
 
 [node name="ButtonManager" type="Control" parent="."]
 layout_mode = 3
