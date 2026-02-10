@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://dvueuso1kqybe"]
+[gd_scene load_steps=9 format=3 uid="uid://dvueuso1kqybe"]
 
 [ext_resource type="Script" path="res://Fridge.gd" id="1_12d5g"]
 [ext_resource type="Texture2D" uid="uid://dbynhogc1sr6y" path="res://ArrowUnselected.png" id="2_edwff"]
@@ -7,6 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://dgy2dputb4r37" path="res://ArrowHover.png" id="4_7beto"]
 [ext_resource type="AudioStream" uid="uid://de83sj2no0dya" path="res://562294-colorscrimsontears-click_mRrswwXk.wav" id="4_8qtko"]
 [ext_resource type="Texture2D" uid="uid://cnoa6ywxd7302" path="res://pear.png" id="6_f03ql"]
+[ext_resource type="Texture2D" uid="uid://ckm8in6xo576k" path="res://Fridge2.png" id="6_tojyv"]
 
 [node name="Fridge" type="Node2D"]
 script = ExtResource("1_12d5g")
@@ -18,9 +19,9 @@ text = "Fridge Placeholder"
 editable = false
 
 [node name="PantryButton" type="TextureButton" parent="."]
-offset_left = 984.0
+offset_left = 936.0
 offset_top = 259.0
-offset_right = 1153.0
+offset_right = 1105.0
 offset_bottom = 424.0
 texture_normal = ExtResource("2_edwff")
 texture_pressed = ExtResource("3_vp5a0")
@@ -29,65 +30,71 @@ ignore_texture_size = true
 stretch_mode = 0
 
 [node name="Fridge" type="Sprite2D" parent="."]
+visible = false
 position = Vector2(467, 327.5)
 scale = Vector2(2.29902, 1.06046)
 texture = ExtResource("3_xff3q")
 
+[node name="Fridge2" type="Sprite2D" parent="."]
+position = Vector2(411.5, 327.25)
+scale = Vector2(0.4115, 0.32725)
+texture = ExtResource("6_tojyv")
+
 [node name="Item1" type="Button" parent="."]
-offset_left = 119.0
-offset_top = 18.0
-offset_right = 2167.0
-offset_bottom = 2026.0
+offset_left = 100.0
+offset_top = 89.0
+offset_right = 2148.0
+offset_bottom = 2097.0
 scale = Vector2(0.07, 0.07)
 icon = ExtResource("6_f03ql")
 
 [node name="Item2" type="Button" parent="."]
-offset_left = 281.0
-offset_top = 151.0
-offset_right = 445.0
-offset_bottom = 259.0
+offset_left = 358.0
+offset_top = 118.0
+offset_right = 522.0
+offset_bottom = 226.0
 text = "Item"
 
 [node name="Item3" type="Button" parent="."]
-offset_left = 476.0
-offset_top = 43.0
-offset_right = 640.0
-offset_bottom = 151.0
+offset_left = 605.0
+offset_top = 118.0
+offset_right = 769.0
+offset_bottom = 226.0
 text = "Item"
 
 [node name="Item4" type="Button" parent="."]
-offset_left = 669.0
-offset_top = 151.0
-offset_right = 833.0
-offset_bottom = 259.0
+offset_left = 605.0
+offset_top = 448.0
+offset_right = 769.0
+offset_bottom = 556.0
 text = "Item"
 
 [node name="Item5" type="Button" parent="."]
-offset_left = 476.0
-offset_top = 269.0
-offset_right = 640.0
-offset_bottom = 377.0
+offset_left = 500.0
+offset_top = 285.0
+offset_right = 664.0
+offset_bottom = 393.0
 text = "Item"
 
 [node name="Item6" type="Button" parent="."]
-offset_left = 100.0
-offset_top = 269.0
-offset_right = 264.0
-offset_bottom = 377.0
+offset_left = 222.0
+offset_top = 285.0
+offset_right = 386.0
+offset_bottom = 393.0
 text = "Item"
 
 [node name="Item7" type="Button" parent="."]
-offset_left = 281.0
-offset_top = 377.0
-offset_right = 445.0
-offset_bottom = 485.0
+offset_left = 100.0
+offset_top = 448.0
+offset_right = 264.0
+offset_bottom = 556.0
 text = "Item"
 
 [node name="Item8" type="Button" parent="."]
-offset_left = 669.0
-offset_top = 377.0
-offset_right = 833.0
-offset_bottom = 485.0
+offset_left = 358.0
+offset_top = 448.0
+offset_right = 522.0
+offset_bottom = 556.0
 text = "Item"
 
 [node name="ClickSound" type="AudioStreamPlayer2D" parent="."]
