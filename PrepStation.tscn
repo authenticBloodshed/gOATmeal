@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://bn7l7abptit80"]
+[gd_scene load_steps=10 format=3 uid="uid://bn7l7abptit80"]
 
 [ext_resource type="Script" path="res://PrepStation.gd" id="1_5drbj"]
 [ext_resource type="Texture2D" uid="uid://dbynhogc1sr6y" path="res://ArrowUnselected.png" id="2_b3ctj"]
@@ -7,6 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://cn7hc2n6fcsmo" path="res://Yogurt Placeholder.png" id="4_21818"]
 [ext_resource type="Texture2D" uid="uid://dgy2dputb4r37" path="res://ArrowHover.png" id="4_bsost"]
 [ext_resource type="AudioStream" uid="uid://de83sj2no0dya" path="res://562294-colorscrimsontears-click_mRrswwXk.wav" id="5_liu57"]
+[ext_resource type="Texture2D" uid="uid://dt0f8s077qi2x" path="res://bowl1.png" id="7_jvau5"]
 [ext_resource type="PackedScene" uid="uid://dgvvcqcelxcsk" path="res://DraggableObject.tscn" id="8_fgw3y"]
 
 [node name="PrepStation" type="Node2D"]
@@ -37,9 +38,15 @@ scale = Vector2(1.19643, 1.79722)
 texture = ExtResource("3_iwkko")
 
 [node name="YogurtPlaceholder" type="Sprite2D" parent="."]
+visible = false
 position = Vector2(623, 322)
 scale = Vector2(0.810357, 0.774643)
 texture = ExtResource("4_21818")
+
+[node name="Bowl1" type="Sprite2D" parent="."]
+position = Vector2(631, 322)
+scale = Vector2(0.23075, 0.23075)
+texture = ExtResource("7_jvau5")
 
 [node name="DraggableObject" parent="." instance=ExtResource("8_fgw3y")]
 position = Vector2(309, 231)
