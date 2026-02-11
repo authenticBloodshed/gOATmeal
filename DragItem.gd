@@ -18,6 +18,7 @@ func _input(event):
 	if dragging and event is InputEventMouseButton:
 		if event.button_index == MOUSE_BUTTON_LEFT and not event.pressed:
 			finish_drag()
+			$PlaceSound2.play()
 
 func finish_drag():
 	dragging = false

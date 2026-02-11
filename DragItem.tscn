@@ -1,7 +1,8 @@
-[gd_scene load_steps=4 format=3 uid="uid://bqbfc5bl3q8xt"]
+[gd_scene load_steps=5 format=3 uid="uid://bqbfc5bl3q8xt"]
 
 [ext_resource type="Script" path="res://DragItem.gd" id="1_v2aox"]
 [ext_resource type="Texture2D" uid="uid://0ymctj271qxw" path="res://GreekYogurt.png" id="2_31s4t"]
+[ext_resource type="AudioStream" uid="uid://cl05wk2co4vj3" path="res://223805__ctcollab__splash-3.wav" id="3_4va46"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_rnvm1"]
 size = Vector2(1818, 2047)
@@ -15,3 +16,7 @@ shape = SubResource("RectangleShape2D_rnvm1")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture = ExtResource("2_31s4t")
+
+[node name="PlaceSound" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("3_4va46")
+volume_db = 10.0
