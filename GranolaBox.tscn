@@ -1,0 +1,23 @@
+[gd_scene load_steps=5 format=3 uid="uid://c1x2ef7pg7oab"]
+
+[ext_resource type="Script" path="res://GranolaBox.gd" id="1_6hte0"]
+[ext_resource type="Texture2D" uid="uid://cl4ane2t12qu2" path="res://Granola.png" id="1_yotpv"]
+[ext_resource type="PackedScene" uid="uid://bnb60jrlwnw6o" path="res://GranolaChunk.tscn" id="2_wavpg"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6kmvq"]
+size = Vector2(977, 1907)
+
+[node name="GranolaBox" type="Node2D"]
+script = ExtResource("1_6hte0")
+granolaChunkScene = ExtResource("2_wavpg")
+
+[node name="Box" type="Area2D" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="Box"]
+texture = ExtResource("1_yotpv")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Box"]
+position = Vector2(-6.5, -5.5)
+shape = SubResource("RectangleShape2D_6kmvq")
+
+[node name="SpawnedGranola" type="Node2D" parent="."]

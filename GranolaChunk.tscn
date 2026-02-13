@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://bnb60jrlwnw6o"]
+
+[ext_resource type="Script" path="res://GranolaChunk.gd" id="1_dmfog"]
+[ext_resource type="Texture2D" uid="uid://peax7l8qqn5p" path="res://GranolaBits.png" id="1_qyynh"]
+
+[node name="GranolaChunk" type="Node2D"]
+script = ExtResource("1_dmfog")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.325, 0.325)
+texture = ExtResource("1_qyynh")

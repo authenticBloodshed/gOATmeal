@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=3 uid="uid://bn7l7abptit80"]
+[gd_scene load_steps=17 format=3 uid="uid://bn7l7abptit80"]
 
 [ext_resource type="Script" path="res://PrepStation.gd" id="1_5drbj"]
 [ext_resource type="Texture2D" uid="uid://dbynhogc1sr6y" path="res://ArrowUnselected.png" id="2_b3ctj"]
@@ -15,6 +15,7 @@
 [ext_resource type="PackedScene" uid="uid://bqbfc5bl3q8xt" path="res://DragItem.tscn" id="10_mer3u"]
 [ext_resource type="PackedScene" uid="uid://djr6f1jtdjnev" path="res://DragOatmeal.tscn" id="13_u64xb"]
 [ext_resource type="AudioStream" uid="uid://cl05wk2co4vj3" path="res://223805__ctcollab__splash-3.wav" id="14_huhej"]
+[ext_resource type="PackedScene" uid="uid://c1x2ef7pg7oab" path="res://GranolaBox.tscn" id="16_qnom6"]
 
 [node name="PrepStation" type="Node2D"]
 script = ExtResource("1_5drbj")
@@ -63,16 +64,16 @@ scale = Vector2(0.23225, 0.23225)
 texture = ExtResource("9_cb7cn")
 
 [node name="DraggableObject" parent="." instance=ExtResource("8_fgw3y")]
-position = Vector2(309, 231)
+position = Vector2(211, 215)
 
 [node name="DraggableObject2" parent="." instance=ExtResource("8_fgw3y")]
-position = Vector2(339, 411)
+position = Vector2(300, 211)
 
 [node name="DraggableObject3" parent="." instance=ExtResource("8_fgw3y")]
-position = Vector2(231, 340)
+position = Vector2(212, 93)
 
 [node name="DraggableObject4" parent="." instance=ExtResource("8_fgw3y")]
-position = Vector2(257, 518)
+position = Vector2(302, 96)
 
 [node name="DragItem" parent="." instance=ExtResource("10_mer3u")]
 position = Vector2(982, 148)
@@ -107,5 +108,9 @@ visible = false
 position = Vector2(623, 322)
 scale = Vector2(0.810357, 0.774643)
 texture = ExtResource("4_21818")
+
+[node name="GranolaBox" parent="." instance=ExtResource("16_qnom6")]
+position = Vector2(251, 466)
+scale = Vector2(0.175, 0.175)
 
 [connection signal="pressed" from="TextureButton" to="." method="_on_texture_button_pressed"]
