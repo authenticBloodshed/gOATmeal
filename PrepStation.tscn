@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=3 uid="uid://bn7l7abptit80"]
+[gd_scene load_steps=18 format=3 uid="uid://bn7l7abptit80"]
 
 [ext_resource type="Script" path="res://PrepStation.gd" id="1_5drbj"]
 [ext_resource type="Texture2D" uid="uid://dbynhogc1sr6y" path="res://ArrowUnselected.png" id="2_b3ctj"]
@@ -16,6 +16,7 @@
 [ext_resource type="PackedScene" uid="uid://djr6f1jtdjnev" path="res://DragOatmeal.tscn" id="13_u64xb"]
 [ext_resource type="AudioStream" uid="uid://cl05wk2co4vj3" path="res://223805__ctcollab__splash-3.wav" id="14_huhej"]
 [ext_resource type="PackedScene" uid="uid://c1x2ef7pg7oab" path="res://GranolaBox.tscn" id="16_qnom6"]
+[ext_resource type="PackedScene" uid="uid://cymwnfrhohpeu" path="res://NewNotebook.tscn" id="17_u1xj1"]
 
 [node name="PrepStation" type="Node2D"]
 script = ExtResource("1_5drbj")
@@ -112,5 +113,7 @@ texture = ExtResource("4_21818")
 [node name="GranolaBox" parent="." instance=ExtResource("16_qnom6")]
 position = Vector2(251, 466)
 scale = Vector2(0.175, 0.175)
+
+[node name="NotebookManager" parent="." instance=ExtResource("17_u1xj1")]
 
 [connection signal="pressed" from="TextureButton" to="." method="_on_texture_button_pressed"]

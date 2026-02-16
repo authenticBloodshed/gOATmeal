@@ -1,0 +1,54 @@
+[gd_scene load_steps=6 format=3 uid="uid://cymwnfrhohpeu"]
+
+[ext_resource type="Texture2D" uid="uid://bboshfcy0viwc" path="res://NotebookLined.png" id="1_7w7mh"]
+[ext_resource type="Script" path="res://NewNotebook.gd" id="1_q6yg3"]
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_y7qts"]
+
+[sub_resource type="Theme" id="Theme_m8x0r"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6q811"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[node name="NotebookManager" type="Node2D"]
+script = ExtResource("1_q6yg3")
+
+[node name="ButtonNotes" type="Button" parent="."]
+offset_left = 970.0
+offset_top = 16.0
+offset_right = 1138.0
+offset_bottom = 63.0
+text = "NOTES"
+
+[node name="NotebookLined" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(554.75, 331)
+scale = Vector2(0.19225, 0.149333)
+texture = ExtResource("1_7w7mh")
+
+[node name="NotesEditText" type="TextEdit" parent="."]
+visible = false
+modulate = Color(0, 0, 0, 1)
+self_modulate = Color(0, 0, 0, 1)
+material = SubResource("CanvasItemMaterial_y7qts")
+offset_left = 389.0
+offset_top = 107.0
+offset_right = 747.0
+offset_bottom = 555.0
+theme = SubResource("Theme_m8x0r")
+theme_override_styles/normal = SubResource("StyleBoxFlat_6q811")
+placeholder_text = "Type here :)"
+wrap_mode = 1
+
+[node name="ButtonCloseNotes" type="Button" parent="."]
+visible = false
+offset_left = 493.0
+offset_top = 497.0
+offset_right = 607.0
+offset_bottom = 544.0
+text = "CLOSE NOTES"
+
+[connection signal="pressed" from="ButtonNotes" to="ButtonNotes" method="_on_pressed"]
+[connection signal="pressed" from="ButtonNotes" to="." method="_on_button_notes_pressed"]
+[connection signal="pressed" from="ButtonCloseNotes" to="ButtonNotes" method="_on_button_close_notes_pressed"]
+[connection signal="pressed" from="ButtonCloseNotes" to="." method="_on_button_close_notes_pressed"]

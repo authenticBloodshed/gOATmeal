@@ -8,24 +8,13 @@ func _ready():
 	$ColorRect.hide()
 	$Breakfast.show()
 	$CloseButton.show()
-	$NotesButton.show()
 	$PlaceholderImage.show()
 
 func _on_close_button_pressed():
 	$Breakfast.hide()
 	$CloseButton.hide()
 	$PlaceholderImage.hide()
-
-func _on_notes_button_pressed():
-	$Notebook.show()
-	$NotesButton.hide()
-	$CloseNotes.show()
-
-func _on_close_notes_pressed():
-	$Notebook.hide()
-	$CloseNotes.hide()
-	$NotesButton.show()
-
+	$NotebookManager.show()
 
 func _on_prep_station_button_pressed():
 	get_tree().change_scene_to_file("res://PrepStation.tscn")
