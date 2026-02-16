@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=3 uid="uid://bn7l7abptit80"]
+[gd_scene load_steps=20 format=3 uid="uid://bn7l7abptit80"]
 
 [ext_resource type="Script" path="res://PrepStation.gd" id="1_5drbj"]
 [ext_resource type="Texture2D" uid="uid://dbynhogc1sr6y" path="res://ArrowUnselected.png" id="2_b3ctj"]
@@ -7,8 +7,10 @@
 [ext_resource type="Texture2D" uid="uid://cn7hc2n6fcsmo" path="res://Yogurt Placeholder.png" id="4_21818"]
 [ext_resource type="Texture2D" uid="uid://dgy2dputb4r37" path="res://ArrowHover.png" id="4_bsost"]
 [ext_resource type="AudioStream" uid="uid://de83sj2no0dya" path="res://562294-colorscrimsontears-click_mRrswwXk.wav" id="5_liu57"]
+[ext_resource type="Texture2D" uid="uid://j8qii1xydm0i" path="res://HeartBowl.png" id="7_3i66u"]
 [ext_resource type="Texture2D" uid="uid://dt0f8s077qi2x" path="res://bowl1.png" id="7_jvau5"]
 [ext_resource type="Texture2D" uid="uid://bym7kwstv0l1e" path="res://Countertop.png" id="7_lob6u"]
+[ext_resource type="Texture2D" uid="uid://bvr3sirjws60s" path="res://CheckerBowl.png" id="8_4u2eb"]
 [ext_resource type="Texture2D" uid="uid://c0ty2sdbqng8f" path="res://yogurt.png" id="8_dmfa1"]
 [ext_resource type="PackedScene" uid="uid://dgvvcqcelxcsk" path="res://DraggableObject.tscn" id="8_fgw3y"]
 [ext_resource type="Texture2D" uid="uid://c1camwkygdip0" path="res://OatmealBowl.png" id="9_cb7cn"]
@@ -51,6 +53,18 @@ texture = ExtResource("7_lob6u")
 position = Vector2(631, 322)
 scale = Vector2(0.23075, 0.23075)
 texture = ExtResource("7_jvau5")
+
+[node name="HeartBowl" type="Sprite2D" parent="FinalAssets"]
+visible = false
+position = Vector2(631, 313)
+scale = Vector2(0.268625, 0.266125)
+texture = ExtResource("7_3i66u")
+
+[node name="CheckerBowl" type="Sprite2D" parent="FinalAssets"]
+visible = false
+position = Vector2(630, 322)
+scale = Vector2(0.23, 0.23)
+texture = ExtResource("8_4u2eb")
 
 [node name="Yogurt" type="Sprite2D" parent="FinalAssets"]
 visible = false
@@ -119,4 +133,27 @@ texture = ExtResource("4_21818")
 
 [node name="NotebookManager" parent="." instance=ExtResource("17_u1xj1")]
 
+[node name="NextBowlButton" type="TextureButton" parent="."]
+offset_left = 633.0
+offset_top = 540.0
+offset_right = 1197.0
+offset_bottom = 1104.0
+scale = Vector2(0.16, 0.16)
+texture_normal = ExtResource("2_b3ctj")
+texture_pressed = ExtResource("3_o1fpt")
+texture_hover = ExtResource("4_bsost")
+
+[node name="PreviousBowlButton" type="TextureButton" parent="."]
+offset_left = 528.0
+offset_top = 539.0
+offset_right = 1092.0
+offset_bottom = 1103.0
+scale = Vector2(0.16, 0.16)
+texture_normal = ExtResource("2_b3ctj")
+texture_pressed = ExtResource("3_o1fpt")
+texture_hover = ExtResource("4_bsost")
+flip_h = true
+
 [connection signal="pressed" from="TextureButton" to="." method="_on_texture_button_pressed"]
+[connection signal="pressed" from="NextBowlButton" to="." method="_on_next_bowl_button_pressed"]
+[connection signal="pressed" from="PreviousBowlButton" to="." method="_on_previous_bowl_button_pressed"]
