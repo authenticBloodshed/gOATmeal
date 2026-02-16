@@ -12,4 +12,4 @@ func _on_texture_button_pressed():
 
 func _input(event):
 	if event is InputEventMouseButton and event.pressed:
-		$ClickSound.play()
+		$DraggableObjects/ClickSound.play()
