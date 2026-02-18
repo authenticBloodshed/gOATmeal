@@ -1,4 +1,4 @@
-[gd_scene load_steps=20 format=3 uid="uid://bn7l7abptit80"]
+[gd_scene load_steps=21 format=3 uid="uid://bn7l7abptit80"]
 
 [ext_resource type="Script" path="res://PrepStation.gd" id="1_5drbj"]
 [ext_resource type="Texture2D" uid="uid://dbynhogc1sr6y" path="res://ArrowUnselected.png" id="2_b3ctj"]
@@ -18,6 +18,7 @@
 [ext_resource type="PackedScene" uid="uid://djr6f1jtdjnev" path="res://DragOatmeal.tscn" id="13_u64xb"]
 [ext_resource type="AudioStream" uid="uid://cl05wk2co4vj3" path="res://223805__ctcollab__splash-3.wav" id="14_huhej"]
 [ext_resource type="PackedScene" uid="uid://c1x2ef7pg7oab" path="res://GranolaBox.tscn" id="16_qnom6"]
+[ext_resource type="PackedScene" uid="uid://b68a3agl827bl" path="res://saus.tscn" id="17_3tge8"]
 [ext_resource type="PackedScene" uid="uid://cymwnfrhohpeu" path="res://NewNotebook.tscn" id="17_u1xj1"]
 
 [node name="PrepStation" type="Node2D"]
@@ -115,6 +116,9 @@ targetPath = NodePath("../../FinalAssets/OatmealBowl")
 [node name="GranolaBox" parent="DraggableObjects" instance=ExtResource("16_qnom6")]
 position = Vector2(251, 466)
 scale = Vector2(0.175, 0.175)
+
+[node name="Saus" parent="DraggableObjects" instance=ExtResource("17_3tge8")]
+position = Vector2(614, 288)
 
 [node name="PlaceholderAssets" type="Node2D" parent="."]
 visible = false
