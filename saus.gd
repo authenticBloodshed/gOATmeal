@@ -6,6 +6,7 @@ var dragOffset := Vector2.ZERO
 
 func _ready():
 	input_pickable = true
+	$CPUParticles2D.hide()
 
 func _input_event(viewport, event, shape_idx):
 	
@@ -24,7 +25,10 @@ func _input_event(viewport, event, shape_idx):
 				$SausSprite.hide()
 				$SausCollision.hide()
 				
+				
 
 func _process(delta):
 	if isDragging:
 		global_position = get_global_mouse_position() + dragOffset
+		
+

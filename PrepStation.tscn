@@ -22,10 +22,11 @@
 [ext_resource type="PackedScene" uid="uid://cymwnfrhohpeu" path="res://NewNotebook.tscn" id="17_u1xj1"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_uy8f1"]
-radius = 191.442
+radius = 200.022
 
 [node name="PrepStation" type="Node2D"]
 script = ExtResource("1_5drbj")
+saus = NodePath("DraggableObjects/Saus")
 
 [node name="TextEdit" type="TextEdit" parent="."]
 offset_right = 1152.0
@@ -82,10 +83,15 @@ position = Vector2(626, 326)
 scale = Vector2(0.23225, 0.23225)
 texture = ExtResource("9_cb7cn")
 
-[node name="BowlCollission" type="CollisionShape2D" parent="FinalAssets"]
+[node name="Area2D" type="Area2D" parent="FinalAssets"]
+
+[node name="BowlCollission" type="CollisionShape2D" parent="FinalAssets/Area2D"]
 position = Vector2(633, 320)
 shape = SubResource("CircleShape2D_uy8f1")
 debug_color = Color(0.666667, 0.509804, 0, 0.419608)
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="FinalAssets/Area2D/BowlCollission"]
+position = Vector2(-633, -320)
 
 [node name="DraggableObjects" type="Node2D" parent="."]
 
@@ -126,7 +132,8 @@ position = Vector2(251, 466)
 scale = Vector2(0.175, 0.175)
 
 [node name="Saus" parent="DraggableObjects" instance=ExtResource("17_3tge8")]
-position = Vector2(614, 288)
+position = Vector2(393, 499)
+scale = Vector2(0.525, 0.525)
 
 [node name="PlaceholderAssets" type="Node2D" parent="."]
 visible = false
@@ -167,5 +174,7 @@ texture_hover = ExtResource("4_bsost")
 flip_h = true
 
 [connection signal="pressed" from="TextureButton" to="." method="_on_texture_button_pressed"]
+[connection signal="area_entered" from="FinalAssets/Area2D" to="." method="_on_area_2d_area_entered"]
+[connection signal="body_entered" from="FinalAssets/Area2D" to="." method="_on_area_2d_body_entered"]
 [connection signal="pressed" from="NextBowlButton" to="." method="_on_next_bowl_button_pressed"]
 [connection signal="pressed" from="PreviousBowlButton" to="." method="_on_previous_bowl_button_pressed"]

@@ -1,10 +1,13 @@
-[gd_scene load_steps=5 format=3 uid="uid://b68a3agl827bl"]
+[gd_scene load_steps=6 format=3 uid="uid://b68a3agl827bl"]
 
 [ext_resource type="Script" path="res://saus.gd" id="1_6i3i1"]
 [ext_resource type="Texture2D" uid="uid://d2rdc1u3jraa2" path="res://SausPlaceholder.png" id="1_n68v1"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_7v8pl"]
-size = Vector2(258, 308)
+size = Vector2(103, 384)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_fhmdw"]
+size = Vector2(74, 80)
 
 [sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_xwmy0"]
 
@@ -15,8 +18,15 @@ script = ExtResource("1_6i3i1")
 texture = ExtResource("1_n68v1")
 
 [node name="SausCollision" type="CollisionShape2D" parent="."]
-position = Vector2(2, 23)
+position = Vector2(-6.5, -45)
 shape = SubResource("RectangleShape2D_7v8pl")
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+position = Vector2(-172, 0)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
+position = Vector2(172, 206)
+shape = SubResource("RectangleShape2D_fhmdw")
 
 [node name="CPUParticles2D" type="CPUParticles2D" parent="."]
 material = SubResource("CanvasItemMaterial_xwmy0")

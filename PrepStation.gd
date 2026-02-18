@@ -1,6 +1,7 @@
 extends Node2D
 
 var counter = 0
+@export var saus : NodePath
 
 func _ready():
 	pass # Replace with function body.
@@ -48,5 +49,8 @@ func update_bowl():
 		$FinalAssets/Bowl1.hide()
 		counter = 2
 
-
-
+func _on_area_2d_body_entered(body):
+	$DraggableObjects/Saus/CPUParticles2D.show()
+	
+	print("hoi")
+		
