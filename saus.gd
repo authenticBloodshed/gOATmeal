@@ -21,7 +21,9 @@ func _input_event(viewport, event, shape_idx):
 			# Releases and places ingredient
 			elif not event.pressed and isDragging:
 				isDragging = false
-				isPouring = true   # Locks the ingredient in place and prevents it from being picked up again
+				$SausSprite.hide()
+				$SausCollision.hide()
+				
 
 func _process(delta):
 	if isDragging:

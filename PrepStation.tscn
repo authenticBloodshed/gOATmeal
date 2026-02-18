@@ -1,4 +1,4 @@
-[gd_scene load_steps=21 format=3 uid="uid://bn7l7abptit80"]
+[gd_scene load_steps=22 format=3 uid="uid://bn7l7abptit80"]
 
 [ext_resource type="Script" path="res://PrepStation.gd" id="1_5drbj"]
 [ext_resource type="Texture2D" uid="uid://dbynhogc1sr6y" path="res://ArrowUnselected.png" id="2_b3ctj"]
@@ -20,6 +20,9 @@
 [ext_resource type="PackedScene" uid="uid://c1x2ef7pg7oab" path="res://GranolaBox.tscn" id="16_qnom6"]
 [ext_resource type="PackedScene" uid="uid://b68a3agl827bl" path="res://saus.tscn" id="17_3tge8"]
 [ext_resource type="PackedScene" uid="uid://cymwnfrhohpeu" path="res://NewNotebook.tscn" id="17_u1xj1"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_uy8f1"]
+radius = 191.442
 
 [node name="PrepStation" type="Node2D"]
 script = ExtResource("1_5drbj")
@@ -78,6 +81,11 @@ visible = false
 position = Vector2(626, 326)
 scale = Vector2(0.23225, 0.23225)
 texture = ExtResource("9_cb7cn")
+
+[node name="BowlCollission" type="CollisionShape2D" parent="FinalAssets"]
+position = Vector2(633, 320)
+shape = SubResource("CircleShape2D_uy8f1")
+debug_color = Color(0.666667, 0.509804, 0, 0.419608)
 
 [node name="DraggableObjects" type="Node2D" parent="."]
 
