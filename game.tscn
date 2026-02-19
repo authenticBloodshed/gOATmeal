@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=3 uid="uid://0n75d8utmol6"]
+[gd_scene load_steps=19 format=3 uid="uid://0n75d8utmol6"]
 
 [ext_resource type="Script" path="res://game.gd" id="1_ottce"]
 [ext_resource type="PackedScene" uid="uid://10ngpxurb116" path="res://transitions.tscn" id="2_rxlpj"]
@@ -17,6 +17,7 @@
 [ext_resource type="Texture2D" uid="uid://d3tm05tra0x64" path="res://caramelsauce.png" id="15_yl3aa"]
 [ext_resource type="Texture2D" uid="uid://cl4ane2t12qu2" path="res://Granola.png" id="16_mqdtn"]
 [ext_resource type="Texture2D" uid="uid://ba47p4y5pemp8" path="res://Oatmeal.png" id="17_1x84r"]
+[ext_resource type="Texture2D" uid="uid://bm4ma2yhmahx2" path="res://KitchenCounter.png" id="18_ys6ic"]
 
 [node name="Game" type="Node2D"]
 script = ExtResource("1_ottce")
@@ -61,10 +62,10 @@ stream = ExtResource("6_7cm77")
 volume_db = 10.0
 
 [node name="PrepStationButton" type="TextureButton" parent="."]
-offset_left = 1013.0
-offset_top = 279.0
-offset_right = 1152.0
-offset_bottom = 422.0
+offset_left = 1012.0
+offset_top = 263.0
+offset_right = 1151.0
+offset_bottom = 406.0
 texture_normal = ExtResource("5_h2uob")
 texture_pressed = ExtResource("6_lbjtf")
 texture_hover = ExtResource("7_xh6vo")
@@ -72,9 +73,10 @@ ignore_texture_size = true
 stretch_mode = 0
 
 [node name="FridgeButton" type="TextureButton" parent="."]
-offset_top = 279.0
-offset_right = 139.0
-offset_bottom = 422.0
+offset_left = -1.0
+offset_top = 263.0
+offset_right = 138.0
+offset_bottom = 406.0
 texture_normal = ExtResource("5_h2uob")
 texture_pressed = ExtResource("6_lbjtf")
 texture_hover = ExtResource("7_xh6vo")
@@ -116,6 +118,11 @@ texture = ExtResource("16_mqdtn")
 position = Vector2(358, 97)
 scale = Vector2(0.07, 0.07)
 texture = ExtResource("17_1x84r")
+
+[node name="KitchenCounter" type="Sprite2D" parent="."]
+position = Vector2(574, 515)
+scale = Vector2(0.379, 0.379)
+texture = ExtResource("18_ys6ic")
 
 [connection signal="pressed" from="CloseButton" to="." method="_on_close_button_pressed"]
 [connection signal="pressed" from="CloseButton" to="Breakfast" method="_on_close_button_pressed"]
