@@ -32,6 +32,21 @@ position = Vector2(576, 141)
 scale = Vector2(0.38275, 0.38275)
 texture = ExtResource("10_sldwx")
 
+[node name="Granola" type="Sprite2D" parent="."]
+position = Vector2(628, 177)
+scale = Vector2(0.075, 0.075)
+texture = ExtResource("16_mqdtn")
+
+[node name="Oatmeal" type="Sprite2D" parent="."]
+position = Vector2(358, 97)
+scale = Vector2(0.07, 0.07)
+texture = ExtResource("17_1x84r")
+
+[node name="KitchenCounter" type="Sprite2D" parent="."]
+position = Vector2(574, 515)
+scale = Vector2(0.379, 0.379)
+texture = ExtResource("18_ys6ic")
+
 [node name="ColorRect" parent="." instance=ExtResource("2_rxlpj")]
 visible = false
 
@@ -108,21 +123,6 @@ texture = ExtResource("14_lhb1w")
 position = Vector2(249, 186)
 scale = Vector2(0.06, 0.06)
 texture = ExtResource("15_yl3aa")
-
-[node name="Granola" type="Sprite2D" parent="."]
-position = Vector2(628, 177)
-scale = Vector2(0.075, 0.075)
-texture = ExtResource("16_mqdtn")
-
-[node name="Oatmeal" type="Sprite2D" parent="."]
-position = Vector2(358, 97)
-scale = Vector2(0.07, 0.07)
-texture = ExtResource("17_1x84r")
-
-[node name="KitchenCounter" type="Sprite2D" parent="."]
-position = Vector2(574, 515)
-scale = Vector2(0.379, 0.379)
-texture = ExtResource("18_ys6ic")
 
 [connection signal="pressed" from="CloseButton" to="." method="_on_close_button_pressed"]
 [connection signal="pressed" from="CloseButton" to="Breakfast" method="_on_close_button_pressed"]
