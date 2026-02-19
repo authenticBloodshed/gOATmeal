@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://0n75d8utmol6"]
+[gd_scene load_steps=18 format=3 uid="uid://0n75d8utmol6"]
 
 [ext_resource type="Script" path="res://game.gd" id="1_ottce"]
 [ext_resource type="PackedScene" uid="uid://10ngpxurb116" path="res://transitions.tscn" id="2_rxlpj"]
@@ -11,6 +11,12 @@
 [ext_resource type="Texture2D" uid="uid://dgy2dputb4r37" path="res://ArrowHover.png" id="7_xh6vo"]
 [ext_resource type="PackedScene" uid="uid://cymwnfrhohpeu" path="res://NewNotebook.tscn" id="9_14vmo"]
 [ext_resource type="Texture2D" uid="uid://c6oc3cl7ri1ks" path="res://cabinet.png" id="10_sldwx"]
+[ext_resource type="Texture2D" uid="uid://cflw13ffeps1a" path="res://strawberrysauce.png" id="12_1nyx4"]
+[ext_resource type="Texture2D" uid="uid://dm0hg58nfilmo" path="res://peanutbutter.png" id="13_d1r40"]
+[ext_resource type="Texture2D" uid="uid://df0inkjjrxjno" path="res://chocolatesauce.png" id="14_lhb1w"]
+[ext_resource type="Texture2D" uid="uid://d3tm05tra0x64" path="res://caramelsauce.png" id="15_yl3aa"]
+[ext_resource type="Texture2D" uid="uid://cl4ane2t12qu2" path="res://Granola.png" id="16_mqdtn"]
+[ext_resource type="Texture2D" uid="uid://ba47p4y5pemp8" path="res://Oatmeal.png" id="17_1x84r"]
 
 [node name="Game" type="Node2D"]
 script = ExtResource("1_ottce")
@@ -78,6 +84,38 @@ flip_h = true
 
 [node name="NotebookManager" parent="." instance=ExtResource("9_14vmo")]
 visible = false
+
+[node name="Sauces" type="Node2D" parent="."]
+
+[node name="Strawberrysauce" type="Sprite2D" parent="Sauces"]
+position = Vector2(69, 186)
+scale = Vector2(0.06, 0.06)
+texture = ExtResource("12_1nyx4")
+
+[node name="Peanutbutter" type="Sprite2D" parent="Sauces"]
+position = Vector2(129, 185)
+scale = Vector2(0.06, 0.06)
+texture = ExtResource("13_d1r40")
+
+[node name="Chocolatesauce" type="Sprite2D" parent="Sauces"]
+position = Vector2(189, 186)
+scale = Vector2(0.06, 0.06)
+texture = ExtResource("14_lhb1w")
+
+[node name="Caramelsauce" type="Sprite2D" parent="Sauces"]
+position = Vector2(249, 186)
+scale = Vector2(0.06, 0.06)
+texture = ExtResource("15_yl3aa")
+
+[node name="Granola" type="Sprite2D" parent="."]
+position = Vector2(628, 177)
+scale = Vector2(0.075, 0.075)
+texture = ExtResource("16_mqdtn")
+
+[node name="Oatmeal" type="Sprite2D" parent="."]
+position = Vector2(358, 97)
+scale = Vector2(0.07, 0.07)
+texture = ExtResource("17_1x84r")
 
 [connection signal="pressed" from="CloseButton" to="." method="_on_close_button_pressed"]
 [connection signal="pressed" from="CloseButton" to="Breakfast" method="_on_close_button_pressed"]
