@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://47yv1o6ecd5y"]
+[gd_scene load_steps=14 format=3 uid="uid://47yv1o6ecd5y"]
 
 [ext_resource type="Script" path="res://MainMenu.gd" id="1_a0sld"]
 [ext_resource type="PackedScene" uid="uid://10ngpxurb116" path="res://transitions.tscn" id="2_f6nk4"]
@@ -7,6 +7,8 @@
 [ext_resource type="Texture2D" uid="uid://ddc01xh0t66rt" path="res://MenuGirl.png" id="3_pje7f"]
 [ext_resource type="Texture2D" uid="uid://dgcc2i51go4pe" path="res://MenuBowl.png" id="4_selnn"]
 [ext_resource type="Texture2D" uid="uid://ddpf64ncnrgni" path="res://MenuGranola.png" id="5_qkxbp"]
+[ext_resource type="Texture2D" uid="uid://d2nykuf3k56mj" path="res://gOATMEALLogo.png" id="6_hjlu7"]
+[ext_resource type="Texture2D" uid="uid://buhqd8of66hre" path="res://tagline.png" id="7_uv6re"]
 
 [sub_resource type="Animation" id="Animation_galfe"]
 resource_name = "BowlAnimation"
@@ -101,6 +103,20 @@ libraries = {
 }
 autoplay = "Granola animation"
 speed_scale = 0.5
+
+[node name="Logo" type="Node2D" parent="."]
+position = Vector2(40, -84)
+scale = Vector2(0.78, 0.78)
+
+[node name="GOatmealLogo" type="Sprite2D" parent="Logo"]
+position = Vector2(332.693, 227.198)
+scale = Vector2(0.78, 0.78)
+texture = ExtResource("6_hjlu7")
+
+[node name="Tagline" type="Sprite2D" parent="Logo"]
+position = Vector2(503.846, 328.205)
+scale = Vector2(0.635, 0.635)
+texture = ExtResource("7_uv6re")
 
 [node name="ColorRect2" type="ColorRect" parent="."]
 offset_left = -35.0
