@@ -1,9 +1,67 @@
-[gd_scene load_steps=5 format=3 uid="uid://47yv1o6ecd5y"]
+[gd_scene load_steps=12 format=3 uid="uid://47yv1o6ecd5y"]
 
 [ext_resource type="Script" path="res://MainMenu.gd" id="1_a0sld"]
 [ext_resource type="PackedScene" uid="uid://10ngpxurb116" path="res://transitions.tscn" id="2_f6nk4"]
 [ext_resource type="Texture2D" uid="uid://2rxfmyccdb2k" path="res://background2.png" id="2_iox2c"]
 [ext_resource type="AudioStream" uid="uid://de83sj2no0dya" path="res://562294-colorscrimsontears-click_mRrswwXk.wav" id="3_0rea3"]
+[ext_resource type="Texture2D" uid="uid://ddc01xh0t66rt" path="res://MenuGirl.png" id="3_pje7f"]
+[ext_resource type="Texture2D" uid="uid://dgcc2i51go4pe" path="res://MenuBowl.png" id="4_selnn"]
+[ext_resource type="Texture2D" uid="uid://ddpf64ncnrgni" path="res://MenuGranola.png" id="5_qkxbp"]
+
+[sub_resource type="Animation" id="Animation_galfe"]
+resource_name = "BowlAnimation"
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5, 1),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(378, 286), Vector2(372.414, 313.793), Vector2(378, 286)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_k1pim"]
+_data = {
+"BowlAnimation": SubResource("Animation_galfe")
+}
+
+[sub_resource type="Animation" id="Animation_mfvci"]
+resource_name = "Granola animation"
+length = 2.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1, 2),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(403, 303), Vector2(431.034, 189.655), Vector2(403, 303)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 1, 2),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [0.0, 0.453786, 0.0]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_ewvax"]
+_data = {
+"Granola animation": SubResource("Animation_mfvci")
+}
 
 [node name="MainMenu" type="Node2D"]
 script = ExtResource("1_a0sld")
@@ -12,6 +70,37 @@ script = ExtResource("1_a0sld")
 position = Vector2(576.5, 330)
 scale = Vector2(0.6115, 0.33)
 texture = ExtResource("2_iox2c")
+
+[node name="MenuVisuals" type="Node2D" parent="."]
+position = Vector2(785, 207)
+scale = Vector2(0.29, 0.29)
+
+[node name="MenuGirl" type="Sprite2D" parent="MenuVisuals"]
+position = Vector2(376, 298)
+texture = ExtResource("3_pje7f")
+
+[node name="MenuBowl" type="Sprite2D" parent="MenuVisuals"]
+position = Vector2(378, 286)
+texture = ExtResource("4_selnn")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="MenuVisuals/MenuBowl"]
+libraries = {
+"": SubResource("AnimationLibrary_k1pim")
+}
+autoplay = "BowlAnimation"
+speed_scale = 0.5
+
+[node name="MenuGranola" type="Sprite2D" parent="MenuVisuals"]
+position = Vector2(418.816, 239.055)
+rotation = 0.256008
+texture = ExtResource("5_qkxbp")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="MenuVisuals/MenuGranola"]
+libraries = {
+"": SubResource("AnimationLibrary_ewvax")
+}
+autoplay = "Granola animation"
+speed_scale = 0.5
 
 [node name="ColorRect2" type="ColorRect" parent="."]
 offset_left = -35.0
