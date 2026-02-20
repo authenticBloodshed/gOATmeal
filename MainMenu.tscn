@@ -1,4 +1,4 @@
-[gd_scene load_steps=21 format=3 uid="uid://47yv1o6ecd5y"]
+[gd_scene load_steps=22 format=3 uid="uid://47yv1o6ecd5y"]
 
 [ext_resource type="Script" path="res://MainMenu.gd" id="1_a0sld"]
 [ext_resource type="PackedScene" uid="uid://10ngpxurb116" path="res://transitions.tscn" id="2_f6nk4"]
@@ -12,6 +12,7 @@
 [ext_resource type="Texture2D" uid="uid://buhqd8of66hre" path="res://tagline.png" id="7_uv6re"]
 [ext_resource type="Texture2D" uid="uid://pr7mqgj3ep2b" path="res://artificialcheesecaketext.png" id="10_4xkoe"]
 [ext_resource type="Texture2D" uid="uid://btoysn1c2ovw7" path="res://hku_logo.png" id="11_35o7a"]
+[ext_resource type="Texture2D" uid="uid://dk7sy6250gmfr" path="res://uishizzle.png" id="13_hcix2"]
 [ext_resource type="Texture2D" uid="uid://0ymctj271qxw" path="res://GreekYogurt.png" id="13_qdty6"]
 [ext_resource type="Texture2D" uid="uid://ba47p4y5pemp8" path="res://Oatmeal.png" id="14_wddw4"]
 [ext_resource type="Texture2D" uid="uid://cl4ane2t12qu2" path="res://Granola.png" id="15_qlwlw"]
@@ -147,6 +148,11 @@ position = Vector2(-1343.53, 561.638)
 scale = Vector2(0.329741, 0.329741)
 texture = ExtResource("16_nom6n")
 
+[node name="Uishizzle" type="Sprite2D" parent="MenuVisuals"]
+position = Vector2(-715.517, 1367.24)
+scale = Vector2(1.32759, 0.382759)
+texture = ExtResource("13_hcix2")
+
 [node name="Logo" type="Node2D" parent="."]
 position = Vector2(40, -84)
 scale = Vector2(0.78, 0.78)
@@ -162,6 +168,7 @@ scale = Vector2(0.635, 0.635)
 texture = ExtResource("7_uv6re")
 
 [node name="ColorRect2" type="ColorRect" parent="."]
+visible = false
 offset_left = -35.0
 offset_top = 549.0
 offset_right = 1188.0
