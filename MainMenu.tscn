@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=3 uid="uid://47yv1o6ecd5y"]
+[gd_scene load_steps=21 format=3 uid="uid://47yv1o6ecd5y"]
 
 [ext_resource type="Script" path="res://MainMenu.gd" id="1_a0sld"]
 [ext_resource type="PackedScene" uid="uid://10ngpxurb116" path="res://transitions.tscn" id="2_f6nk4"]
@@ -12,6 +12,10 @@
 [ext_resource type="Texture2D" uid="uid://buhqd8of66hre" path="res://tagline.png" id="7_uv6re"]
 [ext_resource type="Texture2D" uid="uid://pr7mqgj3ep2b" path="res://artificialcheesecaketext.png" id="10_4xkoe"]
 [ext_resource type="Texture2D" uid="uid://btoysn1c2ovw7" path="res://hku_logo.png" id="11_35o7a"]
+[ext_resource type="Texture2D" uid="uid://0ymctj271qxw" path="res://GreekYogurt.png" id="13_qdty6"]
+[ext_resource type="Texture2D" uid="uid://ba47p4y5pemp8" path="res://Oatmeal.png" id="14_wddw4"]
+[ext_resource type="Texture2D" uid="uid://cl4ane2t12qu2" path="res://Granola.png" id="15_qlwlw"]
+[ext_resource type="Texture2D" uid="uid://cflw13ffeps1a" path="res://strawberrysauce.png" id="16_nom6n"]
 
 [sub_resource type="Animation" id="Animation_galfe"]
 resource_name = "BowlAnimation"
@@ -122,6 +126,26 @@ texture = ExtResource("10_4xkoe")
 position = Vector2(-2072.41, 993.104)
 scale = Vector2(0.327586, 0.327586)
 texture = ExtResource("11_35o7a")
+
+[node name="GreekYogurt" type="Sprite2D" parent="MenuVisuals"]
+position = Vector2(-2373.28, 383.621)
+scale = Vector2(0.350862, 0.350862)
+texture = ExtResource("13_qdty6")
+
+[node name="Oatmeal" type="Sprite2D" parent="MenuVisuals"]
+position = Vector2(-1606.9, 387.931)
+scale = Vector2(0.367242, 0.367242)
+texture = ExtResource("14_wddw4")
+
+[node name="Granola" type="Sprite2D" parent="MenuVisuals"]
+position = Vector2(-1979.31, 546.552)
+scale = Vector2(0.368103, 0.368103)
+texture = ExtResource("15_qlwlw")
+
+[node name="Strawberrysauce" type="Sprite2D" parent="MenuVisuals"]
+position = Vector2(-1343.53, 561.638)
+scale = Vector2(0.329741, 0.329741)
+texture = ExtResource("16_nom6n")
 
 [node name="Logo" type="Node2D" parent="."]
 position = Vector2(40, -84)
