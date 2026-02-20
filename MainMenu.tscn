@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=3 uid="uid://47yv1o6ecd5y"]
+[gd_scene load_steps=16 format=3 uid="uid://47yv1o6ecd5y"]
 
 [ext_resource type="Script" path="res://MainMenu.gd" id="1_a0sld"]
 [ext_resource type="PackedScene" uid="uid://10ngpxurb116" path="res://transitions.tscn" id="2_f6nk4"]
@@ -9,6 +9,8 @@
 [ext_resource type="Texture2D" uid="uid://ddpf64ncnrgni" path="res://MenuGranola.png" id="5_qkxbp"]
 [ext_resource type="Texture2D" uid="uid://d2nykuf3k56mj" path="res://gOATMEALLogo.png" id="6_hjlu7"]
 [ext_resource type="Texture2D" uid="uid://buhqd8of66hre" path="res://tagline.png" id="7_uv6re"]
+[ext_resource type="Texture2D" uid="uid://pr7mqgj3ep2b" path="res://artificialcheesecaketext.png" id="10_4xkoe"]
+[ext_resource type="Texture2D" uid="uid://btoysn1c2ovw7" path="res://hku_logo.png" id="11_35o7a"]
 
 [sub_resource type="Animation" id="Animation_galfe"]
 resource_name = "BowlAnimation"
@@ -163,6 +165,16 @@ visible = false
 [node name="ClickSound" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("3_0rea3")
 volume_db = 10.0
+
+[node name="Artificialcheesecaketext" type="Sprite2D" parent="."]
+position = Vector2(72, 494)
+scale = Vector2(0.05, 0.05)
+texture = ExtResource("10_4xkoe")
+
+[node name="HkuLogo" type="Sprite2D" parent="."]
+position = Vector2(184, 495)
+scale = Vector2(0.095, 0.095)
+texture = ExtResource("11_35o7a")
 
 [connection signal="pressed" from="ButtonManager/Start" to="." method="_on_start_pressed"]
 [connection signal="pressed" from="ButtonManager/Options" to="." method="_on_options_pressed"]
