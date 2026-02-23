@@ -10,6 +10,7 @@
 [sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_y7qts"]
 
 [sub_resource type="Theme" id="Theme_m8x0r"]
+default_font = ExtResource("3_3a6rp")
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6q811"]
 bg_color = Color(0.6, 0.6, 0.6, 0)
