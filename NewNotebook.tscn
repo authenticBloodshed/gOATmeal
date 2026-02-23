@@ -22,6 +22,14 @@ offset_left = 970.0
 offset_top = 16.0
 offset_right = 1138.0
 offset_bottom = 63.0
+theme_override_colors/font_color = Color(0.101961, 0.00784314, 0.415686, 1)
+theme_override_colors/font_pressed_color = Color(0.101961, 0.00784314, 0.415686, 1)
+theme_override_colors/font_hover_color = Color(0.101961, 0.00784314, 0.415686, 1)
+theme_override_fonts/font = ExtResource("3_3a6rp")
+theme_override_font_sizes/font_size = 46
+theme_override_styles/normal = ExtResource("4_1j0k2")
+theme_override_styles/hover = ExtResource("5_lmbys")
+theme_override_styles/pressed = ExtResource("6_ukvgg")
 text = "NOTES"
 
 [node name="NotebookLined" type="Sprite2D" parent="."]
@@ -45,6 +53,7 @@ placeholder_text = "Type here :)"
 wrap_mode = 1
 
 [node name="ButtonCloseNotes" type="Button" parent="."]
+visible = false
 offset_left = 493.0
 offset_top = 497.0
 offset_right = 607.0
