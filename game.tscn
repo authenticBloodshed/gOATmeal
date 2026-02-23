@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=3 uid="uid://0n75d8utmol6"]
+[gd_scene load_steps=24 format=3 uid="uid://0n75d8utmol6"]
 
 [ext_resource type="Script" path="res://game.gd" id="1_ottce"]
 [ext_resource type="PackedScene" uid="uid://10ngpxurb116" path="res://transitions.tscn" id="2_rxlpj"]
@@ -10,9 +10,14 @@
 [ext_resource type="Texture2D" uid="uid://beexh3ycvj1rl" path="res://wall.png" id="7_acpgm"]
 [ext_resource type="Texture2D" uid="uid://dgy2dputb4r37" path="res://ArrowHover.png" id="7_xh6vo"]
 [ext_resource type="PackedScene" uid="uid://cymwnfrhohpeu" path="res://NewNotebook.tscn" id="9_14vmo"]
+[ext_resource type="Texture2D" uid="uid://bboshfcy0viwc" path="res://NotebookLined.png" id="9_u8emr"]
+[ext_resource type="FontFile" uid="uid://dxi8dt74itawk" path="res://Mabook.otf" id="10_f2o6o"]
 [ext_resource type="Texture2D" uid="uid://c6oc3cl7ri1ks" path="res://cabinet.png" id="10_sldwx"]
+[ext_resource type="StyleBox" uid="uid://jw0gfxu6rigt" path="res://unpressed.tres" id="11_x0gjs"]
 [ext_resource type="Texture2D" uid="uid://cflw13ffeps1a" path="res://strawberrysauce.png" id="12_1nyx4"]
+[ext_resource type="StyleBox" uid="uid://bsu75uac0drfx" path="res://hover.tres" id="12_cxap2"]
 [ext_resource type="Texture2D" uid="uid://dm0hg58nfilmo" path="res://peanutbutter.png" id="13_d1r40"]
+[ext_resource type="StyleBox" uid="uid://b60ce0wlbf15n" path="res://pressed.tres" id="13_xjd8a"]
 [ext_resource type="Texture2D" uid="uid://df0inkjjrxjno" path="res://chocolatesauce.png" id="14_lhb1w"]
 [ext_resource type="Texture2D" uid="uid://d3tm05tra0x64" path="res://caramelsauce.png" id="15_yl3aa"]
 [ext_resource type="Texture2D" uid="uid://cl4ane2t12qu2" path="res://Granola.png" id="16_mqdtn"]
@@ -58,12 +63,25 @@ offset_right = 808.0
 offset_bottom = 567.0
 script = ExtResource("3_u4eoj")
 
+[node name="NotebookLined" type="Sprite2D" parent="Breakfast"]
+position = Vector2(246.125, 246)
+scale = Vector2(0.248875, 0.198)
+texture = ExtResource("9_u8emr")
+
 [node name="CloseButton" type="Button" parent="."]
 visible = false
-offset_left = 711.0
-offset_top = 102.0
-offset_right = 792.0
-offset_bottom = 141.0
+offset_left = 694.0
+offset_top = 52.0
+offset_right = 791.0
+offset_bottom = 90.0
+theme_override_colors/font_color = Color(0.101961, 0.00784314, 0.415686, 1)
+theme_override_colors/font_pressed_color = Color(0.101961, 0.00784314, 0.415686, 1)
+theme_override_colors/font_hover_color = Color(0.101961, 0.00784314, 0.415686, 1)
+theme_override_fonts/font = ExtResource("10_f2o6o")
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = ExtResource("11_x0gjs")
+theme_override_styles/hover = ExtResource("12_cxap2")
+theme_override_styles/pressed = ExtResource("13_xjd8a")
 text = "CLOSE"
 
 [node name="PlaceholderImage" type="Sprite2D" parent="."]
