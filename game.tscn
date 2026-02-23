@@ -1,4 +1,4 @@
-[gd_scene load_steps=24 format=3 uid="uid://0n75d8utmol6"]
+[gd_scene load_steps=25 format=3 uid="uid://0n75d8utmol6"]
 
 [ext_resource type="Script" path="res://game.gd" id="1_ottce"]
 [ext_resource type="PackedScene" uid="uid://10ngpxurb116" path="res://transitions.tscn" id="2_rxlpj"]
@@ -23,31 +23,34 @@
 [ext_resource type="Texture2D" uid="uid://cl4ane2t12qu2" path="res://Granola.png" id="16_mqdtn"]
 [ext_resource type="Texture2D" uid="uid://ba47p4y5pemp8" path="res://Oatmeal.png" id="17_1x84r"]
 [ext_resource type="Texture2D" uid="uid://bm4ma2yhmahx2" path="res://KitchenCounter.png" id="18_ys6ic"]
+[ext_resource type="Texture2D" uid="uid://bvjcl7bq1qeyo" path="res://finalbreakfast.png" id="24_edftf"]
 
 [node name="Game" type="Node2D"]
 script = ExtResource("1_ottce")
 
-[node name="Wall" type="Sprite2D" parent="."]
+[node name="KitchenStuff" type="Node2D" parent="."]
+
+[node name="Wall" type="Sprite2D" parent="KitchenStuff"]
 position = Vector2(592.25, 330)
 scale = Vector2(0.394833, 0.33)
 texture = ExtResource("7_acpgm")
 
-[node name="Cabinet" type="Sprite2D" parent="."]
+[node name="Cabinet" type="Sprite2D" parent="KitchenStuff"]
 position = Vector2(576, 141)
 scale = Vector2(0.38275, 0.38275)
 texture = ExtResource("10_sldwx")
 
-[node name="Granola" type="Sprite2D" parent="."]
+[node name="Granola" type="Sprite2D" parent="KitchenStuff"]
 position = Vector2(628, 177)
 scale = Vector2(0.075, 0.075)
 texture = ExtResource("16_mqdtn")
 
-[node name="Oatmeal" type="Sprite2D" parent="."]
+[node name="Oatmeal" type="Sprite2D" parent="KitchenStuff"]
 position = Vector2(358, 97)
 scale = Vector2(0.07, 0.07)
 texture = ExtResource("17_1x84r")
 
-[node name="KitchenCounter" type="Sprite2D" parent="."]
+[node name="KitchenCounter" type="Sprite2D" parent="KitchenStuff"]
 position = Vector2(574, 515)
 scale = Vector2(0.379, 0.379)
 texture = ExtResource("18_ys6ic")
@@ -64,6 +67,12 @@ script = ExtResource("3_u4eoj")
 position = Vector2(246.125, 246)
 scale = Vector2(0.248875, 0.198)
 texture = ExtResource("9_u8emr")
+
+[node name="Finalbreakfast" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(564, 380)
+scale = Vector2(0.229, 0.229)
+texture = ExtResource("24_edftf")
 
 [node name="CloseButton" type="Button" parent="."]
 visible = false

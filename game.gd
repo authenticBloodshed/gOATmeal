@@ -6,12 +6,12 @@ func _ready():
 	$ColorRect.hide()
 	$Breakfast.show()
 	$CloseButton.show()
-	$PlaceholderImage.show()
+	$Finalbreakfast.show()
 
 func _on_close_button_pressed():
 	$Breakfast.hide()
 	$CloseButton.hide()
-	$PlaceholderImage.hide()
+	$Finalbreakfast.hide()
 	$NotebookManager.show()
 
 func _on_prep_station_button_pressed():
