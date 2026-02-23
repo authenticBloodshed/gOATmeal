@@ -52,9 +52,6 @@ position = Vector2(574, 515)
 scale = Vector2(0.379, 0.379)
 texture = ExtResource("18_ys6ic")
 
-[node name="ColorRect" parent="." instance=ExtResource("2_rxlpj")]
-visible = false
-
 [node name="Breakfast" type="ColorRect" parent="."]
 visible = false
 offset_left = 314.0
@@ -141,6 +138,9 @@ texture = ExtResource("14_lhb1w")
 position = Vector2(249, 186)
 scale = Vector2(0.06, 0.06)
 texture = ExtResource("15_yl3aa")
+
+[node name="ColorRect" parent="." instance=ExtResource("2_rxlpj")]
+visible = false
 
 [connection signal="pressed" from="CloseButton" to="." method="_on_close_button_pressed"]
 [connection signal="pressed" from="CloseButton" to="Breakfast" method="_on_close_button_pressed"]
