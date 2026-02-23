@@ -8,9 +8,6 @@ var hasItem6 = false
 var hasItem7 = false
 var hasItem8 = false
 
-func _on_pantry_button_pressed():
-	get_tree().change_scene_to_file("res://game.tscn")
-
 func _on_item_1_pressed():
 	hasItem1 == true
 	$Items/Item1.hide()

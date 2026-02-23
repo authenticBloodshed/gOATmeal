@@ -1,14 +1,10 @@
-[gd_scene load_steps=10 format=3 uid="uid://dvueuso1kqybe"]
+[gd_scene load_steps=6 format=3 uid="uid://dvueuso1kqybe"]
 
 [ext_resource type="Script" path="res://Fridge.gd" id="1_12d5g"]
-[ext_resource type="Texture2D" uid="uid://dbynhogc1sr6y" path="res://ArrowUnselected.png" id="2_edwff"]
-[ext_resource type="Texture2D" uid="uid://bu3bijha23vjn" path="res://ArrowClick.png" id="3_vp5a0"]
 [ext_resource type="Texture2D" uid="uid://cijb85w87ixut" path="res://Fridge.jpg" id="3_xff3q"]
-[ext_resource type="Texture2D" uid="uid://dgy2dputb4r37" path="res://ArrowHover.png" id="4_7beto"]
 [ext_resource type="AudioStream" uid="uid://de83sj2no0dya" path="res://562294-colorscrimsontears-click_mRrswwXk.wav" id="4_8qtko"]
 [ext_resource type="Texture2D" uid="uid://cnoa6ywxd7302" path="res://pear.png" id="6_f03ql"]
 [ext_resource type="Texture2D" uid="uid://ckm8in6xo576k" path="res://Fridge2.png" id="6_tojyv"]
-[ext_resource type="PackedScene" uid="uid://cymwnfrhohpeu" path="res://NewNotebook.tscn" id="9_lsfhm"]
 
 [node name="Fridge" type="Node2D"]
 script = ExtResource("1_12d5g")
@@ -18,17 +14,6 @@ offset_right = 1156.0
 offset_bottom = 652.0
 text = "Fridge Placeholder"
 editable = false
-
-[node name="PantryButton" type="TextureButton" parent="."]
-offset_left = 936.0
-offset_top = 259.0
-offset_right = 1105.0
-offset_bottom = 424.0
-texture_normal = ExtResource("2_edwff")
-texture_pressed = ExtResource("3_vp5a0")
-texture_hover = ExtResource("4_7beto")
-ignore_texture_size = true
-stretch_mode = 0
 
 [node name="FridgePlaceholder" type="Sprite2D" parent="."]
 visible = false
@@ -104,9 +89,6 @@ offset_right = 522.0
 offset_bottom = 556.0
 text = "Item"
 
-[node name="NotebookManager" parent="." instance=ExtResource("9_lsfhm")]
-
-[connection signal="pressed" from="PantryButton" to="." method="_on_pantry_button_pressed"]
 [connection signal="pressed" from="Items/Item1" to="." method="_on_item_1_pressed"]
 [connection signal="pressed" from="Items/Item2" to="." method="_on_item_2_pressed"]
 [connection signal="pressed" from="Items/Item3" to="." method="_on_item_3_pressed"]

@@ -1,4 +1,4 @@
-[gd_scene load_steps=25 format=3 uid="uid://0n75d8utmol6"]
+[gd_scene load_steps=27 format=3 uid="uid://0n75d8utmol6"]
 
 [ext_resource type="Script" path="res://game.gd" id="1_ottce"]
 [ext_resource type="PackedScene" uid="uid://10ngpxurb116" path="res://transitions.tscn" id="2_rxlpj"]
@@ -23,7 +23,9 @@
 [ext_resource type="Texture2D" uid="uid://cl4ane2t12qu2" path="res://Granola.png" id="16_mqdtn"]
 [ext_resource type="Texture2D" uid="uid://ba47p4y5pemp8" path="res://Oatmeal.png" id="17_1x84r"]
 [ext_resource type="Texture2D" uid="uid://bm4ma2yhmahx2" path="res://KitchenCounter.png" id="18_ys6ic"]
+[ext_resource type="PackedScene" uid="uid://dvueuso1kqybe" path="res://Fridge.tscn" id="24_5s72y"]
 [ext_resource type="Texture2D" uid="uid://bvjcl7bq1qeyo" path="res://finalbreakfast.png" id="24_edftf"]
+[ext_resource type="PackedScene" uid="uid://bn7l7abptit80" path="res://PrepStation.tscn" id="24_s7fva"]
 
 [node name="Game" type="Node2D"]
 script = ExtResource("1_ottce")
@@ -145,6 +147,36 @@ ignore_texture_size = true
 stretch_mode = 0
 flip_h = true
 
+[node name="PrepStation" parent="." instance=ExtResource("24_s7fva")]
+visible = false
+
+[node name="KitchenButton" type="TextureButton" parent="."]
+offset_left = -1.0
+offset_top = 263.0
+offset_right = 138.0
+offset_bottom = 406.0
+texture_normal = ExtResource("5_h2uob")
+texture_pressed = ExtResource("6_lbjtf")
+texture_hover = ExtResource("7_xh6vo")
+ignore_texture_size = true
+stretch_mode = 0
+flip_h = true
+
+[node name="Fridge" parent="." instance=ExtResource("24_5s72y")]
+visible = false
+
+[node name="PantryButton" type="TextureButton" parent="."]
+visible = false
+offset_left = 1012.0
+offset_top = 263.0
+offset_right = 1151.0
+offset_bottom = 406.0
+texture_normal = ExtResource("5_h2uob")
+texture_pressed = ExtResource("6_lbjtf")
+texture_hover = ExtResource("7_xh6vo")
+ignore_texture_size = true
+stretch_mode = 0
+
 [node name="NotebookManager" parent="." instance=ExtResource("9_14vmo")]
 visible = false
 
@@ -156,3 +188,5 @@ visible = false
 [connection signal="pressed" from="CloseButton" to="CloseButton" method="_on_pressed"]
 [connection signal="pressed" from="PrepStationButton" to="." method="_on_prep_station_button_pressed"]
 [connection signal="pressed" from="FridgeButton" to="." method="_on_fridge_button_pressed"]
+[connection signal="pressed" from="KitchenButton" to="." method="_on_kitchen_button_pressed"]
+[connection signal="pressed" from="PantryButton" to="." method="_on_pantry_button_pressed"]

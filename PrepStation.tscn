@@ -24,135 +24,128 @@
 [sub_resource type="CircleShape2D" id="CircleShape2D_uy8f1"]
 radius = 160.028
 
-[node name="PrepStation" type="Node2D"]
+[node name="PrepstationManager" type="Node2D"]
+
+[node name="PrepStation" type="Node2D" parent="."]
 script = ExtResource("1_5drbj")
 saus = NodePath("DraggableObjects/Saus")
 
-[node name="TextEdit" type="TextEdit" parent="."]
+[node name="TextEdit" type="TextEdit" parent="PrepStation"]
 offset_right = 1152.0
 offset_bottom = 646.0
 mouse_filter = 2
 text = "Preperation 
 Station "
 editable = false
+metadata/_edit_use_anchors_ = true
 
-[node name="TextureButton" type="TextureButton" parent="."]
-offset_top = 257.0
-offset_right = 147.0
-offset_bottom = 411.0
-texture_normal = ExtResource("2_b3ctj")
-texture_pressed = ExtResource("3_o1fpt")
-texture_hover = ExtResource("4_bsost")
-ignore_texture_size = true
-stretch_mode = 0
-flip_h = true
+[node name="FinalAssets" type="Node2D" parent="PrepStation"]
 
-[node name="FinalAssets" type="Node2D" parent="."]
-
-[node name="Countertop" type="Sprite2D" parent="FinalAssets"]
+[node name="Countertop" type="Sprite2D" parent="PrepStation/FinalAssets"]
 position = Vector2(794, 323.562)
 scale = Vector2(0.323125, 0.324563)
 texture = ExtResource("7_lob6u")
 
-[node name="Bowl1" type="Sprite2D" parent="FinalAssets"]
+[node name="Bowl1" type="Sprite2D" parent="PrepStation/FinalAssets"]
 position = Vector2(631, 322)
 scale = Vector2(0.23075, 0.23075)
 texture = ExtResource("7_jvau5")
 
-[node name="HeartBowl" type="Sprite2D" parent="FinalAssets"]
+[node name="HeartBowl" type="Sprite2D" parent="PrepStation/FinalAssets"]
 visible = false
 position = Vector2(631, 313)
 scale = Vector2(0.268625, 0.266125)
 texture = ExtResource("7_3i66u")
 
-[node name="CheckerBowl" type="Sprite2D" parent="FinalAssets"]
+[node name="CheckerBowl" type="Sprite2D" parent="PrepStation/FinalAssets"]
 visible = false
 position = Vector2(630, 322)
 scale = Vector2(0.23, 0.23)
 texture = ExtResource("8_4u2eb")
 
-[node name="Yogurt" type="Sprite2D" parent="FinalAssets"]
+[node name="Yogurt" type="Sprite2D" parent="PrepStation/FinalAssets"]
 visible = false
 position = Vector2(630, 324)
 scale = Vector2(0.2255, 0.2255)
 texture = ExtResource("8_dmfa1")
 
-[node name="OatmealBowl" type="Sprite2D" parent="FinalAssets"]
+[node name="OatmealBowl" type="Sprite2D" parent="PrepStation/FinalAssets"]
 visible = false
 position = Vector2(626, 326)
 scale = Vector2(0.23225, 0.23225)
 texture = ExtResource("9_cb7cn")
 
-[node name="Area2D" type="Area2D" parent="FinalAssets"]
+[node name="Area2D" type="Area2D" parent="PrepStation/FinalAssets"]
 
-[node name="BowlCollission" type="CollisionShape2D" parent="FinalAssets/Area2D"]
+[node name="BowlCollission" type="CollisionShape2D" parent="PrepStation/FinalAssets/Area2D"]
 position = Vector2(633, 320)
 shape = SubResource("CircleShape2D_uy8f1")
 debug_color = Color(0.666667, 0.509804, 0, 0.419608)
 
-[node name="CharacterBody2D" type="CharacterBody2D" parent="FinalAssets/Area2D/BowlCollission"]
+[node name="CharacterBody2D" type="CharacterBody2D" parent="PrepStation/FinalAssets/Area2D/BowlCollission"]
 position = Vector2(-633, -320)
 
-[node name="DraggableObjects" type="Node2D" parent="."]
+[node name="DraggableObjects" type="Node2D" parent="PrepStation"]
 
-[node name="DraggableObject" parent="DraggableObjects" instance=ExtResource("8_fgw3y")]
+[node name="DraggableObject" parent="PrepStation/DraggableObjects" instance=ExtResource("8_fgw3y")]
 position = Vector2(211, 215)
 
-[node name="DraggableObject2" parent="DraggableObjects" instance=ExtResource("8_fgw3y")]
+[node name="DraggableObject2" parent="PrepStation/DraggableObjects" instance=ExtResource("8_fgw3y")]
 position = Vector2(300, 211)
 
-[node name="DraggableObject3" parent="DraggableObjects" instance=ExtResource("8_fgw3y")]
+[node name="DraggableObject3" parent="PrepStation/DraggableObjects" instance=ExtResource("8_fgw3y")]
 position = Vector2(212, 93)
 
-[node name="DraggableObject4" parent="DraggableObjects" instance=ExtResource("8_fgw3y")]
+[node name="DraggableObject4" parent="PrepStation/DraggableObjects" instance=ExtResource("8_fgw3y")]
 position = Vector2(302, 96)
 
-[node name="DragItem" parent="DraggableObjects" instance=ExtResource("10_mer3u")]
+[node name="DragItem" parent="PrepStation/DraggableObjects" instance=ExtResource("10_mer3u")]
 position = Vector2(982, 148)
 scale = Vector2(0.13, 0.13)
 targetPath = NodePath("../../FinalAssets/Yogurt")
 
-[node name="PlaceSound2" type="AudioStreamPlayer2D" parent="DraggableObjects/DragItem"]
+[node name="PlaceSound2" type="AudioStreamPlayer2D" parent="PrepStation/DraggableObjects/DragItem"]
 position = Vector2(-7553.85, -1138.46)
 scale = Vector2(7.69231, 7.69231)
 stream = ExtResource("14_huhej")
 volume_db = 10.0
 
-[node name="ClickSound" type="AudioStreamPlayer2D" parent="DraggableObjects"]
+[node name="ClickSound" type="AudioStreamPlayer2D" parent="PrepStation/DraggableObjects"]
 stream = ExtResource("5_liu57")
 volume_db = 10.0
 
-[node name="DragOatmeal" parent="DraggableObjects" instance=ExtResource("13_u64xb")]
+[node name="DragOatmeal" parent="PrepStation/DraggableObjects" instance=ExtResource("13_u64xb")]
 position = Vector2(984, 459)
 scale = Vector2(0.15, 0.15)
 targetPath = NodePath("../../FinalAssets/OatmealBowl")
 
-[node name="GranolaBox" parent="DraggableObjects" instance=ExtResource("16_qnom6")]
+[node name="GranolaBox" parent="PrepStation/DraggableObjects" instance=ExtResource("16_qnom6")]
 position = Vector2(251, 466)
 scale = Vector2(0.175, 0.175)
 
-[node name="Saus" parent="DraggableObjects" instance=ExtResource("17_3tge8")]
+[node name="Saus" parent="PrepStation/DraggableObjects" instance=ExtResource("17_3tge8")]
 position = Vector2(393, 499)
 scale = Vector2(0.525, 0.525)
 
-[node name="PlaceholderAssets" type="Node2D" parent="."]
+[node name="PlaceholderAssets" type="Node2D" parent="PrepStation"]
 visible = false
 
-[node name="CounterPlaceholder" type="Sprite2D" parent="PlaceholderAssets"]
+[node name="CounterPlaceholder" type="Sprite2D" parent="PrepStation/PlaceholderAssets"]
 visible = false
 position = Vector2(649.5, 322.5)
 scale = Vector2(1.19643, 1.79722)
 texture = ExtResource("3_iwkko")
 
-[node name="YogurtPlaceholder" type="Sprite2D" parent="PlaceholderAssets"]
+[node name="YogurtPlaceholder" type="Sprite2D" parent="PrepStation/PlaceholderAssets"]
 visible = false
 position = Vector2(623, 322)
 scale = Vector2(0.810357, 0.774643)
 texture = ExtResource("4_21818")
 
-[node name="NotebookManager" parent="." instance=ExtResource("17_u1xj1")]
+[node name="NotebookManager" parent="PrepStation" instance=ExtResource("17_u1xj1")]
+visible = false
 
-[node name="NextBowlButton" type="TextureButton" parent="."]
+[node name="NextBowlButton" type="TextureButton" parent="PrepStation"]
 offset_left = 633.0
 offset_top = 540.0
 offset_right = 1197.0
@@ -161,8 +154,9 @@ scale = Vector2(0.16, 0.16)
 texture_normal = ExtResource("2_b3ctj")
 texture_pressed = ExtResource("3_o1fpt")
 texture_hover = ExtResource("4_bsost")
+metadata/_edit_use_anchors_ = true
 
-[node name="PreviousBowlButton" type="TextureButton" parent="."]
+[node name="PreviousBowlButton" type="TextureButton" parent="PrepStation"]
 offset_left = 528.0
 offset_top = 539.0
 offset_right = 1092.0
@@ -172,9 +166,9 @@ texture_normal = ExtResource("2_b3ctj")
 texture_pressed = ExtResource("3_o1fpt")
 texture_hover = ExtResource("4_bsost")
 flip_h = true
+metadata/_edit_use_anchors_ = true
 
-[connection signal="pressed" from="TextureButton" to="." method="_on_texture_button_pressed"]
-[connection signal="area_entered" from="FinalAssets/Area2D" to="." method="_on_area_2d_area_entered"]
-[connection signal="body_entered" from="FinalAssets/Area2D" to="." method="_on_area_2d_body_entered"]
-[connection signal="pressed" from="NextBowlButton" to="." method="_on_next_bowl_button_pressed"]
-[connection signal="pressed" from="PreviousBowlButton" to="." method="_on_previous_bowl_button_pressed"]
+[connection signal="area_entered" from="PrepStation/FinalAssets/Area2D" to="PrepStation" method="_on_area_2d_area_entered"]
+[connection signal="body_entered" from="PrepStation/FinalAssets/Area2D" to="PrepStation" method="_on_area_2d_body_entered"]
+[connection signal="pressed" from="PrepStation/NextBowlButton" to="PrepStation" method="_on_next_bowl_button_pressed"]
+[connection signal="pressed" from="PrepStation/PreviousBowlButton" to="PrepStation" method="_on_previous_bowl_button_pressed"]
