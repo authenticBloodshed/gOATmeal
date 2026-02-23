@@ -55,6 +55,28 @@ position = Vector2(574, 515)
 scale = Vector2(0.379, 0.379)
 texture = ExtResource("18_ys6ic")
 
+[node name="Sauces" type="Node2D" parent="KitchenStuff"]
+
+[node name="Strawberrysauce" type="Sprite2D" parent="KitchenStuff/Sauces"]
+position = Vector2(69, 186)
+scale = Vector2(0.06, 0.06)
+texture = ExtResource("12_1nyx4")
+
+[node name="Peanutbutter" type="Sprite2D" parent="KitchenStuff/Sauces"]
+position = Vector2(129, 185)
+scale = Vector2(0.06, 0.06)
+texture = ExtResource("13_d1r40")
+
+[node name="Chocolatesauce" type="Sprite2D" parent="KitchenStuff/Sauces"]
+position = Vector2(189, 186)
+scale = Vector2(0.06, 0.06)
+texture = ExtResource("14_lhb1w")
+
+[node name="Caramelsauce" type="Sprite2D" parent="KitchenStuff/Sauces"]
+position = Vector2(249, 186)
+scale = Vector2(0.06, 0.06)
+texture = ExtResource("15_yl3aa")
+
 [node name="Breakfast" type="ColorRect" parent="."]
 visible = false
 offset_left = 314.0
@@ -125,28 +147,6 @@ flip_h = true
 
 [node name="NotebookManager" parent="." instance=ExtResource("9_14vmo")]
 visible = false
-
-[node name="Sauces" type="Node2D" parent="."]
-
-[node name="Strawberrysauce" type="Sprite2D" parent="Sauces"]
-position = Vector2(69, 186)
-scale = Vector2(0.06, 0.06)
-texture = ExtResource("12_1nyx4")
-
-[node name="Peanutbutter" type="Sprite2D" parent="Sauces"]
-position = Vector2(129, 185)
-scale = Vector2(0.06, 0.06)
-texture = ExtResource("13_d1r40")
-
-[node name="Chocolatesauce" type="Sprite2D" parent="Sauces"]
-position = Vector2(189, 186)
-scale = Vector2(0.06, 0.06)
-texture = ExtResource("14_lhb1w")
-
-[node name="Caramelsauce" type="Sprite2D" parent="Sauces"]
-position = Vector2(249, 186)
-scale = Vector2(0.06, 0.06)
-texture = ExtResource("15_yl3aa")
 
 [node name="ColorRect" parent="." instance=ExtResource("2_rxlpj")]
 visible = false

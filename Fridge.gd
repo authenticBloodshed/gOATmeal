@@ -13,35 +13,35 @@ func _on_pantry_button_pressed():
 
 func _on_item_1_pressed():
 	hasItem1 == true
-	$Item1.hide()
+	$Items/Item1.hide()
 	
 func _on_item_2_pressed():
 	hasItem2 == true
-	$Item2.hide()
+	$Items/Item2.hide()
 
 func _on_item_3_pressed():
 	hasItem3 == true
-	$Item3.hide()
+	$Items/Item3.hide()
 
 func _on_item_4_pressed():
 	hasItem4 == true
-	$Item4.hide()
+	$Items/Item4.hide()
 
 func _on_item_5_pressed():
 	hasItem5 == true
-	$Item5.hide()
+	$Items/Item5.hide()
 
 func _on_item_6_pressed():
 	hasItem6 == true
-	$Item6.hide()
+	$Items/Item6.hide()
 
 func _on_item_7_pressed():
 	hasItem7 == true
-	$Item7.hide()
+	$Items/Item7.hide()
 
 func _on_item_8_pressed():
 	hasItem8 == true
-	$Item8.hide()
+	$Items/Item8.hide()
 
 func _input(event):
 	if event is InputEventMouseButton and event.pressed:
