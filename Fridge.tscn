@@ -53,7 +53,7 @@ texture = ExtResource("5_byo5v")
 flip_v = true
 
 [node name="FridgerackMiddle" type="Sprite2D" parent="FinalAssets"]
-position = Vector2(311.833, 265)
+position = Vector2(313, 287)
 scale = Vector2(0.608334, 0.756667)
 texture = ExtResource("6_x4hux")
 
