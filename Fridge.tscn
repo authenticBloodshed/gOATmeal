@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://dvueuso1kqybe"]
+[gd_scene load_steps=10 format=3 uid="uid://dvueuso1kqybe"]
 
 [ext_resource type="Script" path="res://Fridge.gd" id="1_12d5g"]
 [ext_resource type="Texture2D" uid="uid://cijb85w87ixut" path="res://Fridge.jpg" id="3_xff3q"]
@@ -8,6 +8,7 @@
 [ext_resource type="Texture2D" uid="uid://cnoa6ywxd7302" path="res://pear.png" id="6_f03ql"]
 [ext_resource type="Texture2D" uid="uid://ckm8in6xo576k" path="res://Fridge2.png" id="6_tojyv"]
 [ext_resource type="Texture2D" uid="uid://cgrhvjker1j68" path="res://fridgerack2.png" id="6_x4hux"]
+[ext_resource type="Texture2D" uid="uid://bsxu8axr5pyq8" path="res://laatjes.png" id="7_tx2rw"]
 
 [node name="Fridge" type="Node2D"]
 script = ExtResource("1_12d5g")
@@ -35,25 +36,31 @@ texture = ExtResource("6_tojyv")
 [node name="FinalAssets" type="Node2D" parent="."]
 
 [node name="Fridgebackground" type="Sprite2D" parent="FinalAssets"]
-position = Vector2(398, 327.5)
-scale = Vector2(0.398, 0.3275)
+position = Vector2(321.5, 327.5)
+scale = Vector2(0.3215, 0.3275)
 texture = ExtResource("4_8lh3a")
 
 [node name="FridgerackTop" type="Sprite2D" parent="FinalAssets"]
-position = Vector2(400, 129)
-scale = Vector2(0.82, 0.82)
+position = Vector2(324, 84)
+scale = Vector2(0.652, 0.82)
 texture = ExtResource("5_byo5v")
 
 [node name="FridgerackBottom" type="Sprite2D" parent="FinalAssets"]
-position = Vector2(397, 509)
+visible = false
+position = Vector2(394, 464)
 scale = Vector2(0.82, 0.82)
 texture = ExtResource("5_byo5v")
 flip_v = true
 
 [node name="FridgerackMiddle" type="Sprite2D" parent="FinalAssets"]
-position = Vector2(396, 310)
-scale = Vector2(0.756667, 0.756667)
+position = Vector2(311.833, 265)
+scale = Vector2(0.608334, 0.756667)
 texture = ExtResource("6_x4hux")
+
+[node name="Laatjes" type="Sprite2D" parent="FinalAssets"]
+position = Vector2(313.5, 548)
+scale = Vector2(0.241667, 0.22975)
+texture = ExtResource("7_tx2rw")
 
 [node name="ClickSound" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("4_8qtko")
@@ -62,60 +69,60 @@ volume_db = 10.0
 [node name="Items" type="Node2D" parent="."]
 
 [node name="Item1" type="Button" parent="Items"]
-offset_left = 100.0
-offset_top = 6.0
-offset_right = 2148.0
-offset_bottom = 2014.0
+offset_left = 43.0
+offset_top = -19.0
+offset_right = 2091.0
+offset_bottom = 1989.0
 scale = Vector2(0.07, 0.07)
 icon = ExtResource("6_f03ql")
 
 [node name="Item2" type="Button" parent="Items"]
-offset_left = 358.0
-offset_top = 35.0
-offset_right = 522.0
-offset_bottom = 143.0
+offset_left = 228.0
+offset_top = 7.0
+offset_right = 392.0
+offset_bottom = 115.0
 text = "Item"
 
 [node name="Item3" type="Button" parent="Items"]
-offset_left = 605.0
-offset_top = 35.0
-offset_right = 769.0
-offset_bottom = 143.0
+offset_left = 420.0
+offset_top = 7.0
+offset_right = 584.0
+offset_bottom = 115.0
 text = "Item"
 
 [node name="Item4" type="Button" parent="Items"]
-offset_left = 605.0
-offset_top = 365.0
-offset_right = 769.0
-offset_bottom = 473.0
+offset_left = 418.0
+offset_top = 326.0
+offset_right = 582.0
+offset_bottom = 434.0
 text = "Item"
 
 [node name="Item5" type="Button" parent="Items"]
-offset_left = 500.0
-offset_top = 202.0
-offset_right = 664.0
-offset_bottom = 310.0
+offset_left = 306.0
+offset_top = 171.0
+offset_right = 470.0
+offset_bottom = 279.0
 text = "Item"
 
 [node name="Item6" type="Button" parent="Items"]
-offset_left = 222.0
-offset_top = 202.0
-offset_right = 386.0
-offset_bottom = 310.0
+offset_left = 89.0
+offset_top = 165.0
+offset_right = 253.0
+offset_bottom = 273.0
 text = "Item"
 
 [node name="Item7" type="Button" parent="Items"]
-offset_left = 100.0
-offset_top = 365.0
-offset_right = 264.0
-offset_bottom = 473.0
+offset_left = 56.0
+offset_top = 337.0
+offset_right = 220.0
+offset_bottom = 445.0
 text = "Item"
 
 [node name="Item8" type="Button" parent="Items"]
-offset_left = 358.0
-offset_top = 365.0
-offset_right = 522.0
-offset_bottom = 473.0
+offset_left = 242.0
+offset_top = 339.0
+offset_right = 406.0
+offset_bottom = 447.0
 text = "Item"
 
 [connection signal="pressed" from="Items/Item1" to="." method="_on_item_1_pressed"]
