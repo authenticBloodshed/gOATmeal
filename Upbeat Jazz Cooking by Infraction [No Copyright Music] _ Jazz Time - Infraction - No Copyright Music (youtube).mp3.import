@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://c77tvtsq62ofh"
+path="res://.godot/imported/Upbeat Jazz Cooking by Infraction [No Copyright Music] _ Jazz Time - Infraction - No Copyright Music (youtube).mp3-6544b63d9681bb711c2270f52ab727c0.mp3str"
+
+[deps]
+
+source_file="res://Upbeat Jazz Cooking by Infraction [No Copyright Music] _ Jazz Time - Infraction - No Copyright Music (youtube).mp3"
+dest_files=["res://.godot/imported/Upbeat Jazz Cooking by Infraction [No Copyright Music] _ Jazz Time - Infraction - No Copyright Music (youtube).mp3-6544b63d9681bb711c2270f52ab727c0.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
