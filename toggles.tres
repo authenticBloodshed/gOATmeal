@@ -1,0 +1,7 @@
+[gd_resource type="Theme" load_steps=2 format=3 uid="uid://b36dpqnwwq2dk"]
+
+[ext_resource type="FontFile" uid="uid://dxi8dt74itawk" path="res://Mabook.otf" id="1_li0mo"]
+
+[resource]
+default_font = ExtResource("1_li0mo")
+default_font_size = 30

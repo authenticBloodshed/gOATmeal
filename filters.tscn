@@ -1,0 +1,253 @@
+[gd_scene load_steps=2 format=3 uid="uid://djjq0sbowi0kv"]
+
+[ext_resource type="Theme" uid="uid://b36dpqnwwq2dk" path="res://toggles.tres" id="1_hnnkf"]
+
+[node name="FiltersManager" type="Node2D"]
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_right = 1158.0
+offset_bottom = 656.0
+
+[node name="TabManager" type="Node2D" parent="."]
+
+[node name="TabContainer" type="TabContainer" parent="TabManager"]
+offset_left = 30.0
+offset_top = 42.0
+offset_right = 1135.0
+offset_bottom = 627.0
+
+[node name="Type" type="ColorRect" parent="TabManager/TabContainer"]
+visible = false
+layout_mode = 2
+color = Color(0.666667, 0.666667, 0.666667, 1)
+
+[node name="AllButton" type="CheckButton" parent="TabManager/TabContainer/Type"]
+layout_mode = 0
+offset_right = 44.0
+offset_bottom = 24.0
+theme = ExtResource("1_hnnkf")
+button_pressed = true
+text = "All"
+
+[node name="YogurtButton" type="CheckButton" parent="TabManager/TabContainer/Type"]
+layout_mode = 0
+offset_left = 1.0
+offset_top = 42.0
+offset_right = 148.0
+offset_bottom = 79.0
+theme = ExtResource("1_hnnkf")
+text = "Yogurt"
+
+[node name="OatmealButton" type="CheckButton" parent="TabManager/TabContainer/Type"]
+layout_mode = 0
+offset_left = 1.0
+offset_top = 84.0
+offset_right = 164.0
+offset_bottom = 121.0
+theme = ExtResource("1_hnnkf")
+text = "Oatmeal"
+
+[node name="OtherButton" type="CheckButton" parent="TabManager/TabContainer/Type"]
+layout_mode = 0
+offset_left = 1.0
+offset_top = 128.0
+offset_right = 164.0
+offset_bottom = 165.0
+theme = ExtResource("1_hnnkf")
+text = "*Other"
+
+[node name="RichTextLabel" type="RichTextLabel" parent="TabManager/TabContainer/Type"]
+layout_mode = 0
+offset_left = 10.0
+offset_top = 169.0
+offset_right = 527.0
+offset_bottom = 233.0
+theme = ExtResource("1_hnnkf")
+theme_override_font_sizes/normal_font_size = 19
+text = "* Other types of dishes that can't be classified as yogurt or oatmeal based meals. (Example: cream of rice, chia seed pudding, smoothiebowls, etc.)"
+
+[node name="Diet preferences" type="ColorRect" parent="TabManager/TabContainer"]
+layout_mode = 2
+color = Color(0.666667, 0.666667, 0.666667, 1)
+
+[node name="NoneButton" type="CheckButton" parent="TabManager/TabContainer/Diet preferences"]
+offset_top = 3.0
+offset_right = 120.0
+offset_bottom = 40.0
+theme = ExtResource("1_hnnkf")
+button_pressed = true
+text = "None"
+
+[node name="VegetarianButton" type="CheckButton" parent="TabManager/TabContainer/Diet preferences"]
+offset_left = 1.0
+offset_top = 45.0
+offset_right = 198.0
+offset_bottom = 82.0
+theme = ExtResource("1_hnnkf")
+text = "Vegetarian"
+
+[node name="VegetarianExplanation" type="RichTextLabel" parent="TabManager/TabContainer/Diet preferences/VegetarianButton"]
+visible = false
+layout_mode = 0
+offset_left = 426.0
+offset_top = 24.0
+offset_right = 1043.0
+offset_bottom = 443.0
+text = "Selecting this excludes dishes that include meat, poultry, seafood. This includes ingredients that are considered \"by products\" such as gelatin, e120, lard, omega 3 acids, animal rennet and gelatine alternatives made from connective tissue"
+
+[node name="VeganButton" type="CheckButton" parent="TabManager/TabContainer/Diet preferences"]
+offset_left = 1.0
+offset_top = 87.0
+offset_right = 164.0
+offset_bottom = 124.0
+theme = ExtResource("1_hnnkf")
+text = "Vegan"
+
+[node name="GFButton" type="CheckButton" parent="TabManager/TabContainer/Diet preferences"]
+offset_left = 1.0
+offset_top = 131.0
+offset_right = 214.0
+offset_bottom = 168.0
+theme = ExtResource("1_hnnkf")
+text = "Gluten free"
+
+[node name="GFExplanation" type="RichTextLabel" parent="TabManager/TabContainer/Diet preferences/GFButton"]
+visible = false
+layout_mode = 0
+offset_left = 426.0
+offset_top = -62.0
+offset_right = 1070.0
+offset_bottom = 357.0
+text = "Selecting this excludes dishes that include gluten, making them suitable for those with an intolerance to gluten or celiac disease."
+
+[node name="LFButton" type="CheckButton" parent="TabManager/TabContainer/Diet preferences"]
+offset_left = 2.0
+offset_top = 178.0
+offset_right = 222.0
+offset_bottom = 215.0
+theme = ExtResource("1_hnnkf")
+text = "Lactose free"
+
+[node name="LFExplanation" type="RichTextLabel" parent="TabManager/TabContainer/Diet preferences/LFButton"]
+visible = false
+layout_mode = 0
+offset_left = 425.0
+offset_top = -109.0
+offset_right = 1069.0
+offset_bottom = 310.0
+text = "Selecting this excludes dishes that include lactose, making them suitable for those with an intolerance to lactose or milk allergies."
+
+[node name="NutFreeButton" type="CheckButton" parent="TabManager/TabContainer/Diet preferences"]
+offset_left = 2.0
+offset_top = 222.0
+offset_right = 222.0
+offset_bottom = 259.0
+theme = ExtResource("1_hnnkf")
+text = "Nut free"
+
+[node name="NutFreeExplanation" type="RichTextLabel" parent="TabManager/TabContainer/Diet preferences/NutFreeButton"]
+visible = false
+layout_mode = 0
+offset_left = 497.0
+offset_top = -157.0
+offset_right = 1035.0
+offset_bottom = 262.0
+text = "Selecting this excludes dishes that include nuts, products including nuts, and nut butters, making them suitable for those with nut allergies."
+
+[node name="SugarsButton" type="CheckButton" parent="TabManager/TabContainer/Diet preferences"]
+offset_left = 3.0
+offset_top = 261.0
+offset_right = 320.0
+offset_bottom = 298.0
+theme = ExtResource("1_hnnkf")
+text = "No artificial sugars"
+
+[node name="SugarsExplanation" type="RichTextLabel" parent="TabManager/TabContainer/Diet preferences/SugarsButton"]
+visible = false
+layout_mode = 0
+offset_left = 496.0
+offset_top = -196.0
+offset_right = 1034.0
+offset_bottom = 223.0
+text = "Selecting this excludes dishes that include artificial sugars. All dishes under this category are flavoured using natural sugars that are naturally in the products and have no added sugars, such as fructose or honey."
+
+[node name="Organic" type="CheckButton" parent="TabManager/TabContainer/Diet preferences"]
+offset_left = 6.0
+offset_top = 305.0
+offset_right = 323.0
+offset_bottom = 342.0
+theme = ExtResource("1_hnnkf")
+text = "Organic"
+
+[node name="ProteinButton" type="CheckButton" parent="TabManager/TabContainer/Diet preferences"]
+offset_left = 4.0
+offset_top = 350.0
+offset_right = 321.0
+offset_bottom = 387.0
+theme = ExtResource("1_hnnkf")
+text = "High protein"
+
+[node name="PlantBasedButton" type="CheckButton" parent="TabManager/TabContainer/Diet preferences"]
+offset_left = 4.0
+offset_top = 395.0
+offset_right = 321.0
+offset_bottom = 432.0
+theme = ExtResource("1_hnnkf")
+text = "Plantbased"
+
+[node name="HalalButton" type="CheckButton" parent="TabManager/TabContainer/Diet preferences"]
+offset_left = 4.0
+offset_top = 437.0
+offset_right = 321.0
+offset_bottom = 474.0
+theme = ExtResource("1_hnnkf")
+text = "Halal"
+
+[node name="HalalExplanation" type="RichTextLabel" parent="TabManager/TabContainer/Diet preferences/HalalButton"]
+visible = false
+layout_mode = 0
+offset_left = 495.0
+offset_top = -372.0
+offset_right = 1033.0
+offset_bottom = 47.0
+text = "Selecting this ensures that all dishes shown abide by the islamic law. Selecting this ensures that all products used are either halal by default, taahir or halal certified products in the case of animal products. Vegan, vegetarian or kosher dishes may be included in this category as well."
+
+[node name="KosherButton" type="CheckButton" parent="TabManager/TabContainer/Diet preferences"]
+offset_left = 4.0
+offset_top = 479.0
+offset_right = 321.0
+offset_bottom = 516.0
+theme = ExtResource("1_hnnkf")
+text = "Kosher"
+
+[node name="SeasonalButton" type="CheckButton" parent="TabManager/TabContainer/Diet preferences"]
+offset_left = 4.0
+offset_top = 523.0
+offset_right = 321.0
+offset_bottom = 560.0
+theme = ExtResource("1_hnnkf")
+text = "Seasonal / festive"
+
+[node name="SeasonalExplanation" type="RichTextLabel" parent="TabManager/TabContainer/Diet preferences/SeasonalButton"]
+layout_mode = 0
+offset_left = 495.0
+offset_top = -458.0
+offset_right = 1033.0
+offset_bottom = -39.0
+text = "Selecting this ensures you see dishes that use seasonal ingredients that may not be around year round and dishes themed around certain holidays or times of the year."
+
+[node name="Include" type="ColorRect" parent="TabManager/TabContainer"]
+visible = false
+layout_mode = 2
+color = Color(0.666667, 0.666667, 0.666667, 1)
+
+[node name="Exclude" type="ColorRect" parent="TabManager/TabContainer"]
+visible = false
+layout_mode = 2
+color = Color(0.666667, 0.666667, 0.666667, 1)
+
+[node name="DietManager" type="Node2D" parent="."]
+
+[node name="IncludeManager" type="Node2D" parent="."]
+
+[node name="ExcludeManager" type="Node2D" parent="."]
