@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://djjq0sbowi0kv"]
+[gd_scene load_steps=3 format=3 uid="uid://djjq0sbowi0kv"]
 
 [ext_resource type="Theme" uid="uid://b36dpqnwwq2dk" path="res://toggles.tres" id="1_hnnkf"]
+[ext_resource type="Script" path="res://DietToggles.gd" id="2_t4aci"]
 
 [node name="FiltersManager" type="Node2D"]
 
@@ -71,6 +72,7 @@ layout_mode = 2
 color = Color(0.666667, 0.666667, 0.666667, 1)
 
 [node name="NoneButton" type="CheckButton" parent="TabManager/TabContainer/Diet preferences"]
+layout_mode = 0
 offset_top = 3.0
 offset_right = 120.0
 offset_bottom = 40.0
@@ -78,13 +80,16 @@ theme = ExtResource("1_hnnkf")
 button_pressed = true
 text = "None"
 
-[node name="VegetarianButton" type="CheckButton" parent="TabManager/TabContainer/Diet preferences"]
+[node name="VegetarianButton" type="CheckButton" parent="TabManager/TabContainer/Diet preferences" node_paths=PackedStringArray("explanation")]
+layout_mode = 0
 offset_left = 1.0
 offset_top = 45.0
 offset_right = 198.0
 offset_bottom = 82.0
 theme = ExtResource("1_hnnkf")
 text = "Vegetarian"
+script = ExtResource("2_t4aci")
+explanation = NodePath("VegetarianExplanation")
 
 [node name="VegetarianExplanation" type="RichTextLabel" parent="TabManager/TabContainer/Diet preferences/VegetarianButton"]
 visible = false
@@ -93,23 +98,42 @@ offset_left = 426.0
 offset_top = 24.0
 offset_right = 1043.0
 offset_bottom = 443.0
-text = "Selecting this excludes dishes that include meat, poultry, seafood. This includes ingredients that are considered \"by products\" such as gelatin, e120, lard, omega 3 acids, animal rennet and gelatine alternatives made from connective tissue"
+text = "Selecting this excludes dishes that include meat, poultry, seafood. 
 
-[node name="VeganButton" type="CheckButton" parent="TabManager/TabContainer/Diet preferences"]
+This includes ingredients that are considered \"by products\" such as gelatin, e120, lard, omega 3 acids, animal rennet and gelatine alternatives made from connective tissue"
+
+[node name="VeganButton" type="CheckButton" parent="TabManager/TabContainer/Diet preferences" node_paths=PackedStringArray("explanation")]
+layout_mode = 0
 offset_left = 1.0
 offset_top = 87.0
 offset_right = 164.0
 offset_bottom = 124.0
 theme = ExtResource("1_hnnkf")
 text = "Vegan"
+script = ExtResource("2_t4aci")
+explanation = NodePath("VegetarianExplanation2")
 
-[node name="GFButton" type="CheckButton" parent="TabManager/TabContainer/Diet preferences"]
+[node name="VegetarianExplanation2" type="RichTextLabel" parent="TabManager/TabContainer/Diet preferences/VeganButton"]
+visible = false
+layout_mode = 0
+offset_left = 426.0
+offset_top = -18.0
+offset_right = 1043.0
+offset_bottom = 401.0
+text = "Selecting this excludes dishes that include meat, poultry, seafood, dairy, eggs and all other ingredients in which animals are involved during the production. 
+
+This includes ingredients that are considered \"by products\" such as gelatin, e120, lard, omega 3 acids, animal rennet and gelatine alternatives made from connective tissue."
+
+[node name="GFButton" type="CheckButton" parent="TabManager/TabContainer/Diet preferences" node_paths=PackedStringArray("explanation")]
+layout_mode = 0
 offset_left = 1.0
 offset_top = 131.0
 offset_right = 214.0
 offset_bottom = 168.0
 theme = ExtResource("1_hnnkf")
 text = "Gluten free"
+script = ExtResource("2_t4aci")
+explanation = NodePath("GFExplanation")
 
 [node name="GFExplanation" type="RichTextLabel" parent="TabManager/TabContainer/Diet preferences/GFButton"]
 visible = false
@@ -120,13 +144,16 @@ offset_right = 1070.0
 offset_bottom = 357.0
 text = "Selecting this excludes dishes that include gluten, making them suitable for those with an intolerance to gluten or celiac disease."
 
-[node name="LFButton" type="CheckButton" parent="TabManager/TabContainer/Diet preferences"]
+[node name="LFButton" type="CheckButton" parent="TabManager/TabContainer/Diet preferences" node_paths=PackedStringArray("explanation")]
+layout_mode = 0
 offset_left = 2.0
 offset_top = 178.0
 offset_right = 222.0
 offset_bottom = 215.0
 theme = ExtResource("1_hnnkf")
 text = "Lactose free"
+script = ExtResource("2_t4aci")
+explanation = NodePath("LFExplanation")
 
 [node name="LFExplanation" type="RichTextLabel" parent="TabManager/TabContainer/Diet preferences/LFButton"]
 visible = false
@@ -137,13 +164,16 @@ offset_right = 1069.0
 offset_bottom = 310.0
 text = "Selecting this excludes dishes that include lactose, making them suitable for those with an intolerance to lactose or milk allergies."
 
-[node name="NutFreeButton" type="CheckButton" parent="TabManager/TabContainer/Diet preferences"]
+[node name="NutFreeButton" type="CheckButton" parent="TabManager/TabContainer/Diet preferences" node_paths=PackedStringArray("explanation")]
+layout_mode = 0
 offset_left = 2.0
 offset_top = 222.0
 offset_right = 222.0
 offset_bottom = 259.0
 theme = ExtResource("1_hnnkf")
 text = "Nut free"
+script = ExtResource("2_t4aci")
+explanation = NodePath("NutFreeExplanation")
 
 [node name="NutFreeExplanation" type="RichTextLabel" parent="TabManager/TabContainer/Diet preferences/NutFreeButton"]
 visible = false
@@ -154,13 +184,16 @@ offset_right = 1035.0
 offset_bottom = 262.0
 text = "Selecting this excludes dishes that include nuts, products including nuts, and nut butters, making them suitable for those with nut allergies."
 
-[node name="SugarsButton" type="CheckButton" parent="TabManager/TabContainer/Diet preferences"]
+[node name="SugarsButton" type="CheckButton" parent="TabManager/TabContainer/Diet preferences" node_paths=PackedStringArray("explanation")]
+layout_mode = 0
 offset_left = 3.0
 offset_top = 261.0
 offset_right = 320.0
 offset_bottom = 298.0
 theme = ExtResource("1_hnnkf")
-text = "No artificial sugars"
+text = "No artificial ingredients "
+script = ExtResource("2_t4aci")
+explanation = NodePath("SugarsExplanation")
 
 [node name="SugarsExplanation" type="RichTextLabel" parent="TabManager/TabContainer/Diet preferences/SugarsButton"]
 visible = false
@@ -169,39 +202,86 @@ offset_left = 496.0
 offset_top = -196.0
 offset_right = 1034.0
 offset_bottom = 223.0
-text = "Selecting this excludes dishes that include artificial sugars. All dishes under this category are flavoured using natural sugars that are naturally in the products and have no added sugars, such as fructose or honey."
+text = "Selecting this excludes dishes that include artificial ingredients. All dishes under this category are flavoured using natural sugars that are naturally in the products and have no added sugars, such as fructose or honey."
 
-[node name="Organic" type="CheckButton" parent="TabManager/TabContainer/Diet preferences"]
+[node name="Organic" type="CheckButton" parent="TabManager/TabContainer/Diet preferences" node_paths=PackedStringArray("explanation")]
+layout_mode = 0
 offset_left = 6.0
 offset_top = 305.0
 offset_right = 323.0
 offset_bottom = 342.0
 theme = ExtResource("1_hnnkf")
 text = "Organic"
+script = ExtResource("2_t4aci")
+explanation = NodePath("OrganicExplanation")
 
-[node name="ProteinButton" type="CheckButton" parent="TabManager/TabContainer/Diet preferences"]
+[node name="OrganicExplanation" type="RichTextLabel" parent="TabManager/TabContainer/Diet preferences/Organic"]
+visible = false
+layout_mode = 0
+offset_left = 493.0
+offset_top = -240.0
+offset_right = 1031.0
+offset_bottom = 179.0
+text = "Selecting this ensures that you only see dishes made with organic ingredients. This means all ingredients included in these dishes are chemical fertilizers, pesticides, or other artificial chemicals free."
+
+[node name="ProteinButton" type="CheckButton" parent="TabManager/TabContainer/Diet preferences" node_paths=PackedStringArray("explanation")]
+layout_mode = 0
 offset_left = 4.0
 offset_top = 350.0
 offset_right = 321.0
 offset_bottom = 387.0
 theme = ExtResource("1_hnnkf")
 text = "High protein"
+script = ExtResource("2_t4aci")
+explanation = NodePath("ProteinExplanation")
 
-[node name="PlantBasedButton" type="CheckButton" parent="TabManager/TabContainer/Diet preferences"]
+[node name="ProteinExplanation" type="RichTextLabel" parent="TabManager/TabContainer/Diet preferences/ProteinButton"]
+visible = false
+layout_mode = 0
+offset_left = 495.0
+offset_top = -285.0
+offset_right = 1033.0
+offset_bottom = 189.0
+text = "Selecting this ensures that you only see dishes that are higher in protein. 
+
+Something counts as \"high protein\" when at least 20% of its total energy comes from protein. Dishes under this category may be originally high in protein or made high protein through added ingredients such as protein powders. 
+
+If you wish to exclude artificial proteins, adding the \"no artificial ingredients\" filter will exclude those from the results."
+
+[node name="PlantBasedButton" type="CheckButton" parent="TabManager/TabContainer/Diet preferences" node_paths=PackedStringArray("explanation")]
+layout_mode = 0
 offset_left = 4.0
 offset_top = 395.0
 offset_right = 321.0
 offset_bottom = 432.0
 theme = ExtResource("1_hnnkf")
 text = "Plantbased"
+script = ExtResource("2_t4aci")
+explanation = NodePath("PlantBasedExplanation")
 
-[node name="HalalButton" type="CheckButton" parent="TabManager/TabContainer/Diet preferences"]
+[node name="PlantBasedExplanation" type="RichTextLabel" parent="TabManager/TabContainer/Diet preferences/PlantBasedButton"]
+visible = false
+layout_mode = 0
+offset_left = 495.0
+offset_top = -330.0
+offset_right = 1033.0
+offset_bottom = 144.0
+text = "Selecting this ensures that you only see dishes that are plant based. 
+
+Something counts as \"plant based\" when it consists  solely of vegetables, grains, pulses, or other foods derived from plants, rather than animal products.
+
+This category does not eliminate products that may have been tested on animals or include animal labour to produce. "
+
+[node name="HalalButton" type="CheckButton" parent="TabManager/TabContainer/Diet preferences" node_paths=PackedStringArray("explanation")]
+layout_mode = 0
 offset_left = 4.0
 offset_top = 437.0
 offset_right = 321.0
 offset_bottom = 474.0
 theme = ExtResource("1_hnnkf")
 text = "Halal"
+script = ExtResource("2_t4aci")
+explanation = NodePath("HalalExplanation")
 
 [node name="HalalExplanation" type="RichTextLabel" parent="TabManager/TabContainer/Diet preferences/HalalButton"]
 visible = false
@@ -212,23 +292,43 @@ offset_right = 1033.0
 offset_bottom = 47.0
 text = "Selecting this ensures that all dishes shown abide by the islamic law. Selecting this ensures that all products used are either halal by default, taahir or halal certified products in the case of animal products. Vegan, vegetarian or kosher dishes may be included in this category as well."
 
-[node name="KosherButton" type="CheckButton" parent="TabManager/TabContainer/Diet preferences"]
+[node name="KosherButton" type="CheckButton" parent="TabManager/TabContainer/Diet preferences" node_paths=PackedStringArray("explanation")]
+layout_mode = 0
 offset_left = 4.0
 offset_top = 479.0
 offset_right = 321.0
 offset_bottom = 516.0
 theme = ExtResource("1_hnnkf")
 text = "Kosher"
+script = ExtResource("2_t4aci")
+explanation = NodePath("KosherExplanation")
 
-[node name="SeasonalButton" type="CheckButton" parent="TabManager/TabContainer/Diet preferences"]
+[node name="KosherExplanation" type="RichTextLabel" parent="TabManager/TabContainer/Diet preferences/KosherButton"]
+visible = false
+layout_mode = 0
+offset_left = 495.0
+offset_top = -414.0
+offset_right = 1033.0
+offset_bottom = 60.0
+text = "Selecting this ensures that you only see dishes that abide by the Jewish dietary regulations of kashrut. animal derived dishes and dairy are not mixed in these dishes.
+
+Selecting this ensures that all products used are kosher certified products in the case of animal products. 
+
+Vegan or vegetarian may be included in this category as well, provided those dishes do not mix dairy with animal derived products."
+
+[node name="SeasonalButton" type="CheckButton" parent="TabManager/TabContainer/Diet preferences" node_paths=PackedStringArray("explanation")]
+layout_mode = 0
 offset_left = 4.0
 offset_top = 523.0
 offset_right = 321.0
 offset_bottom = 560.0
 theme = ExtResource("1_hnnkf")
 text = "Seasonal / festive"
+script = ExtResource("2_t4aci")
+explanation = NodePath("SeasonalExplanation")
 
 [node name="SeasonalExplanation" type="RichTextLabel" parent="TabManager/TabContainer/Diet preferences/SeasonalButton"]
+visible = false
 layout_mode = 0
 offset_left = 495.0
 offset_top = -458.0
@@ -251,3 +351,7 @@ color = Color(0.666667, 0.666667, 0.666667, 1)
 [node name="IncludeManager" type="Node2D" parent="."]
 
 [node name="ExcludeManager" type="Node2D" parent="."]
+
+[connection signal="focus_exited" from="TabManager/TabContainer/Diet preferences/VegetarianButton" to="TabManager/TabContainer/Diet preferences/VegetarianButton" method="_on_focus_exited"]
+[connection signal="mouse_entered" from="TabManager/TabContainer/Diet preferences/VegetarianButton" to="TabManager/TabContainer/Diet preferences/VegetarianButton" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="TabManager/TabContainer/Diet preferences/VegetarianButton" to="TabManager/TabContainer/Diet preferences/VegetarianButton" method="_on_mouse_exited"]
