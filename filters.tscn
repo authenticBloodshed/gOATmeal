@@ -1,5 +1,6 @@
-[gd_scene load_steps=7 format=3 uid="uid://djjq0sbowi0kv"]
+[gd_scene load_steps=8 format=3 uid="uid://djjq0sbowi0kv"]
 
+[ext_resource type="Texture2D" uid="uid://beexh3ycvj1rl" path="res://wall.png" id="1_86tue"]
 [ext_resource type="Theme" uid="uid://b36dpqnwwq2dk" path="res://toggles.tres" id="1_hnnkf"]
 [ext_resource type="Script" path="res://DietToggles.gd" id="2_t4aci"]
 [ext_resource type="Texture2D" uid="uid://l3xnpqncukxc" path="res://blueberrybowl.png" id="3_3roer"]
@@ -13,6 +14,11 @@
 offset_right = 1158.0
 offset_bottom = 656.0
 
+[node name="Wall" type="Sprite2D" parent="."]
+position = Vector2(579.313, 345.125)
+scale = Vector2(0.387875, 0.387875)
+texture = ExtResource("1_86tue")
+
 [node name="TabManager" type="Node2D" parent="."]
 
 [node name="TabContainer" type="TabContainer" parent="TabManager"]
@@ -22,7 +28,6 @@ offset_right = 1135.0
 offset_bottom = 627.0
 
 [node name="Type" type="ColorRect" parent="TabManager/TabContainer"]
-visible = false
 layout_mode = 2
 color = Color(0.666667, 0.666667, 0.666667, 1)
 
@@ -342,6 +347,7 @@ offset_bottom = -39.0
 text = "Selecting this ensures you see dishes that use seasonal ingredients that may not be around year round and dishes themed around certain holidays or times of the year."
 
 [node name="Include" type="ColorRect" parent="TabManager/TabContainer"]
+visible = false
 layout_mode = 2
 color = Color(0.666667, 0.666667, 0.666667, 1)
 
@@ -353,7 +359,6 @@ offset_right = 1087.0
 offset_bottom = 544.0
 
 [node name="Fresh fruits" type="ColorRect" parent="TabManager/TabContainer/Include/TabContainer"]
-visible = false
 layout_mode = 2
 color = Color(0.262745, 0.262745, 0.262745, 1)
 
@@ -499,6 +504,7 @@ layout_mode = 2
 color = Color(0.262745, 0.262745, 0.262745, 1)
 
 [node name="CheckButton" type="CheckButton" parent="TabManager/TabContainer/Include/TabContainer/Dried fruits"]
+layout_mode = 0
 offset_left = 19.0
 offset_top = 21.0
 offset_right = 183.0
@@ -507,6 +513,7 @@ theme = ExtResource("1_hnnkf")
 text = "Raisins"
 
 [node name="CheckButton2" type="CheckButton" parent="TabManager/TabContainer/Include/TabContainer/Dried fruits"]
+layout_mode = 0
 offset_left = 19.0
 offset_top = 63.0
 offset_right = 238.0
@@ -515,6 +522,7 @@ theme = ExtResource("1_hnnkf")
 text = "Dates "
 
 [node name="CheckButton3" type="CheckButton" parent="TabManager/TabContainer/Include/TabContainer/Dried fruits"]
+layout_mode = 0
 offset_left = 19.0
 offset_top = 112.0
 offset_right = 215.0
@@ -523,6 +531,7 @@ theme = ExtResource("1_hnnkf")
 text = "Cranberry "
 
 [node name="CheckButton4" type="CheckButton" parent="TabManager/TabContainer/Include/TabContainer/Dried fruits"]
+layout_mode = 0
 offset_left = 19.0
 offset_top = 162.0
 offset_right = 216.0
@@ -531,6 +540,7 @@ theme = ExtResource("1_hnnkf")
 text = "Goji berry "
 
 [node name="CheckButton5" type="CheckButton" parent="TabManager/TabContainer/Include/TabContainer/Dried fruits"]
+layout_mode = 0
 offset_left = 19.0
 offset_top = 210.0
 offset_right = 235.0
@@ -559,6 +569,7 @@ layout_mode = 2
 color = Color(0.262745, 0.262745, 0.262745, 1)
 
 [node name="CheckButton" type="CheckButton" parent="TabManager/TabContainer/Include/TabContainer/Nuts"]
+layout_mode = 0
 offset_left = 19.0
 offset_top = 21.0
 offset_right = 183.0
@@ -567,6 +578,7 @@ theme = ExtResource("1_hnnkf")
 text = "Almonds "
 
 [node name="CheckButton2" type="CheckButton" parent="TabManager/TabContainer/Include/TabContainer/Nuts"]
+layout_mode = 0
 offset_left = 19.0
 offset_top = 63.0
 offset_right = 238.0
@@ -575,6 +587,7 @@ theme = ExtResource("1_hnnkf")
 text = "Walnuts "
 
 [node name="CheckButton3" type="CheckButton" parent="TabManager/TabContainer/Include/TabContainer/Nuts"]
+layout_mode = 0
 offset_left = 19.0
 offset_top = 112.0
 offset_right = 215.0
@@ -583,6 +596,7 @@ theme = ExtResource("1_hnnkf")
 text = "Pecans "
 
 [node name="CheckButton4" type="CheckButton" parent="TabManager/TabContainer/Include/TabContainer/Nuts"]
+layout_mode = 0
 offset_left = 19.0
 offset_top = 162.0
 offset_right = 216.0
@@ -591,6 +605,7 @@ theme = ExtResource("1_hnnkf")
 text = "Hazelnuts "
 
 [node name="CheckButton5" type="CheckButton" parent="TabManager/TabContainer/Include/TabContainer/Nuts"]
+layout_mode = 0
 offset_left = 19.0
 offset_top = 210.0
 offset_right = 235.0
@@ -599,6 +614,7 @@ theme = ExtResource("1_hnnkf")
 text = "Cashews "
 
 [node name="CheckButton6" type="CheckButton" parent="TabManager/TabContainer/Include/TabContainer/Nuts"]
+layout_mode = 0
 offset_left = 19.0
 offset_top = 256.0
 offset_right = 216.0
@@ -607,6 +623,7 @@ theme = ExtResource("1_hnnkf")
 text = "Pistachios"
 
 [node name="CheckButton7" type="CheckButton" parent="TabManager/TabContainer/Include/TabContainer/Nuts"]
+layout_mode = 0
 offset_left = 19.0
 offset_top = 302.0
 offset_right = 216.0
@@ -615,6 +632,7 @@ theme = ExtResource("1_hnnkf")
 text = "Macadamia nuts"
 
 [node name="CheckButton8" type="CheckButton" parent="TabManager/TabContainer/Include/TabContainer/Nuts"]
+layout_mode = 0
 offset_left = 24.0
 offset_top = 346.0
 offset_right = 221.0
@@ -628,6 +646,7 @@ layout_mode = 2
 color = Color(0.262745, 0.262745, 0.262745, 1)
 
 [node name="CheckButton" type="CheckButton" parent="TabManager/TabContainer/Include/TabContainer/Toppings"]
+layout_mode = 0
 offset_left = 19.0
 offset_top = 21.0
 offset_right = 183.0
@@ -636,6 +655,7 @@ theme = ExtResource("1_hnnkf")
 text = "Granola "
 
 [node name="CheckButton2" type="CheckButton" parent="TabManager/TabContainer/Include/TabContainer/Toppings"]
+layout_mode = 0
 offset_left = 19.0
 offset_top = 63.0
 offset_right = 238.0
@@ -644,6 +664,7 @@ theme = ExtResource("1_hnnkf")
 text = "Coconut flakes "
 
 [node name="CheckButton3" type="CheckButton" parent="TabManager/TabContainer/Include/TabContainer/Toppings"]
+layout_mode = 0
 offset_left = 19.0
 offset_top = 112.0
 offset_right = 215.0
@@ -652,6 +673,7 @@ theme = ExtResource("1_hnnkf")
 text = "Cacao nibs "
 
 [node name="CheckButton4" type="CheckButton" parent="TabManager/TabContainer/Include/TabContainer/Toppings"]
+layout_mode = 0
 offset_left = 19.0
 offset_top = 162.0
 offset_right = 216.0
@@ -660,6 +682,7 @@ theme = ExtResource("1_hnnkf")
 text = "Crushed biscuits / cookies "
 
 [node name="CheckButton5" type="CheckButton" parent="TabManager/TabContainer/Include/TabContainer/Toppings"]
+layout_mode = 0
 offset_left = 19.0
 offset_top = 210.0
 offset_right = 235.0
@@ -668,6 +691,7 @@ theme = ExtResource("1_hnnkf")
 text = "Puffed rice "
 
 [node name="CheckButton6" type="CheckButton" parent="TabManager/TabContainer/Include/TabContainer/Toppings"]
+layout_mode = 0
 offset_left = 19.0
 offset_top = 256.0
 offset_right = 216.0
@@ -676,6 +700,7 @@ theme = ExtResource("1_hnnkf")
 text = "Puffed quinoa"
 
 [node name="CheckButton7" type="CheckButton" parent="TabManager/TabContainer/Include/TabContainer/Toppings"]
+layout_mode = 0
 offset_left = 19.0
 offset_top = 302.0
 offset_right = 216.0
@@ -684,6 +709,7 @@ theme = ExtResource("1_hnnkf")
 text = "Cinnamon powder"
 
 [node name="CheckButton8" type="CheckButton" parent="TabManager/TabContainer/Include/TabContainer/Toppings"]
+layout_mode = 0
 offset_left = 24.0
 offset_top = 346.0
 offset_right = 221.0
@@ -692,6 +718,7 @@ theme = ExtResource("1_hnnkf")
 text = "Cacao powder "
 
 [node name="CheckButton9" type="CheckButton" parent="TabManager/TabContainer/Include/TabContainer/Toppings"]
+layout_mode = 0
 offset_left = 466.0
 offset_top = 21.0
 offset_right = 639.0
@@ -700,6 +727,7 @@ theme = ExtResource("1_hnnkf")
 text = "Jam / jelly "
 
 [node name="CheckButton10" type="CheckButton" parent="TabManager/TabContainer/Include/TabContainer/Toppings"]
+layout_mode = 0
 offset_left = 466.0
 offset_top = 63.0
 offset_right = 745.0
@@ -708,6 +736,7 @@ theme = ExtResource("1_hnnkf")
 text = "Honey"
 
 [node name="CheckButton11" type="CheckButton" parent="TabManager/TabContainer/Include/TabContainer/Toppings"]
+layout_mode = 0
 offset_left = 466.0
 offset_top = 112.0
 offset_right = 676.0
@@ -716,6 +745,7 @@ theme = ExtResource("1_hnnkf")
 text = "Nut butters "
 
 [node name="CheckButton12" type="CheckButton" parent="TabManager/TabContainer/Include/TabContainer/Toppings"]
+layout_mode = 0
 offset_left = 466.0
 offset_top = 162.0
 offset_right = 747.0
@@ -724,6 +754,7 @@ theme = ExtResource("1_hnnkf")
 text = "Chocolate chips"
 
 [node name="CheckButton13" type="CheckButton" parent="TabManager/TabContainer/Include/TabContainer/Toppings"]
+layout_mode = 0
 offset_left = 466.0
 offset_top = 210.0
 offset_right = 682.0
@@ -732,6 +763,7 @@ theme = ExtResource("1_hnnkf")
 text = "maple syrup"
 
 [node name="CheckButton14" type="CheckButton" parent="TabManager/TabContainer/Include/TabContainer/Toppings"]
+layout_mode = 0
 offset_left = 466.0
 offset_top = 256.0
 offset_right = 713.0
@@ -740,6 +772,7 @@ theme = ExtResource("1_hnnkf")
 text = "Sprinkles"
 
 [node name="CheckButton15" type="CheckButton" parent="TabManager/TabContainer/Include/TabContainer/Toppings"]
+layout_mode = 0
 offset_left = 466.0
 offset_top = 302.0
 offset_right = 767.0
@@ -748,6 +781,7 @@ theme = ExtResource("1_hnnkf")
 text = "Brown sugar"
 
 [node name="CheckButton16" type="CheckButton" parent="TabManager/TabContainer/Include/TabContainer/Toppings"]
+layout_mode = 0
 offset_left = 471.0
 offset_top = 346.0
 offset_right = 726.0
@@ -760,16 +794,442 @@ visible = false
 layout_mode = 2
 color = Color(0.666667, 0.666667, 0.666667, 1)
 
-[node name="RichTextLabel" type="RichTextLabel" parent="TabManager/TabContainer"]
+[node name="TabContainer" type="TabContainer" parent="TabManager/TabContainer/Exclude"]
+offset_left = 19.0
+offset_top = 51.0
+offset_right = 1087.0
+offset_bottom = 544.0
+
+[node name="Fresh fruits" type="ColorRect" parent="TabManager/TabContainer/Exclude/TabContainer"]
 layout_mode = 2
+color = Color(0.262745, 0.262745, 0.262745, 1)
+
+[node name="CheckButton" type="CheckButton" parent="TabManager/TabContainer/Exclude/TabContainer/Fresh fruits"]
+layout_mode = 0
+offset_left = 19.0
+offset_top = 21.0
+offset_right = 183.0
+offset_bottom = 58.0
 theme = ExtResource("1_hnnkf")
-text = "Using \"include\" filters out any dishes that DON'T use the ingredient selected."
+text = "Banana "
 
-[node name="DietManager" type="Node2D" parent="."]
+[node name="CheckButton2" type="CheckButton" parent="TabManager/TabContainer/Exclude/TabContainer/Fresh fruits"]
+layout_mode = 0
+offset_left = 19.0
+offset_top = 63.0
+offset_right = 238.0
+offset_bottom = 100.0
+theme = ExtResource("1_hnnkf")
+text = "Strawberry "
 
-[node name="IncludeManager" type="Node2D" parent="."]
+[node name="CheckButton3" type="CheckButton" parent="TabManager/TabContainer/Exclude/TabContainer/Fresh fruits"]
+layout_mode = 0
+offset_left = 19.0
+offset_top = 112.0
+offset_right = 215.0
+offset_bottom = 149.0
+theme = ExtResource("1_hnnkf")
+text = "Blueberry "
 
-[node name="ExcludeManager" type="Node2D" parent="."]
+[node name="CheckButton4" type="CheckButton" parent="TabManager/TabContainer/Exclude/TabContainer/Fresh fruits"]
+layout_mode = 0
+offset_left = 19.0
+offset_top = 162.0
+offset_right = 216.0
+offset_bottom = 199.0
+theme = ExtResource("1_hnnkf")
+text = "Raspberry "
+
+[node name="CheckButton5" type="CheckButton" parent="TabManager/TabContainer/Exclude/TabContainer/Fresh fruits"]
+layout_mode = 0
+offset_left = 19.0
+offset_top = 210.0
+offset_right = 235.0
+offset_bottom = 247.0
+theme = ExtResource("1_hnnkf")
+text = "Blackberry "
+
+[node name="CheckButton6" type="CheckButton" parent="TabManager/TabContainer/Exclude/TabContainer/Fresh fruits"]
+layout_mode = 0
+offset_left = 19.0
+offset_top = 256.0
+offset_right = 216.0
+offset_bottom = 293.0
+theme = ExtResource("1_hnnkf")
+text = "Apple "
+
+[node name="CheckButton7" type="CheckButton" parent="TabManager/TabContainer/Exclude/TabContainer/Fresh fruits"]
+layout_mode = 0
+offset_left = 19.0
+offset_top = 302.0
+offset_right = 216.0
+offset_bottom = 339.0
+theme = ExtResource("1_hnnkf")
+text = "Pear"
+
+[node name="CheckButton8" type="CheckButton" parent="TabManager/TabContainer/Exclude/TabContainer/Fresh fruits"]
+layout_mode = 0
+offset_left = 314.0
+offset_top = 19.0
+offset_right = 511.0
+offset_bottom = 56.0
+theme = ExtResource("1_hnnkf")
+text = "Peach "
+
+[node name="CheckButton9" type="CheckButton" parent="TabManager/TabContainer/Exclude/TabContainer/Fresh fruits"]
+layout_mode = 0
+offset_left = 314.0
+offset_top = 61.0
+offset_right = 518.0
+offset_bottom = 98.0
+theme = ExtResource("1_hnnkf")
+text = "Green kiwi "
+
+[node name="CheckButton10" type="CheckButton" parent="TabManager/TabContainer/Exclude/TabContainer/Fresh fruits"]
+layout_mode = 0
+offset_left = 314.0
+offset_top = 106.0
+offset_right = 667.0
+offset_bottom = 143.0
+theme = ExtResource("1_hnnkf")
+text = "Golden / yellow kiwi "
+
+[node name="CheckButton11" type="CheckButton" parent="TabManager/TabContainer/Exclude/TabContainer/Fresh fruits"]
+layout_mode = 0
+offset_left = 314.0
+offset_top = 158.0
+offset_right = 667.0
+offset_bottom = 195.0
+theme = ExtResource("1_hnnkf")
+text = "Pineapple"
+
+[node name="CheckButton12" type="CheckButton" parent="TabManager/TabContainer/Exclude/TabContainer/Fresh fruits"]
+layout_mode = 0
+offset_left = 314.0
+offset_top = 200.0
+offset_right = 667.0
+offset_bottom = 237.0
+theme = ExtResource("1_hnnkf")
+text = "Green grapes"
+
+[node name="CheckButton13" type="CheckButton" parent="TabManager/TabContainer/Exclude/TabContainer/Fresh fruits"]
+layout_mode = 0
+offset_left = 314.0
+offset_top = 248.0
+offset_right = 667.0
+offset_bottom = 285.0
+theme = ExtResource("1_hnnkf")
+text = "Red grapes"
+
+[node name="CheckButton14" type="CheckButton" parent="TabManager/TabContainer/Exclude/TabContainer/Fresh fruits"]
+layout_mode = 0
+offset_left = 314.0
+offset_top = 297.0
+offset_right = 667.0
+offset_bottom = 334.0
+theme = ExtResource("1_hnnkf")
+text = "Other"
+
+[node name="Sprite2D" type="Sprite2D" parent="TabManager/TabContainer/Exclude/TabContainer/Fresh fruits"]
+position = Vector2(859, 124.75)
+scale = Vector2(0.14275, 0.14275)
+texture = ExtResource("3_3roer")
+
+[node name="Sprite2D2" type="Sprite2D" parent="TabManager/TabContainer/Exclude/TabContainer/Fresh fruits"]
+position = Vector2(859, 331.75)
+scale = Vector2(0.14275, 0.14275)
+texture = ExtResource("4_h8uav")
+
+[node name="Dried fruits" type="ColorRect" parent="TabManager/TabContainer/Exclude/TabContainer"]
+visible = false
+layout_mode = 2
+color = Color(0.262745, 0.262745, 0.262745, 1)
+
+[node name="CheckButton" type="CheckButton" parent="TabManager/TabContainer/Exclude/TabContainer/Dried fruits"]
+layout_mode = 0
+offset_left = 19.0
+offset_top = 21.0
+offset_right = 183.0
+offset_bottom = 58.0
+theme = ExtResource("1_hnnkf")
+text = "Raisins"
+
+[node name="CheckButton2" type="CheckButton" parent="TabManager/TabContainer/Exclude/TabContainer/Dried fruits"]
+layout_mode = 0
+offset_left = 19.0
+offset_top = 63.0
+offset_right = 238.0
+offset_bottom = 100.0
+theme = ExtResource("1_hnnkf")
+text = "Dates "
+
+[node name="CheckButton3" type="CheckButton" parent="TabManager/TabContainer/Exclude/TabContainer/Dried fruits"]
+layout_mode = 0
+offset_left = 19.0
+offset_top = 112.0
+offset_right = 215.0
+offset_bottom = 149.0
+theme = ExtResource("1_hnnkf")
+text = "Cranberry "
+
+[node name="CheckButton4" type="CheckButton" parent="TabManager/TabContainer/Exclude/TabContainer/Dried fruits"]
+layout_mode = 0
+offset_left = 19.0
+offset_top = 162.0
+offset_right = 216.0
+offset_bottom = 199.0
+theme = ExtResource("1_hnnkf")
+text = "Goji berry "
+
+[node name="CheckButton5" type="CheckButton" parent="TabManager/TabContainer/Exclude/TabContainer/Dried fruits"]
+layout_mode = 0
+offset_left = 19.0
+offset_top = 210.0
+offset_right = 235.0
+offset_bottom = 247.0
+theme = ExtResource("1_hnnkf")
+text = "Other "
+
+[node name="Sprite2D" type="Sprite2D" parent="TabManager/TabContainer/Exclude/TabContainer/Dried fruits"]
+position = Vector2(887, 215.625)
+scale = Vector2(0.212625, 0.212625)
+texture = ExtResource("5_41tdw")
+
+[node name="Sprite2D2" type="Sprite2D" parent="TabManager/TabContainer/Exclude/TabContainer/Dried fruits"]
+position = Vector2(778, 397.625)
+scale = Vector2(0.0795, 0.0795)
+texture = ExtResource("6_l0tek")
+
+[node name="Sprite2D3" type="Sprite2D" parent="TabManager/TabContainer/Exclude/TabContainer/Dried fruits"]
+position = Vector2(889, 420.625)
+scale = Vector2(0.0753125, 0.0753125)
+texture = ExtResource("6_l0tek")
+
+[node name="Nuts" type="ColorRect" parent="TabManager/TabContainer/Exclude/TabContainer"]
+visible = false
+layout_mode = 2
+color = Color(0.262745, 0.262745, 0.262745, 1)
+
+[node name="CheckButton" type="CheckButton" parent="TabManager/TabContainer/Exclude/TabContainer/Nuts"]
+layout_mode = 0
+offset_left = 19.0
+offset_top = 21.0
+offset_right = 183.0
+offset_bottom = 58.0
+theme = ExtResource("1_hnnkf")
+text = "Almonds "
+
+[node name="CheckButton2" type="CheckButton" parent="TabManager/TabContainer/Exclude/TabContainer/Nuts"]
+layout_mode = 0
+offset_left = 19.0
+offset_top = 63.0
+offset_right = 238.0
+offset_bottom = 100.0
+theme = ExtResource("1_hnnkf")
+text = "Walnuts "
+
+[node name="CheckButton3" type="CheckButton" parent="TabManager/TabContainer/Exclude/TabContainer/Nuts"]
+layout_mode = 0
+offset_left = 19.0
+offset_top = 112.0
+offset_right = 215.0
+offset_bottom = 149.0
+theme = ExtResource("1_hnnkf")
+text = "Pecans "
+
+[node name="CheckButton4" type="CheckButton" parent="TabManager/TabContainer/Exclude/TabContainer/Nuts"]
+layout_mode = 0
+offset_left = 19.0
+offset_top = 162.0
+offset_right = 216.0
+offset_bottom = 199.0
+theme = ExtResource("1_hnnkf")
+text = "Hazelnuts "
+
+[node name="CheckButton5" type="CheckButton" parent="TabManager/TabContainer/Exclude/TabContainer/Nuts"]
+layout_mode = 0
+offset_left = 19.0
+offset_top = 210.0
+offset_right = 235.0
+offset_bottom = 247.0
+theme = ExtResource("1_hnnkf")
+text = "Cashews "
+
+[node name="CheckButton6" type="CheckButton" parent="TabManager/TabContainer/Exclude/TabContainer/Nuts"]
+layout_mode = 0
+offset_left = 19.0
+offset_top = 256.0
+offset_right = 216.0
+offset_bottom = 293.0
+theme = ExtResource("1_hnnkf")
+text = "Pistachios"
+
+[node name="CheckButton7" type="CheckButton" parent="TabManager/TabContainer/Exclude/TabContainer/Nuts"]
+layout_mode = 0
+offset_left = 19.0
+offset_top = 302.0
+offset_right = 216.0
+offset_bottom = 339.0
+theme = ExtResource("1_hnnkf")
+text = "Macadamia nuts"
+
+[node name="CheckButton8" type="CheckButton" parent="TabManager/TabContainer/Exclude/TabContainer/Nuts"]
+layout_mode = 0
+offset_left = 24.0
+offset_top = 346.0
+offset_right = 221.0
+offset_bottom = 383.0
+theme = ExtResource("1_hnnkf")
+text = "Other "
+
+[node name="Toppings" type="ColorRect" parent="TabManager/TabContainer/Exclude/TabContainer"]
+visible = false
+layout_mode = 2
+color = Color(0.262745, 0.262745, 0.262745, 1)
+
+[node name="CheckButton" type="CheckButton" parent="TabManager/TabContainer/Exclude/TabContainer/Toppings"]
+layout_mode = 0
+offset_left = 19.0
+offset_top = 21.0
+offset_right = 183.0
+offset_bottom = 58.0
+theme = ExtResource("1_hnnkf")
+text = "Granola "
+
+[node name="CheckButton2" type="CheckButton" parent="TabManager/TabContainer/Exclude/TabContainer/Toppings"]
+layout_mode = 0
+offset_left = 19.0
+offset_top = 63.0
+offset_right = 238.0
+offset_bottom = 100.0
+theme = ExtResource("1_hnnkf")
+text = "Coconut flakes "
+
+[node name="CheckButton3" type="CheckButton" parent="TabManager/TabContainer/Exclude/TabContainer/Toppings"]
+layout_mode = 0
+offset_left = 19.0
+offset_top = 112.0
+offset_right = 215.0
+offset_bottom = 149.0
+theme = ExtResource("1_hnnkf")
+text = "Cacao nibs "
+
+[node name="CheckButton4" type="CheckButton" parent="TabManager/TabContainer/Exclude/TabContainer/Toppings"]
+layout_mode = 0
+offset_left = 19.0
+offset_top = 162.0
+offset_right = 216.0
+offset_bottom = 199.0
+theme = ExtResource("1_hnnkf")
+text = "Crushed biscuits / cookies "
+
+[node name="CheckButton5" type="CheckButton" parent="TabManager/TabContainer/Exclude/TabContainer/Toppings"]
+layout_mode = 0
+offset_left = 19.0
+offset_top = 210.0
+offset_right = 235.0
+offset_bottom = 247.0
+theme = ExtResource("1_hnnkf")
+text = "Puffed rice "
+
+[node name="CheckButton6" type="CheckButton" parent="TabManager/TabContainer/Exclude/TabContainer/Toppings"]
+layout_mode = 0
+offset_left = 19.0
+offset_top = 256.0
+offset_right = 216.0
+offset_bottom = 293.0
+theme = ExtResource("1_hnnkf")
+text = "Puffed quinoa"
+
+[node name="CheckButton7" type="CheckButton" parent="TabManager/TabContainer/Exclude/TabContainer/Toppings"]
+layout_mode = 0
+offset_left = 19.0
+offset_top = 302.0
+offset_right = 216.0
+offset_bottom = 339.0
+theme = ExtResource("1_hnnkf")
+text = "Cinnamon powder"
+
+[node name="CheckButton8" type="CheckButton" parent="TabManager/TabContainer/Exclude/TabContainer/Toppings"]
+layout_mode = 0
+offset_left = 24.0
+offset_top = 346.0
+offset_right = 221.0
+offset_bottom = 383.0
+theme = ExtResource("1_hnnkf")
+text = "Cacao powder "
+
+[node name="CheckButton9" type="CheckButton" parent="TabManager/TabContainer/Exclude/TabContainer/Toppings"]
+layout_mode = 0
+offset_left = 466.0
+offset_top = 21.0
+offset_right = 639.0
+offset_bottom = 58.0
+theme = ExtResource("1_hnnkf")
+text = "Jam / jelly "
+
+[node name="CheckButton10" type="CheckButton" parent="TabManager/TabContainer/Exclude/TabContainer/Toppings"]
+layout_mode = 0
+offset_left = 466.0
+offset_top = 63.0
+offset_right = 745.0
+offset_bottom = 100.0
+theme = ExtResource("1_hnnkf")
+text = "Honey"
+
+[node name="CheckButton11" type="CheckButton" parent="TabManager/TabContainer/Exclude/TabContainer/Toppings"]
+layout_mode = 0
+offset_left = 466.0
+offset_top = 112.0
+offset_right = 676.0
+offset_bottom = 149.0
+theme = ExtResource("1_hnnkf")
+text = "Nut butters "
+
+[node name="CheckButton12" type="CheckButton" parent="TabManager/TabContainer/Exclude/TabContainer/Toppings"]
+layout_mode = 0
+offset_left = 466.0
+offset_top = 162.0
+offset_right = 747.0
+offset_bottom = 199.0
+theme = ExtResource("1_hnnkf")
+text = "Chocolate chips"
+
+[node name="CheckButton13" type="CheckButton" parent="TabManager/TabContainer/Exclude/TabContainer/Toppings"]
+layout_mode = 0
+offset_left = 466.0
+offset_top = 210.0
+offset_right = 682.0
+offset_bottom = 247.0
+theme = ExtResource("1_hnnkf")
+text = "maple syrup"
+
+[node name="CheckButton14" type="CheckButton" parent="TabManager/TabContainer/Exclude/TabContainer/Toppings"]
+layout_mode = 0
+offset_left = 466.0
+offset_top = 256.0
+offset_right = 713.0
+offset_bottom = 293.0
+theme = ExtResource("1_hnnkf")
+text = "Sprinkles"
+
+[node name="CheckButton15" type="CheckButton" parent="TabManager/TabContainer/Exclude/TabContainer/Toppings"]
+layout_mode = 0
+offset_left = 466.0
+offset_top = 302.0
+offset_right = 767.0
+offset_bottom = 339.0
+theme = ExtResource("1_hnnkf")
+text = "Brown sugar"
+
+[node name="CheckButton16" type="CheckButton" parent="TabManager/TabContainer/Exclude/TabContainer/Toppings"]
+layout_mode = 0
+offset_left = 471.0
+offset_top = 346.0
+offset_right = 726.0
+offset_bottom = 383.0
+theme = ExtResource("1_hnnkf")
+text = "Other"
 
 [connection signal="focus_exited" from="TabManager/TabContainer/Diet preferences/VegetarianButton" to="TabManager/TabContainer/Diet preferences/VegetarianButton" method="_on_focus_exited"]
 [connection signal="mouse_entered" from="TabManager/TabContainer/Diet preferences/VegetarianButton" to="TabManager/TabContainer/Diet preferences/VegetarianButton" method="_on_mouse_entered"]
