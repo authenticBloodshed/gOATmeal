@@ -1,0 +1,6 @@
+[gd_resource type="Theme" load_steps=2 format=3 uid="uid://clwhtuf0rdqj3"]
+
+[ext_resource type="FontFile" uid="uid://dxi8dt74itawk" path="res://Mabook.otf" id="1_ripsu"]
+
+[resource]
+default_font = ExtResource("1_ripsu")

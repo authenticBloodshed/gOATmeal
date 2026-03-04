@@ -1,12 +1,21 @@
-[gd_scene load_steps=8 format=3 uid="uid://djjq0sbowi0kv"]
+[gd_scene load_steps=16 format=3 uid="uid://djjq0sbowi0kv"]
 
 [ext_resource type="Texture2D" uid="uid://beexh3ycvj1rl" path="res://wall.png" id="1_86tue"]
 [ext_resource type="Theme" uid="uid://b36dpqnwwq2dk" path="res://toggles.tres" id="1_hnnkf"]
+[ext_resource type="Texture2D" uid="uid://bt6a8qpyddt3x" path="res://bettersquare.png" id="2_6j000"]
+[ext_resource type="Theme" uid="uid://clwhtuf0rdqj3" path="res://TabTheme.tres" id="2_be7ga"]
 [ext_resource type="Script" path="res://DietToggles.gd" id="2_t4aci"]
 [ext_resource type="Texture2D" uid="uid://l3xnpqncukxc" path="res://blueberrybowl.png" id="3_3roer"]
+[ext_resource type="FontFile" uid="uid://dxi8dt74itawk" path="res://Mabook.otf" id="3_bblm0"]
 [ext_resource type="Texture2D" uid="uid://b0ix82ecaanru" path="res://bananainbowl.png" id="4_h8uav"]
+[ext_resource type="StyleBox" uid="uid://b60ce0wlbf15n" path="res://pressed.tres" id="4_lbvj6"]
 [ext_resource type="Texture2D" uid="uid://ufa7bshh1xwv" path="res://gojiberriesjar.png" id="5_41tdw"]
+[ext_resource type="StyleBox" uid="uid://bsu75uac0drfx" path="res://hover.tres" id="5_qioc1"]
+[ext_resource type="StyleBox" uid="uid://jw0gfxu6rigt" path="res://unpressed.tres" id="6_e7n2h"]
 [ext_resource type="Texture2D" uid="uid://cw21qy6egq6uw" path="res://gojichunks.png" id="6_l0tek"]
+[ext_resource type="Texture2D" uid="uid://bboshfcy0viwc" path="res://NotebookLined.png" id="9_18mv1"]
+
+[sub_resource type="Theme" id="Theme_5kuj5"]
 
 [node name="FiltersManager" type="Node2D"]
 
@@ -21,65 +30,88 @@ texture = ExtResource("1_86tue")
 
 [node name="TabManager" type="Node2D" parent="."]
 
+[node name="Bettersquare" type="Sprite2D" parent="TabManager"]
+position = Vector2(573, 340.5)
+scale = Vector2(0.564, 0.2845)
+texture = ExtResource("2_6j000")
+
 [node name="TabContainer" type="TabContainer" parent="TabManager"]
+self_modulate = Color(0.180392, 0.0431373, 0.447059, 0)
 offset_left = 30.0
 offset_top = 42.0
 offset_right = 1135.0
 offset_bottom = 627.0
+theme = ExtResource("2_be7ga")
+theme_override_colors/font_selected_color = Color(0.32549, 0.0745098, 0.439216, 1)
+theme_override_colors/font_hovered_color = Color(0.666667, 0.407843, 0.694118, 1)
+theme_override_colors/font_unselected_color = Color(0.494118, 0.270588, 0.517647, 1)
+theme_override_fonts/font = ExtResource("3_bblm0")
+theme_override_styles/tab_selected = ExtResource("4_lbvj6")
+theme_override_styles/tab_hovered = ExtResource("5_qioc1")
+theme_override_styles/tab_unselected = ExtResource("6_e7n2h")
 
 [node name="Type" type="ColorRect" parent="TabManager/TabContainer"]
 layout_mode = 2
-color = Color(0.666667, 0.666667, 0.666667, 1)
+theme = SubResource("Theme_5kuj5")
+color = Color(1, 1, 1, 0)
 
 [node name="AllButton" type="CheckButton" parent="TabManager/TabContainer/Type"]
 layout_mode = 0
-offset_right = 44.0
-offset_bottom = 24.0
+offset_left = 11.0
+offset_top = 28.0
+offset_right = 100.0
+offset_bottom = 65.0
 theme = ExtResource("1_hnnkf")
 button_pressed = true
 text = "All"
 
 [node name="YogurtButton" type="CheckButton" parent="TabManager/TabContainer/Type"]
 layout_mode = 0
-offset_left = 1.0
-offset_top = 42.0
-offset_right = 148.0
-offset_bottom = 79.0
+offset_left = 12.0
+offset_top = 70.0
+offset_right = 159.0
+offset_bottom = 107.0
 theme = ExtResource("1_hnnkf")
 text = "Yogurt"
 
 [node name="OatmealButton" type="CheckButton" parent="TabManager/TabContainer/Type"]
 layout_mode = 0
-offset_left = 1.0
-offset_top = 84.0
-offset_right = 164.0
-offset_bottom = 121.0
+offset_left = 12.0
+offset_top = 112.0
+offset_right = 175.0
+offset_bottom = 149.0
 theme = ExtResource("1_hnnkf")
 text = "Oatmeal"
 
 [node name="OtherButton" type="CheckButton" parent="TabManager/TabContainer/Type"]
 layout_mode = 0
-offset_left = 1.0
-offset_top = 128.0
-offset_right = 164.0
-offset_bottom = 165.0
+offset_left = 12.0
+offset_top = 156.0
+offset_right = 175.0
+offset_bottom = 193.0
 theme = ExtResource("1_hnnkf")
 text = "*Other"
 
 [node name="RichTextLabel" type="RichTextLabel" parent="TabManager/TabContainer/Type"]
 layout_mode = 0
-offset_left = 10.0
-offset_top = 169.0
-offset_right = 527.0
-offset_bottom = 233.0
+offset_left = 21.0
+offset_top = 197.0
+offset_right = 538.0
+offset_bottom = 261.0
 theme = ExtResource("1_hnnkf")
 theme_override_font_sizes/normal_font_size = 19
 text = "* Other types of dishes that can't be classified as yogurt or oatmeal based meals. (Example: cream of rice, chia seed pudding, smoothiebowls, etc.)"
 
 [node name="Diet preferences" type="ColorRect" parent="TabManager/TabContainer"]
 visible = false
+self_modulate = Color(1, 1, 1, 0)
 layout_mode = 2
 color = Color(0.666667, 0.666667, 0.666667, 1)
+
+[node name="NotebookLined" type="Sprite2D" parent="TabManager/TabContainer/Diet preferences"]
+position = Vector2(509.5, 1283.25)
+scale = Vector2(0.3445, 0.3445)
+texture = ExtResource("9_18mv1")
 
 [node name="NoneButton" type="CheckButton" parent="TabManager/TabContainer/Diet preferences"]
 layout_mode = 0
@@ -348,6 +380,7 @@ text = "Selecting this ensures you see dishes that use seasonal ingredients that
 
 [node name="Include" type="ColorRect" parent="TabManager/TabContainer"]
 visible = false
+self_modulate = Color(1, 1, 1, 0)
 layout_mode = 2
 color = Color(0.666667, 0.666667, 0.666667, 1)
 
@@ -791,10 +824,12 @@ text = "Other"
 
 [node name="Exclude" type="ColorRect" parent="TabManager/TabContainer"]
 visible = false
+self_modulate = Color(1, 1, 1, 0)
 layout_mode = 2
 color = Color(0.666667, 0.666667, 0.666667, 1)
 
 [node name="TabContainer" type="TabContainer" parent="TabManager/TabContainer/Exclude"]
+layout_mode = 0
 offset_left = 19.0
 offset_top = 51.0
 offset_right = 1087.0
