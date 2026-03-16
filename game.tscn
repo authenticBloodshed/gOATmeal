@@ -1,4 +1,4 @@
-[gd_scene load_steps=30 format=3 uid="uid://0n75d8utmol6"]
+[gd_scene load_steps=32 format=3 uid="uid://0n75d8utmol6"]
 
 [ext_resource type="Script" path="res://game.gd" id="1_ottce"]
 [ext_resource type="PackedScene" uid="uid://10ngpxurb116" path="res://transitions.tscn" id="2_rxlpj"]
@@ -18,6 +18,8 @@
 [ext_resource type="StyleBox" uid="uid://bsu75uac0drfx" path="res://hover.tres" id="12_cxap2"]
 [ext_resource type="Texture2D" uid="uid://dm0hg58nfilmo" path="res://peanutbutter.png" id="13_d1r40"]
 [ext_resource type="StyleBox" uid="uid://b60ce0wlbf15n" path="res://pressed.tres" id="13_xjd8a"]
+[ext_resource type="Texture2D" uid="uid://0xy8l78ajnm4" path="res://sunflowerseeds.png" id="13_ycef8"]
+[ext_resource type="Texture2D" uid="uid://d2r0jsdfmyu7y" path="res://flaxseeds.png" id="14_jdsdh"]
 [ext_resource type="Texture2D" uid="uid://df0inkjjrxjno" path="res://chocolatesauce.png" id="14_lhb1w"]
 [ext_resource type="Texture2D" uid="uid://d3tm05tra0x64" path="res://caramelsauce.png" id="15_yl3aa"]
 [ext_resource type="Texture2D" uid="uid://cl4ane2t12qu2" path="res://Granola.png" id="16_mqdtn"]
@@ -61,6 +63,7 @@ scale = Vector2(0.379, 0.379)
 texture = ExtResource("18_ys6ic")
 
 [node name="Sauces" type="Node2D" parent="KitchenStuff"]
+position = Vector2(-9, 0)
 
 [node name="Strawberrysauce" type="Sprite2D" parent="KitchenStuff/Sauces"]
 position = Vector2(69, 186)
@@ -81,6 +84,42 @@ texture = ExtResource("14_lhb1w")
 position = Vector2(249, 186)
 scale = Vector2(0.06, 0.06)
 texture = ExtResource("15_yl3aa")
+
+[node name="Chiaseeds" parent="KitchenStuff" instance=ExtResource("28_aug4q")]
+position = Vector2(371, 288)
+itemId = "chia"
+
+[node name="Sprite2D" parent="KitchenStuff/Chiaseeds" index="0"]
+position = Vector2(321, -93)
+scale = Vector2(0.053, 0.053)
+texture = ExtResource("29_2tvmw")
+
+[node name="CollisionShape2D" parent="KitchenStuff/Chiaseeds" index="1"]
+position = Vector2(319, -92)
+
+[node name="SunflowerSeeds" parent="KitchenStuff" instance=ExtResource("28_aug4q")]
+position = Vector2(796, 244)
+itemId = "sunflower"
+
+[node name="Sprite2D" parent="KitchenStuff/SunflowerSeeds" index="0"]
+position = Vector2(106.5, -29.5)
+scale = Vector2(0.0345, 0.0345)
+texture = ExtResource("13_ycef8")
+
+[node name="CollisionShape2D" parent="KitchenStuff/SunflowerSeeds" index="1"]
+position = Vector2(105.5, -32.5)
+
+[node name="FlaxSeeds" parent="KitchenStuff" instance=ExtResource("28_aug4q")]
+position = Vector2(431, 231)
+itemId = "flax"
+
+[node name="Sprite2D" parent="KitchenStuff/FlaxSeeds" index="0"]
+position = Vector2(316.25, -32.75)
+scale = Vector2(0.04825, 0.04825)
+texture = ExtResource("14_jdsdh")
+
+[node name="CollisionShape2D" parent="KitchenStuff/FlaxSeeds" index="1"]
+position = Vector2(315.25, -35.75)
 
 [node name="Breakfast" type="ColorRect" parent="."]
 visible = false
@@ -190,18 +229,6 @@ visible = false
 stream = ExtResource("27_4g87n")
 autoplay = true
 
-[node name="Chiaseeds" parent="." instance=ExtResource("28_aug4q")]
-position = Vector2(380, 288)
-itemId = "chia"
-
-[node name="Sprite2D" parent="Chiaseeds" index="0"]
-position = Vector2(316, -95)
-scale = Vector2(0.053, 0.053)
-texture = ExtResource("29_2tvmw")
-
-[node name="CollisionShape2D" parent="Chiaseeds" index="1"]
-position = Vector2(314, -94)
-
 [connection signal="pressed" from="CloseButton" to="." method="_on_close_button_pressed"]
 [connection signal="pressed" from="CloseButton" to="Breakfast" method="_on_close_button_pressed"]
 [connection signal="pressed" from="CloseButton" to="CloseButton" method="_on_pressed"]
@@ -210,4 +237,6 @@ position = Vector2(314, -94)
 [connection signal="pressed" from="KitchenButton" to="." method="_on_kitchen_button_pressed"]
 [connection signal="pressed" from="PantryButton" to="." method="_on_pantry_button_pressed"]
 
-[editable path="Chiaseeds"]
+[editable path="KitchenStuff/Chiaseeds"]
+[editable path="KitchenStuff/SunflowerSeeds"]
+[editable path="KitchenStuff/FlaxSeeds"]
