@@ -3,7 +3,7 @@
 [ext_resource type="Script" path="res://pickupItem.gd" id="1_c08x5"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_cvpfk"]
-size = Vector2(52.5, 90)
+size = Vector2(55.875, 90)
 
 [node name="Area2D" type="Area2D"]
 script = ExtResource("1_c08x5")

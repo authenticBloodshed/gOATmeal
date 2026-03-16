@@ -1,11 +1,10 @@
-[gd_scene load_steps=21 format=3 uid="uid://dvueuso1kqybe"]
+[gd_scene load_steps=20 format=3 uid="uid://dvueuso1kqybe"]
 
 [ext_resource type="Script" path="res://Fridge.gd" id="1_12d5g"]
 [ext_resource type="Texture2D" uid="uid://cijb85w87ixut" path="res://Fridge.jpg" id="3_xff3q"]
 [ext_resource type="Texture2D" uid="uid://se5iwcbu15ia" path="res://fridgebackground.png" id="4_8lh3a"]
 [ext_resource type="AudioStream" uid="uid://de83sj2no0dya" path="res://562294-colorscrimsontears-click_mRrswwXk.wav" id="4_8qtko"]
 [ext_resource type="Texture2D" uid="uid://cjlrn0fjo46fk" path="res://fridgerack.png" id="5_byo5v"]
-[ext_resource type="Texture2D" uid="uid://cnoa6ywxd7302" path="res://pear.png" id="6_f03ql"]
 [ext_resource type="Texture2D" uid="uid://ckm8in6xo576k" path="res://Fridge2.png" id="6_tojyv"]
 [ext_resource type="Texture2D" uid="uid://cgrhvjker1j68" path="res://fridgerack2.png" id="6_x4hux"]
 [ext_resource type="Texture2D" uid="uid://bsxu8axr5pyq8" path="res://laatjes.png" id="7_tx2rw"]
@@ -27,6 +26,7 @@ script = ExtResource("1_12d5g")
 [node name="TextEdit" type="TextEdit" parent="."]
 offset_right = 1156.0
 offset_bottom = 652.0
+mouse_filter = 2
 text = "Fridge Placeholder"
 editable = false
 
@@ -79,214 +79,140 @@ volume_db = 10.0
 
 [node name="Items" type="Node2D" parent="."]
 
-[node name="Strawberries" parent="Items" instance=ExtResource("9_mqeoq")]
+[node name="Strawberries" parent="." instance=ExtResource("9_mqeoq")]
 position = Vector2(-370, 405)
 itemId = "strawberry"
 
-[node name="Sprite2D" parent="Items/Strawberries" index="0"]
+[node name="Sprite2D" parent="Strawberries" index="0"]
 position = Vector2(458.5, -6.49992)
 scale = Vector2(0.0835, 0.0835)
 texture = ExtResource("10_kfu12")
 
-[node name="CollisionShape2D" parent="Items/Strawberries" index="1"]
+[node name="CollisionShape2D" parent="Strawberries" index="1"]
 position = Vector2(453.5, -4.49994)
 
-[node name="Blueberries" parent="Items" instance=ExtResource("9_mqeoq")]
+[node name="Blueberries" parent="." instance=ExtResource("9_mqeoq")]
 position = Vector2(-370, 405)
 itemId = "blueberry"
 
-[node name="Sprite2D" parent="Items/Blueberries" index="0"]
+[node name="Sprite2D" parent="Blueberries" index="0"]
 position = Vector2(890.5, -155.5)
 scale = Vector2(0.0545, 0.0545)
 texture = ExtResource("11_nxl8v")
 
-[node name="CollisionShape2D" parent="Items/Blueberries" index="1"]
+[node name="CollisionShape2D" parent="Blueberries" index="1"]
 position = Vector2(888, -154)
 
-[node name="Raspberries" parent="Items" instance=ExtResource("9_mqeoq")]
+[node name="Raspberries" parent="." instance=ExtResource("9_mqeoq")]
 position = Vector2(-717, 578)
 itemId = "raspberry"
 
-[node name="Sprite2D" parent="Items/Raspberries" index="0"]
+[node name="Sprite2D" parent="Raspberries" index="0"]
 position = Vector2(897, -162)
 scale = Vector2(0.061, 0.061)
 texture = ExtResource("12_dm2xr")
 
-[node name="CollisionShape2D" parent="Items/Raspberries" index="1"]
+[node name="CollisionShape2D" parent="Raspberries" index="1"]
 position = Vector2(893.5, -163.5)
 
-[node name="Blackberries" parent="Items" instance=ExtResource("9_mqeoq")]
+[node name="Blackberries" parent="." instance=ExtResource("9_mqeoq")]
 position = Vector2(-717, 578)
 itemId = "blackberry"
 
-[node name="Sprite2D" parent="Items/Blackberries" index="0"]
+[node name="Sprite2D" parent="Blackberries" index="0"]
 position = Vector2(1125, -344)
 scale = Vector2(0.061, 0.061)
 texture = ExtResource("13_ak7mk")
 flip_h = true
 
-[node name="CollisionShape2D" parent="Items/Blackberries" index="1"]
+[node name="CollisionShape2D" parent="Blackberries" index="1"]
 position = Vector2(1126, -345)
 
-[node name="Greenkiwi" parent="Items" instance=ExtResource("9_mqeoq")]
+[node name="Greenkiwi" parent="." instance=ExtResource("9_mqeoq")]
 position = Vector2(-787, 614)
 itemId = "greenkiwi"
 
-[node name="Sprite2D" parent="Items/Greenkiwi" index="0"]
+[node name="Sprite2D" parent="Greenkiwi" index="0"]
 position = Vector2(1127, -348)
 scale = Vector2(0.039, 0.039)
 texture = ExtResource("14_bl64l")
 flip_h = true
 
-[node name="CollisionShape2D" parent="Items/Greenkiwi" index="1"]
+[node name="CollisionShape2D" parent="Greenkiwi" index="1"]
 position = Vector2(1126, -345)
 
-[node name="Goldenkiwi" parent="Items" instance=ExtResource("9_mqeoq")]
+[node name="Goldenkiwi" parent="." instance=ExtResource("9_mqeoq")]
 position = Vector2(-669, 610)
 itemId = "goldenkiwi"
 
-[node name="Sprite2D" parent="Items/Goldenkiwi" index="0"]
+[node name="Sprite2D" parent="Goldenkiwi" index="0"]
 position = Vector2(1127, -344)
 scale = Vector2(0.029, 0.029)
 texture = ExtResource("15_rrvai")
 flip_h = true
 
-[node name="CollisionShape2D" parent="Items/Goldenkiwi" index="1"]
+[node name="CollisionShape2D" parent="Goldenkiwi" index="1"]
 position = Vector2(1126, -345)
 
-[node name="Peach" parent="Items" instance=ExtResource("9_mqeoq")]
+[node name="Peach" parent="." instance=ExtResource("9_mqeoq")]
 position = Vector2(-579, 415)
 itemId = "peach"
 
-[node name="Sprite2D" parent="Items/Peach" index="0"]
+[node name="Sprite2D" parent="Peach" index="0"]
 position = Vector2(1127, -344)
 scale = Vector2(0.029, 0.029)
 texture = ExtResource("16_xnjvc")
 flip_h = true
 
-[node name="CollisionShape2D" parent="Items/Peach" index="1"]
+[node name="CollisionShape2D" parent="Peach" index="1"]
 position = Vector2(1126, -345)
 
-[node name="GreenGrapes" parent="Items" instance=ExtResource("9_mqeoq")]
+[node name="GreenGrapes" parent="." instance=ExtResource("9_mqeoq")]
 position = Vector2(-556, 767)
 itemId = "greengrapes"
 
-[node name="Sprite2D" parent="Items/GreenGrapes" index="0"]
+[node name="Sprite2D" parent="GreenGrapes" index="0"]
 position = Vector2(1094, -358)
 scale = Vector2(0.074, 0.074)
 texture = ExtResource("17_aum1d")
 flip_h = true
 
-[node name="CollisionShape2D" parent="Items/GreenGrapes" index="1"]
+[node name="CollisionShape2D" parent="GreenGrapes" index="1"]
 position = Vector2(1093, -361)
 
-[node name="RedGrapes" parent="Items" instance=ExtResource("9_mqeoq")]
+[node name="RedGrapes" parent="." instance=ExtResource("9_mqeoq")]
 position = Vector2(-556, 767)
 itemId = "redgrapes"
 
-[node name="Sprite2D" parent="Items/RedGrapes" index="0"]
+[node name="Sprite2D" parent="RedGrapes" index="0"]
 position = Vector2(703, -516)
 scale = Vector2(0.074, 0.074)
 texture = ExtResource("18_wmwsu")
 flip_h = true
 
-[node name="CollisionShape2D" parent="Items/RedGrapes" index="1"]
+[node name="CollisionShape2D" parent="RedGrapes" index="1"]
 position = Vector2(702, -519)
 
-[node name="Cherries" parent="Items" instance=ExtResource("9_mqeoq")]
+[node name="Cherries" parent="." instance=ExtResource("9_mqeoq")]
 position = Vector2(-499, 584)
 itemId = "cherry"
 
-[node name="Sprite2D" parent="Items/Cherries" index="0"]
+[node name="Sprite2D" parent="Cherries" index="0"]
 position = Vector2(703, -516)
 scale = Vector2(0.074, 0.074)
 texture = ExtResource("19_3mlff")
 flip_h = true
 
-[node name="CollisionShape2D" parent="Items/Cherries" index="1"]
+[node name="CollisionShape2D" parent="Cherries" index="1"]
 position = Vector2(702, -519)
 
-[node name="Item1" type="Button" parent="Items"]
-visible = false
-offset_left = 43.0
-offset_top = -19.0
-offset_right = 2091.0
-offset_bottom = 1989.0
-scale = Vector2(0.07, 0.07)
-icon = ExtResource("6_f03ql")
-
-[node name="Item2" type="Button" parent="Items"]
-visible = false
-offset_left = 228.0
-offset_top = 7.0
-offset_right = 392.0
-offset_bottom = 115.0
-text = "Item"
-
-[node name="Item3" type="Button" parent="Items"]
-visible = false
-offset_left = 420.0
-offset_top = 7.0
-offset_right = 584.0
-offset_bottom = 115.0
-text = "Item"
-
-[node name="Item4" type="Button" parent="Items"]
-visible = false
-offset_left = 418.0
-offset_top = 326.0
-offset_right = 582.0
-offset_bottom = 434.0
-text = "Item"
-
-[node name="Item5" type="Button" parent="Items"]
-visible = false
-offset_left = 306.0
-offset_top = 171.0
-offset_right = 470.0
-offset_bottom = 279.0
-text = "Item"
-
-[node name="Item6" type="Button" parent="Items"]
-visible = false
-offset_left = 89.0
-offset_top = 165.0
-offset_right = 253.0
-offset_bottom = 273.0
-text = "Item"
-
-[node name="Item7" type="Button" parent="Items"]
-visible = false
-offset_left = 56.0
-offset_top = 337.0
-offset_right = 220.0
-offset_bottom = 445.0
-text = "Item"
-
-[node name="Item8" type="Button" parent="Items"]
-visible = false
-offset_left = 242.0
-offset_top = 339.0
-offset_right = 406.0
-offset_bottom = 447.0
-text = "Item"
-
-[connection signal="pressed" from="Items/Item1" to="." method="_on_item_1_pressed"]
-[connection signal="pressed" from="Items/Item2" to="." method="_on_item_2_pressed"]
-[connection signal="pressed" from="Items/Item3" to="." method="_on_item_3_pressed"]
-[connection signal="pressed" from="Items/Item4" to="." method="_on_item_4_pressed"]
-[connection signal="pressed" from="Items/Item5" to="." method="_on_item_5_pressed"]
-[connection signal="pressed" from="Items/Item6" to="." method="_on_item_6_pressed"]
-[connection signal="pressed" from="Items/Item7" to="." method="_on_item_7_pressed"]
-[connection signal="pressed" from="Items/Item8" to="." method="_on_item_8_pressed"]
-
-[editable path="Items/Strawberries"]
-[editable path="Items/Blueberries"]
-[editable path="Items/Raspberries"]
-[editable path="Items/Blackberries"]
-[editable path="Items/Greenkiwi"]
-[editable path="Items/Goldenkiwi"]
-[editable path="Items/Peach"]
-[editable path="Items/GreenGrapes"]
-[editable path="Items/RedGrapes"]
-[editable path="Items/Cherries"]
+[editable path="Strawberries"]
+[editable path="Blueberries"]
+[editable path="Raspberries"]
+[editable path="Blackberries"]
+[editable path="Greenkiwi"]
+[editable path="Goldenkiwi"]
+[editable path="Peach"]
+[editable path="GreenGrapes"]
+[editable path="RedGrapes"]
+[editable path="Cherries"]
