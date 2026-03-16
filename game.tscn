@@ -1,4 +1,4 @@
-[gd_scene load_steps=28 format=3 uid="uid://0n75d8utmol6"]
+[gd_scene load_steps=30 format=3 uid="uid://0n75d8utmol6"]
 
 [ext_resource type="Script" path="res://game.gd" id="1_ottce"]
 [ext_resource type="PackedScene" uid="uid://10ngpxurb116" path="res://transitions.tscn" id="2_rxlpj"]
@@ -27,6 +27,8 @@
 [ext_resource type="Texture2D" uid="uid://bvjcl7bq1qeyo" path="res://finalbreakfast.png" id="24_edftf"]
 [ext_resource type="PackedScene" uid="uid://bn7l7abptit80" path="res://PrepStation.tscn" id="24_s7fva"]
 [ext_resource type="AudioStream" uid="uid://c77tvtsq62ofh" path="res://Upbeat Jazz Cooking by Infraction [No Copyright Music] _ Jazz Time - Infraction - No Copyright Music (youtube).mp3" id="27_4g87n"]
+[ext_resource type="PackedScene" uid="uid://ctts782sd43x0" path="res://PickupItem.tscn" id="28_aug4q"]
+[ext_resource type="Texture2D" uid="uid://b8y50ho1tt7v" path="res://chiaseeds.png" id="29_2tvmw"]
 
 [node name="Game" type="Node2D"]
 script = ExtResource("1_ottce")
@@ -188,6 +190,18 @@ visible = false
 stream = ExtResource("27_4g87n")
 autoplay = true
 
+[node name="Chiaseeds" parent="." instance=ExtResource("28_aug4q")]
+position = Vector2(380, 288)
+itemId = "chia"
+
+[node name="Sprite2D" parent="Chiaseeds" index="0"]
+position = Vector2(316, -95)
+scale = Vector2(0.053, 0.053)
+texture = ExtResource("29_2tvmw")
+
+[node name="CollisionShape2D" parent="Chiaseeds" index="1"]
+position = Vector2(314, -94)
+
 [connection signal="pressed" from="CloseButton" to="." method="_on_close_button_pressed"]
 [connection signal="pressed" from="CloseButton" to="Breakfast" method="_on_close_button_pressed"]
 [connection signal="pressed" from="CloseButton" to="CloseButton" method="_on_pressed"]
@@ -195,3 +209,5 @@ autoplay = true
 [connection signal="pressed" from="FridgeButton" to="." method="_on_fridge_button_pressed"]
 [connection signal="pressed" from="KitchenButton" to="." method="_on_kitchen_button_pressed"]
 [connection signal="pressed" from="PantryButton" to="." method="_on_pantry_button_pressed"]
+
+[editable path="Chiaseeds"]
