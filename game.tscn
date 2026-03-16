@@ -1,4 +1,4 @@
-[gd_scene load_steps=36 format=3 uid="uid://0n75d8utmol6"]
+[gd_scene load_steps=39 format=3 uid="uid://0n75d8utmol6"]
 
 [ext_resource type="Script" path="res://game.gd" id="1_ottce"]
 [ext_resource type="PackedScene" uid="uid://10ngpxurb116" path="res://transitions.tscn" id="2_rxlpj"]
@@ -27,8 +27,11 @@
 [ext_resource type="Texture2D" uid="uid://d3tm05tra0x64" path="res://caramelsauce.png" id="15_yl3aa"]
 [ext_resource type="Texture2D" uid="uid://cl4ane2t12qu2" path="res://Granola.png" id="16_mqdtn"]
 [ext_resource type="Texture2D" uid="uid://ba47p4y5pemp8" path="res://Oatmeal.png" id="17_1x84r"]
+[ext_resource type="Texture2D" uid="uid://cauckmkv6iib4" path="res://raisins.png" id="18_3bf56"]
 [ext_resource type="Texture2D" uid="uid://727evmauyd7r" path="res://pineapple.png" id="18_3oxwk"]
 [ext_resource type="Texture2D" uid="uid://bm4ma2yhmahx2" path="res://KitchenCounter.png" id="18_ys6ic"]
+[ext_resource type="Texture2D" uid="uid://ci7g57k4bb7xt" path="res://cranberries.png" id="19_0fk1j"]
+[ext_resource type="Texture2D" uid="uid://ufa7bshh1xwv" path="res://gojiberriesjar.png" id="20_8lpqa"]
 [ext_resource type="PackedScene" uid="uid://dvueuso1kqybe" path="res://Fridge.tscn" id="24_5s72y"]
 [ext_resource type="Texture2D" uid="uid://bvjcl7bq1qeyo" path="res://finalbreakfast.png" id="24_edftf"]
 [ext_resource type="PackedScene" uid="uid://bn7l7abptit80" path="res://PrepStation.tscn" id="24_s7fva"]
@@ -52,7 +55,7 @@ scale = Vector2(0.38275, 0.38275)
 texture = ExtResource("10_sldwx")
 
 [node name="Granola" type="Sprite2D" parent="KitchenStuff"]
-position = Vector2(628, 177)
+position = Vector2(620, 179)
 scale = Vector2(0.075, 0.075)
 texture = ExtResource("16_mqdtn")
 
@@ -152,7 +155,7 @@ texture = ExtResource("13_ycef8")
 position = Vector2(105.5, -32.5)
 
 [node name="FlaxSeeds" parent="KitchenStuff" instance=ExtResource("28_aug4q")]
-position = Vector2(431, 231)
+position = Vector2(436, 230)
 itemId = "flax"
 
 [node name="Sprite2D" parent="KitchenStuff/FlaxSeeds" index="0"]
@@ -162,6 +165,42 @@ texture = ExtResource("14_jdsdh")
 
 [node name="CollisionShape2D" parent="KitchenStuff/FlaxSeeds" index="1"]
 position = Vector2(317, -36)
+
+[node name="Raisins" parent="KitchenStuff" instance=ExtResource("28_aug4q")]
+position = Vector2(107, 150)
+itemId = "raisins"
+
+[node name="Sprite2D" parent="KitchenStuff/Raisins" index="0"]
+position = Vector2(316.25, -32.75)
+scale = Vector2(0.04825, 0.04825)
+texture = ExtResource("18_3bf56")
+
+[node name="CollisionShape2D" parent="KitchenStuff/Raisins" index="1"]
+position = Vector2(317, -36)
+
+[node name="CRanberries" parent="KitchenStuff" instance=ExtResource("28_aug4q")]
+position = Vector2(489, 232)
+itemId = "cranberry"
+
+[node name="Sprite2D" parent="KitchenStuff/CRanberries" index="0"]
+position = Vector2(316.25, -32.75)
+scale = Vector2(0.04825, 0.04825)
+texture = ExtResource("19_0fk1j")
+
+[node name="CollisionShape2D" parent="KitchenStuff/CRanberries" index="1"]
+position = Vector2(317, -36)
+
+[node name="Gojiberries" parent="KitchenStuff" instance=ExtResource("28_aug4q")]
+position = Vector2(208, 151)
+itemId = "goji"
+
+[node name="Sprite2D" parent="KitchenStuff/Gojiberries" index="0"]
+position = Vector2(319, -49)
+scale = Vector2(0.066, 0.066)
+texture = ExtResource("20_8lpqa")
+
+[node name="CollisionShape2D" parent="KitchenStuff/Gojiberries" index="1"]
+position = Vector2(320, -45)
 
 [node name="Pineapple" parent="KitchenStuff" instance=ExtResource("28_aug4q")]
 position = Vector2(489, 230)
@@ -297,4 +336,7 @@ autoplay = true
 [editable path="KitchenStuff/Chiaseeds"]
 [editable path="KitchenStuff/SunflowerSeeds"]
 [editable path="KitchenStuff/FlaxSeeds"]
+[editable path="KitchenStuff/Raisins"]
+[editable path="KitchenStuff/CRanberries"]
+[editable path="KitchenStuff/Gojiberries"]
 [editable path="KitchenStuff/Pineapple"]

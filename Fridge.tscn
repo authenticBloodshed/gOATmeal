@@ -1,4 +1,4 @@
-[gd_scene load_steps=20 format=3 uid="uid://dvueuso1kqybe"]
+[gd_scene load_steps=21 format=3 uid="uid://dvueuso1kqybe"]
 
 [ext_resource type="Script" path="res://Fridge.gd" id="1_12d5g"]
 [ext_resource type="Texture2D" uid="uid://cijb85w87ixut" path="res://Fridge.jpg" id="3_xff3q"]
@@ -13,6 +13,7 @@
 [ext_resource type="Texture2D" uid="uid://l3xnpqncukxc" path="res://blueberrybowl.png" id="11_nxl8v"]
 [ext_resource type="Texture2D" uid="uid://dtw7slxs30c4t" path="res://raspberries.png" id="12_dm2xr"]
 [ext_resource type="Texture2D" uid="uid://bhs0s85qej7co" path="res://blackberries.png" id="13_ak7mk"]
+[ext_resource type="Texture2D" uid="uid://ydd5ieg8td5r" path="res://dates.png" id="13_qff86"]
 [ext_resource type="Texture2D" uid="uid://cuol0pkfuktu2" path="res://greenkiwi.png" id="14_bl64l"]
 [ext_resource type="Texture2D" uid="uid://coaf1o7jwjff4" path="res://goldenkiwi.png" id="15_rrvai"]
 [ext_resource type="Texture2D" uid="uid://cwg6e2n2a0l44" path="res://peach.png" id="16_xnjvc"]
@@ -115,6 +116,18 @@ texture = ExtResource("12_dm2xr")
 [node name="CollisionShape2D" parent="Raspberries" index="1"]
 position = Vector2(893.5, -163.5)
 
+[node name="Dates" parent="." instance=ExtResource("9_mqeoq")]
+position = Vector2(-780, 211)
+itemId = "dates"
+
+[node name="Sprite2D" parent="Dates" index="0"]
+position = Vector2(897, -149)
+scale = Vector2(0.046, 0.046)
+texture = ExtResource("13_qff86")
+
+[node name="CollisionShape2D" parent="Dates" index="1"]
+position = Vector2(897, -153)
+
 [node name="Blackberries" parent="." instance=ExtResource("9_mqeoq")]
 position = Vector2(-717, 578)
 itemId = "blackberry"
@@ -209,6 +222,7 @@ position = Vector2(702, -519)
 [editable path="Strawberries"]
 [editable path="Blueberries"]
 [editable path="Raspberries"]
+[editable path="Dates"]
 [editable path="Blackberries"]
 [editable path="Greenkiwi"]
 [editable path="Goldenkiwi"]
