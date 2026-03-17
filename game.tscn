@@ -1,4 +1,4 @@
-[gd_scene load_steps=39 format=3 uid="uid://0n75d8utmol6"]
+[gd_scene load_steps=46 format=3 uid="uid://0n75d8utmol6"]
 
 [ext_resource type="Script" path="res://game.gd" id="1_ottce"]
 [ext_resource type="PackedScene" uid="uid://10ngpxurb116" path="res://transitions.tscn" id="2_rxlpj"]
@@ -32,11 +32,18 @@
 [ext_resource type="Texture2D" uid="uid://bm4ma2yhmahx2" path="res://KitchenCounter.png" id="18_ys6ic"]
 [ext_resource type="Texture2D" uid="uid://ci7g57k4bb7xt" path="res://cranberries.png" id="19_0fk1j"]
 [ext_resource type="Texture2D" uid="uid://ufa7bshh1xwv" path="res://gojiberriesjar.png" id="20_8lpqa"]
+[ext_resource type="Texture2D" uid="uid://ckxdb5drhdnf6" path="res://almonds.png" id="22_45j66"]
+[ext_resource type="Texture2D" uid="uid://dwg4bfw6u2u6g" path="res://walnuts.png" id="23_byiuf"]
 [ext_resource type="PackedScene" uid="uid://dvueuso1kqybe" path="res://Fridge.tscn" id="24_5s72y"]
+[ext_resource type="Texture2D" uid="uid://mst0m4bmq775" path="res://pecans.png" id="24_dnws1"]
 [ext_resource type="Texture2D" uid="uid://bvjcl7bq1qeyo" path="res://finalbreakfast.png" id="24_edftf"]
 [ext_resource type="PackedScene" uid="uid://bn7l7abptit80" path="res://PrepStation.tscn" id="24_s7fva"]
+[ext_resource type="Texture2D" uid="uid://dqo3bfrolfpie" path="res://hazelnuts.png" id="25_hrn4b"]
+[ext_resource type="Texture2D" uid="uid://cckcnxmj3drup" path="res://cashews.png" id="26_gkthc"]
+[ext_resource type="Texture2D" uid="uid://bqpwaboseunpj" path="res://pistachios.png" id="27_3gu88"]
 [ext_resource type="AudioStream" uid="uid://c77tvtsq62ofh" path="res://Upbeat Jazz Cooking by Infraction [No Copyright Music] _ Jazz Time - Infraction - No Copyright Music (youtube).mp3" id="27_4g87n"]
 [ext_resource type="PackedScene" uid="uid://ctts782sd43x0" path="res://PickupItem.tscn" id="28_aug4q"]
+[ext_resource type="Texture2D" uid="uid://draygqa4dcxj6" path="res://macadamianuts.png" id="28_bgiym"]
 [ext_resource type="Texture2D" uid="uid://b8y50ho1tt7v" path="res://chiaseeds.png" id="29_2tvmw"]
 
 [node name="Game" type="Node2D"]
@@ -214,6 +221,90 @@ texture = ExtResource("18_3oxwk")
 [node name="CollisionShape2D" parent="KitchenStuff/Pineapple" index="1"]
 position = Vector2(47, -19)
 
+[node name="Almonds" parent="KitchenStuff" instance=ExtResource("28_aug4q")]
+position = Vector2(16, 91)
+itemId = "almond"
+
+[node name="Sprite2D" parent="KitchenStuff/Almonds" index="0"]
+position = Vector2(47, -19)
+scale = Vector2(0.035, 0.035)
+texture = ExtResource("22_45j66")
+
+[node name="CollisionShape2D" parent="KitchenStuff/Almonds" index="1"]
+position = Vector2(47, -4.5)
+
+[node name="Walnuts" parent="KitchenStuff" instance=ExtResource("28_aug4q")]
+position = Vector2(15, 61)
+itemId = "walnut"
+
+[node name="Sprite2D" parent="KitchenStuff/Walnuts" index="0"]
+position = Vector2(47, -19)
+scale = Vector2(0.035, 0.035)
+texture = ExtResource("23_byiuf")
+
+[node name="CollisionShape2D" parent="KitchenStuff/Walnuts" index="1"]
+position = Vector2(48, -36)
+
+[node name="Pecans" parent="KitchenStuff" instance=ExtResource("28_aug4q")]
+position = Vector2(82, 91)
+itemId = "pecan"
+
+[node name="Sprite2D" parent="KitchenStuff/Pecans" index="0"]
+position = Vector2(47, -19)
+scale = Vector2(0.035, 0.035)
+texture = ExtResource("24_dnws1")
+
+[node name="CollisionShape2D" parent="KitchenStuff/Pecans" index="1"]
+position = Vector2(49, -3)
+
+[node name="Hazelnut" parent="KitchenStuff" instance=ExtResource("28_aug4q")]
+position = Vector2(1025, 151)
+itemId = "hazelnuts"
+
+[node name="Sprite2D" parent="KitchenStuff/Hazelnut" index="0"]
+position = Vector2(74, -32)
+scale = Vector2(0.0505, 0.0505)
+texture = ExtResource("25_hrn4b")
+
+[node name="CollisionShape2D" parent="KitchenStuff/Hazelnut" index="1"]
+position = Vector2(75, -29)
+
+[node name="Cashews" parent="KitchenStuff" instance=ExtResource("28_aug4q")]
+position = Vector2(407, 230)
+itemId = "cashews"
+
+[node name="Sprite2D" parent="KitchenStuff/Cashews" index="0"]
+position = Vector2(74, -32)
+scale = Vector2(0.0505, 0.0505)
+texture = ExtResource("26_gkthc")
+
+[node name="CollisionShape2D" parent="KitchenStuff/Cashews" index="1"]
+position = Vector2(72, -16)
+
+[node name="Pistachios" parent="KitchenStuff" instance=ExtResource("28_aug4q")]
+position = Vector2(964, 149)
+itemId = "pistachio"
+
+[node name="Sprite2D" parent="KitchenStuff/Pistachios" index="0"]
+position = Vector2(74, -32)
+scale = Vector2(0.0505, 0.0505)
+texture = ExtResource("27_3gu88")
+
+[node name="CollisionShape2D" parent="KitchenStuff/Pistachios" index="1"]
+position = Vector2(72, -24)
+
+[node name="Macadamia" parent="KitchenStuff" instance=ExtResource("28_aug4q")]
+position = Vector2(407, 149)
+itemId = "macadamia"
+
+[node name="Sprite2D" parent="KitchenStuff/Macadamia" index="0"]
+position = Vector2(74, -32)
+scale = Vector2(0.0505, 0.0505)
+texture = ExtResource("28_bgiym")
+
+[node name="CollisionShape2D" parent="KitchenStuff/Macadamia" index="1"]
+position = Vector2(72, -24)
+
 [node name="Breakfast" type="ColorRect" parent="."]
 visible = false
 offset_left = 314.0
@@ -340,3 +431,10 @@ autoplay = true
 [editable path="KitchenStuff/CRanberries"]
 [editable path="KitchenStuff/Gojiberries"]
 [editable path="KitchenStuff/Pineapple"]
+[editable path="KitchenStuff/Almonds"]
+[editable path="KitchenStuff/Walnuts"]
+[editable path="KitchenStuff/Pecans"]
+[editable path="KitchenStuff/Hazelnut"]
+[editable path="KitchenStuff/Cashews"]
+[editable path="KitchenStuff/Pistachios"]
+[editable path="KitchenStuff/Macadamia"]
