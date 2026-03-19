@@ -84,6 +84,8 @@ volume_db = 10.0
 [node name="Strawberries" parent="." instance=ExtResource("9_mqeoq")]
 position = Vector2(-370, 405)
 itemId = "strawberry"
+itemName = "Strawberries"
+itemDescription = "The average strawberry has 200 seeds on the outside!"
 
 [node name="Sprite2D" parent="Strawberries" index="0"]
 position = Vector2(458.5, -6.49992)
@@ -96,6 +98,8 @@ position = Vector2(453.5, -4.49994)
 [node name="Yogurt" parent="." instance=ExtResource("9_mqeoq")]
 position = Vector2(7, 376)
 itemId = "yogurt"
+itemName = "Yogurt"
+itemDescription = "I eat this on a dairy basis!"
 
 [node name="Sprite2D" parent="Yogurt" index="0"]
 position = Vector2(438, 18)
@@ -108,6 +112,8 @@ position = Vector2(441, 18)
 [node name="Blueberries" parent="." instance=ExtResource("9_mqeoq")]
 position = Vector2(-370, 405)
 itemId = "blueberry"
+itemName = "Blueberries"
+itemDescription = "I'm blue dabadee dabadie"
 
 [node name="Sprite2D" parent="Blueberries" index="0"]
 position = Vector2(890.5, -155.5)
@@ -120,6 +126,8 @@ position = Vector2(888, -154)
 [node name="Raspberries" parent="." instance=ExtResource("9_mqeoq")]
 position = Vector2(-717, 578)
 itemId = "raspberry"
+itemName = "Raspberries"
+itemDescription = "What do you call a sad raspberry? A blueberry!"
 
 [node name="Sprite2D" parent="Raspberries" index="0"]
 position = Vector2(897, -162)
@@ -132,6 +140,8 @@ position = Vector2(893.5, -163.5)
 [node name="Dates" parent="." instance=ExtResource("9_mqeoq")]
 position = Vector2(-780, 211)
 itemId = "dates"
+itemName = "Dates"
+itemDescription = "I've eaten more of these than i've gone on these."
 
 [node name="Sprite2D" parent="Dates" index="0"]
 position = Vector2(897, -149)
@@ -144,6 +154,8 @@ position = Vector2(897, -153)
 [node name="Blackberries" parent="." instance=ExtResource("9_mqeoq")]
 position = Vector2(-717, 578)
 itemId = "blackberry"
+itemName = "Blackberries"
+itemDescription = "Grow on prickly bushes called brambles, which are part of the rose family."
 
 [node name="Sprite2D" parent="Blackberries" index="0"]
 position = Vector2(1125, -344)
@@ -157,6 +169,8 @@ position = Vector2(1126, -345)
 [node name="Greenkiwi" parent="." instance=ExtResource("9_mqeoq")]
 position = Vector2(-787, 614)
 itemId = "greenkiwi"
+itemName = "Green kiwi"
+itemDescription = "An a-peel-ing fruit."
 
 [node name="Sprite2D" parent="Greenkiwi" index="0"]
 position = Vector2(1127, -348)
@@ -170,6 +184,8 @@ position = Vector2(1126, -345)
 [node name="Goldenkiwi" parent="." instance=ExtResource("9_mqeoq")]
 position = Vector2(-669, 610)
 itemId = "goldenkiwi"
+itemName = "Golden kiwi"
+itemDescription = "Like a green kiwi... but gold."
 
 [node name="Sprite2D" parent="Goldenkiwi" index="0"]
 position = Vector2(1127, -344)
@@ -183,6 +199,8 @@ position = Vector2(1126, -345)
 [node name="Peach" parent="." instance=ExtResource("9_mqeoq")]
 position = Vector2(-579, 415)
 itemId = "peach"
+itemName = "Peach"
+itemDescription = "Peaches and apricots are only separated by one gene. "
 
 [node name="Sprite2D" parent="Peach" index="0"]
 position = Vector2(1127, -344)
@@ -196,6 +214,8 @@ position = Vector2(1126, -345)
 [node name="GreenGrapes" parent="." instance=ExtResource("9_mqeoq")]
 position = Vector2(-556, 767)
 itemId = "greengrapes"
+itemName = "Green grapes"
+itemDescription = "A fine bunch!"
 
 [node name="Sprite2D" parent="GreenGrapes" index="0"]
 position = Vector2(1094, -358)
@@ -209,6 +229,8 @@ position = Vector2(1093, -361)
 [node name="RedGrapes" parent="." instance=ExtResource("9_mqeoq")]
 position = Vector2(-556, 767)
 itemId = "redgrapes"
+itemName = "Red grapes"
+itemDescription = "No sour grapes here!"
 
 [node name="Sprite2D" parent="RedGrapes" index="0"]
 position = Vector2(703, -516)
@@ -222,6 +244,8 @@ position = Vector2(702, -519)
 [node name="Cherries" parent="." instance=ExtResource("9_mqeoq")]
 position = Vector2(-499, 584)
 itemId = "cherry"
+itemName = "Cherries"
+itemDescription = "Love you cherry much!"
 
 [node name="Sprite2D" parent="Cherries" index="0"]
 position = Vector2(703, -516)
