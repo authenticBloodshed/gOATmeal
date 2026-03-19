@@ -392,6 +392,7 @@ position = Vector2(47, -19)
 position = Vector2(220, 72)
 itemId = "cinnamon"
 itemName = "Cinnamon"
+itemDescription = "The developers favourite spice!"
 
 [node name="Sprite2D" parent="KitchenStuff/Cinnamon" index="0"]
 position = Vector2(47, -19)
@@ -404,6 +405,8 @@ position = Vector2(47, -19)
 [node name="Sprinkles" parent="KitchenStuff" instance=ExtResource("28_aug4q")]
 position = Vector2(192, 71)
 itemId = "sprinkles"
+itemName = "Sprinkles"
+itemDescription = "A quick way to add whimsy to every breakfast"
 
 [node name="Sprite2D" parent="KitchenStuff/Sprinkles" index="0"]
 position = Vector2(47, -19)
@@ -416,6 +419,8 @@ position = Vector2(47, -19)
 [node name="jam" parent="KitchenStuff" instance=ExtResource("28_aug4q")]
 position = Vector2(566, 76)
 itemId = "jam"
+itemName = "Jam"
+itemDescription = "Jam-packed with smiles!"
 
 [node name="Sprite2D" parent="KitchenStuff/jam" index="0"]
 position = Vector2(47, -19)
@@ -427,7 +432,9 @@ position = Vector2(47, -19)
 
 [node name="honey" parent="KitchenStuff" instance=ExtResource("28_aug4q")]
 position = Vector2(724, 74)
-itemId = "jam"
+itemId = "honey"
+itemName = "Honey"
+itemDescription = "Sugar! Oh honey honey!"
 
 [node name="Sprite2D" parent="KitchenStuff/honey" index="0"]
 position = Vector2(47, -19)
@@ -440,6 +447,8 @@ position = Vector2(47, -19)
 [node name="Almonds" parent="KitchenStuff" instance=ExtResource("28_aug4q")]
 position = Vector2(16, 91)
 itemId = "almond"
+itemName = "Almonds"
+itemDescription = "Almonds are technically seeds, not nuts!"
 
 [node name="Sprite2D" parent="KitchenStuff/Almonds" index="0"]
 position = Vector2(47, -19)
@@ -452,6 +461,8 @@ position = Vector2(47, -4.5)
 [node name="Walnuts" parent="KitchenStuff" instance=ExtResource("28_aug4q")]
 position = Vector2(15, 61)
 itemId = "walnut"
+itemName = "Walnuts"
+itemDescription = "What's a walnut's favorite movie? The Nutcracker!"
 
 [node name="Sprite2D" parent="KitchenStuff/Walnuts" index="0"]
 position = Vector2(47, -19)
@@ -464,6 +475,8 @@ position = Vector2(48, -36)
 [node name="Pecans" parent="KitchenStuff" instance=ExtResource("28_aug4q")]
 position = Vector2(82, 91)
 itemId = "pecan"
+itemName = "Pecans"
+itemDescription = "Knock Knock Who's there? Pecan! Pecan who? Pecan somebody your own size!"
 
 [node name="Sprite2D" parent="KitchenStuff/Pecans" index="0"]
 position = Vector2(47, -19)
@@ -476,6 +489,8 @@ position = Vector2(49, -3)
 [node name="Hazelnut" parent="KitchenStuff" instance=ExtResource("28_aug4q")]
 position = Vector2(1025, 151)
 itemId = "hazelnuts"
+itemName = "Hazelnuts"
+itemDescription = "In ancient times, hazel branches were believed to symbolize health, joy, and prosperity."
 
 [node name="Sprite2D" parent="KitchenStuff/Hazelnut" index="0"]
 position = Vector2(74, -32)
@@ -488,6 +503,8 @@ position = Vector2(75, -29)
 [node name="Cashews" parent="KitchenStuff" instance=ExtResource("28_aug4q")]
 position = Vector2(407, 230)
 itemId = "cashews"
+itemName = "Cashews"
+itemDescription = "Cashew later!"
 
 [node name="Sprite2D" parent="KitchenStuff/Cashews" index="0"]
 position = Vector2(74, -32)
@@ -500,6 +517,8 @@ position = Vector2(72, -16)
 [node name="Pistachios" parent="KitchenStuff" instance=ExtResource("28_aug4q")]
 position = Vector2(964, 149)
 itemId = "pistachio"
+itemName = "Pistachios"
+itemDescription = "Shell yeah!"
 
 [node name="Sprite2D" parent="KitchenStuff/Pistachios" index="0"]
 position = Vector2(74, -32)
@@ -512,6 +531,8 @@ position = Vector2(72, -24)
 [node name="Macadamia" parent="KitchenStuff" instance=ExtResource("28_aug4q")]
 position = Vector2(407, 149)
 itemId = "macadamia"
+itemName = "Macadamia"
+itemDescription = " It takes 7-10 years for a new macadamia tree to begin producing nuts."
 
 [node name="Sprite2D" parent="KitchenStuff/Macadamia" index="0"]
 position = Vector2(74, -32)
