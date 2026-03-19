@@ -251,6 +251,7 @@ position = Vector2(152, -24)
 position = Vector2(95, 409)
 itemId = "biscuits"
 itemName = "Biscuits"
+itemDescription = "Bite-sized happiness."
 
 [node name="Sprite2D" parent="KitchenStuff/biscuits" index="0"]
 position = Vector2(149, -43)
@@ -264,6 +265,8 @@ position = Vector2(153, -43)
 [node name="FlaxSeeds" parent="KitchenStuff" instance=ExtResource("28_aug4q")]
 position = Vector2(436, 230)
 itemId = "flax"
+itemName = "Flax seeds"
+itemDescription = "mix 1 tablespoon of ground flaxseed with 3 tablespoons of water to create a \"flax egg\" for vegan baking."
 
 [node name="Sprite2D" parent="KitchenStuff/FlaxSeeds" index="0"]
 position = Vector2(316.25, -32.75)
@@ -276,6 +279,8 @@ position = Vector2(317, -36)
 [node name="Raisins" parent="KitchenStuff" instance=ExtResource("28_aug4q")]
 position = Vector2(107, 150)
 itemId = "raisins"
+itemName = "Raisins"
+itemDescription = "Do you prefer these over blueberries in your muffin?"
 
 [node name="Sprite2D" parent="KitchenStuff/Raisins" index="0"]
 position = Vector2(316.25, -32.75)
@@ -288,6 +293,8 @@ position = Vector2(317, -36)
 [node name="StrawberrySauce" parent="KitchenStuff" instance=ExtResource("28_aug4q")]
 position = Vector2(-256, 216)
 itemId = "strawberrysauce"
+itemName = "StrawberrySauce"
+itemDescription = "Strawberries in a handy squeezer!"
 
 [node name="Sprite2D" parent="KitchenStuff/StrawberrySauce" index="0"]
 position = Vector2(316, -30)
@@ -300,6 +307,8 @@ position = Vector2(316, -37)
 [node name="ChocolateSauce" parent="KitchenStuff" instance=ExtResource("28_aug4q")]
 position = Vector2(-136, 216)
 itemId = "chocolatesauce"
+itemName = "Chocolate sauce"
+itemDescription = "I don't like airport chocolate... it's a bit plane..."
 
 [node name="Sprite2D" parent="KitchenStuff/ChocolateSauce" index="0"]
 position = Vector2(316, -30)
@@ -312,6 +321,8 @@ position = Vector2(316, -37)
 [node name="CaramelSauce" parent="KitchenStuff" instance=ExtResource("28_aug4q")]
 position = Vector2(-75, 216)
 itemId = "caramelsauce"
+itemName = "Caramel sauce"
+itemDescription = "Is it caramel or caramel?"
 
 [node name="Sprite2D" parent="KitchenStuff/CaramelSauce" index="0"]
 position = Vector2(316, -30)
@@ -324,6 +335,8 @@ position = Vector2(316, -37)
 [node name="PeanutButter" parent="KitchenStuff" instance=ExtResource("28_aug4q")]
 position = Vector2(-196, 215)
 itemId = "peanutbutter"
+itemName = "Peanut butter"
+itemDescription = "I’m peaNUTS about breakfast."
 
 [node name="Sprite2D" parent="KitchenStuff/PeanutButter" index="0"]
 position = Vector2(316, -30)
@@ -336,6 +349,8 @@ position = Vector2(316, -37)
 [node name="CRanberries" parent="KitchenStuff" instance=ExtResource("28_aug4q")]
 position = Vector2(489, 232)
 itemId = "cranberry"
+itemName = "Cranberries"
+itemDescription = "Can't believe they named a food after a band...."
 
 [node name="Sprite2D" parent="KitchenStuff/CRanberries" index="0"]
 position = Vector2(316.25, -32.75)
@@ -348,6 +363,8 @@ position = Vector2(317, -36)
 [node name="Gojiberries" parent="KitchenStuff" instance=ExtResource("28_aug4q")]
 position = Vector2(208, 151)
 itemId = "goji"
+itemName = "Goji berries"
+itemDescription = "Berry iconic!"
 
 [node name="Sprite2D" parent="KitchenStuff/Gojiberries" index="0"]
 position = Vector2(319, -49)
@@ -360,6 +377,8 @@ position = Vector2(320, -45)
 [node name="Pineapple" parent="KitchenStuff" instance=ExtResource("28_aug4q")]
 position = Vector2(489, 230)
 itemId = "pineapple"
+itemName = "Pineapple slices"
+itemDescription = "Banana without the B is just pineapple."
 
 [node name="Sprite2D" parent="KitchenStuff/Pineapple" index="0"]
 position = Vector2(47, -19)
@@ -372,6 +391,7 @@ position = Vector2(47, -19)
 [node name="Cinnamon" parent="KitchenStuff" instance=ExtResource("28_aug4q")]
 position = Vector2(220, 72)
 itemId = "cinnamon"
+itemName = "Cinnamon"
 
 [node name="Sprite2D" parent="KitchenStuff/Cinnamon" index="0"]
 position = Vector2(47, -19)
