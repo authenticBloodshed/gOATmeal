@@ -1,4 +1,4 @@
-[gd_scene load_steps=56 format=3 uid="uid://0n75d8utmol6"]
+[gd_scene load_steps=57 format=3 uid="uid://0n75d8utmol6"]
 
 [ext_resource type="Script" path="res://game.gd" id="1_ottce"]
 [ext_resource type="PackedScene" uid="uid://10ngpxurb116" path="res://transitions.tscn" id="2_rxlpj"]
@@ -55,6 +55,7 @@
 [ext_resource type="Texture2D" uid="uid://csjvgv4a1243g" path="res://sprinkles.png" id="29_esw55"]
 [ext_resource type="Texture2D" uid="uid://c543o84uw6fm7" path="res://jam.png" id="30_by4h2"]
 [ext_resource type="Texture2D" uid="uid://banfien4osxq6" path="res://honey.png" id="31_woj0u"]
+[ext_resource type="Script" path="res://TooltipPanel.gd" id="56_xsd22"]
 
 [node name="Game" type="Node2D"]
 script = ExtResource("1_ottce")
@@ -79,6 +80,8 @@ texture = ExtResource("18_ys6ic")
 [node name="Banana" parent="KitchenStuff" instance=ExtResource("28_aug4q")]
 position = Vector2(314, 332)
 itemId = "banana"
+itemName = "Banana"
+itemDescription = "Ring ring ring ring ring ring ring! Banana phone! >_<"
 
 [node name="Sprite2D" parent="KitchenStuff/Banana" index="0"]
 position = Vector2(621.5, 12.5)
@@ -91,6 +94,8 @@ position = Vector2(623.5, 15.5)
 [node name="Apple" parent="KitchenStuff" instance=ExtResource("28_aug4q")]
 position = Vector2(314, 332)
 itemId = "apple"
+itemName = "Apple"
+itemDescription = "Keeps doctors away, allegedly."
 
 [node name="Sprite2D" parent="KitchenStuff/Apple" index="0"]
 position = Vector2(564, 34)
@@ -103,6 +108,8 @@ position = Vector2(562, 40)
 [node name="Pear" parent="KitchenStuff" instance=ExtResource("28_aug4q")]
 position = Vector2(262, 341)
 itemId = "pear"
+itemName = "Pear"
+itemDescription = "Why did the pear blush? It saw the salad dressing!"
 
 [node name="Sprite2D" parent="KitchenStuff/Pear" index="0"]
 position = Vector2(568, 33)
@@ -117,6 +124,8 @@ rotation = -1.31598
 [node name="Chiaseeds" parent="KitchenStuff" instance=ExtResource("28_aug4q")]
 position = Vector2(371, 288)
 itemId = "chia"
+itemName = "Chia seeds"
+itemDescription = "Soak before consuming!"
 
 [node name="Sprite2D" parent="KitchenStuff/Chiaseeds" index="0"]
 position = Vector2(321, -93)
@@ -129,6 +138,8 @@ position = Vector2(319, -92)
 [node name="Granola" parent="KitchenStuff" instance=ExtResource("28_aug4q")]
 position = Vector2(371, 288)
 itemId = "granola"
+itemName = "Granola"
+itemDescription = "I’m cereal-sly obsessed with granola..."
 
 [node name="Sprite2D" parent="KitchenStuff/Granola" index="0"]
 position = Vector2(249, -109)
@@ -141,6 +152,8 @@ position = Vector2(249, -104)
 [node name="Oats" parent="KitchenStuff" instance=ExtResource("28_aug4q")]
 position = Vector2(112, 202)
 itemId = "oats"
+itemName = "Oats"
+itemDescription = "OATrageously good!"
 
 [node name="Sprite2D" parent="KitchenStuff/Oats" index="0"]
 position = Vector2(242, -102)
@@ -153,6 +166,8 @@ position = Vector2(246, -98)
 [node name="SunflowerSeeds" parent="KitchenStuff" instance=ExtResource("28_aug4q")]
 position = Vector2(796, 244)
 itemId = "sunflower"
+itemName = "Sunflower seeds"
+itemDescription = "Sun-sational flavours!"
 
 [node name="Sprite2D" parent="KitchenStuff/SunflowerSeeds" index="0"]
 position = Vector2(106.5, -29.5)
@@ -165,6 +180,8 @@ position = Vector2(105.5, -32.5)
 [node name="CoconutFlakes" parent="KitchenStuff" instance=ExtResource("28_aug4q")]
 position = Vector2(841, 244)
 itemId = "coconut"
+itemName = "Coconut flakes"
+itemDescription = "I'm cocoNUTS for coconut flakes!"
 
 [node name="Sprite2D" parent="KitchenStuff/CoconutFlakes" index="0"]
 position = Vector2(110.5, -33.5)
@@ -177,6 +194,8 @@ position = Vector2(111, -33)
 [node name="CacaoNibs" parent="KitchenStuff" instance=ExtResource("28_aug4q")]
 position = Vector2(700, 83)
 itemId = "cacaonibs"
+itemName = "Cacao nibs"
+itemDescription = "Why are they called \"nibs\" if they're beans?"
 
 [node name="Sprite2D" parent="KitchenStuff/CacaoNibs" index="0"]
 position = Vector2(110.5, -33.5)
@@ -189,6 +208,8 @@ position = Vector2(111, -28)
 [node name="puffedrice" parent="KitchenStuff" instance=ExtResource("28_aug4q")]
 position = Vector2(171, 364)
 itemId = "puffedrice"
+itemName = "Puffed Rice"
+itemDescription = "Why don’t rice grains ever get lost?Because they stick together!"
 
 [node name="Sprite2D" parent="KitchenStuff/puffedrice" index="0"]
 position = Vector2(155, -36)
@@ -201,6 +222,8 @@ position = Vector2(156, -41)
 [node name="cocao" parent="KitchenStuff" instance=ExtResource("28_aug4q")]
 position = Vector2(0, 361)
 itemId = "cocoa"
+itemName = "Cocao powder"
+itemDescription = "Adds sweetness without adding sugar!"
 
 [node name="Sprite2D" parent="KitchenStuff/cocao" index="0"]
 position = Vector2(163, -32)
@@ -213,6 +236,8 @@ position = Vector2(175, -38)
 [node name="puffedquinoa" parent="KitchenStuff" instance=ExtResource("28_aug4q")]
 position = Vector2(760, 135)
 itemId = "puffedquinoa"
+itemName = "Puffed quinoa"
+itemDescription = "Surprisingly high in protein!"
 
 [node name="Sprite2D" parent="KitchenStuff/puffedquinoa" index="0"]
 position = Vector2(150, -26)
@@ -225,6 +250,7 @@ position = Vector2(152, -24)
 [node name="biscuits" parent="KitchenStuff" instance=ExtResource("28_aug4q")]
 position = Vector2(95, 409)
 itemId = "biscuits"
+itemName = "Biscuits"
 
 [node name="Sprite2D" parent="KitchenStuff/biscuits" index="0"]
 position = Vector2(149, -43)
@@ -579,8 +605,38 @@ visible = false
 [node name="ColorRect" parent="." instance=ExtResource("2_rxlpj")]
 visible = false
 
+[node name="Tooltip" type="CanvasLayer" parent="." groups=["tooltip"]]
+script = ExtResource("56_xsd22")
+
+[node name="TooltipPanel" type="Panel" parent="Tooltip"]
+visible = false
+offset_left = -310.0
+offset_top = -3.0
+offset_right = 6.0
+offset_bottom = 161.0
+
+[node name="Header" type="Label" parent="Tooltip/TooltipPanel"]
+layout_mode = 0
+offset_left = 53.0
+offset_top = 9.0
+offset_right = 272.0
+offset_bottom = 55.0
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Description" type="Label" parent="Tooltip/TooltipPanel"]
+layout_mode = 0
+offset_left = -1.0
+offset_top = 53.0
+offset_right = 316.0
+offset_bottom = 164.0
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 1
+
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("27_4g87n")
+volume_db = 5.0
 autoplay = true
 
 [connection signal="pressed" from="CloseButton" to="." method="_on_close_button_pressed"]

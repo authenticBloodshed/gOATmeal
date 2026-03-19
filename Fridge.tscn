@@ -1,4 +1,4 @@
-[gd_scene load_steps=21 format=3 uid="uid://dvueuso1kqybe"]
+[gd_scene load_steps=22 format=3 uid="uid://dvueuso1kqybe"]
 
 [ext_resource type="Script" path="res://Fridge.gd" id="1_12d5g"]
 [ext_resource type="Texture2D" uid="uid://cijb85w87ixut" path="res://Fridge.jpg" id="3_xff3q"]
@@ -10,6 +10,7 @@
 [ext_resource type="Texture2D" uid="uid://bsxu8axr5pyq8" path="res://laatjes.png" id="7_tx2rw"]
 [ext_resource type="PackedScene" uid="uid://ctts782sd43x0" path="res://PickupItem.tscn" id="9_mqeoq"]
 [ext_resource type="Texture2D" uid="uid://cre5tlpeb3vmn" path="res://strawberries.png" id="10_kfu12"]
+[ext_resource type="Texture2D" uid="uid://0ymctj271qxw" path="res://GreekYogurt.png" id="11_ay08j"]
 [ext_resource type="Texture2D" uid="uid://l3xnpqncukxc" path="res://blueberrybowl.png" id="11_nxl8v"]
 [ext_resource type="Texture2D" uid="uid://dtw7slxs30c4t" path="res://raspberries.png" id="12_dm2xr"]
 [ext_resource type="Texture2D" uid="uid://bhs0s85qej7co" path="res://blackberries.png" id="13_ak7mk"]
@@ -91,6 +92,18 @@ texture = ExtResource("10_kfu12")
 
 [node name="CollisionShape2D" parent="Strawberries" index="1"]
 position = Vector2(453.5, -4.49994)
+
+[node name="Yogurt" parent="." instance=ExtResource("9_mqeoq")]
+position = Vector2(7, 376)
+itemId = "yogurt"
+
+[node name="Sprite2D" parent="Yogurt" index="0"]
+position = Vector2(438, 18)
+scale = Vector2(0.058, 0.058)
+texture = ExtResource("11_ay08j")
+
+[node name="CollisionShape2D" parent="Yogurt" index="1"]
+position = Vector2(441, 18)
 
 [node name="Blueberries" parent="." instance=ExtResource("9_mqeoq")]
 position = Vector2(-370, 405)
@@ -220,6 +233,7 @@ flip_h = true
 position = Vector2(702, -519)
 
 [editable path="Strawberries"]
+[editable path="Yogurt"]
 [editable path="Blueberries"]
 [editable path="Raspberries"]
 [editable path="Dates"]
