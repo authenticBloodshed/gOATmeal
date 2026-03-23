@@ -199,7 +199,7 @@ theme_override_font_sizes/font_size = 30
 theme_override_styles/normal = ExtResource("16_3lgoj")
 theme_override_styles/hover = ExtResource("17_jq4m3")
 theme_override_styles/pressed = ExtResource("18_pri72")
-text = "START"
+text = "TUTORIAL"
 
 [node name="Options" type="Button" parent="ButtonManager"]
 layout_mode = 0
@@ -215,7 +215,7 @@ theme_override_font_sizes/font_size = 30
 theme_override_styles/normal = ExtResource("16_3lgoj")
 theme_override_styles/hover = ExtResource("17_jq4m3")
 theme_override_styles/pressed = ExtResource("18_pri72")
-text = "OPTIONS"
+text = "CHOOSE A RECIPE"
 
 [node name="Quit" type="Button" parent="ButtonManager"]
 layout_mode = 0

@@ -1,10 +1,11 @@
-[gd_scene load_steps=16 format=3 uid="uid://djjq0sbowi0kv"]
+[gd_scene load_steps=17 format=3 uid="uid://djjq0sbowi0kv"]
 
 [ext_resource type="Texture2D" uid="uid://beexh3ycvj1rl" path="res://wall.png" id="1_86tue"]
 [ext_resource type="Theme" uid="uid://b36dpqnwwq2dk" path="res://toggles.tres" id="1_hnnkf"]
 [ext_resource type="Texture2D" uid="uid://bt6a8qpyddt3x" path="res://bettersquare.png" id="2_6j000"]
 [ext_resource type="Theme" uid="uid://clwhtuf0rdqj3" path="res://TabTheme.tres" id="2_be7ga"]
 [ext_resource type="Script" path="res://DietToggles.gd" id="2_t4aci"]
+[ext_resource type="Script" path="res://ToggleManager.gd" id="2_vufq8"]
 [ext_resource type="Texture2D" uid="uid://l3xnpqncukxc" path="res://blueberrybowl.png" id="3_3roer"]
 [ext_resource type="FontFile" uid="uid://dxi8dt74itawk" path="res://Mabook.otf" id="3_bblm0"]
 [ext_resource type="Texture2D" uid="uid://b0ix82ecaanru" path="res://bananainbowl.png" id="4_h8uav"]
@@ -29,6 +30,7 @@ scale = Vector2(0.387875, 0.387875)
 texture = ExtResource("1_86tue")
 
 [node name="TabManager" type="Node2D" parent="."]
+script = ExtResource("2_vufq8")
 
 [node name="Bettersquare" type="Sprite2D" parent="TabManager"]
 position = Vector2(573, 340.5)
@@ -1266,6 +1268,10 @@ offset_bottom = 383.0
 theme = ExtResource("1_hnnkf")
 text = "Other"
 
+[connection signal="toggled" from="TabManager/TabContainer/Type/AllButton" to="TabManager" method="_on_all_button_toggled"]
+[connection signal="toggled" from="TabManager/TabContainer/Type/YogurtButton" to="TabManager" method="_on_yogurt_button_toggled"]
+[connection signal="toggled" from="TabManager/TabContainer/Type/OatmealButton" to="TabManager" method="_on_oatmeal_button_toggled"]
+[connection signal="toggled" from="TabManager/TabContainer/Type/OtherButton" to="TabManager" method="_on_other_button_toggled"]
 [connection signal="focus_exited" from="TabManager/TabContainer/Diet preferences/VegetarianButton" to="TabManager/TabContainer/Diet preferences/VegetarianButton" method="_on_focus_exited"]
 [connection signal="mouse_entered" from="TabManager/TabContainer/Diet preferences/VegetarianButton" to="TabManager/TabContainer/Diet preferences/VegetarianButton" method="_on_mouse_entered"]
 [connection signal="mouse_exited" from="TabManager/TabContainer/Diet preferences/VegetarianButton" to="TabManager/TabContainer/Diet preferences/VegetarianButton" method="_on_mouse_exited"]
