@@ -14,16 +14,8 @@ func _on_start_pressed():
 	$ColorRect/fadeTimer.start()
 	$ColorRect/AnimationPlayer.play("fade_in")
 
-
-func _on_options_pressed():
-	buttonType = "Options"
-	$ColorRect.show()
-	$ColorRect/fadeTimer.start()
-	$ColorRect/AnimationPlayer.play("fade_in")
-
 func _on_quit_pressed():
 	get_tree().quit()
-
 
 func _on_fade_timer_timeout():
 	if buttonType == "Start" :
@@ -35,3 +27,6 @@ func _on_fade_timer_timeout():
 func _input(event):
 	if event is InputEventMouseButton and event.pressed:
 		$ClickSound.play()
+
+func _on_options_pressed():
+	$FiltersManager.show()
