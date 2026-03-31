@@ -1352,6 +1352,21 @@ offset_bottom = 383.0
 theme = ExtResource("1_hnnkf")
 text = "Other"
 
+[node name="Button" type="Button" parent="."]
+offset_left = 641.0
+offset_top = 10.0
+offset_right = 954.0
+offset_bottom = 50.0
+theme_override_colors/font_color = Color(0.101961, 0.00784314, 0.415686, 1)
+theme_override_colors/font_pressed_color = Color(0.101961, 0.00784314, 0.415686, 1)
+theme_override_colors/font_hover_color = Color(0.101961, 0.00784314, 0.415686, 1)
+theme_override_fonts/font = ExtResource("3_bblm0")
+theme_override_font_sizes/font_size = 33
+theme_override_styles/normal = ExtResource("6_e7n2h")
+theme_override_styles/hover = ExtResource("5_qioc1")
+theme_override_styles/pressed = ExtResource("4_lbvj6")
+text = "View earned recipies"
+
 [connection signal="toggled" from="TabManager/TabContainer/Type/AllButton" to="TabManager" method="_on_all_button_toggled"]
 [connection signal="toggled" from="TabManager/TabContainer/Type/YogurtButton" to="TabManager" method="_on_yogurt_button_toggled"]
 [connection signal="toggled" from="TabManager/TabContainer/Type/OatmealButton" to="TabManager" method="_on_oatmeal_button_toggled"]
@@ -1372,3 +1387,4 @@ text = "Other"
 [connection signal="toggled" from="TabManager/TabContainer/Diet preferences/HalalButton" to="TabManager" method="_on_halal_button_toggled"]
 [connection signal="toggled" from="TabManager/TabContainer/Diet preferences/KosherButton" to="TabManager" method="_on_kosher_button_toggled"]
 [connection signal="toggled" from="TabManager/TabContainer/Diet preferences/SeasonalButton" to="TabManager" method="_on_seasonal_button_toggled"]
+[connection signal="pressed" from="Button" to="TabManager" method="_on_button_pressed"]

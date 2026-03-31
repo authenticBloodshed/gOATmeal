@@ -123,3 +123,5 @@ func apply_filters():
 	
 	print("Filtered dishes: ", filteredDishes)
 
+func _on_button_pressed():
+	get_tree().change_scene_to_file("res://recipebook.tscn")

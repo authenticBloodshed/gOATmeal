@@ -3,11 +3,12 @@ extends Node2D
 var buttonType = null
 
 func _ready():
+	$Button.hide()
 	$ColorRect.show()
 	$ColorRect/AnimationPlayer.play("fade_out")
 	await get_tree().create_timer(1.0).timeout
 	$ColorRect.hide()
-	$Button.hide()
+	
 
 func _on_start_pressed():
 	buttonType = "Start"
