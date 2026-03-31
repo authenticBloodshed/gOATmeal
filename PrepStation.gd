@@ -1,6 +1,7 @@
 extends Node2D
 
 var counter = 0
+var isCorrect = null
 @export var saus : NodePath
 
 func _ready():
@@ -63,3 +64,14 @@ func _on_replay_button_pressed():
 
 func _on_recipebook_button_pressed():
 	get_tree().change_scene_to_file("res://recipebook.tscn")
+
+func _on_button_pressed():
+	isCorrect = true
+	
+	if isCorrect == false:
+		$"../LoseScreen".show()
+		$"../Button".hide()
+		
+	if isCorrect == true:
+		$"../WinScreen".show()
+		$"../Button".hide()

@@ -221,6 +221,7 @@ text = "[center]You have succesfully completed this recipe! The full details of 
 fit_content = true
 
 [node name="ReplayButton" type="Button" parent="WinScreen"]
+layout_mode = 0
 offset_left = 8.0
 offset_top = 265.0
 offset_right = 140.0
@@ -236,6 +237,7 @@ theme_override_styles/pressed = ExtResource("24_hbg40")
 text = "Replay"
 
 [node name="RecipebookButton" type="Button" parent="WinScreen"]
+layout_mode = 0
 offset_left = 146.0
 offset_top = 265.0
 offset_right = 364.0
@@ -251,6 +253,7 @@ theme_override_styles/pressed = ExtResource("24_hbg40")
 text = "Recipe book"
 
 [node name="MainMenuButton" type="Button" parent="WinScreen"]
+layout_mode = 0
 offset_left = 368.0
 offset_top = 265.0
 offset_right = 586.0
@@ -298,6 +301,7 @@ text = "[center]Something about the dish doesn't seem quite right yet... Luckily
 fit_content = true
 
 [node name="RetryButton" type="Button" parent="LoseScreen"]
+layout_mode = 0
 offset_left = 126.0
 offset_top = 265.0
 offset_right = 258.0
@@ -313,6 +317,7 @@ theme_override_styles/pressed = ExtResource("24_hbg40")
 text = "Retry"
 
 [node name="MainMenuButton" type="Button" parent="LoseScreen"]
+layout_mode = 0
 offset_left = 265.0
 offset_top = 265.0
 offset_right = 483.0
@@ -331,6 +336,7 @@ text = "Main menu"
 [connection signal="body_entered" from="PrepStation/FinalAssets/Area2D" to="PrepStation" method="_on_area_2d_body_entered"]
 [connection signal="pressed" from="PrepStation/NextBowlButton" to="PrepStation" method="_on_next_bowl_button_pressed"]
 [connection signal="pressed" from="PrepStation/PreviousBowlButton" to="PrepStation" method="_on_previous_bowl_button_pressed"]
+[connection signal="pressed" from="Button" to="PrepStation" method="_on_button_pressed"]
 [connection signal="pressed" from="WinScreen/ReplayButton" to="PrepStation" method="_on_replay_button_pressed"]
 [connection signal="pressed" from="WinScreen/RecipebookButton" to="PrepStation" method="_on_recipebook_button_pressed"]
 [connection signal="pressed" from="WinScreen/MainMenuButton" to="PrepStation" method="_on_main_menu_button_pressed"]
