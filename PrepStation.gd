@@ -66,7 +66,7 @@ func _on_recipebook_button_pressed():
 	get_tree().change_scene_to_file("res://recipebook.tscn")
 
 func _on_button_pressed():
-	isCorrect = true
+	isCorrect = true 
 	
 	if isCorrect == false:
 		$"../LoseScreen".show()
