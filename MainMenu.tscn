@@ -251,7 +251,23 @@ autoplay = true
 [node name="FiltersManager" parent="." instance=ExtResource("23_c2s78")]
 visible = false
 
+[node name="Button" type="Button" parent="."]
+offset_left = 1006.0
+offset_top = 10.0
+offset_right = 1125.0
+offset_bottom = 50.0
+theme_override_colors/font_color = Color(0.101961, 0.00784314, 0.415686, 1)
+theme_override_colors/font_pressed_color = Color(0.101961, 0.00784314, 0.415686, 1)
+theme_override_colors/font_hover_color = Color(0.101961, 0.00784314, 0.415686, 1)
+theme_override_fonts/font = ExtResource("16_w6fkd")
+theme_override_font_sizes/font_size = 33
+theme_override_styles/normal = ExtResource("16_3lgoj")
+theme_override_styles/hover = ExtResource("17_jq4m3")
+theme_override_styles/pressed = ExtResource("18_pri72")
+text = "back"
+
 [connection signal="pressed" from="ButtonManager/Start" to="." method="_on_start_pressed"]
 [connection signal="pressed" from="ButtonManager/Options" to="." method="_on_options_pressed"]
 [connection signal="pressed" from="ButtonManager/Quit" to="." method="_on_quit_pressed"]
 [connection signal="timeout" from="ColorRect/fadeTimer" to="." method="_on_fade_timer_timeout"]
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

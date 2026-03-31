@@ -122,3 +122,4 @@ func apply_filters():
 				filteredDishes.append(dish)
 	
 	print("Filtered dishes: ", filteredDishes)
+

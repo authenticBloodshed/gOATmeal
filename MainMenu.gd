@@ -7,6 +7,7 @@ func _ready():
 	$ColorRect/AnimationPlayer.play("fade_out")
 	await get_tree().create_timer(1.0).timeout
 	$ColorRect.hide()
+	$Button.hide()
 
 func _on_start_pressed():
 	buttonType = "Start"
@@ -30,3 +31,8 @@ func _input(event):
 
 func _on_options_pressed():
 	$FiltersManager.show()
+	$Button.show()
+
+func _on_button_pressed():
+	$FiltersManager.hide()
+	$Button.hide()
