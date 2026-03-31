@@ -39,3 +39,7 @@ func _on_book_input_event(viewport, event, shape_idx):
 		else:
 			bookOpen.hide()
 			bookClosed.show()
+
+
+func _on_button_pressed():
+	get_tree().change_scene_to_file("res://MainMenu.tscn")

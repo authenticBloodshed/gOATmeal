@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://cmpg3c1sidxbb"]
+[gd_scene load_steps=17 format=3 uid="uid://cmpg3c1sidxbb"]
 
 [ext_resource type="Texture2D" uid="uid://se5iwcbu15ia" path="res://fridgebackground.png" id="1_a5jch"]
 [ext_resource type="Script" path="res://recipebook.gd" id="1_jtgo8"]
@@ -10,6 +10,10 @@
 [ext_resource type="Texture2D" uid="uid://dbynhogc1sr6y" path="res://ArrowUnselected.png" id="7_4xro2"]
 [ext_resource type="Texture2D" uid="uid://bu3bijha23vjn" path="res://ArrowClick.png" id="8_47n3o"]
 [ext_resource type="Texture2D" uid="uid://dgy2dputb4r37" path="res://ArrowHover.png" id="9_43xi6"]
+[ext_resource type="FontFile" uid="uid://dxi8dt74itawk" path="res://Mabook.otf" id="11_i2j55"]
+[ext_resource type="StyleBox" uid="uid://jw0gfxu6rigt" path="res://unpressed.tres" id="12_umetm"]
+[ext_resource type="StyleBox" uid="uid://bsu75uac0drfx" path="res://hover.tres" id="13_y6154"]
+[ext_resource type="StyleBox" uid="uid://b60ce0wlbf15n" path="res://pressed.tres" id="14_t0atd"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_tnef0"]
 size = Vector2(1328.33, 1936.21)
@@ -40,13 +44,13 @@ scale = Vector2(0.999999, 0.999999)
 shape = SubResource("RectangleShape2D_tnef0")
 
 [node name="RichTextLabel" type="RichTextLabel" parent="Bookclosed"]
-offset_left = -1223.26
-offset_top = -1234.52
-offset_right = -546.265
-offset_bottom = -1194.52
+offset_left = -915.572
+offset_top = -1212.01
+offset_right = 907.428
+offset_bottom = -1024.01
 theme = ExtResource("6_ufb1r")
 theme_override_colors/default_color = Color(0.101961, 0.00784314, 0.415686, 1)
-theme_override_font_sizes/normal_font_size = 41
+theme_override_font_sizes/normal_font_size = 111
 text = "Click book to view earned recipes!"
 
 [node name="Book" type="Area2D" parent="."]
@@ -110,5 +114,21 @@ flip_h = true
 position = Vector2(9.6499, -20.5067)
 shape = SubResource("RectangleShape2D_is41p")
 
+[node name="Button" type="Button" parent="."]
+offset_left = 4.0
+offset_top = 6.0
+offset_right = 153.0
+offset_bottom = 52.0
+theme_override_colors/font_color = Color(0.101961, 0.00784314, 0.415686, 1)
+theme_override_colors/font_pressed_color = Color(0.101961, 0.00784314, 0.415686, 1)
+theme_override_colors/font_hover_color = Color(0.101961, 0.00784314, 0.415686, 1)
+theme_override_fonts/font = ExtResource("11_i2j55")
+theme_override_font_sizes/font_size = 28
+theme_override_styles/normal = ExtResource("12_umetm")
+theme_override_styles/hover = ExtResource("13_y6154")
+theme_override_styles/pressed = ExtResource("14_t0atd")
+text = "Main menu"
+
 [connection signal="input_event" from="Bookclosed" to="." method="_on_bookclosed_input_event"]
 [connection signal="input_event" from="Book" to="." method="_on_book_input_event"]
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
