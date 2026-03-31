@@ -188,6 +188,7 @@ theme_override_styles/pressed = ExtResource("24_hbg40")
 text = "✮ Done! ✮"
 
 [node name="WinScreen" type="ColorRect" parent="."]
+visible = false
 offset_left = 330.0
 offset_top = 124.0
 offset_right = 922.0
