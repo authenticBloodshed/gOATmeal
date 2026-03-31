@@ -51,3 +51,15 @@ func _on_area_2d_body_entered(body):
 	
 	print("hoi")
 		
+
+func _on_retry_button_pressed():
+	get_tree().change_scene_to_file("res://game.tscn")
+
+func _on_main_menu_button_pressed():
+	get_tree().change_scene_to_file("res://MainMenu.tscn")
+
+func _on_replay_button_pressed():
+	get_tree().change_scene_to_file("res://game.tscn")
+
+func _on_recipebook_button_pressed():
+	get_tree().change_scene_to_file("res://recipebook.tscn")
