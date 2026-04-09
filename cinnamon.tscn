@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://cjg7sbsrrd80v"]
+
+[ext_resource type="PackedScene" uid="uid://bqvcofia37xot" path="res://almondchunks.tscn" id="1_imrbd"]
+[ext_resource type="Texture2D" uid="uid://ys81ceh7t7cn" path="res://cinnamonpowder.png" id="2_m8qjl"]
+
+[node name="GranolaChunk" instance=ExtResource("1_imrbd")]
+
+[node name="Sprite2D" parent="." index="0"]
+texture = ExtResource("2_m8qjl")

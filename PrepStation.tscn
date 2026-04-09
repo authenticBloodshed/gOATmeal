@@ -1,4 +1,4 @@
-[gd_scene load_steps=42 format=3 uid="uid://bn7l7abptit80"]
+[gd_scene load_steps=46 format=3 uid="uid://bn7l7abptit80"]
 
 [ext_resource type="Script" path="res://PrepStation.gd" id="1_5drbj"]
 [ext_resource type="Texture2D" uid="uid://dbynhogc1sr6y" path="res://ArrowUnselected.png" id="2_b3ctj"]
@@ -27,6 +27,8 @@
 [ext_resource type="PackedScene" uid="uid://r7g0r4x154md" path="res://bananaslices.tscn" id="18_nf2qx"]
 [ext_resource type="Texture2D" uid="uid://b0ix82ecaanru" path="res://bananainbowl.png" id="19_pap87"]
 [ext_resource type="PackedScene" uid="uid://b2lj5bi08bsp6" path="res://blackberrychunk.tscn" id="20_wydm5"]
+[ext_resource type="PackedScene" uid="uid://b24hni3tcqp01" path="res://chiasoaked.tscn" id="20_y20g3"]
+[ext_resource type="Texture2D" uid="uid://b8y50ho1tt7v" path="res://chiaseeds.png" id="21_8qwb2"]
 [ext_resource type="FontFile" uid="uid://dxi8dt74itawk" path="res://Mabook.otf" id="21_jaaq2"]
 [ext_resource type="Texture2D" uid="uid://bhs0s85qej7co" path="res://blackberries.png" id="21_y7kap"]
 [ext_resource type="PackedScene" uid="uid://2muh21st0guc" path="res://blueberrychunks.tscn" id="22_0vmfw"]
@@ -40,6 +42,8 @@
 [ext_resource type="PackedScene" uid="uid://dkme04q6gwpsm" path="res://cashewchunks.tscn" id="26_mr4dr"]
 [ext_resource type="Texture2D" uid="uid://dwf4r1wasaygx" path="res://cherries.png" id="28_826nv"]
 [ext_resource type="PackedScene" uid="uid://b7b72dtjgx6p0" path="res://cherrychunk.tscn" id="28_ohsjo"]
+[ext_resource type="Texture2D" uid="uid://xcl3uipvumac" path="res://cinnamon.png" id="32_6y8lg"]
+[ext_resource type="PackedScene" uid="uid://cjg7sbsrrd80v" path="res://cinnamon.tscn" id="32_pny42"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_uy8f1"]
 radius = 160.028
@@ -205,6 +209,25 @@ position = Vector2(251.429, -2462.86)
 [node name="SpawnedGranola" parent="PrepStation/DraggableObjects/Banana" index="1"]
 position = Vector2(2405.71, 400)
 
+[node name="Chiaseeds" parent="PrepStation/DraggableObjects" instance=ExtResource("16_qnom6")]
+position = Vector2(-166, 503)
+scale = Vector2(0.175, 0.175)
+granolaChunkScene = ExtResource("20_y20g3")
+
+[node name="Box" parent="PrepStation/DraggableObjects/Chiaseeds" index="0"]
+position = Vector2(7040, 2771.43)
+
+[node name="Sprite2D" parent="PrepStation/DraggableObjects/Chiaseeds/Box" index="0"]
+position = Vector2(91.4292, -2600)
+scale = Vector2(0.651428, 0.651428)
+texture = ExtResource("21_8qwb2")
+
+[node name="CollisionShape2D" parent="PrepStation/DraggableObjects/Chiaseeds/Box" index="1"]
+position = Vector2(74.2858, -2811.43)
+
+[node name="SpawnedGranola" parent="PrepStation/DraggableObjects/Chiaseeds" index="1"]
+position = Vector2(7040, 2771.43)
+
 [node name="Blackberries" parent="PrepStation/DraggableObjects" instance=ExtResource("16_qnom6")]
 position = Vector2(-165, 509)
 scale = Vector2(0.175, 0.175)
@@ -299,6 +322,25 @@ position = Vector2(80.0008, -2571.43)
 
 [node name="SpawnedGranola" parent="PrepStation/DraggableObjects/Cherries" index="1"]
 position = Vector2(6645.71, 1657.14)
+
+[node name="Cinnamon" parent="PrepStation/DraggableObjects" instance=ExtResource("16_qnom6")]
+position = Vector2(-165, 509)
+scale = Vector2(0.175, 0.175)
+granolaChunkScene = ExtResource("32_pny42")
+
+[node name="Box" parent="PrepStation/DraggableObjects/Cinnamon" index="0"]
+position = Vector2(5605.71, 2771.43)
+
+[node name="Sprite2D" parent="PrepStation/DraggableObjects/Cinnamon/Box" index="0"]
+position = Vector2(91.4292, -2600)
+scale = Vector2(0.651428, 0.651428)
+texture = ExtResource("32_6y8lg")
+
+[node name="CollisionShape2D" parent="PrepStation/DraggableObjects/Cinnamon/Box" index="1"]
+position = Vector2(80.0008, -2571.43)
+
+[node name="SpawnedGranola" parent="PrepStation/DraggableObjects/Cinnamon" index="1"]
+position = Vector2(5605.71, 2771.43)
 
 [node name="Saus" parent="PrepStation/DraggableObjects" instance=ExtResource("17_3tge8")]
 position = Vector2(393, 499)
@@ -520,8 +562,10 @@ text = "Main menu"
 [editable path="PrepStation/DraggableObjects/Apple"]
 [editable path="PrepStation/DraggableObjects/Almonds"]
 [editable path="PrepStation/DraggableObjects/Banana"]
+[editable path="PrepStation/DraggableObjects/Chiaseeds"]
 [editable path="PrepStation/DraggableObjects/Blackberries"]
 [editable path="PrepStation/DraggableObjects/Blueberries"]
 [editable path="PrepStation/DraggableObjects/Cacaonibs"]
 [editable path="PrepStation/DraggableObjects/Cashews"]
 [editable path="PrepStation/DraggableObjects/Cherries"]
+[editable path="PrepStation/DraggableObjects/Cinnamon"]
