@@ -1,5 +1,7 @@
 extends Node2D
 
+@export var texture: Texture2D
+@onready var sprite: Sprite2D = $Sprite2D
 var dragging := true
 
 func _process(_delta):

@@ -1,4 +1,4 @@
-[gd_scene load_steps=26 format=3 uid="uid://bn7l7abptit80"]
+[gd_scene load_steps=32 format=3 uid="uid://bn7l7abptit80"]
 
 [ext_resource type="Script" path="res://PrepStation.gd" id="1_5drbj"]
 [ext_resource type="Texture2D" uid="uid://dbynhogc1sr6y" path="res://ArrowUnselected.png" id="2_b3ctj"]
@@ -16,10 +16,16 @@
 [ext_resource type="Texture2D" uid="uid://c1camwkygdip0" path="res://OatmealBowl.png" id="9_cb7cn"]
 [ext_resource type="PackedScene" uid="uid://bqbfc5bl3q8xt" path="res://DragItem.tscn" id="10_mer3u"]
 [ext_resource type="PackedScene" uid="uid://djr6f1jtdjnev" path="res://DragOatmeal.tscn" id="13_u64xb"]
+[ext_resource type="Texture2D" uid="uid://6o6dv70htffk" path="res://apple.png" id="14_76ypw"]
+[ext_resource type="PackedScene" uid="uid://bgtq6flp28mup" path="res://applechunk.tscn" id="14_gmhuf"]
 [ext_resource type="AudioStream" uid="uid://cl05wk2co4vj3" path="res://223805__ctcollab__splash-3.wav" id="14_huhej"]
+[ext_resource type="PackedScene" uid="uid://bqvcofia37xot" path="res://almondchunks.tscn" id="16_6stob"]
 [ext_resource type="PackedScene" uid="uid://c1x2ef7pg7oab" path="res://GranolaBox.tscn" id="16_qnom6"]
 [ext_resource type="PackedScene" uid="uid://b68a3agl827bl" path="res://saus.tscn" id="17_3tge8"]
+[ext_resource type="Texture2D" uid="uid://ckxdb5drhdnf6" path="res://almonds.png" id="17_r6qld"]
 [ext_resource type="PackedScene" uid="uid://cymwnfrhohpeu" path="res://NewNotebook.tscn" id="17_u1xj1"]
+[ext_resource type="PackedScene" uid="uid://r7g0r4x154md" path="res://bananaslices.tscn" id="18_nf2qx"]
+[ext_resource type="Texture2D" uid="uid://b0ix82ecaanru" path="res://bananainbowl.png" id="19_pap87"]
 [ext_resource type="FontFile" uid="uid://dxi8dt74itawk" path="res://Mabook.otf" id="21_jaaq2"]
 [ext_resource type="StyleBox" uid="uid://jw0gfxu6rigt" path="res://unpressed.tres" id="22_t3olf"]
 [ext_resource type="StyleBox" uid="uid://bsu75uac0drfx" path="res://hover.tres" id="23_x58nf"]
@@ -92,15 +98,19 @@ position = Vector2(-633, -320)
 [node name="DraggableObjects" type="Node2D" parent="PrepStation"]
 
 [node name="DraggableObject" parent="PrepStation/DraggableObjects" instance=ExtResource("8_fgw3y")]
+visible = false
 position = Vector2(211, 215)
 
 [node name="DraggableObject2" parent="PrepStation/DraggableObjects" instance=ExtResource("8_fgw3y")]
+visible = false
 position = Vector2(300, 211)
 
 [node name="DraggableObject3" parent="PrepStation/DraggableObjects" instance=ExtResource("8_fgw3y")]
+visible = false
 position = Vector2(212, 93)
 
 [node name="DraggableObject4" parent="PrepStation/DraggableObjects" instance=ExtResource("8_fgw3y")]
+visible = false
 position = Vector2(302, 96)
 
 [node name="DragItem" parent="PrepStation/DraggableObjects" instance=ExtResource("10_mer3u")]
@@ -126,6 +136,60 @@ targetPath = NodePath("../../FinalAssets/OatmealBowl")
 [node name="GranolaBox" parent="PrepStation/DraggableObjects" instance=ExtResource("16_qnom6")]
 position = Vector2(251, 466)
 scale = Vector2(0.175, 0.175)
+
+[node name="Apple" parent="PrepStation/DraggableObjects" instance=ExtResource("16_qnom6")]
+position = Vector2(251, 466)
+scale = Vector2(0.175, 0.175)
+granolaChunkScene = ExtResource("14_gmhuf")
+
+[node name="Sprite2D" parent="PrepStation/DraggableObjects/Apple/Box" index="0"]
+position = Vector2(-194.286, -2108.57)
+scale = Vector2(0.288571, 0.288571)
+texture = ExtResource("14_76ypw")
+
+[node name="CollisionShape2D" parent="PrepStation/DraggableObjects/Apple/Box" index="1"]
+position = Vector2(-200, -2091.43)
+scale = Vector2(1, 1)
+
+[node name="Almonds" parent="PrepStation/DraggableObjects" instance=ExtResource("16_qnom6")]
+position = Vector2(353, 939)
+scale = Vector2(0.175, 0.175)
+granolaChunkScene = ExtResource("16_6stob")
+
+[node name="Box" parent="PrepStation/DraggableObjects/Almonds" index="0"]
+position = Vector2(-828.571, 542.857)
+
+[node name="Sprite2D" parent="PrepStation/DraggableObjects/Almonds/Box" index="0"]
+position = Vector2(245.714, -2491.43)
+scale = Vector2(0.62, 0.62)
+texture = ExtResource("17_r6qld")
+
+[node name="CollisionShape2D" parent="PrepStation/DraggableObjects/Almonds/Box" index="1"]
+position = Vector2(251.429, -2462.86)
+scale = Vector2(1, 1)
+
+[node name="SpawnedGranola" parent="PrepStation/DraggableObjects/Almonds" index="1"]
+position = Vector2(-828.571, 542.857)
+
+[node name="Banana" parent="PrepStation/DraggableObjects" instance=ExtResource("16_qnom6")]
+position = Vector2(-165, 509)
+scale = Vector2(0.175, 0.175)
+granolaChunkScene = ExtResource("18_nf2qx")
+
+[node name="Box" parent="PrepStation/DraggableObjects/Banana" index="0"]
+position = Vector2(2405.71, 400)
+
+[node name="Sprite2D" parent="PrepStation/DraggableObjects/Banana/Box" index="0"]
+position = Vector2(245.714, -2491.43)
+scale = Vector2(0.62, 0.62)
+texture = ExtResource("19_pap87")
+
+[node name="CollisionShape2D" parent="PrepStation/DraggableObjects/Banana/Box" index="1"]
+position = Vector2(251.429, -2462.86)
+scale = Vector2(1, 1)
+
+[node name="SpawnedGranola" parent="PrepStation/DraggableObjects/Banana" index="1"]
+position = Vector2(2405.71, 400)
 
 [node name="Saus" parent="PrepStation/DraggableObjects" instance=ExtResource("17_3tge8")]
 position = Vector2(393, 499)
@@ -342,3 +406,8 @@ text = "Main menu"
 [connection signal="pressed" from="WinScreen/MainMenuButton" to="PrepStation" method="_on_main_menu_button_pressed"]
 [connection signal="pressed" from="LoseScreen/RetryButton" to="PrepStation" method="_on_retry_button_pressed"]
 [connection signal="pressed" from="LoseScreen/MainMenuButton" to="PrepStation" method="_on_main_menu_button_pressed"]
+
+[editable path="PrepStation/DraggableObjects/GranolaBox"]
+[editable path="PrepStation/DraggableObjects/Apple"]
+[editable path="PrepStation/DraggableObjects/Almonds"]
+[editable path="PrepStation/DraggableObjects/Banana"]
