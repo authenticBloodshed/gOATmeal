@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://b7b72dtjgx6p0"]
+
+[ext_resource type="PackedScene" uid="uid://b2lj5bi08bsp6" path="res://blackberrychunk.tscn" id="1_jbfnu"]
+[ext_resource type="Texture2D" uid="uid://c3vd23qfuh0fx" path="res://cherry.png" id="2_idfuv"]
+
+[node name="GranolaChunk" instance=ExtResource("1_jbfnu")]
+
+[node name="Sprite2D" parent="." index="0"]
+position = Vector2(74, -133)
+scale = Vector2(0.4555, 0.4555)
+texture = ExtResource("2_idfuv")

@@ -6,6 +6,6 @@
 [node name="GranolaChunk" instance=ExtResource("1_mdbrm")]
 
 [node name="Sprite2D" parent="." index="0"]
-position = Vector2(1.52588e-05, 1.52588e-05)
-scale = Vector2(0.563, 0.563)
+position = Vector2(177, 48)
+scale = Vector2(1.103, 1.103)
 texture = ExtResource("2_teint")
