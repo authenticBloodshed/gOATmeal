@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://p2fd6ixeq0iw"]
+
+[ext_resource type="PackedScene" uid="uid://d0xdc3la1tx4d" path="res://goldenkiwi.tscn" id="1_0isg3"]
+[ext_resource type="Texture2D" uid="uid://r5pc7dlkk2k3" path="res://kiwislice.png" id="2_3rm31"]
+
+[node name="GranolaChunk" instance=ExtResource("1_0isg3")]
+
+[node name="Sprite2D" parent="." index="0"]
+texture = ExtResource("2_3rm31")
