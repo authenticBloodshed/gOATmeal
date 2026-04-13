@@ -1,4 +1,4 @@
-[gd_scene load_steps=68 format=3 uid="uid://bn7l7abptit80"]
+[gd_scene load_steps=72 format=3 uid="uid://bn7l7abptit80"]
 
 [ext_resource type="Script" path="res://PrepStation.gd" id="1_5drbj"]
 [ext_resource type="Texture2D" uid="uid://dbynhogc1sr6y" path="res://ArrowUnselected.png" id="2_b3ctj"]
@@ -19,7 +19,9 @@
 [ext_resource type="Texture2D" uid="uid://6o6dv70htffk" path="res://apple.png" id="14_76ypw"]
 [ext_resource type="PackedScene" uid="uid://bgtq6flp28mup" path="res://applechunk.tscn" id="14_gmhuf"]
 [ext_resource type="AudioStream" uid="uid://cl05wk2co4vj3" path="res://223805__ctcollab__splash-3.wav" id="14_huhej"]
+[ext_resource type="PackedScene" uid="uid://c2pr52p4ag0tp" path="res://peach.tscn" id="16_5rtbe"]
 [ext_resource type="PackedScene" uid="uid://bqvcofia37xot" path="res://almondchunks.tscn" id="16_6stob"]
+[ext_resource type="Texture2D" uid="uid://cwg6e2n2a0l44" path="res://peach.png" id="16_267qb"]
 [ext_resource type="PackedScene" uid="uid://p2fd6ixeq0iw" path="res://kiwi.tscn" id="16_jdtqb"]
 [ext_resource type="PackedScene" uid="uid://d0xdc3la1tx4d" path="res://goldenkiwi.tscn" id="16_nco8x"]
 [ext_resource type="PackedScene" uid="uid://c1x2ef7pg7oab" path="res://GranolaBox.tscn" id="16_qnom6"]
@@ -61,6 +63,8 @@
 [ext_resource type="PackedScene" uid="uid://cncnm7dr0qsgn" path="res://hazelnut.tscn" id="38_dckb6"]
 [ext_resource type="Texture2D" uid="uid://dqo3bfrolfpie" path="res://hazelnuts.png" id="38_ga40k"]
 [ext_resource type="PackedScene" uid="uid://4mexhgtu2vy2" path="res://goji.tscn" id="42_fdnp5"]
+[ext_resource type="PackedScene" uid="uid://c0tugijsi463h" path="res://pear.tscn" id="42_jkku3"]
+[ext_resource type="Texture2D" uid="uid://cnoa6ywxd7302" path="res://pear.png" id="43_17xg8"]
 [ext_resource type="Texture2D" uid="uid://ufa7bshh1xwv" path="res://gojiberriesjar.png" id="43_mnws2"]
 [ext_resource type="PackedScene" uid="uid://bikwv4amvlu6v" path="res://macadamia.tscn" id="48_nrina"]
 [ext_resource type="PackedScene" uid="uid://daj3xfnc8p7xm" path="res://jam.tscn" id="48_x3md0"]
@@ -192,6 +196,19 @@ texture = ExtResource("14_76ypw")
 
 [node name="CollisionShape2D" parent="PrepStation/DraggableObjects/Apple/Box" index="1"]
 position = Vector2(-200, -2091.43)
+
+[node name="Peach" parent="PrepStation/DraggableObjects" instance=ExtResource("16_qnom6")]
+position = Vector2(490, 431)
+scale = Vector2(0.175, 0.175)
+granolaChunkScene = ExtResource("16_5rtbe")
+
+[node name="Sprite2D" parent="PrepStation/DraggableObjects/Peach/Box" index="0"]
+position = Vector2(-194.286, -2108.57)
+scale = Vector2(0.288571, 0.288571)
+texture = ExtResource("16_267qb")
+
+[node name="CollisionShape2D" parent="PrepStation/DraggableObjects/Peach/Box" index="1"]
+position = Vector2(-120, -2068.57)
 
 [node name="Kiwi" parent="PrepStation/DraggableObjects" instance=ExtResource("16_qnom6")]
 position = Vector2(415, 436)
@@ -407,6 +424,25 @@ texture = ExtResource("37_rtvu3")
 position = Vector2(34.2858, -2582.86)
 
 [node name="SpawnedGranola" parent="PrepStation/DraggableObjects/Grapes" index="1"]
+position = Vector2(6508.57, 1845.71)
+
+[node name="Pear" parent="PrepStation/DraggableObjects" instance=ExtResource("16_qnom6")]
+position = Vector2(-47, 491)
+scale = Vector2(0.175, 0.175)
+granolaChunkScene = ExtResource("42_jkku3")
+
+[node name="Box" parent="PrepStation/DraggableObjects/Pear" index="0"]
+position = Vector2(6508.57, 1845.71)
+
+[node name="Sprite2D" parent="PrepStation/DraggableObjects/Pear/Box" index="0"]
+position = Vector2(-21.428, -2614.79)
+scale = Vector2(0.404285, 0.380503)
+texture = ExtResource("43_17xg8")
+
+[node name="CollisionShape2D" parent="PrepStation/DraggableObjects/Pear/Box" index="1"]
+position = Vector2(11.4287, -2497.14)
+
+[node name="SpawnedGranola" parent="PrepStation/DraggableObjects/Pear" index="1"]
 position = Vector2(6508.57, 1845.71)
 
 [node name="Hazelnut" parent="PrepStation/DraggableObjects" instance=ExtResource("16_qnom6")]
@@ -779,6 +815,7 @@ text = "Main menu"
 
 [editable path="PrepStation/DraggableObjects/GranolaBox"]
 [editable path="PrepStation/DraggableObjects/Apple"]
+[editable path="PrepStation/DraggableObjects/Peach"]
 [editable path="PrepStation/DraggableObjects/Kiwi"]
 [editable path="PrepStation/DraggableObjects/GoldenKiwi"]
 [editable path="PrepStation/DraggableObjects/Banana"]
@@ -791,6 +828,7 @@ text = "Main menu"
 [editable path="PrepStation/DraggableObjects/Cherries"]
 [editable path="PrepStation/DraggableObjects/Flax"]
 [editable path="PrepStation/DraggableObjects/Grapes"]
+[editable path="PrepStation/DraggableObjects/Pear"]
 [editable path="PrepStation/DraggableObjects/Hazelnut"]
 [editable path="PrepStation/DraggableObjects/Cinnamon"]
 [editable path="PrepStation/DraggableObjects/Cocoa"]
