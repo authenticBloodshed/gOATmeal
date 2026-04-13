@@ -1,4 +1,4 @@
-[gd_scene load_steps=46 format=3 uid="uid://bn7l7abptit80"]
+[gd_scene load_steps=54 format=3 uid="uid://bn7l7abptit80"]
 
 [ext_resource type="Script" path="res://PrepStation.gd" id="1_5drbj"]
 [ext_resource type="Texture2D" uid="uid://dbynhogc1sr6y" path="res://ArrowUnselected.png" id="2_b3ctj"]
@@ -26,10 +26,12 @@
 [ext_resource type="PackedScene" uid="uid://cymwnfrhohpeu" path="res://NewNotebook.tscn" id="17_u1xj1"]
 [ext_resource type="PackedScene" uid="uid://r7g0r4x154md" path="res://bananaslices.tscn" id="18_nf2qx"]
 [ext_resource type="Texture2D" uid="uid://b0ix82ecaanru" path="res://bananainbowl.png" id="19_pap87"]
+[ext_resource type="PackedScene" uid="uid://c3y625tame2ci" path="res://cranberries.tscn" id="20_7hg4k"]
 [ext_resource type="PackedScene" uid="uid://b2lj5bi08bsp6" path="res://blackberrychunk.tscn" id="20_wydm5"]
 [ext_resource type="PackedScene" uid="uid://b24hni3tcqp01" path="res://chiasoaked.tscn" id="20_y20g3"]
 [ext_resource type="Texture2D" uid="uid://b8y50ho1tt7v" path="res://chiaseeds.png" id="21_8qwb2"]
 [ext_resource type="FontFile" uid="uid://dxi8dt74itawk" path="res://Mabook.otf" id="21_jaaq2"]
+[ext_resource type="Texture2D" uid="uid://ci7g57k4bb7xt" path="res://cranberries.png" id="21_srd2r"]
 [ext_resource type="Texture2D" uid="uid://bhs0s85qej7co" path="res://blackberries.png" id="21_y7kap"]
 [ext_resource type="PackedScene" uid="uid://2muh21st0guc" path="res://blueberrychunks.tscn" id="22_0vmfw"]
 [ext_resource type="StyleBox" uid="uid://jw0gfxu6rigt" path="res://unpressed.tres" id="22_t3olf"]
@@ -43,7 +45,13 @@
 [ext_resource type="Texture2D" uid="uid://dwf4r1wasaygx" path="res://cherries.png" id="28_826nv"]
 [ext_resource type="PackedScene" uid="uid://b7b72dtjgx6p0" path="res://cherrychunk.tscn" id="28_ohsjo"]
 [ext_resource type="Texture2D" uid="uid://xcl3uipvumac" path="res://cinnamon.png" id="32_6y8lg"]
+[ext_resource type="PackedScene" uid="uid://7mjdohg8thvq" path="res://cocoapowder.tscn" id="32_12fop"]
+[ext_resource type="Texture2D" uid="uid://d2r0jsdfmyu7y" path="res://flaxseeds.png" id="32_he1bk"]
 [ext_resource type="PackedScene" uid="uid://cjg7sbsrrd80v" path="res://cinnamon.tscn" id="32_pny42"]
+[ext_resource type="PackedScene" uid="uid://c6ojgshxixlkh" path="res://flax.tscn" id="32_qyuyh"]
+[ext_resource type="Texture2D" uid="uid://d23bvd4bdlhij" path="res://cocoa.png" id="33_ab124"]
+[ext_resource type="PackedScene" uid="uid://7105tii8o7bh" path="res://coconutflakes.tscn" id="34_7d1h0"]
+[ext_resource type="Texture2D" uid="uid://bntnn40hb471n" path="res://coconutflakes.png" id="35_46wae"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_uy8f1"]
 radius = 160.028
@@ -171,25 +179,6 @@ texture = ExtResource("14_76ypw")
 [node name="CollisionShape2D" parent="PrepStation/DraggableObjects/Apple/Box" index="1"]
 position = Vector2(-200, -2091.43)
 
-[node name="Almonds" parent="PrepStation/DraggableObjects" instance=ExtResource("16_qnom6")]
-position = Vector2(353, 939)
-scale = Vector2(0.175, 0.175)
-granolaChunkScene = ExtResource("16_6stob")
-
-[node name="Box" parent="PrepStation/DraggableObjects/Almonds" index="0"]
-position = Vector2(-828.571, 542.857)
-
-[node name="Sprite2D" parent="PrepStation/DraggableObjects/Almonds/Box" index="0"]
-position = Vector2(245.714, -2491.43)
-scale = Vector2(0.62, 0.62)
-texture = ExtResource("17_r6qld")
-
-[node name="CollisionShape2D" parent="PrepStation/DraggableObjects/Almonds/Box" index="1"]
-position = Vector2(251.429, -2462.86)
-
-[node name="SpawnedGranola" parent="PrepStation/DraggableObjects/Almonds" index="1"]
-position = Vector2(-828.571, 542.857)
-
 [node name="Banana" parent="PrepStation/DraggableObjects" instance=ExtResource("16_qnom6")]
 position = Vector2(-165, 509)
 scale = Vector2(0.175, 0.175)
@@ -226,6 +215,25 @@ texture = ExtResource("21_8qwb2")
 position = Vector2(74.2858, -2811.43)
 
 [node name="SpawnedGranola" parent="PrepStation/DraggableObjects/Chiaseeds" index="1"]
+position = Vector2(7040, 2771.43)
+
+[node name="Cranberries" parent="PrepStation/DraggableObjects" instance=ExtResource("16_qnom6")]
+position = Vector2(-507, 505)
+scale = Vector2(0.175, 0.175)
+granolaChunkScene = ExtResource("20_7hg4k")
+
+[node name="Box" parent="PrepStation/DraggableObjects/Cranberries" index="0"]
+position = Vector2(7040, 2771.43)
+
+[node name="Sprite2D" parent="PrepStation/DraggableObjects/Cranberries/Box" index="0"]
+position = Vector2(91.4292, -2600)
+scale = Vector2(0.651428, 0.651428)
+texture = ExtResource("21_srd2r")
+
+[node name="CollisionShape2D" parent="PrepStation/DraggableObjects/Cranberries/Box" index="1"]
+position = Vector2(74.2858, -2811.43)
+
+[node name="SpawnedGranola" parent="PrepStation/DraggableObjects/Cranberries" index="1"]
 position = Vector2(7040, 2771.43)
 
 [node name="Blackberries" parent="PrepStation/DraggableObjects" instance=ExtResource("16_qnom6")]
@@ -323,6 +331,25 @@ position = Vector2(80.0008, -2571.43)
 [node name="SpawnedGranola" parent="PrepStation/DraggableObjects/Cherries" index="1"]
 position = Vector2(6645.71, 1657.14)
 
+[node name="Flax" parent="PrepStation/DraggableObjects" instance=ExtResource("16_qnom6")]
+position = Vector2(-284, 467)
+scale = Vector2(0.175, 0.175)
+granolaChunkScene = ExtResource("32_qyuyh")
+
+[node name="Box" parent="PrepStation/DraggableObjects/Flax" index="0"]
+position = Vector2(6645.71, 1657.14)
+
+[node name="Sprite2D" parent="PrepStation/DraggableObjects/Flax/Box" index="0"]
+position = Vector2(102.861, -2600)
+scale = Vector2(0.582859, 0.548572)
+texture = ExtResource("32_he1bk")
+
+[node name="CollisionShape2D" parent="PrepStation/DraggableObjects/Flax/Box" index="1"]
+position = Vector2(74.29, -2605.71)
+
+[node name="SpawnedGranola" parent="PrepStation/DraggableObjects/Flax" index="1"]
+position = Vector2(6645.71, 1657.14)
+
 [node name="Cinnamon" parent="PrepStation/DraggableObjects" instance=ExtResource("16_qnom6")]
 position = Vector2(-165, 509)
 scale = Vector2(0.175, 0.175)
@@ -332,18 +359,75 @@ granolaChunkScene = ExtResource("32_pny42")
 position = Vector2(5605.71, 2771.43)
 
 [node name="Sprite2D" parent="PrepStation/DraggableObjects/Cinnamon/Box" index="0"]
-position = Vector2(91.4292, -2600)
-scale = Vector2(0.651428, 0.651428)
+position = Vector2(11.4331, -2502.86)
+scale = Vector2(0.525716, 0.525716)
 texture = ExtResource("32_6y8lg")
 
 [node name="CollisionShape2D" parent="PrepStation/DraggableObjects/Cinnamon/Box" index="1"]
-position = Vector2(80.0008, -2571.43)
+position = Vector2(5.71893, -2502.86)
 
 [node name="SpawnedGranola" parent="PrepStation/DraggableObjects/Cinnamon" index="1"]
 position = Vector2(5605.71, 2771.43)
 
+[node name="Cocoa" parent="PrepStation/DraggableObjects" instance=ExtResource("16_qnom6")]
+position = Vector2(-165, 509)
+scale = Vector2(0.175, 0.175)
+granolaChunkScene = ExtResource("32_12fop")
+
+[node name="Box" parent="PrepStation/DraggableObjects/Cocoa" index="0"]
+position = Vector2(2828.57, 2794.29)
+
+[node name="Sprite2D" parent="PrepStation/DraggableObjects/Cocoa/Box" index="0"]
+position = Vector2(91.4292, -2600)
+scale = Vector2(0.651428, 0.651428)
+texture = ExtResource("33_ab124")
+
+[node name="CollisionShape2D" parent="PrepStation/DraggableObjects/Cocoa/Box" index="1"]
+position = Vector2(177.142, -2617.14)
+
+[node name="SpawnedGranola" parent="PrepStation/DraggableObjects/Cocoa" index="1"]
+position = Vector2(2828.57, 2794.29)
+
+[node name="Coconutflakes" parent="PrepStation/DraggableObjects" instance=ExtResource("16_qnom6")]
+position = Vector2(-273, 200)
+scale = Vector2(0.175, 0.175)
+granolaChunkScene = ExtResource("34_7d1h0")
+
+[node name="Box" parent="PrepStation/DraggableObjects/Coconutflakes" index="0"]
+position = Vector2(2828.57, 2794.29)
+
+[node name="Sprite2D" parent="PrepStation/DraggableObjects/Coconutflakes/Box" index="0"]
+position = Vector2(51.4282, -2748.57)
+scale = Vector2(0.494285, 0.494285)
+texture = ExtResource("35_46wae")
+
+[node name="CollisionShape2D" parent="PrepStation/DraggableObjects/Coconutflakes/Box" index="1"]
+position = Vector2(57.1425, -2748.57)
+
+[node name="SpawnedGranola" parent="PrepStation/DraggableObjects/Coconutflakes" index="1"]
+position = Vector2(2828.57, 2794.29)
+
+[node name="Almonds" parent="PrepStation/DraggableObjects" instance=ExtResource("16_qnom6")]
+position = Vector2(353, 939)
+scale = Vector2(0.175, 0.175)
+granolaChunkScene = ExtResource("16_6stob")
+
+[node name="Box" parent="PrepStation/DraggableObjects/Almonds" index="0"]
+position = Vector2(-828.571, 542.857)
+
+[node name="Sprite2D" parent="PrepStation/DraggableObjects/Almonds/Box" index="0"]
+position = Vector2(245.714, -2491.43)
+scale = Vector2(0.62, 0.62)
+texture = ExtResource("17_r6qld")
+
+[node name="CollisionShape2D" parent="PrepStation/DraggableObjects/Almonds/Box" index="1"]
+position = Vector2(251.429, -2462.86)
+
+[node name="SpawnedGranola" parent="PrepStation/DraggableObjects/Almonds" index="1"]
+position = Vector2(-828.571, 542.857)
+
 [node name="Saus" parent="PrepStation/DraggableObjects" instance=ExtResource("17_3tge8")]
-position = Vector2(393, 499)
+position = Vector2(427, 515)
 scale = Vector2(0.525, 0.525)
 
 [node name="PlaceholderAssets" type="Node2D" parent="PrepStation"]
@@ -560,12 +644,16 @@ text = "Main menu"
 
 [editable path="PrepStation/DraggableObjects/GranolaBox"]
 [editable path="PrepStation/DraggableObjects/Apple"]
-[editable path="PrepStation/DraggableObjects/Almonds"]
 [editable path="PrepStation/DraggableObjects/Banana"]
 [editable path="PrepStation/DraggableObjects/Chiaseeds"]
+[editable path="PrepStation/DraggableObjects/Cranberries"]
 [editable path="PrepStation/DraggableObjects/Blackberries"]
 [editable path="PrepStation/DraggableObjects/Blueberries"]
 [editable path="PrepStation/DraggableObjects/Cacaonibs"]
 [editable path="PrepStation/DraggableObjects/Cashews"]
 [editable path="PrepStation/DraggableObjects/Cherries"]
+[editable path="PrepStation/DraggableObjects/Flax"]
 [editable path="PrepStation/DraggableObjects/Cinnamon"]
+[editable path="PrepStation/DraggableObjects/Cocoa"]
+[editable path="PrepStation/DraggableObjects/Coconutflakes"]
+[editable path="PrepStation/DraggableObjects/Almonds"]
