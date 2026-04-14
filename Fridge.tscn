@@ -81,18 +81,18 @@ volume_db = 10.0
 
 [node name="Items" type="Node2D" parent="."]
 
-[node name="Strawberries" parent="." instance=ExtResource("9_mqeoq")]
+[node name="strawberry" parent="." instance=ExtResource("9_mqeoq")]
 position = Vector2(-370, 405)
 itemId = "strawberry"
 itemName = "Strawberries"
 itemDescription = "The average strawberry has 200 seeds on the outside!"
 
-[node name="Sprite2D" parent="Strawberries" index="0"]
+[node name="Sprite2D" parent="strawberry" index="0"]
 position = Vector2(458.5, -6.49992)
 scale = Vector2(0.0835, 0.0835)
 texture = ExtResource("10_kfu12")
 
-[node name="CollisionShape2D" parent="Strawberries" index="1"]
+[node name="CollisionShape2D" parent="strawberry" index="1"]
 position = Vector2(453.5, -4.49994)
 
 [node name="Yogurt" parent="." instance=ExtResource("9_mqeoq")]
@@ -109,18 +109,18 @@ texture = ExtResource("11_ay08j")
 [node name="CollisionShape2D" parent="Yogurt" index="1"]
 position = Vector2(441, 18)
 
-[node name="Blueberries" parent="." instance=ExtResource("9_mqeoq")]
+[node name="blueberries" parent="." instance=ExtResource("9_mqeoq")]
 position = Vector2(-370, 405)
-itemId = "blueberry"
+itemId = "blueberries"
 itemName = "Blueberries"
 itemDescription = "I'm blue dabadee dabadie"
 
-[node name="Sprite2D" parent="Blueberries" index="0"]
+[node name="Sprite2D" parent="blueberries" index="0"]
 position = Vector2(890.5, -155.5)
 scale = Vector2(0.0545, 0.0545)
 texture = ExtResource("11_nxl8v")
 
-[node name="CollisionShape2D" parent="Blueberries" index="1"]
+[node name="CollisionShape2D" parent="blueberries" index="1"]
 position = Vector2(888, -154)
 
 [node name="Raspberries" parent="." instance=ExtResource("9_mqeoq")]
@@ -256,9 +256,9 @@ flip_h = true
 [node name="CollisionShape2D" parent="Cherries" index="1"]
 position = Vector2(702, -519)
 
-[editable path="Strawberries"]
+[editable path="strawberry"]
 [editable path="Yogurt"]
-[editable path="Blueberries"]
+[editable path="blueberries"]
 [editable path="Raspberries"]
 [editable path="Dates"]
 [editable path="Blackberries"]

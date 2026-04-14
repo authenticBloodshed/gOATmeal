@@ -3,9 +3,55 @@ extends Node2D
 var counter = 0
 var isCorrect = null
 @export var saus : NodePath
+@onready var apple = $DraggableObjects/Apple
+@onready var granola = $DraggableObjects/GranolaBox
+@onready var yogurt = $DraggableObjects/DragItem
+@onready var oatmeal = $DraggableObjects/DragOatmeal
+@onready var peach = $DraggableObjects/Peach
+@onready var kiwi = $DraggableObjects/Kiwi
+@onready var goldenKiwi = $DraggableObjects/GoldenKiwi
+@onready var banana = $DraggableObjects/Banana
+@onready var raspberry = $DraggableObjects/Raspberry
+@onready var chia = $DraggableObjects/Chiaseeds
+@onready var pistachio = $DraggableObjects/Pistachio
+@onready var cranberries = $DraggableObjects/Cranberries
+@onready var blackberries = $DraggableObjects/Blackberries
+@onready var blueberries = $DraggableObjects/Blueberries
+@onready var quinoa = $DraggableObjects/Quinoa
+@onready var nibs = $DraggableObjects/Cacaonibs
+@onready var cashews = $DraggableObjects/Cashews
+@onready var cherries = $DraggableObjects/Cherries
+@onready var flax = $DraggableObjects/Flax
+@onready var grapes = $DraggableObjects/Grapes
+@onready var pear = $DraggableObjects/Pear
+@onready var walnut = $DraggableObjects/Walnut
+@onready var rice = $DraggableObjects/Rice
+@onready var pineapple = $DraggableObjects/Pineapple
+@onready var pecans = $DraggableObjects/Pecans
+@onready var redGrape = $DraggableObjects/RedGrape
+@onready var dates = $DraggableObjects/Dates
+@onready var hazelnut = $DraggableObjects/Hazelnut
+@onready var sunflower = $DraggableObjects/Sunflower
+@onready var strawberries = $DraggableObjects/Strawberries
+@onready var cinnamon = $DraggableObjects/Cinnamon
+@onready var cocoa = $DraggableObjects/Cocoa
+@onready var coconut = $DraggableObjects/Coconutflakes
+@onready var macadamia = $DraggableObjects/Macadamia
+@onready var raisin = $DraggableObjects/Raisin
+@onready var jam = $DraggableObjects/Jam
+@onready var goji = $DraggableObjects/Goji
+@onready var almonds = $DraggableObjects/Almonds
+@onready var sauce = $DraggableObjects/Saus
 
-func _ready():
-	pass # Replace with function body.
+func _process(delta):
+	if GameManager.is_item_collected("chia"):
+		$DraggableObjects/Chiaseeds.show()
+		
+	if GameManager.is_item_collected("strawberry"):
+		$DraggableObjects/Strawberries.show()
+	
+	if GameManager.is_item_collected("blueberries"):
+		$DraggableObjects/Blueberries.show()
 
 func _input(event):
 	if event is InputEventMouseButton and event.pressed:
@@ -75,3 +121,13 @@ func _on_button_pressed():
 	if isCorrect == true:
 		$"../WinScreen".show()
 		$"../Button".hide()
+
+func _check_inventory():
+	if GameManager.is_item_collected("chia"):
+		chia.show()
+		
+	if GameManager.is_item_collected("strawberry"):
+		$DraggableObjects/Strawberries.show()
+	
+	if GameManager.is_item_collected("blueberries"):
+		$DraggableObjects/Blueberries.show()

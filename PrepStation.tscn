@@ -178,6 +178,7 @@ visible = false
 position = Vector2(302, 96)
 
 [node name="DragItem" parent="PrepStation/DraggableObjects" instance=ExtResource("10_mer3u")]
+visible = false
 position = Vector2(898, 87)
 scale = Vector2(0.08, 0.08)
 targetPath = NodePath("../../FinalAssets/Yogurt")
@@ -193,11 +194,13 @@ stream = ExtResource("5_liu57")
 volume_db = 10.0
 
 [node name="DragOatmeal" parent="PrepStation/DraggableObjects" instance=ExtResource("13_u64xb")]
+visible = false
 position = Vector2(1043, 92)
 scale = Vector2(0.09, 0.09)
 targetPath = NodePath("../../FinalAssets/OatmealBowl")
 
 [node name="GranolaBox" parent="PrepStation/DraggableObjects" instance=ExtResource("16_qnom6")]
+visible = false
 position = Vector2(251, 466)
 scale = Vector2(0.175, 0.175)
 
@@ -209,6 +212,7 @@ scale = Vector2(0.631428, 0.631428)
 position = Vector2(-165.714, 131.429)
 
 [node name="Apple" parent="PrepStation/DraggableObjects" instance=ExtResource("16_qnom6")]
+visible = false
 position = Vector2(228, 412)
 scale = Vector2(0.175, 0.175)
 granolaChunkScene = ExtResource("14_gmhuf")
@@ -222,6 +226,7 @@ texture = ExtResource("14_76ypw")
 position = Vector2(-200, -2091.43)
 
 [node name="Peach" parent="PrepStation/DraggableObjects" instance=ExtResource("16_qnom6")]
+visible = false
 position = Vector2(469, 410)
 scale = Vector2(0.175, 0.175)
 granolaChunkScene = ExtResource("16_5rtbe")
@@ -235,6 +240,7 @@ texture = ExtResource("16_267qb")
 position = Vector2(-120, -2068.57)
 
 [node name="Kiwi" parent="PrepStation/DraggableObjects" instance=ExtResource("16_qnom6")]
+visible = false
 position = Vector2(382, 401)
 scale = Vector2(0.175, 0.175)
 granolaChunkScene = ExtResource("16_jdtqb")
@@ -248,6 +254,7 @@ texture = ExtResource("17_xe5fv")
 position = Vector2(-125.714, -2022.86)
 
 [node name="GoldenKiwi" parent="PrepStation/DraggableObjects" instance=ExtResource("16_qnom6")]
+visible = false
 position = Vector2(311, 416)
 scale = Vector2(0.175, 0.175)
 granolaChunkScene = ExtResource("16_nco8x")
@@ -261,6 +268,7 @@ texture = ExtResource("17_do28j")
 position = Vector2(-200, -2091.43)
 
 [node name="Banana" parent="PrepStation/DraggableObjects" instance=ExtResource("16_qnom6")]
+visible = false
 position = Vector2(-165, 509)
 scale = Vector2(0.175, 0.175)
 granolaChunkScene = ExtResource("18_nf2qx")
@@ -280,6 +288,7 @@ position = Vector2(982.861, -2600)
 position = Vector2(2405.71, 400)
 
 [node name="Raspberry" parent="PrepStation/DraggableObjects" instance=ExtResource("16_qnom6")]
+visible = false
 position = Vector2(-344, 510)
 scale = Vector2(0.175, 0.175)
 granolaChunkScene = ExtResource("24_ryv1p")
@@ -299,6 +308,7 @@ position = Vector2(937.147, -2714.29)
 position = Vector2(2405.71, 400)
 
 [node name="Chiaseeds" parent="PrepStation/DraggableObjects" instance=ExtResource("16_qnom6")]
+visible = false
 position = Vector2(-166, 503)
 scale = Vector2(0.175, 0.175)
 granolaChunkScene = ExtResource("20_y20g3")
@@ -318,6 +328,7 @@ position = Vector2(131.429, -2737.14)
 position = Vector2(7040, 2771.43)
 
 [node name="Pistachio" parent="PrepStation/DraggableObjects" instance=ExtResource("16_qnom6")]
+visible = false
 position = Vector2(-257, 490)
 scale = Vector2(0.175, 0.175)
 granolaChunkScene = ExtResource("26_on4av")
@@ -337,6 +348,7 @@ position = Vector2(131.429, -2737.14)
 position = Vector2(7040, 2771.43)
 
 [node name="Cranberries" parent="PrepStation/DraggableObjects" instance=ExtResource("16_qnom6")]
+visible = false
 position = Vector2(-507, 505)
 scale = Vector2(0.175, 0.175)
 granolaChunkScene = ExtResource("20_7hg4k")
@@ -356,6 +368,7 @@ position = Vector2(74.2858, -2811.43)
 position = Vector2(7040, 2771.43)
 
 [node name="Blackberries" parent="PrepStation/DraggableObjects" instance=ExtResource("16_qnom6")]
+visible = false
 position = Vector2(-165, 509)
 scale = Vector2(0.175, 0.175)
 granolaChunkScene = ExtResource("20_wydm5")
@@ -375,6 +388,7 @@ position = Vector2(251.429, -2462.86)
 position = Vector2(6668.57, 2954.29)
 
 [node name="Blueberries" parent="PrepStation/DraggableObjects" instance=ExtResource("16_qnom6")]
+visible = false
 position = Vector2(-165, 509)
 scale = Vector2(0.175, 0.175)
 granolaChunkScene = ExtResource("22_0vmfw")
@@ -394,6 +408,7 @@ position = Vector2(268.572, -2525.71)
 position = Vector2(6325.71, 1085.71)
 
 [node name="Quinoa" parent="PrepStation/DraggableObjects" instance=ExtResource("16_qnom6")]
+visible = false
 position = Vector2(-194, 369)
 scale = Vector2(0.175, 0.175)
 granolaChunkScene = ExtResource("34_txovy")
@@ -413,6 +428,7 @@ position = Vector2(322.149, -2405.71)
 position = Vector2(6325.71, 1085.71)
 
 [node name="Cacaonibs" parent="PrepStation/DraggableObjects" instance=ExtResource("16_qnom6")]
+visible = false
 position = Vector2(-165, 509)
 scale = Vector2(0.175, 0.175)
 granolaChunkScene = ExtResource("24_7vnlo")
@@ -432,6 +448,7 @@ position = Vector2(102.854, -2640)
 position = Vector2(5942.86, 2645.71)
 
 [node name="Cashews" parent="PrepStation/DraggableObjects" instance=ExtResource("16_qnom6")]
+visible = false
 position = Vector2(-165, 509)
 scale = Vector2(0.175, 0.175)
 granolaChunkScene = ExtResource("26_mr4dr")
@@ -451,6 +468,7 @@ position = Vector2(251.429, -2462.86)
 position = Vector2(6942.86, 1137.14)
 
 [node name="Cherries" parent="PrepStation/DraggableObjects" instance=ExtResource("16_qnom6")]
+visible = false
 position = Vector2(-165, 509)
 scale = Vector2(0.175, 0.175)
 granolaChunkScene = ExtResource("28_ohsjo")
@@ -470,6 +488,7 @@ position = Vector2(80.0008, -2571.43)
 position = Vector2(6645.71, 1657.14)
 
 [node name="Flax" parent="PrepStation/DraggableObjects" instance=ExtResource("16_qnom6")]
+visible = false
 position = Vector2(-284, 467)
 scale = Vector2(0.175, 0.175)
 granolaChunkScene = ExtResource("32_qyuyh")
@@ -489,6 +508,7 @@ position = Vector2(74.29, -2605.71)
 position = Vector2(6645.71, 1657.14)
 
 [node name="Grapes" parent="PrepStation/DraggableObjects" instance=ExtResource("16_qnom6")]
+visible = false
 position = Vector2(-213, 509)
 scale = Vector2(0.175, 0.175)
 granolaChunkScene = ExtResource("36_i6r7y")
@@ -508,6 +528,7 @@ position = Vector2(1171.43, -1228.57)
 position = Vector2(6508.57, 1845.71)
 
 [node name="Pear" parent="PrepStation/DraggableObjects" instance=ExtResource("16_qnom6")]
+visible = false
 position = Vector2(-47, 491)
 scale = Vector2(0.175, 0.175)
 granolaChunkScene = ExtResource("42_jkku3")
@@ -527,6 +548,7 @@ position = Vector2(11.4287, -2497.14)
 position = Vector2(6508.57, 1845.71)
 
 [node name="Walnut" parent="PrepStation/DraggableObjects" instance=ExtResource("16_qnom6")]
+visible = false
 position = Vector2(-770, 266)
 scale = Vector2(0.175, 0.175)
 granolaChunkScene = ExtResource("50_6krac")
@@ -546,6 +568,7 @@ position = Vector2(-131.427, -2582.85)
 position = Vector2(6508.57, 1845.71)
 
 [node name="Rice" parent="PrepStation/DraggableObjects" instance=ExtResource("16_qnom6")]
+visible = false
 position = Vector2(-213, 514)
 scale = Vector2(0.175, 0.175)
 granolaChunkScene = ExtResource("48_rk2s1")
@@ -565,6 +588,7 @@ position = Vector2(91.4301, -2611.42)
 position = Vector2(6508.57, 1845.71)
 
 [node name="Pineapple" parent="PrepStation/DraggableObjects" instance=ExtResource("16_qnom6")]
+visible = false
 position = Vector2(-349, 199)
 scale = Vector2(0.175, 0.175)
 granolaChunkScene = ExtResource("44_7lwjv")
@@ -584,6 +608,7 @@ position = Vector2(-45.7128, -2565.71)
 position = Vector2(6508.57, 1845.71)
 
 [node name="Pecans" parent="PrepStation/DraggableObjects" instance=ExtResource("16_qnom6")]
+visible = false
 position = Vector2(-218, 751)
 scale = Vector2(0.175, 0.175)
 granolaChunkScene = ExtResource("44_bcd6e")
@@ -603,6 +628,7 @@ position = Vector2(62.8587, -2691.42)
 position = Vector2(6508.57, 1845.71)
 
 [node name="RedGrape" parent="PrepStation/DraggableObjects" instance=ExtResource("16_qnom6")]
+visible = false
 position = Vector2(-892, 313)
 scale = Vector2(0.175, 0.175)
 granolaChunkScene = ExtResource("56_ydb6k")
@@ -622,6 +648,7 @@ position = Vector2(62.8587, -2691.42)
 position = Vector2(6508.57, 1845.71)
 
 [node name="Dates" parent="PrepStation/DraggableObjects" instance=ExtResource("16_qnom6")]
+visible = false
 position = Vector2(-954, 384)
 scale = Vector2(0.175, 0.175)
 granolaChunkScene = ExtResource("58_8naq7")
@@ -641,6 +668,7 @@ position = Vector2(62.8587, -2691.42)
 position = Vector2(6508.57, 1845.71)
 
 [node name="Hazelnut" parent="PrepStation/DraggableObjects" instance=ExtResource("16_qnom6")]
+visible = false
 position = Vector2(-830, 539)
 scale = Vector2(0.175, 0.175)
 granolaChunkScene = ExtResource("38_dckb6")
@@ -660,6 +688,7 @@ position = Vector2(-20.0003, -2627.89)
 position = Vector2(6508.57, 1845.71)
 
 [node name="Sunflower" parent="PrepStation/DraggableObjects" instance=ExtResource("16_qnom6")]
+visible = false
 position = Vector2(-742, 531)
 scale = Vector2(0.175, 0.175)
 granolaChunkScene = ExtResource("64_80gnp")
@@ -679,6 +708,7 @@ position = Vector2(-20.0003, -2627.89)
 position = Vector2(6508.57, 1845.71)
 
 [node name="Strawberries" parent="PrepStation/DraggableObjects" instance=ExtResource("16_qnom6")]
+visible = false
 position = Vector2(-746, 555)
 scale = Vector2(0.175, 0.175)
 granolaChunkScene = ExtResource("62_0a716")
@@ -698,6 +728,7 @@ position = Vector2(-140, -2410.75)
 position = Vector2(6508.57, 1845.71)
 
 [node name="Cinnamon" parent="PrepStation/DraggableObjects" instance=ExtResource("16_qnom6")]
+visible = false
 position = Vector2(-165, 509)
 scale = Vector2(0.175, 0.175)
 granolaChunkScene = ExtResource("32_pny42")
@@ -717,6 +748,7 @@ position = Vector2(5.71893, -2502.86)
 position = Vector2(5605.71, 2771.43)
 
 [node name="Cocoa" parent="PrepStation/DraggableObjects" instance=ExtResource("16_qnom6")]
+visible = false
 position = Vector2(-165, 509)
 scale = Vector2(0.175, 0.175)
 granolaChunkScene = ExtResource("32_12fop")
@@ -736,6 +768,7 @@ position = Vector2(-22.8557, -2811.43)
 position = Vector2(2828.57, 2794.29)
 
 [node name="Coconutflakes" parent="PrepStation/DraggableObjects" instance=ExtResource("16_qnom6")]
+visible = false
 position = Vector2(-236, 237)
 scale = Vector2(0.175, 0.175)
 granolaChunkScene = ExtResource("34_7d1h0")
@@ -755,6 +788,7 @@ position = Vector2(80.0014, -2702.86)
 position = Vector2(2828.57, 2794.29)
 
 [node name="Macadamia" parent="PrepStation/DraggableObjects" instance=ExtResource("16_qnom6")]
+visible = false
 position = Vector2(-275, 289)
 scale = Vector2(0.175, 0.175)
 granolaChunkScene = ExtResource("48_nrina")
@@ -774,6 +808,7 @@ position = Vector2(-54.2855, -2402.86)
 position = Vector2(2828.57, 2794.29)
 
 [node name="Raisin" parent="PrepStation/DraggableObjects" instance=ExtResource("16_qnom6")]
+visible = false
 position = Vector2(361, 133)
 scale = Vector2(0.175, 0.175)
 granolaChunkScene = ExtResource("64_w286a")
@@ -793,6 +828,7 @@ position = Vector2(-51.4289, -2777.14)
 position = Vector2(2828.57, 2794.29)
 
 [node name="Jam" parent="PrepStation/DraggableObjects" instance=ExtResource("16_qnom6")]
+visible = false
 position = Vector2(18, 557)
 scale = Vector2(0.175, 0.175)
 granolaChunkScene = ExtResource("48_x3md0")
@@ -812,6 +848,7 @@ position = Vector2(-5.71427, -2611.43)
 position = Vector2(2828.57, 2794.29)
 
 [node name="Goji" parent="PrepStation/DraggableObjects" instance=ExtResource("16_qnom6")]
+visible = false
 position = Vector2(-140, 209)
 scale = Vector2(0.175, 0.175)
 granolaChunkScene = ExtResource("42_fdnp5")
@@ -831,6 +868,7 @@ position = Vector2(62.8568, -2685.71)
 position = Vector2(2828.57, 2794.29)
 
 [node name="Almonds" parent="PrepStation/DraggableObjects" instance=ExtResource("16_qnom6")]
+visible = false
 position = Vector2(353, 939)
 scale = Vector2(0.175, 0.175)
 granolaChunkScene = ExtResource("16_6stob")
@@ -850,6 +888,7 @@ position = Vector2(251.429, -2462.86)
 position = Vector2(-828.571, 542.857)
 
 [node name="Saus" parent="PrepStation/DraggableObjects" instance=ExtResource("17_3tge8")]
+visible = false
 position = Vector2(427, 535)
 scale = Vector2(0.445, 0.445)
 
