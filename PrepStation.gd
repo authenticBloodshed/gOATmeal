@@ -32,7 +32,7 @@ var isCorrect = null
 @onready var dates = $DraggableObjects/Dates
 @onready var hazelnut = $DraggableObjects/Hazelnut
 @onready var sunflower = $DraggableObjects/Sunflower
-@onready var strawberries = $DraggableObjects/Strawberries
+@onready var strawberries = $DraggableObjects/strawberries
 @onready var cinnamon = $DraggableObjects/Cinnamon
 @onready var cocoa = $DraggableObjects/Cocoa
 @onready var coconut = $DraggableObjects/Coconutflakes
@@ -45,16 +45,31 @@ var isCorrect = null
 
 func _process(delta):
 	if GameManager.is_item_collected("chia"):
-		$DraggableObjects/Chiaseeds.show()
-		
+		chia.show()
 	if GameManager.is_item_collected("strawberries"):
-		$DraggableObjects/Strawberries.show()
-	
+		strawberries.show()
 	if GameManager.is_item_collected("blueberries"):
-		$DraggableObjects/Blueberries.show()
-	
+		blueberries.show()
 	if GameManager.is_item_collected("yogurt"):
-		$DraggableObjects/DragItem.show()
+		yogurt.show()
+	if GameManager.is_item_collected("kiwi"):
+		kiwi.show()
+	if GameManager.is_item_collected("goldenkiwi"):
+		goldenKiwi.show()
+	if GameManager.is_item_collected("dates"):
+		dates.show()
+	if GameManager.is_item_collected("raspberries"):
+		raspberry.show()
+	if GameManager.is_item_collected("blackberries"):
+		blackberries.show()
+	if GameManager.is_item_collected("peach"):
+		peach.show()
+	if GameManager.is_item_collected("greengrapes"):
+		grapes.show()
+	if GameManager.is_item_collected("redgrapes"):
+		redGrape.show()
+	if GameManager.is_item_collected("cherries"):
+		cherries.show()
 
 func _input(event):
 	if event is InputEventMouseButton and event.pressed:
