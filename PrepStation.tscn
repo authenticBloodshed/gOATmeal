@@ -707,24 +707,24 @@ position = Vector2(-20.0003, -2627.89)
 [node name="SpawnedGranola" parent="PrepStation/DraggableObjects/Sunflower" index="1"]
 position = Vector2(6508.57, 1845.71)
 
-[node name="Strawberries" parent="PrepStation/DraggableObjects" instance=ExtResource("16_qnom6")]
+[node name="strawberries" parent="PrepStation/DraggableObjects" instance=ExtResource("16_qnom6")]
 visible = false
 position = Vector2(-746, 555)
 scale = Vector2(0.175, 0.175)
 granolaChunkScene = ExtResource("62_0a716")
 
-[node name="Box" parent="PrepStation/DraggableObjects/Strawberries" index="0"]
+[node name="Box" parent="PrepStation/DraggableObjects/strawberries" index="0"]
 position = Vector2(6508.57, 1845.71)
 
-[node name="Sprite2D" parent="PrepStation/DraggableObjects/Strawberries/Box" index="0"]
+[node name="Sprite2D" parent="PrepStation/DraggableObjects/strawberries/Box" index="0"]
 position = Vector2(-157.143, -2353.61)
 scale = Vector2(0.522856, 0.492099)
 texture = ExtResource("63_lw7mp")
 
-[node name="CollisionShape2D" parent="PrepStation/DraggableObjects/Strawberries/Box" index="1"]
+[node name="CollisionShape2D" parent="PrepStation/DraggableObjects/strawberries/Box" index="1"]
 position = Vector2(-140, -2410.75)
 
-[node name="SpawnedGranola" parent="PrepStation/DraggableObjects/Strawberries" index="1"]
+[node name="SpawnedGranola" parent="PrepStation/DraggableObjects/strawberries" index="1"]
 position = Vector2(6508.57, 1845.71)
 
 [node name="Cinnamon" parent="PrepStation/DraggableObjects" instance=ExtResource("16_qnom6")]
@@ -1131,7 +1131,7 @@ text = "Main menu"
 [editable path="PrepStation/DraggableObjects/Dates"]
 [editable path="PrepStation/DraggableObjects/Hazelnut"]
 [editable path="PrepStation/DraggableObjects/Sunflower"]
-[editable path="PrepStation/DraggableObjects/Strawberries"]
+[editable path="PrepStation/DraggableObjects/strawberries"]
 [editable path="PrepStation/DraggableObjects/Cinnamon"]
 [editable path="PrepStation/DraggableObjects/Cocoa"]
 [editable path="PrepStation/DraggableObjects/Coconutflakes"]

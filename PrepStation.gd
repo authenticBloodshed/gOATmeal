@@ -47,11 +47,14 @@ func _process(delta):
 	if GameManager.is_item_collected("chia"):
 		$DraggableObjects/Chiaseeds.show()
 		
-	if GameManager.is_item_collected("strawberry"):
+	if GameManager.is_item_collected("strawberries"):
 		$DraggableObjects/Strawberries.show()
 	
 	if GameManager.is_item_collected("blueberries"):
 		$DraggableObjects/Blueberries.show()
+	
+	if GameManager.is_item_collected("yogurt"):
+		$DraggableObjects/DragItem.show()
 
 func _input(event):
 	if event is InputEventMouseButton and event.pressed:

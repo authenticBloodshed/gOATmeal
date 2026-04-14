@@ -81,32 +81,32 @@ volume_db = 10.0
 
 [node name="Items" type="Node2D" parent="."]
 
-[node name="strawberry" parent="." instance=ExtResource("9_mqeoq")]
+[node name="strawberries" parent="." instance=ExtResource("9_mqeoq")]
 position = Vector2(-370, 405)
-itemId = "strawberry"
+itemId = "strawberries"
 itemName = "Strawberries"
 itemDescription = "The average strawberry has 200 seeds on the outside!"
 
-[node name="Sprite2D" parent="strawberry" index="0"]
+[node name="Sprite2D" parent="strawberries" index="0"]
 position = Vector2(458.5, -6.49992)
 scale = Vector2(0.0835, 0.0835)
 texture = ExtResource("10_kfu12")
 
-[node name="CollisionShape2D" parent="strawberry" index="1"]
+[node name="CollisionShape2D" parent="strawberries" index="1"]
 position = Vector2(453.5, -4.49994)
 
-[node name="Yogurt" parent="." instance=ExtResource("9_mqeoq")]
+[node name="yogurt" parent="." instance=ExtResource("9_mqeoq")]
 position = Vector2(7, 376)
 itemId = "yogurt"
 itemName = "Yogurt"
 itemDescription = "I eat this on a dairy basis!"
 
-[node name="Sprite2D" parent="Yogurt" index="0"]
+[node name="Sprite2D" parent="yogurt" index="0"]
 position = Vector2(438, 18)
 scale = Vector2(0.058, 0.058)
 texture = ExtResource("11_ay08j")
 
-[node name="CollisionShape2D" parent="Yogurt" index="1"]
+[node name="CollisionShape2D" parent="yogurt" index="1"]
 position = Vector2(441, 18)
 
 [node name="blueberries" parent="." instance=ExtResource("9_mqeoq")]
@@ -256,8 +256,8 @@ flip_h = true
 [node name="CollisionShape2D" parent="Cherries" index="1"]
 position = Vector2(702, -519)
 
-[editable path="strawberry"]
-[editable path="Yogurt"]
+[editable path="strawberries"]
+[editable path="yogurt"]
 [editable path="blueberries"]
 [editable path="Raspberries"]
 [editable path="Dates"]
