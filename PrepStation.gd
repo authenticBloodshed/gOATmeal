@@ -70,6 +70,56 @@ func _process(delta):
 		redGrape.show()
 	if GameManager.is_item_collected("cherries"):
 		cherries.show()
+	if GameManager.is_item_collected("banana"):
+		banana.show()
+	if GameManager.is_item_collected("apple"):
+		apple.show()
+	if GameManager.is_item_collected("pear"):
+		pear.show()
+	if GameManager.is_item_collected("granola"):
+		granola.show()
+	if GameManager.is_item_collected("oats"):
+		oatmeal.show()
+	if GameManager.is_item_collected("sunflower"):
+		sunflower.show()
+	if GameManager.is_item_collected("coconut"):
+		coconut.show()
+	if GameManager.is_item_collected("cacaonibs"):
+		cocoa.show()
+	if GameManager.is_item_collected("puffedrice"):
+		rice.show()
+	if GameManager.is_item_collected("cocoa"):
+		cocoa.show()
+	if GameManager.is_item_collected("puffedquinoa"):
+		quinoa.show()
+	if GameManager.is_item_collected("flax"):
+		flax.show()
+	if GameManager.is_item_collected("raisins"):
+		raisin.show()
+	if GameManager.is_item_collected("cranberry"):
+		cranberries.show()
+	if GameManager.is_item_collected("goji"):
+		goji.show()
+	if GameManager.is_item_collected("pineapple"):
+		pineapple.show()
+	if GameManager.is_item_collected("cinnamon"):
+		cinnamon.show()
+	if GameManager.is_item_collected("jam"):
+		jam.show()
+	if GameManager.is_item_collected("almond"):
+		almonds.show()
+	if GameManager.is_item_collected("walnut"):
+		walnut.show()
+	if GameManager.is_item_collected("pecan"):
+		pecans.show()
+	if GameManager.is_item_collected("hazelnuts"):
+		hazelnut.show()
+	if GameManager.is_item_collected("cashews"):
+		cashews.show()
+	if GameManager.is_item_collected("pistachio"):
+		pistachio.show()
+	if GameManager.is_item_collected("macadamia"):
+		macadamia.show()
 
 func _input(event):
 	if event is InputEventMouseButton and event.pressed:
