@@ -50,7 +50,7 @@ func _process(delta):
 		strawberries.show()
 	if GameManager.is_item_collected("blueberries"):
 		blueberries.show()
-	if GameManager.is_item_collected("yogurt"):
+	if GameManager.is_item_collected("yogurt") and not yogurt.visible:
 		yogurt.show()
 	if GameManager.is_item_collected("kiwi"):
 		kiwi.show()
@@ -78,7 +78,7 @@ func _process(delta):
 		pear.show()
 	if GameManager.is_item_collected("granola"):
 		granola.show()
-	if GameManager.is_item_collected("oats"):
+	if GameManager.is_item_collected("oats") and not oatmeal.visible:
 		oatmeal.show()
 	if GameManager.is_item_collected("sunflower"):
 		sunflower.show()

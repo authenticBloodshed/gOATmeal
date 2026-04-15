@@ -27,6 +27,9 @@ func finish_drag():
 	# Activates target
 	var target = get_node(targetPath)
 	target.visible = true
-	
+	$Sprite2D.visble = false
 	# Removes the yogurt from scene
-	queue_free()
+	hide()
+	set_process(false)
+	set_physics_process(false)
+	input_pickable = false
