@@ -1,16 +1,40 @@
 extends Node2D
 
 var activeFilters = {
-	"yogurt": false,
-	"oatmeal": false,
-	"other": false
+	"type": {
+		"yogurt": false,
+		"oatmeal": false,
+		"other": false
+	},
+	"diet": {
+		"vegetarian": false,
+		"vegan": false,
+		"glutenFree": false,
+		"lactoseFree": false,
+		"nutFree": false,
+		"noArtificial": false,
+		"organic": false,
+		"highProtein": false,
+		"plantBased": false,
+		"halal": false,
+		"kosher": false,
+		"seasonal": false
+	}
 }
 
 var allDishes = [
-	{ "name": "Strawberry Yogurt", "type": "yogurt" },
-	{ "name": "Banana Oatmeal", "type": "oatmeal" },
-	{ "name": "Chocolate Yogurt", "type": "yogurt" },
-	{ "name": "Mystery Dish", "type": "other" }
+	{
+		"name": "Strawberry Yogurt",
+		"tags": ["yogurt", "vegetarian", "glutenFree", "highProtein"]
+	},
+	{
+		"name": "Vegan Oatmeal Bowl",
+		"tags": ["oatmeal", "vegan", "plantBased", "organic"]
+	},
+	{
+		"name": "Holiday Special",
+		"tags": ["other", "seasonal", "nutFree"]
+	}
 ]
 
 func _ready():
@@ -21,9 +45,10 @@ func _process(delta):
 
 func _on_all_button_toggled(toggled_on):
 	if toggled_on:
-		activeFilters["yogurt"] = false
-		activeFilters["oatmeal"] = false
-		activeFilters["other"] = false
+		if toggled_on:
+			for type in activeFilters["type"]:
+				activeFilters["type"][type] = false
+		
 		$TabContainer/Type/YogurtButton.button_pressed = false
 		$TabContainer/Type/OatmealButton.button_pressed = false
 		$TabContainer/Type/OtherButton.button_pressed = false
@@ -31,7 +56,7 @@ func _on_all_button_toggled(toggled_on):
 	apply_filters()
 
 func _on_yogurt_button_toggled(toggled_on):
-	activeFilters["yogurt"] = toggled_on
+	activeFilters["type"]["yogurt"] = toggled_on
 	
 	if toggled_on:
 		$TabContainer/Type/AllButton.button_pressed = false
@@ -39,7 +64,7 @@ func _on_yogurt_button_toggled(toggled_on):
 	apply_filters()
 
 func _on_oatmeal_button_toggled(toggled_on):
-	activeFilters["oatmeal"] = toggled_on
+	activeFilters["type"]["oatmeal"] = toggled_on
 	
 	if toggled_on:
 		$TabContainer/Type/AllButton.button_pressed = false
@@ -47,7 +72,7 @@ func _on_oatmeal_button_toggled(toggled_on):
 	apply_filters()
 
 func _on_other_button_toggled(toggled_on):
-	activeFilters["other"] = toggled_on
+	activeFilters["type"]["other"] = toggled_on
 	
 	if toggled_on:
 		$TabContainer/Type/AllButton.button_pressed = false
@@ -71,56 +96,107 @@ func _on_none_button_toggled(toggled_on):
 
 func _on_vegetarian_button_toggled(toggled_on):
 	$"TabContainer/Diet preferences/NoneButton".button_pressed = false
+	activeFilters["diet"]["vegetarian"] = toggled_on
+	apply_filters()
 
 func _on_vegan_button_toggled(toggled_on):
 	$"TabContainer/Diet preferences/NoneButton".button_pressed = false
+	activeFilters["diet"]["vegan"] = toggled_on
+	apply_filters()
 
 func _on_gf_button_toggled(toggled_on):
 	$"TabContainer/Diet preferences/NoneButton".button_pressed = false
+	activeFilters["diet"]["glutenFree"] = toggled_on
+	apply_filters()
 
 func _on_lf_button_toggled(toggled_on):
 	$"TabContainer/Diet preferences/NoneButton".button_pressed = false
-
+	activeFilters["diet"]["lactoseFree"] = toggled_on
+	apply_filters()
 func _on_nut_free_button_toggled(toggled_on):
 	$"TabContainer/Diet preferences/NoneButton".button_pressed = false
-
+	activeFilters["diet"]["nutFree"] = toggled_on
+	apply_filters()
 func _on_sugars_button_toggled(toggled_on):
 	$"TabContainer/Diet preferences/NoneButton".button_pressed = false
-
+	activeFilters["diet"]["noArtificial"] = toggled_on
+	apply_filters()
 func _on_organic_toggled(toggled_on):
 	$"TabContainer/Diet preferences/NoneButton".button_pressed = false
-
+	activeFilters["diet"]["organic"] = toggled_on
+	apply_filters()
 func _on_protein_button_toggled(toggled_on):
 	$"TabContainer/Diet preferences/NoneButton".button_pressed = false
-
+	activeFilters["diet"]["highProtein"] = toggled_on
+	apply_filters()
 func _on_plant_based_button_toggled(toggled_on):
 	$"TabContainer/Diet preferences/NoneButton".button_pressed = false
+	activeFilters["diet"]["plantBased"] = toggled_on
+	apply_filters()
 
 func _on_halal_button_toggled(toggled_on):
 	$"TabContainer/Diet preferences/NoneButton".button_pressed = false
-
+	activeFilters["diet"]["halal"] = toggled_on
+	apply_filters()
 func _on_kosher_button_toggled(toggled_on):
 	$"TabContainer/Diet preferences/NoneButton".button_pressed = false
-
+	activeFilters["diet"]["kosher"] = toggled_on
+	apply_filters()
 func _on_seasonal_button_toggled(toggled_on):
 	$"TabContainer/Diet preferences/NoneButton".button_pressed = false
-
+	activeFilters["diet"]["seasonal"] = toggled_on
+	apply_filters()
 func apply_filters():
 	var filteredDishes = []
-	var anyFilterActive = false
-	
-	for key in activeFilters:
-		if activeFilters[key]:
-			anyFilterActive = true
-			break
-	
+	var activeTypes = []
+	var activeDiets = []
+
+	# collect active filters
+	for type in activeFilters["type"]:
+		if activeFilters["type"][type]:
+			activeTypes.append(type)
+
+	for diet in activeFilters["diet"]:
+		if activeFilters["diet"][diet]:
+			activeDiets.append(diet)
+
 	for dish in allDishes:
-		if $TabContainer/Type/AllButton.button_pressed or not anyFilterActive:
+
+		# ✅ Show all if nothing selected OR "All" is pressed
+		if $TabContainer/Type/AllButton.button_pressed \
+		or (activeTypes.is_empty() and activeDiets.is_empty()):
 			filteredDishes.append(dish)
+			continue
+
+		# -------------------------
+		# 🥣 TYPE CHECK
+		# -------------------------
+		var typeMatch = false
+
+		if activeTypes.is_empty():
+			typeMatch = true
 		else:
-			if activeFilters[dish["type"]]:
-				filteredDishes.append(dish)
-	
+			for t in activeTypes:
+				if t in dish["tags"]:
+					typeMatch = true
+					break
+
+		# -------------------------
+		# 🌱 DIET CHECK (AND)
+		# -------------------------
+		var dietMatch = true
+
+		for d in activeDiets:
+			if d not in dish["tags"]:
+				dietMatch = false
+				break
+
+		# -------------------------
+		# ✅ FINAL
+		# -------------------------
+		if typeMatch and dietMatch:
+			filteredDishes.append(dish)
+
 	print("Filtered dishes: ", filteredDishes)
 
 func _on_button_pressed():
