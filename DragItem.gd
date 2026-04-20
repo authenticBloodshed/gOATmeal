@@ -24,6 +24,7 @@ func finish_drag():
 	dragging = false
 	z_index = 0
 	
+	
 	# Activates target
 	var target = get_node(targetPath)
 	target.visible = true

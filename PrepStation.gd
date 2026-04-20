@@ -2,6 +2,7 @@ extends Node2D
 
 var counter = 0
 var isCorrect = null
+var requiredItems = ["yogurt", "banana", "blueberries", "granola", "goji"]
 @export var saus : NodePath
 @onready var apple = $DraggableObjects/Apple
 @onready var granola = $DraggableObjects/GranolaBox
@@ -180,15 +181,7 @@ func _on_recipebook_button_pressed():
 	get_tree().change_scene_to_file("res://recipebook.tscn")
 
 func _on_button_pressed():
-	isCorrect = true 
-	
-	if isCorrect == false:
-		$"../LoseScreen".show()
-		$"../Button".hide()
-		
-	if isCorrect == true:
-		$"../WinScreen".show()
-		$"../Button".hide()
+	check_win()
 
 func _check_inventory():
 	if GameManager.is_item_collected("chia"):
@@ -199,3 +192,20 @@ func _check_inventory():
 	
 	if GameManager.is_item_collected("blueberries"):
 		$DraggableObjects/Blueberries.show()
+		
+		
+func check_win():
+	var isCorrect = true
+	
+	for item in requiredItems:
+		if not GameManager.is_item_used(item):
+			isCorrect = false
+	
+	if isCorrect:
+		print("you win")
+		$"../WinScreen".show()
+		$"../Button".hide()
+	else:
+		print("you lose")
+		$"../LoseScreen".show()
+		$"../Button".hide()

@@ -19,6 +19,7 @@ func pickup():
 	
 	# Tell the game an ingredient was collected
 	GameManager.set_item_collected(itemId, true)
+	GameManager.set_item_used(itemId, true)
 	get_tree().call_group("inventory_checkers", "check_inventory")
 	
 	# Removes the ingredient from the kitchen
