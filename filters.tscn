@@ -915,7 +915,7 @@ theme_override_styles/tab_unselected = ExtResource("6_e7n2h")
 layout_mode = 2
 color = Color(0.631373, 0.556863, 0.776471, 1)
 
-[node name="BananaButton" type="CheckButton" parent="TabManager/TabContainer/Exclude/TabContainer/Fresh fruits"]
+[node name="BananaExcludeButton" type="CheckButton" parent="TabManager/TabContainer/Exclude/TabContainer/Fresh fruits"]
 layout_mode = 0
 offset_left = 19.0
 offset_top = 21.0
@@ -924,7 +924,7 @@ offset_bottom = 58.0
 theme = ExtResource("1_hnnkf")
 text = "Banana "
 
-[node name="StrawberryButton" type="CheckButton" parent="TabManager/TabContainer/Exclude/TabContainer/Fresh fruits"]
+[node name="StrawberryExcludeButton" type="CheckButton" parent="TabManager/TabContainer/Exclude/TabContainer/Fresh fruits"]
 layout_mode = 0
 offset_left = 19.0
 offset_top = 63.0
@@ -933,7 +933,7 @@ offset_bottom = 100.0
 theme = ExtResource("1_hnnkf")
 text = "Strawberry "
 
-[node name="BlueberryButton" type="CheckButton" parent="TabManager/TabContainer/Exclude/TabContainer/Fresh fruits"]
+[node name="BlueberryExcludeButton" type="CheckButton" parent="TabManager/TabContainer/Exclude/TabContainer/Fresh fruits"]
 layout_mode = 0
 offset_left = 19.0
 offset_top = 112.0
@@ -942,7 +942,7 @@ offset_bottom = 149.0
 theme = ExtResource("1_hnnkf")
 text = "Blueberry "
 
-[node name="RaspberryButton" type="CheckButton" parent="TabManager/TabContainer/Exclude/TabContainer/Fresh fruits"]
+[node name="RaspberryExcludeButton" type="CheckButton" parent="TabManager/TabContainer/Exclude/TabContainer/Fresh fruits"]
 layout_mode = 0
 offset_left = 19.0
 offset_top = 162.0
@@ -951,7 +951,7 @@ offset_bottom = 199.0
 theme = ExtResource("1_hnnkf")
 text = "Raspberry "
 
-[node name="BlackberryButton" type="CheckButton" parent="TabManager/TabContainer/Exclude/TabContainer/Fresh fruits"]
+[node name="BlackberryExcludeButton" type="CheckButton" parent="TabManager/TabContainer/Exclude/TabContainer/Fresh fruits"]
 layout_mode = 0
 offset_left = 19.0
 offset_top = 210.0
@@ -960,7 +960,7 @@ offset_bottom = 247.0
 theme = ExtResource("1_hnnkf")
 text = "Blackberry "
 
-[node name="AppleButton" type="CheckButton" parent="TabManager/TabContainer/Exclude/TabContainer/Fresh fruits"]
+[node name="AppleExcludeButton" type="CheckButton" parent="TabManager/TabContainer/Exclude/TabContainer/Fresh fruits"]
 layout_mode = 0
 offset_left = 19.0
 offset_top = 256.0
@@ -969,7 +969,7 @@ offset_bottom = 293.0
 theme = ExtResource("1_hnnkf")
 text = "Apple "
 
-[node name="PearButton" type="CheckButton" parent="TabManager/TabContainer/Exclude/TabContainer/Fresh fruits"]
+[node name="PearExcludeButton" type="CheckButton" parent="TabManager/TabContainer/Exclude/TabContainer/Fresh fruits"]
 layout_mode = 0
 offset_left = 19.0
 offset_top = 302.0
@@ -978,7 +978,7 @@ offset_bottom = 339.0
 theme = ExtResource("1_hnnkf")
 text = "Pear"
 
-[node name="PeachButton" type="CheckButton" parent="TabManager/TabContainer/Exclude/TabContainer/Fresh fruits"]
+[node name="PeachExcludeButton" type="CheckButton" parent="TabManager/TabContainer/Exclude/TabContainer/Fresh fruits"]
 layout_mode = 0
 offset_left = 314.0
 offset_top = 19.0
@@ -987,7 +987,7 @@ offset_bottom = 56.0
 theme = ExtResource("1_hnnkf")
 text = "Peach "
 
-[node name="GreenKiwiButton" type="CheckButton" parent="TabManager/TabContainer/Exclude/TabContainer/Fresh fruits"]
+[node name="GreenKiwiExcludeButton" type="CheckButton" parent="TabManager/TabContainer/Exclude/TabContainer/Fresh fruits"]
 layout_mode = 0
 offset_left = 314.0
 offset_top = 61.0
@@ -996,7 +996,7 @@ offset_bottom = 98.0
 theme = ExtResource("1_hnnkf")
 text = "Green kiwi "
 
-[node name="GoldenKiwiButton" type="CheckButton" parent="TabManager/TabContainer/Exclude/TabContainer/Fresh fruits"]
+[node name="GoldenKiwiExcludeButton" type="CheckButton" parent="TabManager/TabContainer/Exclude/TabContainer/Fresh fruits"]
 layout_mode = 0
 offset_left = 314.0
 offset_top = 106.0
@@ -1005,7 +1005,7 @@ offset_bottom = 143.0
 theme = ExtResource("1_hnnkf")
 text = "Golden / yellow kiwi "
 
-[node name="PineappleButton" type="CheckButton" parent="TabManager/TabContainer/Exclude/TabContainer/Fresh fruits"]
+[node name="PineappleExcludeButton" type="CheckButton" parent="TabManager/TabContainer/Exclude/TabContainer/Fresh fruits"]
 layout_mode = 0
 offset_left = 314.0
 offset_top = 158.0
@@ -1014,7 +1014,7 @@ offset_bottom = 195.0
 theme = ExtResource("1_hnnkf")
 text = "Pineapple"
 
-[node name="GreenGrapesButton" type="CheckButton" parent="TabManager/TabContainer/Exclude/TabContainer/Fresh fruits"]
+[node name="GreenGrapesExcludeButton" type="CheckButton" parent="TabManager/TabContainer/Exclude/TabContainer/Fresh fruits"]
 layout_mode = 0
 offset_left = 314.0
 offset_top = 200.0
@@ -1023,7 +1023,7 @@ offset_bottom = 237.0
 theme = ExtResource("1_hnnkf")
 text = "Green grapes"
 
-[node name="RedGrapesButton" type="CheckButton" parent="TabManager/TabContainer/Exclude/TabContainer/Fresh fruits"]
+[node name="RedGrapesExcludeButton" type="CheckButton" parent="TabManager/TabContainer/Exclude/TabContainer/Fresh fruits"]
 layout_mode = 0
 offset_left = 314.0
 offset_top = 248.0
@@ -1056,7 +1056,7 @@ visible = false
 layout_mode = 2
 color = Color(0.631373, 0.556863, 0.776471, 1)
 
-[node name="RaisinsButton" type="CheckButton" parent="TabManager/TabContainer/Exclude/TabContainer/Dried fruits"]
+[node name="RaisinsExcludeButton" type="CheckButton" parent="TabManager/TabContainer/Exclude/TabContainer/Dried fruits"]
 layout_mode = 0
 offset_left = 19.0
 offset_top = 21.0
@@ -1065,7 +1065,7 @@ offset_bottom = 58.0
 theme = ExtResource("1_hnnkf")
 text = "Raisins"
 
-[node name="DatesButton" type="CheckButton" parent="TabManager/TabContainer/Exclude/TabContainer/Dried fruits"]
+[node name="DatesExcludeButton" type="CheckButton" parent="TabManager/TabContainer/Exclude/TabContainer/Dried fruits"]
 layout_mode = 0
 offset_left = 19.0
 offset_top = 63.0
@@ -1074,7 +1074,7 @@ offset_bottom = 100.0
 theme = ExtResource("1_hnnkf")
 text = "Dates "
 
-[node name="CranberryButton" type="CheckButton" parent="TabManager/TabContainer/Exclude/TabContainer/Dried fruits"]
+[node name="CranberryExcludeButton" type="CheckButton" parent="TabManager/TabContainer/Exclude/TabContainer/Dried fruits"]
 layout_mode = 0
 offset_left = 19.0
 offset_top = 112.0
@@ -1083,7 +1083,7 @@ offset_bottom = 149.0
 theme = ExtResource("1_hnnkf")
 text = "Cranberry "
 
-[node name="GojiButton" type="CheckButton" parent="TabManager/TabContainer/Exclude/TabContainer/Dried fruits"]
+[node name="GojiExcludeButton" type="CheckButton" parent="TabManager/TabContainer/Exclude/TabContainer/Dried fruits"]
 layout_mode = 0
 offset_left = 19.0
 offset_top = 162.0
@@ -1121,7 +1121,7 @@ visible = false
 layout_mode = 2
 color = Color(0.631373, 0.556863, 0.776471, 1)
 
-[node name="AlmondsButton" type="CheckButton" parent="TabManager/TabContainer/Exclude/TabContainer/Nuts"]
+[node name="AlmondsExcludeButton" type="CheckButton" parent="TabManager/TabContainer/Exclude/TabContainer/Nuts"]
 layout_mode = 0
 offset_left = 19.0
 offset_top = 21.0
@@ -1130,7 +1130,7 @@ offset_bottom = 58.0
 theme = ExtResource("1_hnnkf")
 text = "Almonds "
 
-[node name="WalnutsButton" type="CheckButton" parent="TabManager/TabContainer/Exclude/TabContainer/Nuts"]
+[node name="WalnutsExcludeButton" type="CheckButton" parent="TabManager/TabContainer/Exclude/TabContainer/Nuts"]
 layout_mode = 0
 offset_left = 19.0
 offset_top = 63.0
@@ -1139,7 +1139,7 @@ offset_bottom = 100.0
 theme = ExtResource("1_hnnkf")
 text = "Walnuts "
 
-[node name="PecansButton" type="CheckButton" parent="TabManager/TabContainer/Exclude/TabContainer/Nuts"]
+[node name="PecansExcludeButton" type="CheckButton" parent="TabManager/TabContainer/Exclude/TabContainer/Nuts"]
 layout_mode = 0
 offset_left = 19.0
 offset_top = 112.0
@@ -1148,7 +1148,7 @@ offset_bottom = 149.0
 theme = ExtResource("1_hnnkf")
 text = "Pecans "
 
-[node name="HazelnutsButton" type="CheckButton" parent="TabManager/TabContainer/Exclude/TabContainer/Nuts"]
+[node name="HazelnutsExcludeButton" type="CheckButton" parent="TabManager/TabContainer/Exclude/TabContainer/Nuts"]
 layout_mode = 0
 offset_left = 19.0
 offset_top = 162.0
@@ -1157,7 +1157,7 @@ offset_bottom = 199.0
 theme = ExtResource("1_hnnkf")
 text = "Hazelnuts "
 
-[node name="CashewsButton" type="CheckButton" parent="TabManager/TabContainer/Exclude/TabContainer/Nuts"]
+[node name="CashewsExcludeButton" type="CheckButton" parent="TabManager/TabContainer/Exclude/TabContainer/Nuts"]
 layout_mode = 0
 offset_left = 19.0
 offset_top = 210.0
@@ -1166,7 +1166,7 @@ offset_bottom = 247.0
 theme = ExtResource("1_hnnkf")
 text = "Cashews "
 
-[node name="PistachiosButton" type="CheckButton" parent="TabManager/TabContainer/Exclude/TabContainer/Nuts"]
+[node name="PistachiosExcludeButton" type="CheckButton" parent="TabManager/TabContainer/Exclude/TabContainer/Nuts"]
 layout_mode = 0
 offset_left = 19.0
 offset_top = 256.0
@@ -1175,7 +1175,7 @@ offset_bottom = 293.0
 theme = ExtResource("1_hnnkf")
 text = "Pistachios"
 
-[node name="MacadamiaButton" type="CheckButton" parent="TabManager/TabContainer/Exclude/TabContainer/Nuts"]
+[node name="MacadamiaExcludeButton" type="CheckButton" parent="TabManager/TabContainer/Exclude/TabContainer/Nuts"]
 layout_mode = 0
 offset_left = 19.0
 offset_top = 302.0
@@ -1426,4 +1426,28 @@ text = "View earned recipies"
 [connection signal="toggled" from="TabManager/TabContainer/Include/TabContainer/Toppings/MapleSyrupButton" to="TabManager" method="_on_maple_syrup_button_toggled"]
 [connection signal="toggled" from="TabManager/TabContainer/Include/TabContainer/Toppings/SprinklesButton" to="TabManager" method="_on_sprinkles_button_toggled"]
 [connection signal="toggled" from="TabManager/TabContainer/Include/TabContainer/Toppings/BrownSugarButton" to="TabManager" method="_on_brown_sugar_button_toggled"]
+[connection signal="toggled" from="TabManager/TabContainer/Exclude/TabContainer/Fresh fruits/BananaExcludeButton" to="TabManager" method="_on_banana_exclude_button_toggled"]
+[connection signal="toggled" from="TabManager/TabContainer/Exclude/TabContainer/Fresh fruits/StrawberryExcludeButton" to="TabManager" method="_on_strawberry_exclude_button_toggled"]
+[connection signal="toggled" from="TabManager/TabContainer/Exclude/TabContainer/Fresh fruits/BlueberryExcludeButton" to="TabManager" method="_on_blueberry_exclude_button_toggled"]
+[connection signal="toggled" from="TabManager/TabContainer/Exclude/TabContainer/Fresh fruits/RaspberryExcludeButton" to="TabManager" method="_on_raspberry_exclude_button_toggled"]
+[connection signal="toggled" from="TabManager/TabContainer/Exclude/TabContainer/Fresh fruits/BlackberryExcludeButton" to="TabManager" method="_on_blackberry_exclude_button_toggled"]
+[connection signal="toggled" from="TabManager/TabContainer/Exclude/TabContainer/Fresh fruits/AppleExcludeButton" to="TabManager" method="_on_apple_exclude_button_toggled"]
+[connection signal="toggled" from="TabManager/TabContainer/Exclude/TabContainer/Fresh fruits/PearExcludeButton" to="TabManager" method="_on_pear_exclude_button_toggled"]
+[connection signal="toggled" from="TabManager/TabContainer/Exclude/TabContainer/Fresh fruits/PeachExcludeButton" to="TabManager" method="_on_peach_exclude_button_toggled"]
+[connection signal="toggled" from="TabManager/TabContainer/Exclude/TabContainer/Fresh fruits/GreenKiwiExcludeButton" to="TabManager" method="_on_green_kiwi_exclude_button_toggled"]
+[connection signal="toggled" from="TabManager/TabContainer/Exclude/TabContainer/Fresh fruits/GoldenKiwiExcludeButton" to="TabManager" method="_on_golden_kiwi_exclude_button_toggled"]
+[connection signal="toggled" from="TabManager/TabContainer/Exclude/TabContainer/Fresh fruits/PineappleExcludeButton" to="TabManager" method="_on_pineapple_exclude_button_toggled"]
+[connection signal="toggled" from="TabManager/TabContainer/Exclude/TabContainer/Fresh fruits/GreenGrapesExcludeButton" to="TabManager" method="_on_green_grapes_exclude_button_toggled"]
+[connection signal="toggled" from="TabManager/TabContainer/Exclude/TabContainer/Fresh fruits/RedGrapesExcludeButton" to="TabManager" method="_on_red_grapes_exclude_button_toggled"]
+[connection signal="toggled" from="TabManager/TabContainer/Exclude/TabContainer/Dried fruits/RaisinsExcludeButton" to="TabManager" method="_on_raisins_exclude_button_toggled"]
+[connection signal="toggled" from="TabManager/TabContainer/Exclude/TabContainer/Dried fruits/DatesExcludeButton" to="TabManager" method="_on_dates_exclude_button_toggled"]
+[connection signal="toggled" from="TabManager/TabContainer/Exclude/TabContainer/Dried fruits/CranberryExcludeButton" to="TabManager" method="_on_cranberry_exclude_button_toggled"]
+[connection signal="toggled" from="TabManager/TabContainer/Exclude/TabContainer/Dried fruits/GojiExcludeButton" to="TabManager" method="_on_goji_exclude_button_toggled"]
+[connection signal="toggled" from="TabManager/TabContainer/Exclude/TabContainer/Nuts/AlmondsExcludeButton" to="TabManager" method="_on_almonds_exclude_button_toggled"]
+[connection signal="toggled" from="TabManager/TabContainer/Exclude/TabContainer/Nuts/WalnutsExcludeButton" to="TabManager" method="_on_walnuts_exclude_button_toggled"]
+[connection signal="toggled" from="TabManager/TabContainer/Exclude/TabContainer/Nuts/PecansExcludeButton" to="TabManager" method="_on_pecans_exclude_button_toggled"]
+[connection signal="toggled" from="TabManager/TabContainer/Exclude/TabContainer/Nuts/HazelnutsExcludeButton" to="TabManager" method="_on_hazelnuts_exclude_button_toggled"]
+[connection signal="toggled" from="TabManager/TabContainer/Exclude/TabContainer/Nuts/CashewsExcludeButton" to="TabManager" method="_on_cashews_exclude_button_toggled"]
+[connection signal="toggled" from="TabManager/TabContainer/Exclude/TabContainer/Nuts/PistachiosExcludeButton" to="TabManager" method="_on_pistachios_exclude_button_toggled"]
+[connection signal="toggled" from="TabManager/TabContainer/Exclude/TabContainer/Nuts/MacadamiaExcludeButton" to="TabManager" method="_on_macadamia_exclude_button_toggled"]
 [connection signal="pressed" from="Button" to="TabManager" method="_on_button_pressed"]

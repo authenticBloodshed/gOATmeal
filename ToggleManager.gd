@@ -515,3 +515,194 @@ func _on_brown_sugar_button_toggled(toggled_on):
 	else:
 		activeFilters["ingredients"]["include"].erase("brownSugar")
 	apply_filters()
+
+
+func _on_banana_exclude_button_toggled(toggled_on):
+	if toggled_on:
+		activeFilters["ingredients"]["exclude"].append("banana")
+	else:
+		activeFilters["ingredients"]["exclude"].erase("banana")
+	apply_filters()
+
+
+func _on_strawberry_exclude_button_toggled(toggled_on):
+	if toggled_on:
+		activeFilters["ingredients"]["exclude"].append("strawberry")
+	else:
+		activeFilters["ingredients"]["exclude"].erase("strawberry")
+	apply_filters()
+
+
+func _on_blueberry_exclude_button_toggled(toggled_on):
+	if toggled_on:
+		activeFilters["ingredients"]["exclude"].append("blueberry")
+	else:
+		activeFilters["ingredients"]["exclude"].erase("blueberry")
+	apply_filters()
+
+
+func _on_raspberry_exclude_button_toggled(toggled_on):
+	if toggled_on:
+		activeFilters["ingredients"]["exclude"].append("raspberry")
+	else:
+		activeFilters["ingredients"]["exclude"].erase("raspberry")
+	apply_filters()
+
+
+func _on_blackberry_exclude_button_toggled(toggled_on):
+	if toggled_on:
+		activeFilters["ingredients"]["exclude"].append("blackberry")
+	else:
+		activeFilters["ingredients"]["exclude"].erase("blackberry")
+	apply_filters()
+
+
+func _on_apple_exclude_button_toggled(toggled_on):
+	if toggled_on:
+		activeFilters["ingredients"]["exclude"].append("apple")
+	else:
+		activeFilters["ingredients"]["exclude"].erase("apple")
+	apply_filters()
+
+
+func _on_pear_exclude_button_toggled(toggled_on):
+	if toggled_on:
+		activeFilters["ingredients"]["exclude"].append("pear")
+	else:
+		activeFilters["ingredients"]["exclude"].erase("pear")
+	apply_filters()
+
+
+func _on_peach_exclude_button_toggled(toggled_on):
+	if toggled_on:
+		activeFilters["ingredients"]["exclude"].append("pear")
+	else:
+		activeFilters["ingredients"]["exclude"].erase("pear")
+	apply_filters()
+
+
+func _on_green_kiwi_exclude_button_toggled(toggled_on):
+	if toggled_on:
+		activeFilters["ingredients"]["exclude"].append("greenKiwi")
+	else:
+		activeFilters["ingredients"]["exclude"].erase("greenKiwi")
+	apply_filters()
+
+
+func _on_golden_kiwi_exclude_button_toggled(toggled_on):
+	if toggled_on:
+		activeFilters["ingredients"]["exclude"].append("goldenKiwi")
+	else:
+		activeFilters["ingredients"]["exclude"].erase("goldenKiwi")
+	apply_filters()
+
+
+func _on_pineapple_exclude_button_toggled(toggled_on):
+	if toggled_on:
+		activeFilters["ingredients"]["exclude"].append("pineapple")
+	else:
+		activeFilters["ingredients"]["exclude"].erase("pineapple")
+	apply_filters()
+
+
+func _on_green_grapes_exclude_button_toggled(toggled_on):
+	if toggled_on:
+		activeFilters["ingredients"]["exclude"].append("greenGrapes")
+	else:
+		activeFilters["ingredients"]["exclude"].erase("greenGrapes")
+	apply_filters()
+
+
+func _on_red_grapes_exclude_button_toggled(toggled_on):
+	if toggled_on:
+		activeFilters["ingredients"]["exclude"].append("redGrapes")
+	else:
+		activeFilters["ingredients"]["exclude"].erase("redGrapes")
+	apply_filters()
+
+
+func _on_raisins_exclude_button_toggled(toggled_on):
+	if toggled_on:
+		activeFilters["ingredients"]["exclude"].append("raisins")
+	else:
+		activeFilters["ingredients"]["exclude"].erase("raisins")
+	apply_filters()
+
+
+func _on_dates_exclude_button_toggled(toggled_on):
+	if toggled_on:
+		activeFilters["ingredients"]["exclude"].append("dates")
+	else:
+		activeFilters["ingredients"]["exclude"].erase("dates")
+	apply_filters()
+
+func _on_cranberry_exclude_button_toggled(toggled_on):
+	if toggled_on:
+		activeFilters["ingredients"]["exclude"].append("cranberry")
+	else:
+		activeFilters["ingredients"]["exclude"].erase("cranberry")
+	apply_filters()
+
+
+func _on_goji_exclude_button_toggled(toggled_on):
+	if toggled_on:
+		activeFilters["ingredients"]["exclude"].append("goji")
+	else:
+		activeFilters["ingredients"]["exclude"].erase("goji")
+	apply_filters()
+
+
+func _on_almonds_exclude_button_toggled(toggled_on):
+	if toggled_on:
+		activeFilters["ingredients"]["exclude"].append("almonds")
+	else:
+		activeFilters["ingredients"]["exclude"].erase("almonds")
+	apply_filters()
+
+
+func _on_walnuts_exclude_button_toggled(toggled_on):
+	if toggled_on:
+		activeFilters["ingredients"]["exclude"].append("walnuts")
+	else:
+		activeFilters["ingredients"]["exclude"].erase("walnuts")
+	apply_filters()
+
+
+func _on_pecans_exclude_button_toggled(toggled_on):
+	if toggled_on:
+		activeFilters["ingredients"]["exclude"].append("pecans")
+	else:
+		activeFilters["ingredients"]["exclude"].erase("pecans")
+	apply_filters()
+
+
+func _on_hazelnuts_exclude_button_toggled(toggled_on):
+	if toggled_on:
+		activeFilters["ingredients"]["exclude"].append("hazelnuts")
+	else:
+		activeFilters["ingredients"]["exclude"].erase("hazelnuts")
+	apply_filters()
+
+
+func _on_cashews_exclude_button_toggled(toggled_on):
+	if toggled_on:
+		activeFilters["ingredients"]["exclude"].append("cashews")
+	else:
+		activeFilters["ingredients"]["exclude"].erase("cashews")
+	apply_filters()
+
+
+func _on_pistachios_exclude_button_toggled(toggled_on):
+	if toggled_on:
+		activeFilters["ingredients"]["exclude"].append("pistachios")
+	else:
+		activeFilters["ingredients"]["exclude"].erase("pistachios")
+	apply_filters()
+
+
+func _on_macadamia_exclude_button_toggled(toggled_on):
+	if toggled_on:
+		activeFilters["ingredients"]["exclude"].append("macadamia")
+	else:
+		activeFilters["ingredients"]["exclude"].erase("macadamia")
+	apply_filters()
