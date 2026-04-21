@@ -1208,7 +1208,7 @@ visible = false
 layout_mode = 2
 color = Color(0.631373, 0.556863, 0.776471, 1)
 
-[node name="GranolaButton" type="CheckButton" parent="TabManager/TabContainer/Exclude/TabContainer/Toppings"]
+[node name="GranolaExcludeButton" type="CheckButton" parent="TabManager/TabContainer/Exclude/TabContainer/Toppings"]
 layout_mode = 0
 offset_left = 19.0
 offset_top = 21.0
@@ -1217,7 +1217,7 @@ offset_bottom = 58.0
 theme = ExtResource("1_hnnkf")
 text = "Granola "
 
-[node name="CoconutButton" type="CheckButton" parent="TabManager/TabContainer/Exclude/TabContainer/Toppings"]
+[node name="CoconutExcludeButton" type="CheckButton" parent="TabManager/TabContainer/Exclude/TabContainer/Toppings"]
 layout_mode = 0
 offset_left = 19.0
 offset_top = 63.0
@@ -1226,7 +1226,7 @@ offset_bottom = 100.0
 theme = ExtResource("1_hnnkf")
 text = "Coconut flakes "
 
-[node name="CacaoNibsButton" type="CheckButton" parent="TabManager/TabContainer/Exclude/TabContainer/Toppings"]
+[node name="CacaoNibsExcludeButton" type="CheckButton" parent="TabManager/TabContainer/Exclude/TabContainer/Toppings"]
 layout_mode = 0
 offset_left = 19.0
 offset_top = 112.0
@@ -1235,7 +1235,7 @@ offset_bottom = 149.0
 theme = ExtResource("1_hnnkf")
 text = "Cacao nibs "
 
-[node name="BiscuitsButton" type="CheckButton" parent="TabManager/TabContainer/Exclude/TabContainer/Toppings"]
+[node name="BiscuitsExcludeButton" type="CheckButton" parent="TabManager/TabContainer/Exclude/TabContainer/Toppings"]
 layout_mode = 0
 offset_left = 19.0
 offset_top = 162.0
@@ -1244,7 +1244,7 @@ offset_bottom = 199.0
 theme = ExtResource("1_hnnkf")
 text = "Crushed biscuits / cookies "
 
-[node name="RiceButton" type="CheckButton" parent="TabManager/TabContainer/Exclude/TabContainer/Toppings"]
+[node name="RiceExcludeButton" type="CheckButton" parent="TabManager/TabContainer/Exclude/TabContainer/Toppings"]
 layout_mode = 0
 offset_left = 19.0
 offset_top = 210.0
@@ -1253,7 +1253,7 @@ offset_bottom = 247.0
 theme = ExtResource("1_hnnkf")
 text = "Puffed rice "
 
-[node name="QuinoaButton" type="CheckButton" parent="TabManager/TabContainer/Exclude/TabContainer/Toppings"]
+[node name="QuinoaExcludeButton" type="CheckButton" parent="TabManager/TabContainer/Exclude/TabContainer/Toppings"]
 layout_mode = 0
 offset_left = 19.0
 offset_top = 256.0
@@ -1262,7 +1262,7 @@ offset_bottom = 293.0
 theme = ExtResource("1_hnnkf")
 text = "Puffed quinoa"
 
-[node name="CinnamonButton" type="CheckButton" parent="TabManager/TabContainer/Exclude/TabContainer/Toppings"]
+[node name="CinnamonExcludeButton" type="CheckButton" parent="TabManager/TabContainer/Exclude/TabContainer/Toppings"]
 layout_mode = 0
 offset_left = 19.0
 offset_top = 302.0
@@ -1271,7 +1271,7 @@ offset_bottom = 339.0
 theme = ExtResource("1_hnnkf")
 text = "Cinnamon powder"
 
-[node name="CacaoPowderButton" type="CheckButton" parent="TabManager/TabContainer/Exclude/TabContainer/Toppings"]
+[node name="CacaoPowderExcludeButton" type="CheckButton" parent="TabManager/TabContainer/Exclude/TabContainer/Toppings"]
 layout_mode = 0
 offset_left = 24.0
 offset_top = 346.0
@@ -1280,7 +1280,7 @@ offset_bottom = 383.0
 theme = ExtResource("1_hnnkf")
 text = "Cacao powder "
 
-[node name="JamButton" type="CheckButton" parent="TabManager/TabContainer/Exclude/TabContainer/Toppings"]
+[node name="JamExcludeButton" type="CheckButton" parent="TabManager/TabContainer/Exclude/TabContainer/Toppings"]
 layout_mode = 0
 offset_left = 466.0
 offset_top = 21.0
@@ -1289,7 +1289,7 @@ offset_bottom = 58.0
 theme = ExtResource("1_hnnkf")
 text = "Jam / jelly "
 
-[node name="HoneyButton" type="CheckButton" parent="TabManager/TabContainer/Exclude/TabContainer/Toppings"]
+[node name="HoneyExcludeButton" type="CheckButton" parent="TabManager/TabContainer/Exclude/TabContainer/Toppings"]
 layout_mode = 0
 offset_left = 466.0
 offset_top = 63.0
@@ -1298,7 +1298,7 @@ offset_bottom = 100.0
 theme = ExtResource("1_hnnkf")
 text = "Honey"
 
-[node name="NutButtersButton" type="CheckButton" parent="TabManager/TabContainer/Exclude/TabContainer/Toppings"]
+[node name="NutButtersExcludeButton" type="CheckButton" parent="TabManager/TabContainer/Exclude/TabContainer/Toppings"]
 layout_mode = 0
 offset_left = 466.0
 offset_top = 112.0
@@ -1307,7 +1307,7 @@ offset_bottom = 149.0
 theme = ExtResource("1_hnnkf")
 text = "Nut butters "
 
-[node name="ChocolateChipsButton" type="CheckButton" parent="TabManager/TabContainer/Exclude/TabContainer/Toppings"]
+[node name="ChocolateChipsExcludeButton" type="CheckButton" parent="TabManager/TabContainer/Exclude/TabContainer/Toppings"]
 layout_mode = 0
 offset_left = 466.0
 offset_top = 162.0
@@ -1316,7 +1316,7 @@ offset_bottom = 199.0
 theme = ExtResource("1_hnnkf")
 text = "Chocolate chips"
 
-[node name="MapleSyrupButton" type="CheckButton" parent="TabManager/TabContainer/Exclude/TabContainer/Toppings"]
+[node name="MapleSyrupExcludeButton" type="CheckButton" parent="TabManager/TabContainer/Exclude/TabContainer/Toppings"]
 layout_mode = 0
 offset_left = 466.0
 offset_top = 210.0
@@ -1325,7 +1325,7 @@ offset_bottom = 247.0
 theme = ExtResource("1_hnnkf")
 text = "maple syrup"
 
-[node name="SprinklesButton" type="CheckButton" parent="TabManager/TabContainer/Exclude/TabContainer/Toppings"]
+[node name="SprinklesExcludeButton" type="CheckButton" parent="TabManager/TabContainer/Exclude/TabContainer/Toppings"]
 layout_mode = 0
 offset_left = 466.0
 offset_top = 256.0
@@ -1334,7 +1334,7 @@ offset_bottom = 293.0
 theme = ExtResource("1_hnnkf")
 text = "Sprinkles"
 
-[node name="BrownSugarButton" type="CheckButton" parent="TabManager/TabContainer/Exclude/TabContainer/Toppings"]
+[node name="BrownSugarExcludeButton" type="CheckButton" parent="TabManager/TabContainer/Exclude/TabContainer/Toppings"]
 layout_mode = 0
 offset_left = 466.0
 offset_top = 302.0
@@ -1450,4 +1450,19 @@ text = "View earned recipies"
 [connection signal="toggled" from="TabManager/TabContainer/Exclude/TabContainer/Nuts/CashewsExcludeButton" to="TabManager" method="_on_cashews_exclude_button_toggled"]
 [connection signal="toggled" from="TabManager/TabContainer/Exclude/TabContainer/Nuts/PistachiosExcludeButton" to="TabManager" method="_on_pistachios_exclude_button_toggled"]
 [connection signal="toggled" from="TabManager/TabContainer/Exclude/TabContainer/Nuts/MacadamiaExcludeButton" to="TabManager" method="_on_macadamia_exclude_button_toggled"]
+[connection signal="toggled" from="TabManager/TabContainer/Exclude/TabContainer/Toppings/GranolaExcludeButton" to="TabManager" method="_on_granola_exclude_button_toggled"]
+[connection signal="toggled" from="TabManager/TabContainer/Exclude/TabContainer/Toppings/CoconutExcludeButton" to="TabManager" method="_on_coconut_exclude_button_toggled"]
+[connection signal="toggled" from="TabManager/TabContainer/Exclude/TabContainer/Toppings/CacaoNibsExcludeButton" to="TabManager" method="_on_cacao_nibs_exclude_button_toggled"]
+[connection signal="toggled" from="TabManager/TabContainer/Exclude/TabContainer/Toppings/BiscuitsExcludeButton" to="TabManager" method="_on_biscuits_exclude_button_toggled"]
+[connection signal="toggled" from="TabManager/TabContainer/Exclude/TabContainer/Toppings/RiceExcludeButton" to="TabManager" method="_on_rice_exclude_button_toggled"]
+[connection signal="toggled" from="TabManager/TabContainer/Exclude/TabContainer/Toppings/QuinoaExcludeButton" to="TabManager" method="_on_quinoa_exclude_button_toggled"]
+[connection signal="toggled" from="TabManager/TabContainer/Exclude/TabContainer/Toppings/CinnamonExcludeButton" to="TabManager" method="_on_cinnamon_exclude_button_toggled"]
+[connection signal="toggled" from="TabManager/TabContainer/Exclude/TabContainer/Toppings/CacaoPowderExcludeButton" to="TabManager" method="_on_cacao_powder_exclude_button_toggled"]
+[connection signal="toggled" from="TabManager/TabContainer/Exclude/TabContainer/Toppings/JamExcludeButton" to="TabManager" method="_on_jam_exclude_button_toggled"]
+[connection signal="toggled" from="TabManager/TabContainer/Exclude/TabContainer/Toppings/HoneyExcludeButton" to="TabManager" method="_on_honey_exclude_button_toggled"]
+[connection signal="toggled" from="TabManager/TabContainer/Exclude/TabContainer/Toppings/NutButtersExcludeButton" to="TabManager" method="_on_nut_butters_exclude_button_toggled"]
+[connection signal="toggled" from="TabManager/TabContainer/Exclude/TabContainer/Toppings/ChocolateChipsExcludeButton" to="TabManager" method="_on_chocolate_chips_exclude_button_toggled"]
+[connection signal="toggled" from="TabManager/TabContainer/Exclude/TabContainer/Toppings/MapleSyrupExcludeButton" to="TabManager" method="_on_maple_syrup_exclude_button_toggled"]
+[connection signal="toggled" from="TabManager/TabContainer/Exclude/TabContainer/Toppings/SprinklesExcludeButton" to="TabManager" method="_on_sprinkles_exclude_button_toggled"]
+[connection signal="toggled" from="TabManager/TabContainer/Exclude/TabContainer/Toppings/BrownSugarExcludeButton" to="TabManager" method="_on_brown_sugar_exclude_button_toggled"]
 [connection signal="pressed" from="Button" to="TabManager" method="_on_button_pressed"]
