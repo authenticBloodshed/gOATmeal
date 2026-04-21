@@ -198,12 +198,31 @@ func apply_filters():
 			if d not in dish["tags"]:
 				dietMatch = false
 				break
+	# -------------------------
+# 🧂 INGREDIENT CHECKS
+# -------------------------
+
+# ✅ INCLUDE (must have ALL)
+		var includeMatch = true
+		for ingredient in activeFilters["ingredients"]["include"]:
+			if ingredient not in dish["ingredients"]:
+				includeMatch = false
+				break
+
+# ❌ EXCLUDE (must have NONE)
+		var excludeMatch = true
+		for ingredient in activeFilters["ingredients"]["exclude"]:
+			if ingredient in dish["ingredients"]:
+				excludeMatch = false
+				break
 
 		# -------------------------
 		# ✅ FINAL
 		# -------------------------
-		if typeMatch and dietMatch:
+		if typeMatch and dietMatch and includeMatch and excludeMatch:
 			filteredDishes.append(dish)
+		
+		
 
 	print("Filtered dishes: ", filteredDishes)
 
