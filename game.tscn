@@ -206,7 +206,7 @@ texture = ExtResource("18_c2g6u")
 position = Vector2(111, -28)
 
 [node name="puffedrice" parent="KitchenStuff" instance=ExtResource("28_aug4q")]
-position = Vector2(171, 364)
+position = Vector2(32, 217)
 itemId = "puffedrice"
 itemName = "Puffed Rice"
 itemDescription = "Why don’t rice grains ever get lost?Because they stick together!"
@@ -291,6 +291,7 @@ texture = ExtResource("18_3bf56")
 position = Vector2(317, -36)
 
 [node name="StrawberrySauce" parent="KitchenStuff" instance=ExtResource("28_aug4q")]
+visible = false
 position = Vector2(-256, 216)
 itemId = "strawberrysauce"
 itemName = "StrawberrySauce"
@@ -305,6 +306,7 @@ texture = ExtResource("12_1nyx4")
 position = Vector2(316, -37)
 
 [node name="ChocolateSauce" parent="KitchenStuff" instance=ExtResource("28_aug4q")]
+visible = false
 position = Vector2(-136, 216)
 itemId = "chocolatesauce"
 itemName = "Chocolate sauce"
@@ -319,6 +321,7 @@ texture = ExtResource("14_lhb1w")
 position = Vector2(316, -37)
 
 [node name="CaramelSauce" parent="KitchenStuff" instance=ExtResource("28_aug4q")]
+visible = false
 position = Vector2(-75, 216)
 itemId = "caramelsauce"
 itemName = "Caramel sauce"

@@ -47,6 +47,8 @@ var requiredItems = ["yogurt", "banana", "blueberries", "granola", "goji"]
 func _process(delta):
 	if GameManager.is_item_collected("chia"):
 		chia.show()
+	if GameManager.is_item_collected("peanutbutter"):
+		sauce.show()
 	if GameManager.is_item_collected("strawberries"):
 		strawberries.show()
 	if GameManager.is_item_collected("blueberries"):
