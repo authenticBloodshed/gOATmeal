@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=3 uid="uid://cvfionxbg10xc"]
+
+[ext_resource type="PackedScene" uid="uid://cydifamk217fe" path="res://strawberrysauce.tscn" id="1_lgqp0"]
+[ext_resource type="Texture2D" uid="uid://df0inkjjrxjno" path="res://chocolatesauce.png" id="2_sgem0"]
+
+[node name="Saus" instance=ExtResource("1_lgqp0")]
+
+[node name="SausSprite" parent="." index="0"]
+texture = ExtResource("2_sgem0")
+
+[node name="CPUParticles2D" parent="." index="3"]
+color = Color(0.45098, 0.219608, 0.172549, 1)

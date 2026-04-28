@@ -1,4 +1,4 @@
-[gd_scene load_steps=96 format=3 uid="uid://bn7l7abptit80"]
+[gd_scene load_steps=99 format=3 uid="uid://bn7l7abptit80"]
 
 [ext_resource type="Script" path="res://PrepStation.gd" id="1_5drbj"]
 [ext_resource type="Texture2D" uid="uid://dbynhogc1sr6y" path="res://ArrowUnselected.png" id="2_b3ctj"]
@@ -94,6 +94,9 @@
 [ext_resource type="PackedScene" uid="uid://ch672fwtqn2k6" path="res://raisins.tscn" id="64_w286a"]
 [ext_resource type="Texture2D" uid="uid://0xy8l78ajnm4" path="res://sunflowerseeds.png" id="65_k82p4"]
 [ext_resource type="Texture2D" uid="uid://cauckmkv6iib4" path="res://raisins.png" id="65_p1ycs"]
+[ext_resource type="PackedScene" uid="uid://dkd2ho26pdumc" path="res://caramelsauce.tscn" id="84_4tf7p"]
+[ext_resource type="PackedScene" uid="uid://cydifamk217fe" path="res://strawberrysauce.tscn" id="85_5s6ks"]
+[ext_resource type="PackedScene" uid="uid://cvfionxbg10xc" path="res://chocolatesauce.tscn" id="86_gsvc2"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_uy8f1"]
 radius = 160.028
@@ -687,7 +690,7 @@ position = Vector2(6508.57, 1845.71)
 
 [node name="Sunflower" parent="PrepStation/DraggableObjects" instance=ExtResource("16_qnom6")]
 visible = false
-position = Vector2(-742, 531)
+position = Vector2(-746, 499)
 scale = Vector2(0.175, 0.175)
 granolaChunkScene = ExtResource("64_80gnp")
 
@@ -885,10 +888,25 @@ position = Vector2(251.429, -2462.86)
 [node name="SpawnedGranola" parent="PrepStation/DraggableObjects/Almonds" index="1"]
 position = Vector2(-828.571, 542.857)
 
+[node name="caramelsauce" parent="PrepStation/DraggableObjects" instance=ExtResource("84_4tf7p")]
+visible = false
+position = Vector2(498, 442)
+scale = Vector2(0.365, 0.365)
+
 [node name="Saus" parent="PrepStation/DraggableObjects" instance=ExtResource("17_3tge8")]
 visible = false
-position = Vector2(427, 535)
-scale = Vector2(0.445, 0.445)
+position = Vector2(419, 557)
+scale = Vector2(0.365, 0.365)
+
+[node name="strawberrysauce" parent="PrepStation/DraggableObjects" instance=ExtResource("85_5s6ks")]
+visible = false
+position = Vector2(866, 355)
+scale = Vector2(0.365, 0.365)
+
+[node name="chocolatesauce" parent="PrepStation/DraggableObjects" instance=ExtResource("86_gsvc2")]
+visible = false
+position = Vector2(631, 563)
+scale = Vector2(0.365, 0.365)
 
 [node name="PlaceholderAssets" type="Node2D" parent="PrepStation"]
 visible = false
@@ -944,7 +962,7 @@ theme_override_font_sizes/font_size = 37
 theme_override_styles/normal = ExtResource("22_t3olf")
 theme_override_styles/hover = ExtResource("23_x58nf")
 theme_override_styles/pressed = ExtResource("24_hbg40")
-text = "✮ Done! ✮"
+text = "Done!"
 
 [node name="WinScreen" type="ColorRect" parent="."]
 visible = false

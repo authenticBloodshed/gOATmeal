@@ -291,7 +291,6 @@ texture = ExtResource("18_3bf56")
 position = Vector2(317, -36)
 
 [node name="StrawberrySauce" parent="KitchenStuff" instance=ExtResource("28_aug4q")]
-visible = false
 position = Vector2(-256, 216)
 itemId = "strawberrysauce"
 itemName = "StrawberrySauce"
@@ -306,8 +305,7 @@ texture = ExtResource("12_1nyx4")
 position = Vector2(316, -37)
 
 [node name="ChocolateSauce" parent="KitchenStuff" instance=ExtResource("28_aug4q")]
-visible = false
-position = Vector2(-136, 216)
+position = Vector2(666, 137)
 itemId = "chocolatesauce"
 itemName = "Chocolate sauce"
 itemDescription = "I don't like airport chocolate... it's a bit plane..."
@@ -321,19 +319,18 @@ texture = ExtResource("14_lhb1w")
 position = Vector2(316, -37)
 
 [node name="CaramelSauce" parent="KitchenStuff" instance=ExtResource("28_aug4q")]
-visible = false
 position = Vector2(-75, 216)
 itemId = "caramelsauce"
 itemName = "Caramel sauce"
 itemDescription = "Is it caramel or caramel?"
 
 [node name="Sprite2D" parent="KitchenStuff/CaramelSauce" index="0"]
-position = Vector2(316, -30)
+position = Vector2(331, -31)
 scale = Vector2(0.062, 0.062)
 texture = ExtResource("15_yl3aa")
 
 [node name="CollisionShape2D" parent="KitchenStuff/CaramelSauce" index="1"]
-position = Vector2(316, -37)
+position = Vector2(329, -39)
 
 [node name="PeanutButter" parent="KitchenStuff" instance=ExtResource("28_aug4q")]
 position = Vector2(-196, 215)
