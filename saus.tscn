@@ -1,7 +1,7 @@
 [gd_scene load_steps=6 format=3 uid="uid://b68a3agl827bl"]
 
 [ext_resource type="Script" path="res://saus.gd" id="1_6i3i1"]
-[ext_resource type="Texture2D" uid="uid://d2rdc1u3jraa2" path="res://SausPlaceholder.png" id="1_n68v1"]
+[ext_resource type="Texture2D" uid="uid://dm0hg58nfilmo" path="res://peanutbutter.png" id="2_uppy1"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_7v8pl"]
 size = Vector2(103, 384)
@@ -15,7 +15,9 @@ size = Vector2(74, 80)
 script = ExtResource("1_6i3i1")
 
 [node name="SausSprite" type="Sprite2D" parent="."]
-texture = ExtResource("1_n68v1")
+position = Vector2(0, -66)
+scale = Vector2(0.30875, 0.30875)
+texture = ExtResource("2_uppy1")
 
 [node name="SausCollision" type="CollisionShape2D" parent="."]
 position = Vector2(-6.5, -45)
@@ -41,4 +43,4 @@ spread = 0.0
 gravity = Vector2(0, 0)
 scale_amount_min = 20.0
 scale_amount_max = 25.0
-color = Color(0.607843, 0.247059, 0.262745, 1)
+color = Color(0.780392, 0.466667, 0.309804, 1)
