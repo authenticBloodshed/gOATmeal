@@ -2,7 +2,7 @@ extends Node2D
 
 var counter = 0
 var isCorrect = null
-var requiredItems = ["yogurt", "banana", "blueberries", "granola", "goji"]
+var requiredItems = ["yogurt", "banana", "blueberries", "granola", "goji", "peanutbutter"]
 @export var saus : NodePath
 @onready var apple = $DraggableObjects/Apple
 @onready var granola = $DraggableObjects/GranolaBox
