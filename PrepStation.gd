@@ -2,7 +2,7 @@ extends Node2D
 
 var counter = 0
 var isCorrect = null
-var requiredItems = ["yogurt", "banana", "blueberries", "granola", "goji", "peanutbutter", "caramelsauce"]
+var requiredItems = ["yogurt", "banana", "blueberries", "granola", "goji", "peanutbutter", "caramelsauce", "sprinkles"]
 @export var saus : NodePath
 @onready var apple = $DraggableObjects/Apple
 @onready var granola = $DraggableObjects/GranolaBox
@@ -46,10 +46,13 @@ var requiredItems = ["yogurt", "banana", "blueberries", "granola", "goji", "pean
 @onready var strawberrysauce = $DraggableObjects/strawberrysauce
 @onready var chocolatesauce = $DraggableObjects/chocolatesauce
 @onready var caramelsauce = $DraggableObjects/caramelsauce
+@onready var sprinkles = $DraggableObjects/sprinkles
 
 func _process(delta):
 	if GameManager.is_item_collected("chia"):
 		chia.show()
+	if GameManager.is_item_collected("sprinkles"):
+		sprinkles.show()
 	if GameManager.is_item_collected("caramelsauce"):
 		caramelsauce.show()
 	if GameManager.is_item_collected("chocolatesauce"):

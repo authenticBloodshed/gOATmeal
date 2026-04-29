@@ -1,4 +1,4 @@
-[gd_scene load_steps=99 format=3 uid="uid://bn7l7abptit80"]
+[gd_scene load_steps=101 format=3 uid="uid://bn7l7abptit80"]
 
 [ext_resource type="Script" path="res://PrepStation.gd" id="1_5drbj"]
 [ext_resource type="Texture2D" uid="uid://dbynhogc1sr6y" path="res://ArrowUnselected.png" id="2_b3ctj"]
@@ -94,6 +94,8 @@
 [ext_resource type="PackedScene" uid="uid://ch672fwtqn2k6" path="res://raisins.tscn" id="64_w286a"]
 [ext_resource type="Texture2D" uid="uid://0xy8l78ajnm4" path="res://sunflowerseeds.png" id="65_k82p4"]
 [ext_resource type="Texture2D" uid="uid://cauckmkv6iib4" path="res://raisins.png" id="65_p1ycs"]
+[ext_resource type="PackedScene" uid="uid://csmntc42p4mva" path="res://sprinkles.tscn" id="70_x55yu"]
+[ext_resource type="Texture2D" uid="uid://csjvgv4a1243g" path="res://sprinkles.png" id="71_5wu0e"]
 [ext_resource type="PackedScene" uid="uid://dkd2ho26pdumc" path="res://caramelsauce.tscn" id="84_4tf7p"]
 [ext_resource type="PackedScene" uid="uid://cydifamk217fe" path="res://strawberrysauce.tscn" id="85_5s6ks"]
 [ext_resource type="PackedScene" uid="uid://cvfionxbg10xc" path="res://chocolatesauce.tscn" id="86_gsvc2"]
@@ -729,7 +731,6 @@ position = Vector2(-140, -2410.75)
 position = Vector2(6508.57, 1845.71)
 
 [node name="Cinnamon" parent="PrepStation/DraggableObjects" instance=ExtResource("16_qnom6")]
-visible = false
 position = Vector2(-165, 509)
 scale = Vector2(0.175, 0.175)
 granolaChunkScene = ExtResource("32_pny42")
@@ -746,6 +747,25 @@ texture = ExtResource("32_6y8lg")
 position = Vector2(5.71893, -2502.86)
 
 [node name="SpawnedGranola" parent="PrepStation/DraggableObjects/Cinnamon" index="1"]
+position = Vector2(5605.71, 2771.43)
+
+[node name="sprinkles" parent="PrepStation/DraggableObjects" instance=ExtResource("16_qnom6")]
+position = Vector2(-586, 309)
+scale = Vector2(0.175, 0.175)
+granolaChunkScene = ExtResource("70_x55yu")
+
+[node name="Box" parent="PrepStation/DraggableObjects/sprinkles" index="0"]
+position = Vector2(5605.71, 2771.43)
+
+[node name="Sprite2D" parent="PrepStation/DraggableObjects/sprinkles/Box" index="0"]
+position = Vector2(11.4331, -2502.86)
+scale = Vector2(0.525716, 0.525716)
+texture = ExtResource("71_5wu0e")
+
+[node name="CollisionShape2D" parent="PrepStation/DraggableObjects/sprinkles/Box" index="1"]
+position = Vector2(5.71893, -2502.86)
+
+[node name="SpawnedGranola" parent="PrepStation/DraggableObjects/sprinkles" index="1"]
 position = Vector2(5605.71, 2771.43)
 
 [node name="Cocoa" parent="PrepStation/DraggableObjects" instance=ExtResource("16_qnom6")]
@@ -1149,6 +1169,7 @@ text = "Main menu"
 [editable path="PrepStation/DraggableObjects/Sunflower"]
 [editable path="PrepStation/DraggableObjects/strawberries"]
 [editable path="PrepStation/DraggableObjects/Cinnamon"]
+[editable path="PrepStation/DraggableObjects/sprinkles"]
 [editable path="PrepStation/DraggableObjects/Cocoa"]
 [editable path="PrepStation/DraggableObjects/Coconutflakes"]
 [editable path="PrepStation/DraggableObjects/Macadamia"]
