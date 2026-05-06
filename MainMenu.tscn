@@ -204,6 +204,7 @@ theme_override_styles/pressed = ExtResource("18_pri72")
 text = "TUTORIAL"
 
 [node name="Options" type="Button" parent="ButtonManager"]
+visible = false
 layout_mode = 0
 offset_left = 409.0
 offset_top = 572.0

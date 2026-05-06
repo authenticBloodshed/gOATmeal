@@ -555,6 +555,17 @@ position = Vector2(246.125, 246)
 scale = Vector2(0.248875, 0.198)
 texture = ExtResource("9_u8emr")
 
+[node name="RichTextLabel" type="RichTextLabel" parent="Breakfast"]
+layout_mode = 0
+offset_left = 4.0
+offset_top = 5.0
+offset_right = 460.0
+offset_bottom = 79.0
+theme_override_colors/default_color = Color(0.121569, 0.027451, 0.427451, 1)
+theme_override_fonts/normal_font = ExtResource("10_f2o6o")
+theme_override_font_sizes/normal_font_size = 21
+text = "Try to memorise all ingredients and recreate the dish in the digital kitchen , when you close this tab you will not see it again!"
+
 [node name="Finalbreakfast" type="Sprite2D" parent="."]
 visible = false
 position = Vector2(564, 380)
@@ -644,7 +655,6 @@ stretch_mode = 0
 visible = false
 
 [node name="ColorRect" parent="." instance=ExtResource("2_rxlpj")]
-visible = false
 
 [node name="Tooltip" type="CanvasLayer" parent="." groups=["tooltip"]]
 script = ExtResource("56_xsd22")
