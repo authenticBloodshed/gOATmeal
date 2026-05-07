@@ -23,3 +23,11 @@ Inventory="*res://inventory.gd"
 [display]
 
 window/stretch/mode="canvas_items"
+
+[rendering]
+
+renderer/rendering_method="gl_compatibility"
+
+[threading]
+
+worker_pool/use_system_threads_for_low_priority_tasks=false

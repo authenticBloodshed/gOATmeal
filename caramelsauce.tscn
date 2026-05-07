@@ -1,7 +1,9 @@
-[gd_scene load_steps=3 format=3 uid="uid://dkd2ho26pdumc"]
+[gd_scene load_steps=4 format=3 uid="uid://dkd2ho26pdumc"]
 
 [ext_resource type="PackedScene" uid="uid://cydifamk217fe" path="res://strawberrysauce.tscn" id="1_os1pi"]
 [ext_resource type="Texture2D" uid="uid://d3tm05tra0x64" path="res://caramelsauce.png" id="2_2v45b"]
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_8feop"]
 
 [node name="Saus" instance=ExtResource("1_os1pi")]
 
@@ -10,3 +12,21 @@ texture = ExtResource("2_2v45b")
 
 [node name="CPUParticles2D" parent="." index="3"]
 color = Color(0.784314, 0.470588, 0.309804, 1)
+
+[node name="CPUParticles2D2" parent="." index="4"]
+visible = false
+
+[node name="CPUParticles2D3" type="CPUParticles2D" parent="." index="5"]
+material = SubResource("CanvasItemMaterial_8feop")
+position = Vector2(0, 257)
+scale = Vector2(10.265, 10.265)
+amount = 7000
+lifetime = 600.0
+one_shot = true
+explosiveness = 0.27
+fixed_fps = 60
+spread = 0.0
+gravity = Vector2(0, 0)
+scale_amount_min = 20.0
+scale_amount_max = 25.0
+color = Color(0.839216, 0.541176, 0.376471, 1)

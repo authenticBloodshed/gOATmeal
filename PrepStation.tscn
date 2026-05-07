@@ -731,6 +731,7 @@ position = Vector2(-140, -2410.75)
 position = Vector2(6508.57, 1845.71)
 
 [node name="Cinnamon" parent="PrepStation/DraggableObjects" instance=ExtResource("16_qnom6")]
+visible = false
 position = Vector2(-165, 509)
 scale = Vector2(0.175, 0.175)
 granolaChunkScene = ExtResource("32_pny42")
@@ -750,6 +751,7 @@ position = Vector2(5.71893, -2502.86)
 position = Vector2(5605.71, 2771.43)
 
 [node name="sprinkles" parent="PrepStation/DraggableObjects" instance=ExtResource("16_qnom6")]
+visible = false
 position = Vector2(-586, 309)
 scale = Vector2(0.175, 0.175)
 granolaChunkScene = ExtResource("70_x55yu")
@@ -914,12 +916,10 @@ position = Vector2(498, 442)
 scale = Vector2(0.365, 0.365)
 
 [node name="Saus" parent="PrepStation/DraggableObjects" instance=ExtResource("17_3tge8")]
-visible = false
 position = Vector2(419, 557)
 scale = Vector2(0.365, 0.365)
 
 [node name="strawberrysauce" parent="PrepStation/DraggableObjects" instance=ExtResource("85_5s6ks")]
-visible = false
 position = Vector2(866, 355)
 scale = Vector2(0.365, 0.365)
 
