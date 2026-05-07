@@ -269,7 +269,6 @@ texture = ExtResource("17_do28j")
 position = Vector2(-200, -2091.43)
 
 [node name="Banana" parent="PrepStation/DraggableObjects" instance=ExtResource("16_qnom6")]
-visible = false
 position = Vector2(-165, 509)
 scale = Vector2(0.175, 0.175)
 granolaChunkScene = ExtResource("18_nf2qx")
@@ -309,7 +308,6 @@ position = Vector2(937.147, -2714.29)
 position = Vector2(2405.71, 400)
 
 [node name="Chiaseeds" parent="PrepStation/DraggableObjects" instance=ExtResource("16_qnom6")]
-visible = false
 position = Vector2(-166, 503)
 scale = Vector2(0.175, 0.175)
 granolaChunkScene = ExtResource("20_y20g3")
