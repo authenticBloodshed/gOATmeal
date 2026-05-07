@@ -203,7 +203,6 @@ scale = Vector2(0.09, 0.09)
 targetPath = NodePath("../../FinalAssets/OatmealBowl")
 
 [node name="GranolaBox" parent="PrepStation/DraggableObjects" instance=ExtResource("16_qnom6")]
-visible = false
 position = Vector2(251, 466)
 scale = Vector2(0.175, 0.175)
 
@@ -215,7 +214,6 @@ scale = Vector2(0.631428, 0.631428)
 position = Vector2(-165.714, 131.429)
 
 [node name="Apple" parent="PrepStation/DraggableObjects" instance=ExtResource("16_qnom6")]
-visible = false
 position = Vector2(228, 412)
 scale = Vector2(0.175, 0.175)
 granolaChunkScene = ExtResource("14_gmhuf")
@@ -916,10 +914,12 @@ position = Vector2(498, 442)
 scale = Vector2(0.365, 0.365)
 
 [node name="Saus" parent="PrepStation/DraggableObjects" instance=ExtResource("17_3tge8")]
+visible = false
 position = Vector2(419, 557)
 scale = Vector2(0.365, 0.365)
 
 [node name="strawberrysauce" parent="PrepStation/DraggableObjects" instance=ExtResource("85_5s6ks")]
+visible = false
 position = Vector2(866, 355)
 scale = Vector2(0.365, 0.365)
 

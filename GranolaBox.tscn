@@ -1,8 +1,9 @@
-[gd_scene load_steps=5 format=3 uid="uid://c1x2ef7pg7oab"]
+[gd_scene load_steps=6 format=3 uid="uid://c1x2ef7pg7oab"]
 
 [ext_resource type="Script" path="res://GranolaBox.gd" id="1_6hte0"]
 [ext_resource type="Texture2D" uid="uid://cl4ane2t12qu2" path="res://Granola.png" id="1_yotpv"]
 [ext_resource type="PackedScene" uid="uid://bnb60jrlwnw6o" path="res://GranolaChunk.tscn" id="2_wavpg"]
+[ext_resource type="AudioStream" uid="uid://vawq4v5gk2aw" path="res://369602__evanboyerman__bone-crunchcrack-3-mixed.wav" id="4_iuksv"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_6kmvq"]
 size = Vector2(465.643, 502.857)
@@ -21,3 +22,7 @@ position = Vector2(-6.5, -5.5)
 shape = SubResource("RectangleShape2D_6kmvq")
 
 [node name="SpawnedGranola" type="Node2D" parent="."]
+
+[node name="PlaceSound" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("4_iuksv")
+volume_db = 15.0

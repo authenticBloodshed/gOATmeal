@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://bnb60jrlwnw6o"]
+[gd_scene load_steps=4 format=3 uid="uid://bnb60jrlwnw6o"]
 
 [ext_resource type="Script" path="res://GranolaChunk.gd" id="1_dmfog"]
 [ext_resource type="Texture2D" uid="uid://peax7l8qqn5p" path="res://GranolaBits.png" id="1_qyynh"]
+[ext_resource type="AudioStream" uid="uid://vawq4v5gk2aw" path="res://369602__evanboyerman__bone-crunchcrack-3-mixed.wav" id="3_0meld"]
 
 [node name="GranolaChunk" type="Node2D"]
 script = ExtResource("1_dmfog")
@@ -10,3 +11,7 @@ texture = ExtResource("1_qyynh")
 [node name="Sprite2D" type="Sprite2D" parent="."]
 scale = Vector2(0.325, 0.325)
 texture = ExtResource("1_qyynh")
+
+[node name="PlaceSound" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("3_0meld")
+volume_db = 15.0

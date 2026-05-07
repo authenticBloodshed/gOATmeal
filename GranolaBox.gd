@@ -13,6 +13,7 @@ func _on_box_clicked(viewport, event, shape_idx):
 	if event is InputEventMouseButton:
 		if event.button_index == MOUSE_BUTTON_LEFT and event.pressed:
 			spawn_granola()
+			$PlaceSound.play()
 
 func spawn_granola():
 	var chunk = granolaChunkScene.instantiate()

@@ -1,7 +1,8 @@
-[gd_scene load_steps=4 format=3 uid="uid://djr6f1jtdjnev"]
+[gd_scene load_steps=5 format=3 uid="uid://djr6f1jtdjnev"]
 
 [ext_resource type="Script" path="res://DragOatmeal.gd" id="1_lpomr"]
 [ext_resource type="Texture2D" uid="uid://ba47p4y5pemp8" path="res://Oatmeal.png" id="1_qkovw"]
+[ext_resource type="AudioStream" uid="uid://cl05wk2co4vj3" path="res://223805__ctcollab__splash-3.wav" id="3_p75gi"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_sdy20"]
 size = Vector2(1612, 2062)
@@ -15,3 +16,7 @@ texture = ExtResource("1_qkovw")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(15, -17)
 shape = SubResource("RectangleShape2D_sdy20")
+
+[node name="PlaceSound" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("3_p75gi")
+volume_db = 24.0
