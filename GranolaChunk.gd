@@ -3,6 +3,7 @@ static var top_z := 0
 @export var texture: Texture2D
 @onready var sprite: Sprite2D = $Sprite2D
 var dragging := true
+var rotationSpeed := 10.0
 
 func _ready():
 	top_z += 1
@@ -16,3 +17,10 @@ func _input(event):
 	if dragging and event is InputEventMouseButton:
 		if event.button_index == MOUSE_BUTTON_LEFT and not event.pressed:
 			dragging = false
+		# Rotate clockwise
+		if event.button_index == MOUSE_BUTTON_WHEEL_UP and event.pressed:
+			rotation_degrees += rotationSpeed
+
+		# Rotate counter-clockwise
+		if event.button_index == MOUSE_BUTTON_WHEEL_DOWN and event.pressed:
+			rotation_degrees -= rotationSpeed
