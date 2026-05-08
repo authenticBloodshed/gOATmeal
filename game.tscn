@@ -664,6 +664,7 @@ stretch_mode = 0
 flip_h = true
 
 [node name="RichTextLabel" type="RichTextLabel" parent="KitchenButton"]
+layout_mode = 0
 offset_left = 59.0
 offset_top = 58.0
 offset_right = 141.0
@@ -691,6 +692,7 @@ ignore_texture_size = true
 stretch_mode = 0
 
 [node name="RichTextLabel" type="RichTextLabel" parent="PantryButton"]
+layout_mode = 0
 offset_left = 10.0
 offset_top = 58.0
 offset_right = 81.0

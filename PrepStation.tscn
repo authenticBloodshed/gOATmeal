@@ -968,10 +968,10 @@ flip_h = true
 metadata/_edit_use_anchors_ = true
 
 [node name="Button" type="Button" parent="."]
-offset_left = 533.0
-offset_top = 23.0
-offset_right = 722.0
-offset_bottom = 81.0
+offset_left = 523.0
+offset_top = 6.0
+offset_right = 712.0
+offset_bottom = 64.0
 theme_override_colors/font_color = Color(0.101961, 0.00784314, 0.415686, 1)
 theme_override_colors/font_pressed_color = Color(0.101961, 0.00784314, 0.415686, 1)
 theme_override_colors/font_hover_color = Color(0.101961, 0.00784314, 0.415686, 1)
@@ -1127,6 +1127,21 @@ theme_override_styles/hover = ExtResource("23_x58nf")
 theme_override_styles/pressed = ExtResource("24_hbg40")
 text = "Main menu"
 
+[node name="UndoButton" type="Button" parent="."]
+offset_left = 567.0
+offset_top = 66.0
+offset_right = 671.0
+offset_bottom = 100.0
+theme_override_colors/font_color = Color(0.101961, 0.00784314, 0.415686, 1)
+theme_override_colors/font_pressed_color = Color(0.101961, 0.00784314, 0.415686, 1)
+theme_override_colors/font_hover_color = Color(0.141176, 0.0470588, 0.439216, 1)
+theme_override_fonts/font = ExtResource("21_jaaq2")
+theme_override_font_sizes/font_size = 26
+theme_override_styles/normal = ExtResource("22_t3olf")
+theme_override_styles/hover = ExtResource("23_x58nf")
+theme_override_styles/pressed = ExtResource("24_hbg40")
+text = "Undo"
+
 [connection signal="area_entered" from="PrepStation/FinalAssets/Area2D" to="PrepStation" method="_on_area_2d_area_entered"]
 [connection signal="body_entered" from="PrepStation/FinalAssets/Area2D" to="PrepStation" method="_on_area_2d_body_entered"]
 [connection signal="pressed" from="PrepStation/NextBowlButton" to="PrepStation" method="_on_next_bowl_button_pressed"]
@@ -1137,6 +1152,7 @@ text = "Main menu"
 [connection signal="pressed" from="WinScreen/MainMenuButton" to="PrepStation" method="_on_main_menu_button_pressed"]
 [connection signal="pressed" from="LoseScreen/RetryButton" to="PrepStation" method="_on_retry_button_pressed"]
 [connection signal="pressed" from="LoseScreen/MainMenuButton" to="PrepStation" method="_on_main_menu_button_pressed"]
+[connection signal="pressed" from="UndoButton" to="PrepStation/DraggableObjects/GranolaBox" method="_on_undo_button_pressed"]
 
 [editable path="PrepStation/DraggableObjects/GranolaBox"]
 [editable path="PrepStation/DraggableObjects/Apple"]
