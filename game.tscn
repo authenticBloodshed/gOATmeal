@@ -625,6 +625,7 @@ flip_h = true
 visible = false
 
 [node name="KitchenButton" type="TextureButton" parent="."]
+visible = false
 offset_left = -1.0
 offset_top = 263.0
 offset_right = 138.0
@@ -655,6 +656,7 @@ stretch_mode = 0
 visible = false
 
 [node name="ColorRect" parent="." instance=ExtResource("2_rxlpj")]
+visible = false
 
 [node name="Tooltip" type="CanvasLayer" parent="." groups=["tooltip"]]
 script = ExtResource("56_xsd22")
