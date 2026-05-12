@@ -3,12 +3,14 @@ extends CanvasLayer
 @onready var panel = $TooltipPanel
 @onready var header = $TooltipPanel/Header
 @onready var description = $TooltipPanel/Description
+@onready var itemIcon = $TooltipPanel/ItemIcon
 
 var tooltipOffset := Vector2(-160, 16)
 
-func show_tooltip(title: String, text: String):
+func show_tooltip(title: String, text: String, texture: Texture2D = null):
 	header.text = title
 	description.text = text
+	itemIcon.texture = texture
 	panel.visible = true
 
 func hide_tooltip():

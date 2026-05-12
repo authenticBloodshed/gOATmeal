@@ -82,6 +82,7 @@ position = Vector2(314, 332)
 itemId = "banana"
 itemName = "Banana"
 itemDescription = "Ring ring ring ring ring ring ring! Banana phone! >_<"
+itemTexture = ExtResource("12_8vtil")
 
 [node name="Sprite2D" parent="KitchenStuff/Banana" index="0"]
 position = Vector2(621.5, 12.5)
@@ -96,6 +97,7 @@ position = Vector2(314, 332)
 itemId = "apple"
 itemName = "Apple"
 itemDescription = "Keeps doctors away, allegedly."
+itemTexture = ExtResource("13_fpg8d")
 
 [node name="Sprite2D" parent="KitchenStuff/Apple" index="0"]
 position = Vector2(564, 34)
@@ -110,6 +112,7 @@ position = Vector2(262, 341)
 itemId = "pear"
 itemName = "Pear"
 itemDescription = "Why did the pear blush? It saw the salad dressing!"
+itemTexture = ExtResource("14_st5ki")
 
 [node name="Sprite2D" parent="KitchenStuff/Pear" index="0"]
 position = Vector2(568, 33)
@@ -126,6 +129,7 @@ position = Vector2(371, 288)
 itemId = "chia"
 itemName = "Chia seeds"
 itemDescription = "Soak before consuming!"
+itemTexture = ExtResource("29_2tvmw")
 
 [node name="Sprite2D" parent="KitchenStuff/Chiaseeds" index="0"]
 position = Vector2(321, -93)
@@ -140,6 +144,7 @@ position = Vector2(371, 288)
 itemId = "granola"
 itemName = "Granola"
 itemDescription = "I’m cereal-sly obsessed with granola..."
+itemTexture = ExtResource("16_mqdtn")
 
 [node name="Sprite2D" parent="KitchenStuff/Granola" index="0"]
 position = Vector2(249, -109)
@@ -154,6 +159,7 @@ position = Vector2(112, 202)
 itemId = "oats"
 itemName = "Oats"
 itemDescription = "OATrageously good!"
+itemTexture = ExtResource("17_1x84r")
 
 [node name="Sprite2D" parent="KitchenStuff/Oats" index="0"]
 position = Vector2(242, -102)
@@ -168,6 +174,7 @@ position = Vector2(796, 244)
 itemId = "sunflower"
 itemName = "Sunflower seeds"
 itemDescription = "Sun-sational flavours!"
+itemTexture = ExtResource("13_ycef8")
 
 [node name="Sprite2D" parent="KitchenStuff/SunflowerSeeds" index="0"]
 position = Vector2(106.5, -29.5)
@@ -182,6 +189,7 @@ position = Vector2(841, 244)
 itemId = "coconut"
 itemName = "Coconut flakes"
 itemDescription = "I'm cocoNUTS for coconut flakes!"
+itemTexture = ExtResource("17_psy4w")
 
 [node name="Sprite2D" parent="KitchenStuff/CoconutFlakes" index="0"]
 position = Vector2(110.5, -33.5)
@@ -196,6 +204,7 @@ position = Vector2(700, 83)
 itemId = "cacaonibs"
 itemName = "Cacao nibs"
 itemDescription = "Why are they called \"nibs\" if they're beans?"
+itemTexture = ExtResource("18_c2g6u")
 
 [node name="Sprite2D" parent="KitchenStuff/CacaoNibs" index="0"]
 position = Vector2(110.5, -33.5)
@@ -210,6 +219,7 @@ position = Vector2(32, 217)
 itemId = "puffedrice"
 itemName = "Puffed Rice"
 itemDescription = "Why don’t rice grains ever get lost?Because they stick together!"
+itemTexture = ExtResource("19_u3jfd")
 
 [node name="Sprite2D" parent="KitchenStuff/puffedrice" index="0"]
 position = Vector2(155, -36)
@@ -224,6 +234,7 @@ position = Vector2(0, 361)
 itemId = "cocoa"
 itemName = "Cocao powder"
 itemDescription = "Adds sweetness without adding sugar!"
+itemTexture = ExtResource("20_opjk1")
 
 [node name="Sprite2D" parent="KitchenStuff/cocao" index="0"]
 position = Vector2(163, -32)
@@ -238,6 +249,7 @@ position = Vector2(760, 135)
 itemId = "puffedquinoa"
 itemName = "Puffed quinoa"
 itemDescription = "Surprisingly high in protein!"
+itemTexture = ExtResource("21_aeqjl")
 
 [node name="Sprite2D" parent="KitchenStuff/puffedquinoa" index="0"]
 position = Vector2(150, -26)
@@ -252,6 +264,7 @@ position = Vector2(95, 409)
 itemId = "biscuits"
 itemName = "Biscuits"
 itemDescription = "Bite-sized happiness."
+itemTexture = ExtResource("22_fjlbe")
 
 [node name="Sprite2D" parent="KitchenStuff/biscuits" index="0"]
 position = Vector2(149, -43)
@@ -267,6 +280,7 @@ position = Vector2(436, 230)
 itemId = "flax"
 itemName = "Flax seeds"
 itemDescription = "mix 1 tablespoon of ground flaxseed with 3 tablespoons of water to create a \"flax egg\" for vegan baking."
+itemTexture = ExtResource("14_jdsdh")
 
 [node name="Sprite2D" parent="KitchenStuff/FlaxSeeds" index="0"]
 position = Vector2(316.25, -32.75)
@@ -281,6 +295,7 @@ position = Vector2(107, 150)
 itemId = "raisins"
 itemName = "Raisins"
 itemDescription = "Do you prefer these over blueberries in your muffin?"
+itemTexture = ExtResource("18_3bf56")
 
 [node name="Sprite2D" parent="KitchenStuff/Raisins" index="0"]
 position = Vector2(316.25, -32.75)
@@ -295,6 +310,7 @@ position = Vector2(-256, 216)
 itemId = "strawberrysauce"
 itemName = "StrawberrySauce"
 itemDescription = "Strawberries in a handy squeezer!"
+itemTexture = ExtResource("12_1nyx4")
 
 [node name="Sprite2D" parent="KitchenStuff/StrawberrySauce" index="0"]
 position = Vector2(316, -30)
@@ -309,6 +325,7 @@ position = Vector2(666, 137)
 itemId = "chocolatesauce"
 itemName = "Chocolate sauce"
 itemDescription = "I don't like airport chocolate... it's a bit plane..."
+itemTexture = ExtResource("14_lhb1w")
 
 [node name="Sprite2D" parent="KitchenStuff/ChocolateSauce" index="0"]
 position = Vector2(316, -30)
@@ -323,6 +340,7 @@ position = Vector2(-75, 216)
 itemId = "caramelsauce"
 itemName = "Caramel sauce"
 itemDescription = "Is it caramel or caramel?"
+itemTexture = ExtResource("15_yl3aa")
 
 [node name="Sprite2D" parent="KitchenStuff/CaramelSauce" index="0"]
 position = Vector2(331, -31)
@@ -337,6 +355,7 @@ position = Vector2(-196, 215)
 itemId = "peanutbutter"
 itemName = "Peanut butter"
 itemDescription = "I’m peaNUTS about breakfast."
+itemTexture = ExtResource("13_d1r40")
 
 [node name="Sprite2D" parent="KitchenStuff/PeanutButter" index="0"]
 position = Vector2(316, -30)
@@ -351,6 +370,7 @@ position = Vector2(489, 232)
 itemId = "cranberry"
 itemName = "Cranberries"
 itemDescription = "Can't believe they named a food after a band...."
+itemTexture = ExtResource("19_0fk1j")
 
 [node name="Sprite2D" parent="KitchenStuff/CRanberries" index="0"]
 position = Vector2(316.25, -32.75)
@@ -365,6 +385,7 @@ position = Vector2(208, 151)
 itemId = "goji"
 itemName = "Goji berries"
 itemDescription = "Berry iconic!"
+itemTexture = ExtResource("20_8lpqa")
 
 [node name="Sprite2D" parent="KitchenStuff/Gojiberries" index="0"]
 position = Vector2(319, -49)
@@ -379,6 +400,7 @@ position = Vector2(489, 230)
 itemId = "pineapple"
 itemName = "Pineapple slices"
 itemDescription = "Banana without the B is just pineapple."
+itemTexture = ExtResource("18_3oxwk")
 
 [node name="Sprite2D" parent="KitchenStuff/Pineapple" index="0"]
 position = Vector2(47, -19)
@@ -393,6 +415,7 @@ position = Vector2(220, 72)
 itemId = "cinnamon"
 itemName = "Cinnamon"
 itemDescription = "The developers favourite spice!"
+itemTexture = ExtResource("28_fon5t")
 
 [node name="Sprite2D" parent="KitchenStuff/Cinnamon" index="0"]
 position = Vector2(47, -19)
@@ -407,6 +430,7 @@ position = Vector2(192, 71)
 itemId = "sprinkles"
 itemName = "Sprinkles"
 itemDescription = "A quick way to add whimsy to every breakfast"
+itemTexture = ExtResource("29_esw55")
 
 [node name="Sprite2D" parent="KitchenStuff/Sprinkles" index="0"]
 position = Vector2(47, -19)
@@ -421,6 +445,7 @@ position = Vector2(566, 76)
 itemId = "jam"
 itemName = "Jam"
 itemDescription = "Jam-packed with smiles!"
+itemTexture = ExtResource("30_by4h2")
 
 [node name="Sprite2D" parent="KitchenStuff/jam" index="0"]
 position = Vector2(47, -19)
@@ -435,6 +460,7 @@ position = Vector2(724, 74)
 itemId = "honey"
 itemName = "Honey"
 itemDescription = "Sugar! Oh honey honey!"
+itemTexture = ExtResource("31_woj0u")
 
 [node name="Sprite2D" parent="KitchenStuff/honey" index="0"]
 position = Vector2(47, -19)
@@ -449,6 +475,7 @@ position = Vector2(16, 91)
 itemId = "almond"
 itemName = "Almonds"
 itemDescription = "Almonds are technically seeds, not nuts!"
+itemTexture = ExtResource("22_45j66")
 
 [node name="Sprite2D" parent="KitchenStuff/Almonds" index="0"]
 position = Vector2(47, -19)
@@ -463,6 +490,7 @@ position = Vector2(15, 61)
 itemId = "walnut"
 itemName = "Walnuts"
 itemDescription = "What's a walnut's favorite movie? The Nutcracker!"
+itemTexture = ExtResource("23_byiuf")
 
 [node name="Sprite2D" parent="KitchenStuff/Walnuts" index="0"]
 position = Vector2(47, -19)
@@ -477,6 +505,7 @@ position = Vector2(82, 91)
 itemId = "pecan"
 itemName = "Pecans"
 itemDescription = "Knock Knock Who's there? Pecan! Pecan who? Pecan somebody your own size!"
+itemTexture = ExtResource("24_dnws1")
 
 [node name="Sprite2D" parent="KitchenStuff/Pecans" index="0"]
 position = Vector2(47, -19)
@@ -491,6 +520,7 @@ position = Vector2(1025, 151)
 itemId = "hazelnuts"
 itemName = "Hazelnuts"
 itemDescription = "In ancient times, hazel branches were believed to symbolize health, joy, and prosperity."
+itemTexture = ExtResource("25_hrn4b")
 
 [node name="Sprite2D" parent="KitchenStuff/Hazelnut" index="0"]
 position = Vector2(74, -32)
@@ -505,6 +535,7 @@ position = Vector2(407, 230)
 itemId = "cashews"
 itemName = "Cashews"
 itemDescription = "Cashew later!"
+itemTexture = ExtResource("26_gkthc")
 
 [node name="Sprite2D" parent="KitchenStuff/Cashews" index="0"]
 position = Vector2(74, -32)
@@ -519,6 +550,7 @@ position = Vector2(964, 149)
 itemId = "pistachio"
 itemName = "Pistachios"
 itemDescription = "Shell yeah!"
+itemTexture = ExtResource("27_3gu88")
 
 [node name="Sprite2D" parent="KitchenStuff/Pistachios" index="0"]
 position = Vector2(74, -32)
@@ -533,6 +565,7 @@ position = Vector2(407, 149)
 itemId = "macadamia"
 itemName = "Macadamia"
 itemDescription = " It takes 7-10 years for a new macadamia tree to begin producing nuts."
+itemTexture = ExtResource("28_bgiym")
 
 [node name="Sprite2D" parent="KitchenStuff/Macadamia" index="0"]
 position = Vector2(74, -32)
@@ -708,6 +741,7 @@ text = "Pantry"
 visible = false
 
 [node name="ColorRect" parent="." instance=ExtResource("2_rxlpj")]
+visible = false
 
 [node name="Tooltip" type="CanvasLayer" parent="." groups=["tooltip"]]
 script = ExtResource("56_xsd22")
@@ -717,7 +751,7 @@ visible = false
 offset_left = -310.0
 offset_top = -3.0
 offset_right = 6.0
-offset_bottom = 161.0
+offset_bottom = 423.0
 
 [node name="Header" type="Label" parent="Tooltip/TooltipPanel"]
 layout_mode = 0
@@ -738,6 +772,15 @@ horizontal_alignment = 1
 vertical_alignment = 1
 autowrap_mode = 3
 text_overrun_behavior = 2
+
+[node name="ItemIcon" type="TextureRect" parent="Tooltip/TooltipPanel"]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 0
+offset_top = 157.0
+offset_right = 317.0
+offset_bottom = 398.0
+expand_mode = 3
+stretch_mode = 5
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("27_4g87n")

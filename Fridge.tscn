@@ -86,6 +86,7 @@ position = Vector2(-370, 405)
 itemId = "strawberries"
 itemName = "Strawberries"
 itemDescription = "The average strawberry has 200 seeds on the outside!"
+itemTexture = ExtResource("10_kfu12")
 
 [node name="Sprite2D" parent="strawberries" index="0"]
 position = Vector2(458.5, -6.49992)
@@ -100,6 +101,7 @@ position = Vector2(7, 376)
 itemId = "yogurt"
 itemName = "Yogurt"
 itemDescription = "I eat this on a dairy basis!"
+itemTexture = ExtResource("11_ay08j")
 
 [node name="Sprite2D" parent="yogurt" index="0"]
 position = Vector2(438, 18)
@@ -114,6 +116,7 @@ position = Vector2(-370, 405)
 itemId = "blueberries"
 itemName = "Blueberries"
 itemDescription = "I'm blue dabadee dabadie"
+itemTexture = ExtResource("11_nxl8v")
 
 [node name="Sprite2D" parent="blueberries" index="0"]
 position = Vector2(890.5, -155.5)
@@ -128,6 +131,7 @@ position = Vector2(-717, 578)
 itemId = "raspberries"
 itemName = "Raspberries"
 itemDescription = "What do you call a sad raspberry? A blueberry!"
+itemTexture = ExtResource("12_dm2xr")
 
 [node name="Sprite2D" parent="raspberries" index="0"]
 position = Vector2(897, -162)
@@ -142,6 +146,7 @@ position = Vector2(-780, 211)
 itemId = "dates"
 itemName = "Dates"
 itemDescription = "I've eaten more of these than i've gone on these."
+itemTexture = ExtResource("13_qff86")
 
 [node name="Sprite2D" parent="dates" index="0"]
 position = Vector2(897, -149)
@@ -156,6 +161,7 @@ position = Vector2(-717, 578)
 itemId = "blackberries"
 itemName = "Blackberries"
 itemDescription = "Grow on prickly bushes called brambles, which are part of the rose family."
+itemTexture = ExtResource("13_ak7mk")
 
 [node name="Sprite2D" parent="blackberries" index="0"]
 position = Vector2(1125, -344)
@@ -171,6 +177,7 @@ position = Vector2(-787, 614)
 itemId = "kiwi"
 itemName = "Green kiwi"
 itemDescription = "An a-peel-ing fruit."
+itemTexture = ExtResource("14_bl64l")
 
 [node name="Sprite2D" parent="kiwi" index="0"]
 position = Vector2(1127, -348)
@@ -186,6 +193,7 @@ position = Vector2(-669, 610)
 itemId = "goldenkiwi"
 itemName = "Golden kiwi"
 itemDescription = "Like a green kiwi... but gold."
+itemTexture = ExtResource("15_rrvai")
 
 [node name="Sprite2D" parent="goldenkiwi" index="0"]
 position = Vector2(1127, -344)
@@ -201,6 +209,7 @@ position = Vector2(-579, 415)
 itemId = "peach"
 itemName = "Peach"
 itemDescription = "Peaches and apricots are only separated by one gene. "
+itemTexture = ExtResource("16_xnjvc")
 
 [node name="Sprite2D" parent="peach" index="0"]
 position = Vector2(1127, -344)
@@ -216,6 +225,7 @@ position = Vector2(-556, 767)
 itemId = "greengrapes"
 itemName = "Green grapes"
 itemDescription = "A fine bunch!"
+itemTexture = ExtResource("17_aum1d")
 
 [node name="Sprite2D" parent="greengrapes" index="0"]
 position = Vector2(1094, -358)
@@ -231,6 +241,7 @@ position = Vector2(-556, 767)
 itemId = "redgrapes"
 itemName = "Red grapes"
 itemDescription = "No sour grapes here!"
+itemTexture = ExtResource("18_wmwsu")
 
 [node name="Sprite2D" parent="redgrapes" index="0"]
 position = Vector2(703, -516)
@@ -246,6 +257,7 @@ position = Vector2(-499, 584)
 itemId = "cherries"
 itemName = "Cherries"
 itemDescription = "Love you cherry much!"
+itemTexture = ExtResource("19_3mlff")
 
 [node name="Sprite2D" parent="cherries" index="0"]
 position = Vector2(703, -516)

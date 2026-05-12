@@ -3,6 +3,7 @@ extends Area2D
 @export var itemId : String = "item"
 @export var itemName: String = "Item"
 @export var itemDescription: String = "Description"
+@export var itemTexture : Texture2D
 
 var pickedUp : bool = false
 
@@ -42,7 +43,7 @@ func _mouse_exited():
 func _on_mouse_entered():
 	var tooltip = get_tree().get_first_node_in_group("tooltip")
 	if tooltip:
-		tooltip.show_tooltip(itemName, itemDescription)
+		tooltip.show_tooltip(itemName, itemDescription, itemTexture)
 
 func _on_mouse_exited():
 	var tooltip = get_tree().get_first_node_in_group("tooltip")
