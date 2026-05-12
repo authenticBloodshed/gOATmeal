@@ -708,7 +708,6 @@ text = "Pantry"
 visible = false
 
 [node name="ColorRect" parent="." instance=ExtResource("2_rxlpj")]
-visible = false
 
 [node name="Tooltip" type="CanvasLayer" parent="." groups=["tooltip"]]
 script = ExtResource("56_xsd22")

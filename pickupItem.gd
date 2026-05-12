@@ -16,7 +16,12 @@ func _input_event(viewport, event, shape_idx):
 
 func pickup():
 	pickedUp = true
+	# Hide tooltip immediately before removing item
+	var tooltip = get_tree().get_first_node_in_group("tooltip")
 	
+	if tooltip:
+		tooltip.hide_tooltip()
+		
 	# Tell the game an ingredient was collected
 	GameManager.set_item_collected(itemId, true)
 	GameManager.set_item_used(itemId, true)
