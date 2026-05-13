@@ -748,6 +748,7 @@ script = ExtResource("56_xsd22")
 
 [node name="TooltipPanel" type="Panel" parent="Tooltip"]
 visible = false
+self_modulate = Color(0.760784, 0.737255, 0.866667, 1)
 offset_left = -310.0
 offset_top = -3.0
 offset_right = 6.0
