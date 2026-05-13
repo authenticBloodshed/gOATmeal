@@ -308,7 +308,7 @@ position = Vector2(317, -36)
 [node name="StrawberrySauce" parent="KitchenStuff" instance=ExtResource("28_aug4q")]
 position = Vector2(-256, 216)
 itemId = "strawberrysauce"
-itemName = "StrawberrySauce"
+itemName = "Strawberry sauce"
 itemDescription = "Strawberries in a handy squeezer!"
 itemTexture = ExtResource("12_1nyx4")
 
@@ -760,6 +760,8 @@ offset_left = 53.0
 offset_top = 9.0
 offset_right = 272.0
 offset_bottom = 55.0
+theme_override_fonts/font = ExtResource("10_f2o6o")
+theme_override_font_sizes/font_size = 30
 horizontal_alignment = 1
 vertical_alignment = 1
 
@@ -769,6 +771,8 @@ offset_left = -1.0
 offset_top = 53.0
 offset_right = 316.0
 offset_bottom = 164.0
+theme_override_fonts/font = ExtResource("10_f2o6o")
+theme_override_font_sizes/font_size = 20
 horizontal_alignment = 1
 vertical_alignment = 1
 autowrap_mode = 3
