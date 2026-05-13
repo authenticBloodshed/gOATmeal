@@ -752,6 +752,7 @@ offset_left = -310.0
 offset_top = -3.0
 offset_right = 6.0
 offset_bottom = 423.0
+mouse_filter = 2
 
 [node name="Header" type="Label" parent="Tooltip/TooltipPanel"]
 layout_mode = 0
@@ -779,6 +780,7 @@ layout_mode = 0
 offset_top = 157.0
 offset_right = 317.0
 offset_bottom = 398.0
+mouse_filter = 2
 expand_mode = 3
 stretch_mode = 5
 
