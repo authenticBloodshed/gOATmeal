@@ -988,6 +988,7 @@ text = "Done!"
 
 [node name="WinScreen" type="ColorRect" parent="."]
 visible = false
+z_index = 100
 offset_left = 330.0
 offset_top = 124.0
 offset_right = 922.0
@@ -1069,6 +1070,7 @@ text = "Main menu"
 
 [node name="LoseScreen" type="ColorRect" parent="."]
 visible = false
+z_index = 100
 offset_left = 330.0
 offset_top = 124.0
 offset_right = 922.0
@@ -1132,6 +1134,7 @@ theme_override_styles/pressed = ExtResource("24_hbg40")
 text = "Main menu"
 
 [node name="UndoButton" type="Button" parent="."]
+z_index = 101
 offset_left = 567.0
 offset_top = 66.0
 offset_right = 671.0
