@@ -170,7 +170,7 @@ texture = ExtResource("13_ak7mk")
 flip_h = true
 
 [node name="CollisionShape2D" parent="blackberries" index="1"]
-position = Vector2(1126, -345)
+position = Vector2(1114, -351)
 
 [node name="kiwi" parent="." instance=ExtResource("9_mqeoq")]
 position = Vector2(-787, 614)

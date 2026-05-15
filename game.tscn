@@ -108,7 +108,7 @@ texture = ExtResource("13_fpg8d")
 position = Vector2(562, 40)
 
 [node name="Pear" parent="KitchenStuff" instance=ExtResource("28_aug4q")]
-position = Vector2(262, 341)
+position = Vector2(233, 339)
 itemId = "pear"
 itemName = "Pear"
 itemDescription = "Why did the pear blush? It saw the salad dressing!"
@@ -182,7 +182,7 @@ scale = Vector2(0.0345, 0.0345)
 texture = ExtResource("13_ycef8")
 
 [node name="CollisionShape2D" parent="KitchenStuff/SunflowerSeeds" index="1"]
-position = Vector2(105.5, -32.5)
+position = Vector2(98, -31)
 
 [node name="CoconutFlakes" parent="KitchenStuff" instance=ExtResource("28_aug4q")]
 position = Vector2(841, 244)
@@ -197,7 +197,7 @@ scale = Vector2(0.0385, 0.0385)
 texture = ExtResource("17_psy4w")
 
 [node name="CollisionShape2D" parent="KitchenStuff/CoconutFlakes" index="1"]
-position = Vector2(111, -33)
+position = Vector2(115, -32)
 
 [node name="CacaoNibs" parent="KitchenStuff" instance=ExtResource("28_aug4q")]
 position = Vector2(700, 83)
@@ -212,7 +212,7 @@ scale = Vector2(0.0385, 0.0385)
 texture = ExtResource("18_c2g6u")
 
 [node name="CollisionShape2D" parent="KitchenStuff/CacaoNibs" index="1"]
-position = Vector2(111, -28)
+position = Vector2(120, -28)
 
 [node name="puffedrice" parent="KitchenStuff" instance=ExtResource("28_aug4q")]
 position = Vector2(32, 217)
@@ -438,7 +438,7 @@ scale = Vector2(0.035, 0.035)
 texture = ExtResource("29_esw55")
 
 [node name="CollisionShape2D" parent="KitchenStuff/Sprinkles" index="1"]
-position = Vector2(47, -19)
+position = Vector2(30, -16)
 
 [node name="jam" parent="KitchenStuff" instance=ExtResource("28_aug4q")]
 position = Vector2(566, 76)
@@ -468,7 +468,7 @@ scale = Vector2(0.035, 0.035)
 texture = ExtResource("31_woj0u")
 
 [node name="CollisionShape2D" parent="KitchenStuff/honey" index="1"]
-position = Vector2(47, -19)
+position = Vector2(38, -17)
 
 [node name="Almonds" parent="KitchenStuff" instance=ExtResource("28_aug4q")]
 position = Vector2(16, 91)
