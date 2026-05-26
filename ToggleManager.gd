@@ -28,20 +28,23 @@ var activeFilters = {
 
 var allDishes = [
 	{
-		"name": "Strawberry Yogurt",
-		"tags": ["yogurt", "vegetarian", "glutenFree", "highProtein"],
-		"ingredients": ["granola", "strawberry", "hazelnuts", "chiaseeds", "sprinkles"]
+		"name": "Fruity Smoothie Bowl",
+		"tags": ["other", "vegetarian", "lactoseFree", "vegan", "plantBased", "nutFree", "organic", "halal", "kosher"],
+		"ingredients": ["granola", "banana", "cranberry", "raspberry", "greengrapes"],
+		"imagePath" : "res://smoothiebowl.png",
 		
 	},
 	{
-		"name": "Vegan Oatmeal Bowl",
-		"tags": ["oatmeal", "vegan", "plantBased", "organic"],
-		"ingredients": ["flaxseeds", "banana", "jam", "macadamia"]
+		"name": "Cinnamon Pear yogurt",
+		"tags": ["yogurt", "vegetarian", "nutFree", "organic", "highProtein", "halal", "kosher", "seasonal"],
+		"ingredients": ["pear", "granola", "cinnamon", "raisins"],
+		"imagePath" : "res://Spiced pear.png",
 	},
 	{
-		"name": "Holiday Special",
-		"tags": ["other", "seasonal", "nutFree"],
-		"ingredients": ["kiwi", "goldenkiwi", "sprinkles", "strawberry", "pistachios"]
+		"name": "Simple Chocolate Oatmeal",
+		"tags": ["oatmeal", "vegetarian", "vegan", "glutenFree", "plantBased", "nutFree", "halal", "kosher"],
+		"ingredients": ["blueberry", "strawberry", "chocolatechips"],
+		"imagePath" : "res://chocolate oatmeal.jpeg"
 	}
 ]
 
