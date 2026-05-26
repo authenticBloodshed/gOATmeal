@@ -101,40 +101,156 @@ offset_left = 4.0
 offset_top = 36.0
 offset_right = 667.0
 offset_bottom = 240.0
-columns = 3
+columns = 5
 
-[node name="CheckBox" type="CheckBox" parent="IngredientLabel/GridContainer"]
+[node name="BananaCheckBox" type="CheckBox" parent="IngredientLabel/GridContainer"]
 layout_mode = 2
+text = "Banana"
 
-[node name="CheckBox2" type="CheckBox" parent="IngredientLabel/GridContainer"]
+[node name="StrawberryCheckbox" type="CheckBox" parent="IngredientLabel/GridContainer"]
 layout_mode = 2
+text = "Strawberry"
 
-[node name="CheckBox3" type="CheckBox" parent="IngredientLabel/GridContainer"]
+[node name="BlueberryCheckBox" type="CheckBox" parent="IngredientLabel/GridContainer"]
 layout_mode = 2
+text = "Blueberry"
 
-[node name="CheckBox4" type="CheckBox" parent="IngredientLabel/GridContainer"]
+[node name="RaspberryCheckBox" type="CheckBox" parent="IngredientLabel/GridContainer"]
 layout_mode = 2
+text = "Raspberry"
 
-[node name="CheckBox5" type="CheckBox" parent="IngredientLabel/GridContainer"]
+[node name="BlackberryCheckBox" type="CheckBox" parent="IngredientLabel/GridContainer"]
 layout_mode = 2
+text = "Blackberry"
 
-[node name="CheckBox6" type="CheckBox" parent="IngredientLabel/GridContainer"]
+[node name="AppleCheckBox" type="CheckBox" parent="IngredientLabel/GridContainer"]
 layout_mode = 2
+text = "Apple"
 
-[node name="CheckBox7" type="CheckBox" parent="IngredientLabel/GridContainer"]
+[node name="PearCheckBox" type="CheckBox" parent="IngredientLabel/GridContainer"]
 layout_mode = 2
+text = "Pear"
 
-[node name="CheckBox8" type="CheckBox" parent="IngredientLabel/GridContainer"]
+[node name="PeachCheckBox" type="CheckBox" parent="IngredientLabel/GridContainer"]
 layout_mode = 2
+text = "Peach"
 
-[node name="CheckBox9" type="CheckBox" parent="IngredientLabel/GridContainer"]
+[node name="GreenKiwiCheckBox" type="CheckBox" parent="IngredientLabel/GridContainer"]
 layout_mode = 2
+text = "Green kiwi"
 
-[node name="CheckBox10" type="CheckBox" parent="IngredientLabel/GridContainer"]
+[node name="GoldenKiwiCheckBox" type="CheckBox" parent="IngredientLabel/GridContainer"]
 layout_mode = 2
+text = "Golden kiwi"
 
-[node name="CheckBox11" type="CheckBox" parent="IngredientLabel/GridContainer"]
+[node name="PineappleCheckBox" type="CheckBox" parent="IngredientLabel/GridContainer"]
 layout_mode = 2
+text = "Pineapple"
 
-[node name="CheckBox12" type="CheckBox" parent="IngredientLabel/GridContainer"]
+[node name="GreenGrapesCheckBox" type="CheckBox" parent="IngredientLabel/GridContainer"]
 layout_mode = 2
+text = "Green grapes"
+
+[node name="RedGrapesCheckBox" type="CheckBox" parent="IngredientLabel/GridContainer"]
+layout_mode = 2
+text = "Red grapes"
+
+[node name="RaisinsCheckBox" type="CheckBox" parent="IngredientLabel/GridContainer"]
+layout_mode = 2
+text = "Raisins"
+
+[node name="DatesCheckBox" type="CheckBox" parent="IngredientLabel/GridContainer"]
+layout_mode = 2
+text = "Dates"
+
+[node name="GojiCheckBox" type="CheckBox" parent="IngredientLabel/GridContainer"]
+layout_mode = 2
+text = "Goji berries"
+
+[node name="AlmondsCheckBox" type="CheckBox" parent="IngredientLabel/GridContainer"]
+layout_mode = 2
+text = "Almonds"
+
+[node name="WalnutsCheckBox" type="CheckBox" parent="IngredientLabel/GridContainer"]
+layout_mode = 2
+text = "Walnuts"
+
+[node name="PecanCheckBox" type="CheckBox" parent="IngredientLabel/GridContainer"]
+layout_mode = 2
+text = "Pecans"
+
+[node name="HazelnutsCheckBox" type="CheckBox" parent="IngredientLabel/GridContainer"]
+layout_mode = 2
+text = "Hazelnuts"
+
+[node name="CashewsCheckBox" type="CheckBox" parent="IngredientLabel/GridContainer"]
+layout_mode = 2
+text = "Cashews"
+
+[node name="PistachiosCheckBox" type="CheckBox" parent="IngredientLabel/GridContainer"]
+layout_mode = 2
+text = "Pistachios"
+
+[node name="MacadamiaCheckBox" type="CheckBox" parent="IngredientLabel/GridContainer"]
+layout_mode = 2
+text = "Macadamia"
+
+[node name="GranolaCheckBox" type="CheckBox" parent="IngredientLabel/GridContainer"]
+layout_mode = 2
+text = "Granola"
+
+[node name="CoconutCheckBox" type="CheckBox" parent="IngredientLabel/GridContainer"]
+layout_mode = 2
+text = "Coconut flakes"
+
+[node name="CacaoNibsCheckBox" type="CheckBox" parent="IngredientLabel/GridContainer"]
+layout_mode = 2
+text = "Cacao nibs"
+
+[node name="BiscuitsCheckBox" type="CheckBox" parent="IngredientLabel/GridContainer"]
+layout_mode = 2
+text = "Biscuits"
+
+[node name="RiceCheckBox" type="CheckBox" parent="IngredientLabel/GridContainer"]
+layout_mode = 2
+text = "Puffed rice"
+
+[node name="QuinoaCheckBox" type="CheckBox" parent="IngredientLabel/GridContainer"]
+layout_mode = 2
+text = "Puffed quinoa"
+
+[node name="CinnamonCheckBox" type="CheckBox" parent="IngredientLabel/GridContainer"]
+layout_mode = 2
+text = "Cinnamon"
+
+[node name="CacaoPowderCheckBox" type="CheckBox" parent="IngredientLabel/GridContainer"]
+layout_mode = 2
+text = "Cacao powder"
+
+[node name="JamCheckBox" type="CheckBox" parent="IngredientLabel/GridContainer"]
+layout_mode = 2
+text = "Jam"
+
+[node name="HoneyCheckBox" type="CheckBox" parent="IngredientLabel/GridContainer"]
+layout_mode = 2
+text = "Honey"
+
+[node name="NutButterCheckBox" type="CheckBox" parent="IngredientLabel/GridContainer"]
+layout_mode = 2
+text = "Nut butter"
+
+[node name="ChocolateChipsCheckBox" type="CheckBox" parent="IngredientLabel/GridContainer"]
+layout_mode = 2
+text = "Chocolate chips"
+
+[node name="MapleSyrupCheckBox" type="CheckBox" parent="IngredientLabel/GridContainer"]
+layout_mode = 2
+text = "Maple Syrup"
+
+[node name="SprinklesCheckBox" type="CheckBox" parent="IngredientLabel/GridContainer"]
+layout_mode = 2
+text = "Sprinkles"
+
+[node name="BrownSugarCheckBox" type="CheckBox" parent="IngredientLabel/GridContainer"]
+layout_mode = 2
+text = "Brown sugar"
