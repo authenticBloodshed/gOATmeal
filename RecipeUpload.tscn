@@ -254,3 +254,21 @@ text = "Sprinkles"
 [node name="BrownSugarCheckBox" type="CheckBox" parent="IngredientLabel/GridContainer"]
 layout_mode = 2
 text = "Brown sugar"
+
+[node name="ImageLabel" type="Label" parent="."]
+layout_mode = 2
+offset_left = 14.0
+offset_top = 415.0
+offset_right = 1149.0
+offset_bottom = 438.0
+text = "Recipe Image
+"
+
+[node name="RecipePreview" type="TextureRect" parent="ImageLabel"]
+custom_minimum_size = Vector2(200, 200)
+layout_mode = 0
+offset_top = 26.0
+offset_right = 110.0
+offset_bottom = 143.0
+expand_mode = 1
+stretch_mode = 5
