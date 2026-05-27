@@ -272,3 +272,30 @@ offset_right = 110.0
 offset_bottom = 143.0
 expand_mode = 1
 stretch_mode = 5
+
+[node name="UploadImageButton" type="Button" parent="."]
+layout_mode = 2
+offset_left = 460.0
+offset_top = 552.0
+offset_right = 638.0
+offset_bottom = 616.0
+text = "Upload image"
+
+[node name="ImageFileDialog" type="FileDialog" parent="."]
+title = "Open a File"
+ok_button_text = "Open"
+file_mode = 0
+access = 2
+filters = PackedStringArray("*.png", "*.jpg", "*.jpeg")
+
+[node name="SaveRecipeButton" type="Button" parent="."]
+layout_mode = 0
+offset_left = 649.0
+offset_top = 554.0
+offset_right = 826.0
+offset_bottom = 616.0
+text = "Save recipe"
+
+[connection signal="pressed" from="UploadImageButton" to="." method="_on_upload_image_button_pressed"]
+[connection signal="file_selected" from="ImageFileDialog" to="." method="_on_image_file_dialog_file_selected"]
+[connection signal="pressed" from="SaveRecipeButton" to="." method="_on_save_recipe_button_pressed"]
