@@ -26,27 +26,7 @@ var activeFilters = {
 		}
 	}
 
-var allDishes = [
-	{
-		"name": "Fruity Smoothie Bowl",
-		"tags": ["other", "vegetarian", "lactoseFree", "vegan", "plantBased", "nutFree", "organic", "halal", "kosher"],
-		"ingredients": ["granola", "banana", "cranberry", "raspberry", "greengrapes"],
-		"imagePath" : "res://smoothiebowl.png",
-		
-	},
-	{
-		"name": "Cinnamon Pear yogurt",
-		"tags": ["yogurt", "vegetarian", "nutFree", "organic", "highProtein", "halal", "kosher", "seasonal"],
-		"ingredients": ["pear", "granola", "cinnamon", "raisins"],
-		"imagePath" : "res://Spiced pear.png",
-	},
-	{
-		"name": "Simple Chocolate Oatmeal",
-		"tags": ["oatmeal", "vegetarian", "vegan", "glutenFree", "plantBased", "nutFree", "halal", "kosher"],
-		"ingredients": ["blueberry", "strawberry", "chocolatechips"],
-		"imagePath" : "res://chocolate oatmeal.jpeg"
-	}
-]
+var allDishes = loadRecipes()
 
 func _ready():
 	pass 
@@ -54,6 +34,24 @@ func _ready():
 func _process(delta):
 	pass
 
+func loadRecipes():
+
+	if not FileAccess.file_exists("user://recipes.json"):
+		return []
+
+	var file = FileAccess.open(
+		"user://recipes.json",
+		FileAccess.READ
+	)
+
+	var content = file.get_as_text()
+
+	file.close()
+
+	var json = JSON.new()
+	json.parse(content)
+
+	return json.data
 func _on_all_button_toggled(toggled_on):
 	if toggled_on:
 		if toggled_on:
@@ -162,7 +160,7 @@ func apply_filters():
 	var activeTypes = []
 	var activeDiets = []
 
-	# collect active filters
+	# collects active filters
 	for type in activeFilters["type"]:
 		if activeFilters["type"][type]:
 			activeTypes.append(type)
@@ -173,7 +171,7 @@ func apply_filters():
 
 	for dish in allDishes:
 
-		# ✅ Show all if nothing selected OR "All" is pressed
+		# Shows all if nothing selected OR "All" is pressed
 		if $TabContainer/Type/AllButton.button_pressed \
 		or (activeTypes.is_empty() and activeDiets.is_empty()):
 			filteredDishes.append(dish)
@@ -227,7 +225,7 @@ func apply_filters():
 		
 		
 
-	print("Filtered dishes: ", filteredDishes)
+	displayRecipes(filteredDishes)
 
 func _on_button_pressed():
 	get_tree().change_scene_to_file("res://recipebook.tscn")
@@ -926,3 +924,22 @@ func _on_brown_sugar_exclude_button_toggled(toggled_on):
 	else:
 		activeFilters["ingredients"]["exclude"].erase("brownSugar")
 	apply_filters()
+
+func displayRecipes(recipes):
+
+	# clear old cards
+	for child in $MainLayout/ResultsPanel/RecipeScroll/RecipeList.get_children():
+		child.queue_free()
+
+	# create new cards
+	for recipe in recipes:
+
+		var card = preload(
+			"res://RecipeCard.tscn"
+		).instantiate()
+
+		card.setup(recipe)
+
+		$MainLayout/ResultsPanel/RecipeScroll/RecipeList.add_child(card)
+
+

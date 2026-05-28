@@ -41,6 +41,41 @@ func _on_save_recipe_button_pressed():
 		"ingredients": getSelectedIngredients(),
 		"imagePath": savedImagePath
 	}
+	saveRecipe(recipe)
+
+func loadRecipes():
+
+	if not FileAccess.file_exists("user://recipes.json"):
+		return []
+
+	var file = FileAccess.open(
+		"user://recipes.json",
+		FileAccess.READ
+	)
+
+	var content = file.get_as_text()
+
+	file.close()
+
+	var json = JSON.new()
+	json.parse(content)
+
+	return json.data
+
+func saveRecipe(recipe):
+
+	var recipes = loadRecipes()
+
+	recipes.append(recipe)
+
+	var file = FileAccess.open(
+		"user://recipes.json",
+		FileAccess.WRITE
+	)
+
+	file.store_string(JSON.stringify(recipes))
+
+	file.close()
 
 func ensureImageFolder():
 	var dir = DirAccess.open("user://")
