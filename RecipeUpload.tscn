@@ -1,6 +1,10 @@
-[gd_scene load_steps=2 format=3 uid="uid://6alrseehaqaa"]
+[gd_scene load_steps=6 format=3 uid="uid://6alrseehaqaa"]
 
 [ext_resource type="Script" path="res://RecipeUpload.gd" id="1_s337i"]
+[ext_resource type="FontFile" uid="uid://dxi8dt74itawk" path="res://Mabook.otf" id="2_ol58i"]
+[ext_resource type="StyleBox" uid="uid://jw0gfxu6rigt" path="res://unpressed.tres" id="3_1ct8i"]
+[ext_resource type="StyleBox" uid="uid://bsu75uac0drfx" path="res://hover.tres" id="4_4sjqk"]
+[ext_resource type="StyleBox" uid="uid://b60ce0wlbf15n" path="res://pressed.tres" id="5_nirl4"]
 
 [node name="RecipeUpload" type="Control"]
 layout_mode = 3
@@ -11,15 +15,39 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_s337i")
 
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 0
+offset_right = 1158.0
+offset_bottom = 654.0
+color = Color(0.443137, 0.337255, 0.541176, 1)
+
+[node name="ColorRect2" type="ColorRect" parent="."]
+layout_mode = 0
+offset_left = 325.0
+offset_top = 202.0
+offset_right = 1115.0
+offset_bottom = 405.0
+color = Color(0.596078, 0.537255, 0.756863, 1)
+
+[node name="ColorRect3" type="ColorRect" parent="."]
+layout_mode = 0
+offset_left = 7.0
+offset_top = 203.0
+offset_right = 253.0
+offset_bottom = 406.0
+color = Color(0.596078, 0.537255, 0.756863, 1)
+
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
 layout_mode = 0
 offset_left = 10.0
+offset_top = 8.0
 offset_right = 1145.0
 offset_bottom = 649.0
 theme_override_constants/separation = 20
 
 [node name="TitleLabel" type="Label" parent="VBoxContainer"]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("2_ol58i")
 theme_override_font_sizes/font_size = 32
 text = "Upload Recipe"
 horizontal_alignment = 1
@@ -27,240 +55,294 @@ horizontal_alignment = 1
 [node name="RecipeNameEdit" type="LineEdit" parent="VBoxContainer"]
 custom_minimum_size = Vector2(400, 50)
 layout_mode = 2
+theme_override_fonts/font = ExtResource("2_ol58i")
 placeholder_text = "Enter recipe name..."
 
 [node name="TypeOptionButton" type="OptionButton" parent="VBoxContainer"]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("2_ol58i")
 
 [node name="DietLabel" type="Label" parent="VBoxContainer"]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("2_ol58i")
 text = "Diet Preferences"
 
 [node name="DietGrid" type="GridContainer" parent="VBoxContainer/DietLabel"]
 layout_mode = 0
-offset_top = 27.0
+offset_top = 39.0
 offset_right = 1123.0
 offset_bottom = 233.0
 columns = 2
 
 [node name="VeganCheckBox" type="CheckBox" parent="VBoxContainer/DietLabel/DietGrid"]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("2_ol58i")
 text = "Vegan"
 
 [node name="VegetarianCheckBox" type="CheckBox" parent="VBoxContainer/DietLabel/DietGrid"]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("2_ol58i")
 text = "Vegetarian"
 
 [node name="GlutenFreeCheckBox" type="CheckBox" parent="VBoxContainer/DietLabel/DietGrid"]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("2_ol58i")
 text = "Gluten free"
 
 [node name="LactoseFreeCheckBox" type="CheckBox" parent="VBoxContainer/DietLabel/DietGrid"]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("2_ol58i")
 text = "Lactose free"
 
 [node name="NutFreeCheckBox" type="CheckBox" parent="VBoxContainer/DietLabel/DietGrid"]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("2_ol58i")
 text = "Nut free"
 
 [node name="OrganicCheckBox" type="CheckBox" parent="VBoxContainer/DietLabel/DietGrid"]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("2_ol58i")
 text = "Organic"
 
 [node name="HighProteinCheckBox" type="CheckBox" parent="VBoxContainer/DietLabel/DietGrid"]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("2_ol58i")
 text = "High protein"
 
 [node name="PlantBasedCheckBox" type="CheckBox" parent="VBoxContainer/DietLabel/DietGrid"]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("2_ol58i")
 text = "Plantbased"
 
 [node name="HalalCheckBox" type="CheckBox" parent="VBoxContainer/DietLabel/DietGrid"]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("2_ol58i")
 text = "Halal"
 
 [node name="KosherCheckBox" type="CheckBox" parent="VBoxContainer/DietLabel/DietGrid"]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("2_ol58i")
 text = "Kosher"
 
 [node name="SeasonalCheckBox" type="CheckBox" parent="VBoxContainer/DietLabel/DietGrid"]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("2_ol58i")
 text = "Seasonal"
 
 [node name="IngredientLabel" type="Label" parent="."]
 layout_mode = 2
-offset_left = 443.0
-offset_top = 175.0
-offset_right = 1578.0
-offset_bottom = 198.0
+offset_left = 344.0
+offset_top = 168.0
+offset_right = 1564.0
+offset_bottom = 191.0
+theme_override_fonts/font = ExtResource("2_ol58i")
 text = "Included ingedients"
 
 [node name="GridContainer" type="GridContainer" parent="IngredientLabel"]
 layout_mode = 0
-offset_left = 4.0
+offset_left = -19.0
 offset_top = 36.0
-offset_right = 667.0
-offset_bottom = 240.0
-columns = 5
+offset_right = 766.0
+offset_bottom = 228.0
+columns = 6
 
 [node name="BananaCheckBox" type="CheckBox" parent="IngredientLabel/GridContainer"]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("2_ol58i")
 text = "Banana"
 
 [node name="StrawberryCheckbox" type="CheckBox" parent="IngredientLabel/GridContainer"]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("2_ol58i")
 text = "Strawberry"
 
 [node name="BlueberryCheckBox" type="CheckBox" parent="IngredientLabel/GridContainer"]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("2_ol58i")
 text = "Blueberry"
 
 [node name="RaspberryCheckBox" type="CheckBox" parent="IngredientLabel/GridContainer"]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("2_ol58i")
 text = "Raspberry"
 
 [node name="BlackberryCheckBox" type="CheckBox" parent="IngredientLabel/GridContainer"]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("2_ol58i")
 text = "Blackberry"
 
 [node name="AppleCheckBox" type="CheckBox" parent="IngredientLabel/GridContainer"]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("2_ol58i")
 text = "Apple"
 
 [node name="PearCheckBox" type="CheckBox" parent="IngredientLabel/GridContainer"]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("2_ol58i")
 text = "Pear"
 
 [node name="PeachCheckBox" type="CheckBox" parent="IngredientLabel/GridContainer"]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("2_ol58i")
 text = "Peach"
 
 [node name="GreenKiwiCheckBox" type="CheckBox" parent="IngredientLabel/GridContainer"]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("2_ol58i")
 text = "Green kiwi"
 
 [node name="GoldenKiwiCheckBox" type="CheckBox" parent="IngredientLabel/GridContainer"]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("2_ol58i")
 text = "Golden kiwi"
 
 [node name="PineappleCheckBox" type="CheckBox" parent="IngredientLabel/GridContainer"]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("2_ol58i")
 text = "Pineapple"
 
 [node name="GreenGrapesCheckBox" type="CheckBox" parent="IngredientLabel/GridContainer"]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("2_ol58i")
 text = "Green grapes"
 
 [node name="RedGrapesCheckBox" type="CheckBox" parent="IngredientLabel/GridContainer"]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("2_ol58i")
 text = "Red grapes"
 
 [node name="RaisinsCheckBox" type="CheckBox" parent="IngredientLabel/GridContainer"]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("2_ol58i")
 text = "Raisins"
 
 [node name="DatesCheckBox" type="CheckBox" parent="IngredientLabel/GridContainer"]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("2_ol58i")
 text = "Dates"
 
 [node name="GojiCheckBox" type="CheckBox" parent="IngredientLabel/GridContainer"]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("2_ol58i")
 text = "Goji berries"
 
 [node name="AlmondsCheckBox" type="CheckBox" parent="IngredientLabel/GridContainer"]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("2_ol58i")
 text = "Almonds"
 
 [node name="WalnutsCheckBox" type="CheckBox" parent="IngredientLabel/GridContainer"]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("2_ol58i")
 text = "Walnuts"
 
 [node name="PecanCheckBox" type="CheckBox" parent="IngredientLabel/GridContainer"]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("2_ol58i")
 text = "Pecans"
 
 [node name="HazelnutsCheckBox" type="CheckBox" parent="IngredientLabel/GridContainer"]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("2_ol58i")
 text = "Hazelnuts"
 
 [node name="CashewsCheckBox" type="CheckBox" parent="IngredientLabel/GridContainer"]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("2_ol58i")
 text = "Cashews"
 
 [node name="PistachiosCheckBox" type="CheckBox" parent="IngredientLabel/GridContainer"]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("2_ol58i")
 text = "Pistachios"
 
 [node name="MacadamiaCheckBox" type="CheckBox" parent="IngredientLabel/GridContainer"]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("2_ol58i")
 text = "Macadamia"
 
 [node name="GranolaCheckBox" type="CheckBox" parent="IngredientLabel/GridContainer"]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("2_ol58i")
 text = "Granola"
 
 [node name="CoconutCheckBox" type="CheckBox" parent="IngredientLabel/GridContainer"]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("2_ol58i")
 text = "Coconut flakes"
 
 [node name="CacaoNibsCheckBox" type="CheckBox" parent="IngredientLabel/GridContainer"]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("2_ol58i")
 text = "Cacao nibs"
 
 [node name="BiscuitsCheckBox" type="CheckBox" parent="IngredientLabel/GridContainer"]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("2_ol58i")
 text = "Biscuits"
 
 [node name="RiceCheckBox" type="CheckBox" parent="IngredientLabel/GridContainer"]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("2_ol58i")
 text = "Puffed rice"
 
 [node name="QuinoaCheckBox" type="CheckBox" parent="IngredientLabel/GridContainer"]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("2_ol58i")
 text = "Puffed quinoa"
 
 [node name="CinnamonCheckBox" type="CheckBox" parent="IngredientLabel/GridContainer"]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("2_ol58i")
 text = "Cinnamon"
 
 [node name="CacaoPowderCheckBox" type="CheckBox" parent="IngredientLabel/GridContainer"]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("2_ol58i")
 text = "Cacao powder"
 
 [node name="JamCheckBox" type="CheckBox" parent="IngredientLabel/GridContainer"]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("2_ol58i")
 text = "Jam"
 
 [node name="HoneyCheckBox" type="CheckBox" parent="IngredientLabel/GridContainer"]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("2_ol58i")
 text = "Honey"
 
 [node name="NutButterCheckBox" type="CheckBox" parent="IngredientLabel/GridContainer"]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("2_ol58i")
 text = "Nut butter"
 
 [node name="ChocolateChipsCheckBox" type="CheckBox" parent="IngredientLabel/GridContainer"]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("2_ol58i")
 text = "Chocolate chips"
 
 [node name="MapleSyrupCheckBox" type="CheckBox" parent="IngredientLabel/GridContainer"]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("2_ol58i")
 text = "Maple Syrup"
 
 [node name="SprinklesCheckBox" type="CheckBox" parent="IngredientLabel/GridContainer"]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("2_ol58i")
 text = "Sprinkles"
 
 [node name="BrownSugarCheckBox" type="CheckBox" parent="IngredientLabel/GridContainer"]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("2_ol58i")
 text = "Brown sugar"
 
 [node name="ImageLabel" type="Label" parent="."]
 layout_mode = 2
 offset_left = 14.0
 offset_top = 415.0
-offset_right = 1149.0
+offset_right = 1054.0
 offset_bottom = 438.0
+theme_override_fonts/font = ExtResource("2_ol58i")
 text = "Recipe Image
 "
 
@@ -279,6 +361,12 @@ offset_left = 460.0
 offset_top = 552.0
 offset_right = 638.0
 offset_bottom = 616.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_ol58i")
+theme_override_font_sizes/font_size = 25
+theme_override_styles/normal = ExtResource("3_1ct8i")
+theme_override_styles/hover = ExtResource("4_4sjqk")
+theme_override_styles/pressed = ExtResource("5_nirl4")
 text = "Upload image"
 
 [node name="ImageFileDialog" type="FileDialog" parent="."]
@@ -294,6 +382,12 @@ offset_left = 649.0
 offset_top = 554.0
 offset_right = 826.0
 offset_bottom = 616.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_ol58i")
+theme_override_font_sizes/font_size = 25
+theme_override_styles/normal = ExtResource("3_1ct8i")
+theme_override_styles/hover = ExtResource("4_4sjqk")
+theme_override_styles/pressed = ExtResource("5_nirl4")
 text = "Save recipe"
 
 [connection signal="pressed" from="UploadImageButton" to="." method="_on_upload_image_button_pressed"]
