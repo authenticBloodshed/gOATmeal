@@ -49,6 +49,7 @@ layout_mode = 2
 
 [node name="RecipeList" type="VBoxContainer" parent="MainLayout/ResultsPanel/RecipeScroll"]
 layout_mode = 2
+theme_override_constants/separation = 80
 
 [node name="TabManager" type="Node2D" parent="."]
 script = ExtResource("2_vufq8")

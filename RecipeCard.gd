@@ -16,7 +16,7 @@ func setup(recipe):
 
 	$CardButton/CardLayout/InfoVBox/RecipeName.text = recipe["name"]
 
-	$CardButton/CardLayout/InfoVBox/RecipeTags.text = str(recipe["tags"])
+	$CardButton/CardLayout/InfoVBox/RecipeTags.text = " • ".join(recipe["tags"])
 
 	# load image
 	var image = Image.new()
