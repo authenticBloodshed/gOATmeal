@@ -926,13 +926,16 @@ func _on_brown_sugar_exclude_button_toggled(toggled_on):
 	apply_filters()
 
 func displayRecipes(recipes):
+	print("Recipes received:", recipes.size())
 
 	# clear old cards
-	for child in $MainLayout/ResultsPanel/RecipeScroll/RecipeList.get_children():
+	for child in $"../MainLayout/ResultsPanel/RecipeScroll/RecipeList".get_children():
 		child.queue_free()
 
 	# create new cards
 	for recipe in recipes:
+
+		print("Creating card for:", recipe["name"])
 
 		var card = preload(
 			"res://RecipeCard.tscn"
@@ -940,6 +943,6 @@ func displayRecipes(recipes):
 
 		card.setup(recipe)
 
-		$MainLayout/ResultsPanel/RecipeScroll/RecipeList.add_child(card)
+		$"../MainLayout/ResultsPanel/RecipeScroll/RecipeList".add_child(card)
 
 

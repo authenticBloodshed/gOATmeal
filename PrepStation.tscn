@@ -147,7 +147,6 @@ scale = Vector2(0.2255, 0.2255)
 texture = ExtResource("8_dmfa1")
 
 [node name="OatmealBowl" type="Sprite2D" parent="PrepStation/FinalAssets"]
-visible = false
 position = Vector2(626, 326)
 scale = Vector2(0.23225, 0.23225)
 texture = ExtResource("9_cb7cn")
@@ -921,7 +920,6 @@ position = Vector2(419, 557)
 scale = Vector2(0.365, 0.365)
 
 [node name="strawberrysauce" parent="PrepStation/DraggableObjects" instance=ExtResource("85_5s6ks")]
-visible = false
 position = Vector2(866, 355)
 scale = Vector2(0.365, 0.365)
 

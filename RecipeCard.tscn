@@ -3,6 +3,7 @@
 [ext_resource type="Script" path="res://RecipeCard.gd" id="1_a6wlg"]
 
 [node name="RecipeCard" type="Control"]
+custom_minimum_size = Vector2(400, 120)
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -14,17 +15,20 @@ script = ExtResource("1_a6wlg")
 [node name="CardButton" type="Button" parent="."]
 custom_minimum_size = Vector2(400, 150)
 layout_mode = 0
-offset_right = 8.0
-offset_bottom = 8.0
+offset_right = 400.0
+offset_bottom = 184.0
+vertical_icon_alignment = 0
+expand_icon = true
 
 [node name="CardLayout" type="HBoxContainer" parent="CardButton"]
 layout_mode = 0
 offset_right = 399.0
-offset_bottom = 147.0
+offset_bottom = 184.0
 
 [node name="RecipeImage" type="TextureRect" parent="CardButton/CardLayout"]
 custom_minimum_size = Vector2(120, 120)
 layout_mode = 2
+expand_mode = 1
 stretch_mode = 5
 
 [node name="InfoVBox" type="VBoxContainer" parent="CardButton/CardLayout"]
@@ -32,6 +36,9 @@ layout_mode = 2
 
 [node name="RecipeName" type="Label" parent="CardButton/CardLayout/InfoVBox"]
 layout_mode = 2
+autowrap_mode = 2
+clip_text = true
 
 [node name="RecipeTags" type="Label" parent="CardButton/CardLayout/InfoVBox"]
 layout_mode = 2
+autowrap_mode = 2

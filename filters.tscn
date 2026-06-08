@@ -1400,6 +1400,21 @@ theme_override_styles/hover = ExtResource("5_qioc1")
 theme_override_styles/pressed = ExtResource("4_lbvj6")
 text = "Apply filters"
 
+[node name="Button3" type="Button" parent="."]
+offset_left = 367.0
+offset_top = 10.0
+offset_right = 580.0
+offset_bottom = 50.0
+theme_override_colors/font_color = Color(0.101961, 0.00784314, 0.415686, 1)
+theme_override_colors/font_pressed_color = Color(0.101961, 0.00784314, 0.415686, 1)
+theme_override_colors/font_hover_color = Color(0.101961, 0.00784314, 0.415686, 1)
+theme_override_fonts/font = ExtResource("3_bblm0")
+theme_override_font_sizes/font_size = 33
+theme_override_styles/normal = ExtResource("6_e7n2h")
+theme_override_styles/hover = ExtResource("5_qioc1")
+theme_override_styles/pressed = ExtResource("4_lbvj6")
+text = "Upload recipe"
+
 [connection signal="toggled" from="TabManager/TabContainer/Type/AllButton" to="TabManager" method="_on_all_button_toggled"]
 [connection signal="toggled" from="TabManager/TabContainer/Type/YogurtButton" to="TabManager" method="_on_yogurt_button_toggled"]
 [connection signal="toggled" from="TabManager/TabContainer/Type/OatmealButton" to="TabManager" method="_on_oatmeal_button_toggled"]
