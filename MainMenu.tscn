@@ -189,9 +189,9 @@ offset_bottom = 40.0
 
 [node name="Start" type="Button" parent="ButtonManager"]
 layout_mode = 0
-offset_left = 78.0
+offset_left = 43.0
 offset_top = 572.0
-offset_right = 275.0
+offset_right = 240.0
 offset_bottom = 626.0
 theme_override_colors/font_color = Color(0.101961, 0.00784314, 0.415686, 1)
 theme_override_colors/font_pressed_color = Color(0.101961, 0.00784314, 0.415686, 1)
@@ -203,11 +203,27 @@ theme_override_styles/hover = ExtResource("17_jq4m3")
 theme_override_styles/pressed = ExtResource("18_pri72")
 text = "TUTORIAL"
 
+[node name="Start2" type="Button" parent="ButtonManager"]
+layout_mode = 0
+offset_left = 275.0
+offset_top = 572.0
+offset_right = 472.0
+offset_bottom = 626.0
+theme_override_colors/font_color = Color(0.101961, 0.00784314, 0.415686, 1)
+theme_override_colors/font_pressed_color = Color(0.101961, 0.00784314, 0.415686, 1)
+theme_override_colors/font_hover_color = Color(0.101961, 0.00784314, 0.415686, 1)
+theme_override_fonts/font = ExtResource("16_w6fkd")
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = ExtResource("16_3lgoj")
+theme_override_styles/hover = ExtResource("17_jq4m3")
+theme_override_styles/pressed = ExtResource("18_pri72")
+text = "FREEPLAY"
+
 [node name="Options" type="Button" parent="ButtonManager"]
 layout_mode = 0
-offset_left = 409.0
+offset_left = 499.0
 offset_top = 572.0
-offset_right = 756.0
+offset_right = 846.0
 offset_bottom = 626.0
 theme_override_colors/font_color = Color(0.101961, 0.00784314, 0.415686, 1)
 theme_override_colors/font_pressed_color = Color(0.101961, 0.00784314, 0.415686, 1)
@@ -268,6 +284,7 @@ theme_override_styles/pressed = ExtResource("18_pri72")
 text = "back"
 
 [connection signal="pressed" from="ButtonManager/Start" to="." method="_on_start_pressed"]
+[connection signal="pressed" from="ButtonManager/Start2" to="." method="_on_start_2_pressed"]
 [connection signal="pressed" from="ButtonManager/Options" to="." method="_on_options_pressed"]
 [connection signal="pressed" from="ButtonManager/Quit" to="." method="_on_quit_pressed"]
 [connection signal="timeout" from="ColorRect/fadeTimer" to="." method="_on_fade_timer_timeout"]

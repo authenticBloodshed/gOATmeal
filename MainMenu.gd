@@ -37,3 +37,7 @@ func _on_options_pressed():
 func _on_button_pressed():
 	$FiltersManager.hide()
 	$Button.hide()
+
+
+func _on_start_2_pressed():
+	get_tree().change_scene_to_file("res://freeplay.tscn")
