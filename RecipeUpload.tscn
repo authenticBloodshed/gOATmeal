@@ -390,6 +390,21 @@ theme_override_styles/hover = ExtResource("4_4sjqk")
 theme_override_styles/pressed = ExtResource("5_nirl4")
 text = "Save recipe"
 
+[node name="HomeMenuButton" type="Button" parent="."]
+layout_mode = 0
+offset_left = 838.0
+offset_top = 554.0
+offset_right = 1015.0
+offset_bottom = 616.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_ol58i")
+theme_override_font_sizes/font_size = 25
+theme_override_styles/normal = ExtResource("3_1ct8i")
+theme_override_styles/hover = ExtResource("4_4sjqk")
+theme_override_styles/pressed = ExtResource("5_nirl4")
+text = "Back to filters"
+
 [connection signal="pressed" from="UploadImageButton" to="." method="_on_upload_image_button_pressed"]
 [connection signal="file_selected" from="ImageFileDialog" to="." method="_on_image_file_dialog_file_selected"]
 [connection signal="pressed" from="SaveRecipeButton" to="." method="_on_save_recipe_button_pressed"]
+[connection signal="pressed" from="HomeMenuButton" to="." method="_on_home_menu_button_pressed"]

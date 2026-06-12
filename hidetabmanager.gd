@@ -13,3 +13,7 @@ func _process(delta):
 
 func _on_button_2_pressed():
 	$TabManager.hide()
+
+
+func _on_button_3_pressed():
+	get_tree().change_scene_to_file("res://RecipeUpload.tscn")

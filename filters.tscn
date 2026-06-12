@@ -102,7 +102,6 @@ offset_top = 187.0
 offset_right = 100.0
 offset_bottom = 224.0
 theme = ExtResource("1_hnnkf")
-button_pressed = true
 text = "All"
 
 [node name="YogurtButton" type="CheckButton" parent="TabManager/TabContainer/Type"]
@@ -1516,3 +1515,4 @@ text = "Upload recipe"
 [connection signal="toggled" from="TabManager/TabContainer/Exclude/TabContainer/Toppings/BrownSugarExcludeButton" to="TabManager" method="_on_brown_sugar_exclude_button_toggled"]
 [connection signal="pressed" from="Button" to="TabManager" method="_on_button_pressed"]
 [connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]
+[connection signal="pressed" from="Button3" to="." method="_on_button_3_pressed"]

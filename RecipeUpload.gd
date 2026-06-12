@@ -249,3 +249,7 @@ func getSelectedIngredients():
 	if $IngredientLabel/GridContainer/BrownSugarCheckBox.button_pressed:
 		ingredients.append("brownSugar")
 	return ingredients
+
+
+func _on_home_menu_button_pressed():
+	get_tree().change_scene_to_file("res://filters.tscn")
