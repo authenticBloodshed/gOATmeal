@@ -1,0 +1,775 @@
+[gd_scene load_steps=50 format=3 uid="uid://dxeyswlt206g4"]
+
+[ext_resource type="Script" path="res://game.gd" id="1_vqudt"]
+[ext_resource type="Texture2D" uid="uid://beexh3ycvj1rl" path="res://wall.png" id="2_ggy1k"]
+[ext_resource type="Texture2D" uid="uid://c6oc3cl7ri1ks" path="res://cabinet.png" id="3_xdr37"]
+[ext_resource type="Texture2D" uid="uid://bm4ma2yhmahx2" path="res://KitchenCounter.png" id="4_pe60u"]
+[ext_resource type="PackedScene" uid="uid://ctts782sd43x0" path="res://PickupItem.tscn" id="5_umhcn"]
+[ext_resource type="Texture2D" uid="uid://b0ix82ecaanru" path="res://bananainbowl.png" id="6_3sofh"]
+[ext_resource type="Texture2D" uid="uid://6o6dv70htffk" path="res://apple.png" id="7_yrxhm"]
+[ext_resource type="Texture2D" uid="uid://cnoa6ywxd7302" path="res://pear.png" id="8_7wwcb"]
+[ext_resource type="Texture2D" uid="uid://b8y50ho1tt7v" path="res://chiaseeds.png" id="9_l4tip"]
+[ext_resource type="Texture2D" uid="uid://cl4ane2t12qu2" path="res://Granola.png" id="10_cf1nk"]
+[ext_resource type="Texture2D" uid="uid://ba47p4y5pemp8" path="res://Oatmeal.png" id="11_pdc8v"]
+[ext_resource type="Texture2D" uid="uid://0xy8l78ajnm4" path="res://sunflowerseeds.png" id="12_px3dl"]
+[ext_resource type="Texture2D" uid="uid://bntnn40hb471n" path="res://coconutflakes.png" id="13_k3pyd"]
+[ext_resource type="Texture2D" uid="uid://bd2bk82vucpi5" path="res://cacaonibs.png" id="14_cgp7p"]
+[ext_resource type="Texture2D" uid="uid://bcuinekt6udaw" path="res://puffedrice.png" id="15_ikab6"]
+[ext_resource type="Texture2D" uid="uid://d23bvd4bdlhij" path="res://cocoa.png" id="16_6pgjt"]
+[ext_resource type="Texture2D" uid="uid://cnq6o37ntheb2" path="res://puffedquinoa.png" id="17_koscx"]
+[ext_resource type="Texture2D" uid="uid://bpgv4yiqkiaoq" path="res://biscuits.png" id="18_x6b18"]
+[ext_resource type="Texture2D" uid="uid://d2r0jsdfmyu7y" path="res://flaxseeds.png" id="19_u2nsl"]
+[ext_resource type="Texture2D" uid="uid://cauckmkv6iib4" path="res://raisins.png" id="20_hlvyg"]
+[ext_resource type="Texture2D" uid="uid://cflw13ffeps1a" path="res://strawberrysauce.png" id="21_sv3vy"]
+[ext_resource type="Texture2D" uid="uid://df0inkjjrxjno" path="res://chocolatesauce.png" id="22_v7m1d"]
+[ext_resource type="Texture2D" uid="uid://d3tm05tra0x64" path="res://caramelsauce.png" id="23_57jvs"]
+[ext_resource type="Texture2D" uid="uid://dm0hg58nfilmo" path="res://peanutbutter.png" id="24_7k8uf"]
+[ext_resource type="Texture2D" uid="uid://ci7g57k4bb7xt" path="res://cranberries.png" id="25_vyyhc"]
+[ext_resource type="Texture2D" uid="uid://ufa7bshh1xwv" path="res://gojiberriesjar.png" id="26_eif20"]
+[ext_resource type="Texture2D" uid="uid://727evmauyd7r" path="res://pineapple.png" id="27_m0xrf"]
+[ext_resource type="Texture2D" uid="uid://xcl3uipvumac" path="res://cinnamon.png" id="28_dfjp2"]
+[ext_resource type="Texture2D" uid="uid://csjvgv4a1243g" path="res://sprinkles.png" id="29_uo8b8"]
+[ext_resource type="Texture2D" uid="uid://c543o84uw6fm7" path="res://jam.png" id="30_ld6x0"]
+[ext_resource type="Texture2D" uid="uid://banfien4osxq6" path="res://honey.png" id="31_gso7r"]
+[ext_resource type="Texture2D" uid="uid://ckxdb5drhdnf6" path="res://almonds.png" id="32_y7wg8"]
+[ext_resource type="Texture2D" uid="uid://dwg4bfw6u2u6g" path="res://walnuts.png" id="33_e3gp7"]
+[ext_resource type="Texture2D" uid="uid://mst0m4bmq775" path="res://pecans.png" id="34_t8jf3"]
+[ext_resource type="Texture2D" uid="uid://dqo3bfrolfpie" path="res://hazelnuts.png" id="35_sukda"]
+[ext_resource type="Texture2D" uid="uid://cckcnxmj3drup" path="res://cashews.png" id="36_qf0gy"]
+[ext_resource type="Texture2D" uid="uid://bqpwaboseunpj" path="res://pistachios.png" id="37_6oh58"]
+[ext_resource type="Texture2D" uid="uid://draygqa4dcxj6" path="res://macadamianuts.png" id="38_gh035"]
+[ext_resource type="AudioStream" uid="uid://de83sj2no0dya" path="res://562294-colorscrimsontears-click_mRrswwXk.wav" id="39_ep0b4"]
+[ext_resource type="Texture2D" uid="uid://dbynhogc1sr6y" path="res://ArrowUnselected.png" id="40_y5d34"]
+[ext_resource type="Texture2D" uid="uid://bu3bijha23vjn" path="res://ArrowClick.png" id="41_vj44m"]
+[ext_resource type="Texture2D" uid="uid://dgy2dputb4r37" path="res://ArrowHover.png" id="42_bpox5"]
+[ext_resource type="FontFile" uid="uid://dxi8dt74itawk" path="res://Mabook.otf" id="43_2kclr"]
+[ext_resource type="PackedScene" uid="uid://bn7l7abptit80" path="res://PrepStation.tscn" id="44_oap3v"]
+[ext_resource type="PackedScene" uid="uid://dvueuso1kqybe" path="res://Fridge.tscn" id="45_ctvux"]
+[ext_resource type="PackedScene" uid="uid://cymwnfrhohpeu" path="res://NewNotebook.tscn" id="46_irvqd"]
+[ext_resource type="PackedScene" uid="uid://10ngpxurb116" path="res://transitions.tscn" id="47_iok7o"]
+[ext_resource type="Script" path="res://TooltipPanel.gd" id="48_x5gw1"]
+[ext_resource type="AudioStream" uid="uid://c77tvtsq62ofh" path="res://Upbeat Jazz Cooking by Infraction [No Copyright Music] _ Jazz Time - Infraction - No Copyright Music (youtube).mp3" id="49_7ch3u"]
+
+[node name="Game" type="Node2D"]
+script = ExtResource("1_vqudt")
+
+[node name="KitchenStuff" type="Node2D" parent="."]
+
+[node name="Wall" type="Sprite2D" parent="KitchenStuff"]
+position = Vector2(592.25, 330)
+scale = Vector2(0.394833, 0.33)
+texture = ExtResource("2_ggy1k")
+
+[node name="Cabinet" type="Sprite2D" parent="KitchenStuff"]
+position = Vector2(576, 141)
+scale = Vector2(0.38275, 0.38275)
+texture = ExtResource("3_xdr37")
+
+[node name="KitchenCounter" type="Sprite2D" parent="KitchenStuff"]
+position = Vector2(574, 515)
+scale = Vector2(0.379, 0.379)
+texture = ExtResource("4_pe60u")
+
+[node name="Banana" parent="KitchenStuff" instance=ExtResource("5_umhcn")]
+position = Vector2(314, 332)
+itemId = "banana"
+itemName = "Banana"
+itemDescription = "Ring ring ring ring ring ring ring! Banana phone! >_<"
+itemTexture = ExtResource("6_3sofh")
+
+[node name="Sprite2D" parent="KitchenStuff/Banana" index="0"]
+position = Vector2(621.5, 12.5)
+scale = Vector2(0.0705, 0.0705)
+texture = ExtResource("6_3sofh")
+
+[node name="CollisionShape2D" parent="KitchenStuff/Banana" index="1"]
+position = Vector2(623.5, 15.5)
+
+[node name="Apple" parent="KitchenStuff" instance=ExtResource("5_umhcn")]
+position = Vector2(314, 332)
+itemId = "apple"
+itemName = "Apple"
+itemDescription = "Keeps doctors away, allegedly."
+itemTexture = ExtResource("7_yrxhm")
+
+[node name="Sprite2D" parent="KitchenStuff/Apple" index="0"]
+position = Vector2(564, 34)
+scale = Vector2(0.032, 0.032)
+texture = ExtResource("7_yrxhm")
+
+[node name="CollisionShape2D" parent="KitchenStuff/Apple" index="1"]
+position = Vector2(562, 40)
+
+[node name="Pear" parent="KitchenStuff" instance=ExtResource("5_umhcn")]
+position = Vector2(233, 339)
+itemId = "pear"
+itemName = "Pear"
+itemDescription = "Why did the pear blush? It saw the salad dressing!"
+itemTexture = ExtResource("8_7wwcb")
+
+[node name="Sprite2D" parent="KitchenStuff/Pear" index="0"]
+position = Vector2(568, 33)
+rotation = -1.31598
+scale = Vector2(0.036, 0.036)
+texture = ExtResource("8_7wwcb")
+
+[node name="CollisionShape2D" parent="KitchenStuff/Pear" index="1"]
+position = Vector2(570, 39.9999)
+rotation = -1.31598
+
+[node name="Chiaseeds" parent="KitchenStuff" instance=ExtResource("5_umhcn")]
+position = Vector2(371, 288)
+itemId = "chia"
+itemName = "Chia seeds"
+itemDescription = "Soak before consuming!"
+itemTexture = ExtResource("9_l4tip")
+
+[node name="Sprite2D" parent="KitchenStuff/Chiaseeds" index="0"]
+position = Vector2(321, -93)
+scale = Vector2(0.053, 0.053)
+texture = ExtResource("9_l4tip")
+
+[node name="CollisionShape2D" parent="KitchenStuff/Chiaseeds" index="1"]
+position = Vector2(319, -92)
+
+[node name="Granola" parent="KitchenStuff" instance=ExtResource("5_umhcn")]
+position = Vector2(371, 288)
+itemId = "granola"
+itemName = "Granola"
+itemDescription = "I’m cereal-sly obsessed with granola..."
+itemTexture = ExtResource("10_cf1nk")
+
+[node name="Sprite2D" parent="KitchenStuff/Granola" index="0"]
+position = Vector2(249, -109)
+scale = Vector2(0.0755, 0.0755)
+texture = ExtResource("10_cf1nk")
+
+[node name="CollisionShape2D" parent="KitchenStuff/Granola" index="1"]
+position = Vector2(249, -104)
+
+[node name="Oats" parent="KitchenStuff" instance=ExtResource("5_umhcn")]
+position = Vector2(112, 202)
+itemId = "oats"
+itemName = "Oats"
+itemDescription = "OATrageously good!"
+itemTexture = ExtResource("11_pdc8v")
+
+[node name="Sprite2D" parent="KitchenStuff/Oats" index="0"]
+position = Vector2(242, -102)
+scale = Vector2(0.06975, 0.06975)
+texture = ExtResource("11_pdc8v")
+
+[node name="CollisionShape2D" parent="KitchenStuff/Oats" index="1"]
+position = Vector2(246, -98)
+
+[node name="SunflowerSeeds" parent="KitchenStuff" instance=ExtResource("5_umhcn")]
+position = Vector2(796, 244)
+itemId = "sunflower"
+itemName = "Sunflower seeds"
+itemDescription = "Sun-sational flavours!"
+itemTexture = ExtResource("12_px3dl")
+
+[node name="Sprite2D" parent="KitchenStuff/SunflowerSeeds" index="0"]
+position = Vector2(106.5, -29.5)
+scale = Vector2(0.0345, 0.0345)
+texture = ExtResource("12_px3dl")
+
+[node name="CollisionShape2D" parent="KitchenStuff/SunflowerSeeds" index="1"]
+position = Vector2(98, -31)
+
+[node name="CoconutFlakes" parent="KitchenStuff" instance=ExtResource("5_umhcn")]
+position = Vector2(841, 244)
+itemId = "coconut"
+itemName = "Coconut flakes"
+itemDescription = "I'm cocoNUTS for coconut flakes!"
+itemTexture = ExtResource("13_k3pyd")
+
+[node name="Sprite2D" parent="KitchenStuff/CoconutFlakes" index="0"]
+position = Vector2(110.5, -33.5)
+scale = Vector2(0.0385, 0.0385)
+texture = ExtResource("13_k3pyd")
+
+[node name="CollisionShape2D" parent="KitchenStuff/CoconutFlakes" index="1"]
+position = Vector2(115, -32)
+
+[node name="CacaoNibs" parent="KitchenStuff" instance=ExtResource("5_umhcn")]
+position = Vector2(700, 83)
+itemId = "cacaonibs"
+itemName = "Cacao nibs"
+itemDescription = "Why are they called \"nibs\" if they're beans?"
+itemTexture = ExtResource("14_cgp7p")
+
+[node name="Sprite2D" parent="KitchenStuff/CacaoNibs" index="0"]
+position = Vector2(110.5, -33.5)
+scale = Vector2(0.0385, 0.0385)
+texture = ExtResource("14_cgp7p")
+
+[node name="CollisionShape2D" parent="KitchenStuff/CacaoNibs" index="1"]
+position = Vector2(120, -28)
+
+[node name="puffedrice" parent="KitchenStuff" instance=ExtResource("5_umhcn")]
+position = Vector2(32, 217)
+itemId = "puffedrice"
+itemName = "Puffed Rice"
+itemDescription = "Why don’t rice grains ever get lost?Because they stick together!"
+itemTexture = ExtResource("15_ikab6")
+
+[node name="Sprite2D" parent="KitchenStuff/puffedrice" index="0"]
+position = Vector2(155, -36)
+scale = Vector2(0.0715, 0.0715)
+texture = ExtResource("15_ikab6")
+
+[node name="CollisionShape2D" parent="KitchenStuff/puffedrice" index="1"]
+position = Vector2(156, -41)
+
+[node name="cocao" parent="KitchenStuff" instance=ExtResource("5_umhcn")]
+position = Vector2(0, 361)
+itemId = "cocoa"
+itemName = "Cocao powder"
+itemDescription = "Adds sweetness without adding sugar!"
+itemTexture = ExtResource("16_6pgjt")
+
+[node name="Sprite2D" parent="KitchenStuff/cocao" index="0"]
+position = Vector2(163, -32)
+scale = Vector2(0.06625, 0.06625)
+texture = ExtResource("16_6pgjt")
+
+[node name="CollisionShape2D" parent="KitchenStuff/cocao" index="1"]
+position = Vector2(175, -38)
+
+[node name="puffedquinoa" parent="KitchenStuff" instance=ExtResource("5_umhcn")]
+position = Vector2(760, 135)
+itemId = "puffedquinoa"
+itemName = "Puffed quinoa"
+itemDescription = "Surprisingly high in protein!"
+itemTexture = ExtResource("17_koscx")
+
+[node name="Sprite2D" parent="KitchenStuff/puffedquinoa" index="0"]
+position = Vector2(150, -26)
+scale = Vector2(0.06125, 0.06125)
+texture = ExtResource("17_koscx")
+
+[node name="CollisionShape2D" parent="KitchenStuff/puffedquinoa" index="1"]
+position = Vector2(152, -24)
+
+[node name="biscuits" parent="KitchenStuff" instance=ExtResource("5_umhcn")]
+position = Vector2(95, 409)
+itemId = "biscuits"
+itemName = "Biscuits"
+itemDescription = "Bite-sized happiness."
+itemTexture = ExtResource("18_x6b18")
+
+[node name="Sprite2D" parent="KitchenStuff/biscuits" index="0"]
+position = Vector2(149, -43)
+rotation = 0.0959931
+scale = Vector2(0.082, 0.082)
+texture = ExtResource("18_x6b18")
+
+[node name="CollisionShape2D" parent="KitchenStuff/biscuits" index="1"]
+position = Vector2(153, -43)
+
+[node name="FlaxSeeds" parent="KitchenStuff" instance=ExtResource("5_umhcn")]
+position = Vector2(436, 230)
+itemId = "flax"
+itemName = "Flax seeds"
+itemDescription = "mix 1 tablespoon of ground flaxseed with 3 tablespoons of water to create a \"flax egg\" for vegan baking."
+itemTexture = ExtResource("19_u2nsl")
+
+[node name="Sprite2D" parent="KitchenStuff/FlaxSeeds" index="0"]
+position = Vector2(316.25, -32.75)
+scale = Vector2(0.04825, 0.04825)
+texture = ExtResource("19_u2nsl")
+
+[node name="CollisionShape2D" parent="KitchenStuff/FlaxSeeds" index="1"]
+position = Vector2(317, -36)
+
+[node name="Raisins" parent="KitchenStuff" instance=ExtResource("5_umhcn")]
+position = Vector2(107, 150)
+itemId = "raisins"
+itemName = "Raisins"
+itemDescription = "Do you prefer these over blueberries in your muffin?"
+itemTexture = ExtResource("20_hlvyg")
+
+[node name="Sprite2D" parent="KitchenStuff/Raisins" index="0"]
+position = Vector2(316.25, -32.75)
+scale = Vector2(0.04825, 0.04825)
+texture = ExtResource("20_hlvyg")
+
+[node name="CollisionShape2D" parent="KitchenStuff/Raisins" index="1"]
+position = Vector2(317, -36)
+
+[node name="StrawberrySauce" parent="KitchenStuff" instance=ExtResource("5_umhcn")]
+position = Vector2(-256, 216)
+itemId = "strawberrysauce"
+itemName = "Strawberry sauce"
+itemDescription = "Strawberries in a handy squeezer!"
+itemTexture = ExtResource("21_sv3vy")
+
+[node name="Sprite2D" parent="KitchenStuff/StrawberrySauce" index="0"]
+position = Vector2(316, -30)
+scale = Vector2(0.062, 0.062)
+texture = ExtResource("21_sv3vy")
+
+[node name="CollisionShape2D" parent="KitchenStuff/StrawberrySauce" index="1"]
+position = Vector2(316, -37)
+
+[node name="ChocolateSauce" parent="KitchenStuff" instance=ExtResource("5_umhcn")]
+position = Vector2(666, 137)
+itemId = "chocolatesauce"
+itemName = "Chocolate sauce"
+itemDescription = "I don't like airport chocolate... it's a bit plane..."
+itemTexture = ExtResource("22_v7m1d")
+
+[node name="Sprite2D" parent="KitchenStuff/ChocolateSauce" index="0"]
+position = Vector2(316, -30)
+scale = Vector2(0.062, 0.062)
+texture = ExtResource("22_v7m1d")
+
+[node name="CollisionShape2D" parent="KitchenStuff/ChocolateSauce" index="1"]
+position = Vector2(316, -37)
+
+[node name="CaramelSauce" parent="KitchenStuff" instance=ExtResource("5_umhcn")]
+position = Vector2(-75, 216)
+itemId = "caramelsauce"
+itemName = "Caramel sauce"
+itemDescription = "Is it caramel or caramel?"
+itemTexture = ExtResource("23_57jvs")
+
+[node name="Sprite2D" parent="KitchenStuff/CaramelSauce" index="0"]
+position = Vector2(331, -31)
+scale = Vector2(0.062, 0.062)
+texture = ExtResource("23_57jvs")
+
+[node name="CollisionShape2D" parent="KitchenStuff/CaramelSauce" index="1"]
+position = Vector2(329, -39)
+
+[node name="PeanutButter" parent="KitchenStuff" instance=ExtResource("5_umhcn")]
+position = Vector2(-196, 215)
+itemId = "peanutbutter"
+itemName = "Peanut butter"
+itemDescription = "I’m peaNUTS about breakfast."
+itemTexture = ExtResource("24_7k8uf")
+
+[node name="Sprite2D" parent="KitchenStuff/PeanutButter" index="0"]
+position = Vector2(316, -30)
+scale = Vector2(0.062, 0.062)
+texture = ExtResource("24_7k8uf")
+
+[node name="CollisionShape2D" parent="KitchenStuff/PeanutButter" index="1"]
+position = Vector2(316, -37)
+
+[node name="CRanberries" parent="KitchenStuff" instance=ExtResource("5_umhcn")]
+position = Vector2(489, 232)
+itemId = "cranberry"
+itemName = "Cranberries"
+itemDescription = "Can't believe they named a food after a band...."
+itemTexture = ExtResource("25_vyyhc")
+
+[node name="Sprite2D" parent="KitchenStuff/CRanberries" index="0"]
+position = Vector2(316.25, -32.75)
+scale = Vector2(0.04825, 0.04825)
+texture = ExtResource("25_vyyhc")
+
+[node name="CollisionShape2D" parent="KitchenStuff/CRanberries" index="1"]
+position = Vector2(317, -36)
+
+[node name="Gojiberries" parent="KitchenStuff" instance=ExtResource("5_umhcn")]
+position = Vector2(208, 151)
+itemId = "goji"
+itemName = "Goji berries"
+itemDescription = "Berry iconic!"
+itemTexture = ExtResource("26_eif20")
+
+[node name="Sprite2D" parent="KitchenStuff/Gojiberries" index="0"]
+position = Vector2(319, -49)
+scale = Vector2(0.066, 0.066)
+texture = ExtResource("26_eif20")
+
+[node name="CollisionShape2D" parent="KitchenStuff/Gojiberries" index="1"]
+position = Vector2(320, -45)
+
+[node name="Pineapple" parent="KitchenStuff" instance=ExtResource("5_umhcn")]
+position = Vector2(489, 230)
+itemId = "pineapple"
+itemName = "Pineapple slices"
+itemDescription = "Banana without the B is just pineapple."
+itemTexture = ExtResource("27_m0xrf")
+
+[node name="Sprite2D" parent="KitchenStuff/Pineapple" index="0"]
+position = Vector2(47, -19)
+scale = Vector2(0.035, 0.035)
+texture = ExtResource("27_m0xrf")
+
+[node name="CollisionShape2D" parent="KitchenStuff/Pineapple" index="1"]
+position = Vector2(47, -19)
+
+[node name="Cinnamon" parent="KitchenStuff" instance=ExtResource("5_umhcn")]
+position = Vector2(220, 72)
+itemId = "cinnamon"
+itemName = "Cinnamon"
+itemDescription = "The developers favourite spice!"
+itemTexture = ExtResource("28_dfjp2")
+
+[node name="Sprite2D" parent="KitchenStuff/Cinnamon" index="0"]
+position = Vector2(47, -19)
+scale = Vector2(0.035, 0.035)
+texture = ExtResource("28_dfjp2")
+
+[node name="CollisionShape2D" parent="KitchenStuff/Cinnamon" index="1"]
+position = Vector2(47, -19)
+
+[node name="Sprinkles" parent="KitchenStuff" instance=ExtResource("5_umhcn")]
+position = Vector2(192, 71)
+itemId = "sprinkles"
+itemName = "Sprinkles"
+itemDescription = "A quick way to add whimsy to every breakfast"
+itemTexture = ExtResource("29_uo8b8")
+
+[node name="Sprite2D" parent="KitchenStuff/Sprinkles" index="0"]
+position = Vector2(47, -19)
+scale = Vector2(0.035, 0.035)
+texture = ExtResource("29_uo8b8")
+
+[node name="CollisionShape2D" parent="KitchenStuff/Sprinkles" index="1"]
+position = Vector2(30, -16)
+
+[node name="jam" parent="KitchenStuff" instance=ExtResource("5_umhcn")]
+position = Vector2(566, 76)
+itemId = "jam"
+itemName = "Jam"
+itemDescription = "Jam-packed with smiles!"
+itemTexture = ExtResource("30_ld6x0")
+
+[node name="Sprite2D" parent="KitchenStuff/jam" index="0"]
+position = Vector2(47, -19)
+scale = Vector2(0.035, 0.035)
+texture = ExtResource("30_ld6x0")
+
+[node name="CollisionShape2D" parent="KitchenStuff/jam" index="1"]
+position = Vector2(47, -19)
+
+[node name="honey" parent="KitchenStuff" instance=ExtResource("5_umhcn")]
+position = Vector2(724, 74)
+itemId = "honey"
+itemName = "Honey"
+itemDescription = "Sugar! Oh honey honey!"
+itemTexture = ExtResource("31_gso7r")
+
+[node name="Sprite2D" parent="KitchenStuff/honey" index="0"]
+position = Vector2(47, -19)
+scale = Vector2(0.035, 0.035)
+texture = ExtResource("31_gso7r")
+
+[node name="CollisionShape2D" parent="KitchenStuff/honey" index="1"]
+position = Vector2(38, -17)
+
+[node name="Almonds" parent="KitchenStuff" instance=ExtResource("5_umhcn")]
+position = Vector2(16, 91)
+itemId = "almond"
+itemName = "Almonds"
+itemDescription = "Almonds are technically seeds, not nuts!"
+itemTexture = ExtResource("32_y7wg8")
+
+[node name="Sprite2D" parent="KitchenStuff/Almonds" index="0"]
+position = Vector2(47, -19)
+scale = Vector2(0.035, 0.035)
+texture = ExtResource("32_y7wg8")
+
+[node name="CollisionShape2D" parent="KitchenStuff/Almonds" index="1"]
+position = Vector2(47, -4.5)
+
+[node name="Walnuts" parent="KitchenStuff" instance=ExtResource("5_umhcn")]
+position = Vector2(15, 61)
+itemId = "walnut"
+itemName = "Walnuts"
+itemDescription = "What's a walnut's favorite movie? The Nutcracker!"
+itemTexture = ExtResource("33_e3gp7")
+
+[node name="Sprite2D" parent="KitchenStuff/Walnuts" index="0"]
+position = Vector2(47, -19)
+scale = Vector2(0.035, 0.035)
+texture = ExtResource("33_e3gp7")
+
+[node name="CollisionShape2D" parent="KitchenStuff/Walnuts" index="1"]
+position = Vector2(48, -36)
+
+[node name="Pecans" parent="KitchenStuff" instance=ExtResource("5_umhcn")]
+position = Vector2(82, 91)
+itemId = "pecan"
+itemName = "Pecans"
+itemDescription = "Knock Knock Who's there? Pecan! Pecan who? Pecan somebody your own size!"
+itemTexture = ExtResource("34_t8jf3")
+
+[node name="Sprite2D" parent="KitchenStuff/Pecans" index="0"]
+position = Vector2(47, -19)
+scale = Vector2(0.035, 0.035)
+texture = ExtResource("34_t8jf3")
+
+[node name="CollisionShape2D" parent="KitchenStuff/Pecans" index="1"]
+position = Vector2(49, -3)
+
+[node name="Hazelnut" parent="KitchenStuff" instance=ExtResource("5_umhcn")]
+position = Vector2(1025, 151)
+itemId = "hazelnuts"
+itemName = "Hazelnuts"
+itemDescription = "In ancient times, hazel branches were believed to symbolize health, joy, and prosperity."
+itemTexture = ExtResource("35_sukda")
+
+[node name="Sprite2D" parent="KitchenStuff/Hazelnut" index="0"]
+position = Vector2(74, -32)
+scale = Vector2(0.0505, 0.0505)
+texture = ExtResource("35_sukda")
+
+[node name="CollisionShape2D" parent="KitchenStuff/Hazelnut" index="1"]
+position = Vector2(75, -29)
+
+[node name="Cashews" parent="KitchenStuff" instance=ExtResource("5_umhcn")]
+position = Vector2(407, 230)
+itemId = "cashews"
+itemName = "Cashews"
+itemDescription = "Cashew later!"
+itemTexture = ExtResource("36_qf0gy")
+
+[node name="Sprite2D" parent="KitchenStuff/Cashews" index="0"]
+position = Vector2(74, -32)
+scale = Vector2(0.0505, 0.0505)
+texture = ExtResource("36_qf0gy")
+
+[node name="CollisionShape2D" parent="KitchenStuff/Cashews" index="1"]
+position = Vector2(72, -16)
+
+[node name="Pistachios" parent="KitchenStuff" instance=ExtResource("5_umhcn")]
+position = Vector2(964, 149)
+itemId = "pistachio"
+itemName = "Pistachios"
+itemDescription = "Shell yeah!"
+itemTexture = ExtResource("37_6oh58")
+
+[node name="Sprite2D" parent="KitchenStuff/Pistachios" index="0"]
+position = Vector2(74, -32)
+scale = Vector2(0.0505, 0.0505)
+texture = ExtResource("37_6oh58")
+
+[node name="CollisionShape2D" parent="KitchenStuff/Pistachios" index="1"]
+position = Vector2(72, -24)
+
+[node name="Macadamia" parent="KitchenStuff" instance=ExtResource("5_umhcn")]
+position = Vector2(407, 149)
+itemId = "macadamia"
+itemName = "Macadamia"
+itemDescription = " It takes 7-10 years for a new macadamia tree to begin producing nuts."
+itemTexture = ExtResource("38_gh035")
+
+[node name="Sprite2D" parent="KitchenStuff/Macadamia" index="0"]
+position = Vector2(74, -32)
+scale = Vector2(0.0505, 0.0505)
+texture = ExtResource("38_gh035")
+
+[node name="CollisionShape2D" parent="KitchenStuff/Macadamia" index="1"]
+position = Vector2(72, -24)
+
+[node name="ClickSound" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("39_ep0b4")
+volume_db = 10.0
+
+[node name="PrepStationButton" type="TextureButton" parent="."]
+offset_left = 1012.0
+offset_top = 263.0
+offset_right = 1151.0
+offset_bottom = 406.0
+texture_normal = ExtResource("40_y5d34")
+texture_pressed = ExtResource("41_vj44m")
+texture_hover = ExtResource("42_bpox5")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="RichTextLabel" type="RichTextLabel" parent="PrepStationButton"]
+layout_mode = 0
+offset_left = 6.0
+offset_top = 54.0
+offset_right = 67.0
+offset_bottom = 130.0
+theme_override_colors/default_color = Color(0.129412, 0.0352941, 0.431373, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/normal_font = ExtResource("43_2kclr")
+theme_override_font_sizes/normal_font_size = 16
+text = "Work station"
+
+[node name="FridgeButton" type="TextureButton" parent="."]
+offset_left = -1.0
+offset_top = 263.0
+offset_right = 138.0
+offset_bottom = 406.0
+texture_normal = ExtResource("40_y5d34")
+texture_pressed = ExtResource("41_vj44m")
+texture_hover = ExtResource("42_bpox5")
+ignore_texture_size = true
+stretch_mode = 0
+flip_h = true
+
+[node name="RichTextLabel" type="RichTextLabel" parent="FridgeButton"]
+layout_mode = 0
+offset_left = 73.0
+offset_top = 58.0
+offset_right = 137.0
+offset_bottom = 98.0
+theme_override_colors/default_color = Color(0.129412, 0.0352941, 0.431373, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/normal_font = ExtResource("43_2kclr")
+theme_override_font_sizes/normal_font_size = 21
+text = "Fridge"
+
+[node name="PrepStation" parent="." instance=ExtResource("44_oap3v")]
+visible = false
+
+[node name="KitchenButton" type="TextureButton" parent="."]
+visible = false
+offset_left = -1.0
+offset_top = 263.0
+offset_right = 138.0
+offset_bottom = 406.0
+texture_normal = ExtResource("40_y5d34")
+texture_pressed = ExtResource("41_vj44m")
+texture_hover = ExtResource("42_bpox5")
+ignore_texture_size = true
+stretch_mode = 0
+flip_h = true
+
+[node name="RichTextLabel" type="RichTextLabel" parent="KitchenButton"]
+layout_mode = 0
+offset_left = 59.0
+offset_top = 58.0
+offset_right = 141.0
+offset_bottom = 134.0
+theme_override_colors/default_color = Color(0.129412, 0.0352941, 0.431373, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/normal_font = ExtResource("43_2kclr")
+theme_override_font_sizes/normal_font_size = 22
+text = "Pantry"
+
+[node name="Fridge" parent="." instance=ExtResource("45_ctvux")]
+visible = false
+
+[node name="PantryButton" type="TextureButton" parent="."]
+visible = false
+offset_left = 1012.0
+offset_top = 263.0
+offset_right = 1151.0
+offset_bottom = 406.0
+texture_normal = ExtResource("40_y5d34")
+texture_pressed = ExtResource("41_vj44m")
+texture_hover = ExtResource("42_bpox5")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="RichTextLabel" type="RichTextLabel" parent="PantryButton"]
+layout_mode = 0
+offset_left = 10.0
+offset_top = 58.0
+offset_right = 81.0
+offset_bottom = 98.0
+theme_override_colors/default_color = Color(0.129412, 0.0352941, 0.431373, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/normal_font = ExtResource("43_2kclr")
+theme_override_font_sizes/normal_font_size = 21
+text = "Pantry"
+
+[node name="NotebookManager" parent="." instance=ExtResource("46_irvqd")]
+visible = false
+
+[node name="ColorRect" parent="." instance=ExtResource("47_iok7o")]
+visible = false
+
+[node name="Tooltip" type="CanvasLayer" parent="." groups=["tooltip"]]
+script = ExtResource("48_x5gw1")
+
+[node name="TooltipPanel" type="Panel" parent="Tooltip"]
+visible = false
+self_modulate = Color(0.760784, 0.737255, 0.866667, 1)
+offset_left = -310.0
+offset_top = -3.0
+offset_right = 6.0
+offset_bottom = 423.0
+mouse_filter = 2
+
+[node name="Header" type="Label" parent="Tooltip/TooltipPanel"]
+layout_mode = 0
+offset_left = 53.0
+offset_top = 9.0
+offset_right = 272.0
+offset_bottom = 55.0
+theme_override_fonts/font = ExtResource("43_2kclr")
+theme_override_font_sizes/font_size = 30
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Description" type="Label" parent="Tooltip/TooltipPanel"]
+layout_mode = 0
+offset_left = -1.0
+offset_top = 53.0
+offset_right = 316.0
+offset_bottom = 164.0
+theme_override_fonts/font = ExtResource("43_2kclr")
+theme_override_font_sizes/font_size = 20
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+text_overrun_behavior = 2
+
+[node name="ItemIcon" type="TextureRect" parent="Tooltip/TooltipPanel"]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 0
+offset_top = 157.0
+offset_right = 317.0
+offset_bottom = 398.0
+mouse_filter = 2
+expand_mode = 3
+stretch_mode = 5
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("49_7ch3u")
+volume_db = 2.0
+autoplay = true
+
+[connection signal="pressed" from="PrepStationButton" to="." method="_on_prep_station_button_pressed"]
+[connection signal="pressed" from="FridgeButton" to="." method="_on_fridge_button_pressed"]
+[connection signal="pressed" from="KitchenButton" to="." method="_on_kitchen_button_pressed"]
+[connection signal="pressed" from="PantryButton" to="." method="_on_pantry_button_pressed"]
+
+[editable path="KitchenStuff/Banana"]
+[editable path="KitchenStuff/Apple"]
+[editable path="KitchenStuff/Pear"]
+[editable path="KitchenStuff/Chiaseeds"]
+[editable path="KitchenStuff/Granola"]
+[editable path="KitchenStuff/Oats"]
+[editable path="KitchenStuff/SunflowerSeeds"]
+[editable path="KitchenStuff/CoconutFlakes"]
+[editable path="KitchenStuff/CacaoNibs"]
+[editable path="KitchenStuff/puffedrice"]
+[editable path="KitchenStuff/cocao"]
+[editable path="KitchenStuff/puffedquinoa"]
+[editable path="KitchenStuff/biscuits"]
+[editable path="KitchenStuff/FlaxSeeds"]
+[editable path="KitchenStuff/Raisins"]
+[editable path="KitchenStuff/StrawberrySauce"]
+[editable path="KitchenStuff/ChocolateSauce"]
+[editable path="KitchenStuff/CaramelSauce"]
+[editable path="KitchenStuff/PeanutButter"]
+[editable path="KitchenStuff/CRanberries"]
+[editable path="KitchenStuff/Gojiberries"]
+[editable path="KitchenStuff/Pineapple"]
+[editable path="KitchenStuff/Cinnamon"]
+[editable path="KitchenStuff/Sprinkles"]
+[editable path="KitchenStuff/jam"]
+[editable path="KitchenStuff/honey"]
+[editable path="KitchenStuff/Almonds"]
+[editable path="KitchenStuff/Walnuts"]
+[editable path="KitchenStuff/Pecans"]
+[editable path="KitchenStuff/Hazelnut"]
+[editable path="KitchenStuff/Cashews"]
+[editable path="KitchenStuff/Pistachios"]
+[editable path="KitchenStuff/Macadamia"]

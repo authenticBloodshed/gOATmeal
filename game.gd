@@ -19,15 +19,17 @@ func _ready():
 	$ColorRect/AnimationPlayer.play("fade_out")
 	await get_tree().create_timer(1.0).timeout
 	$ColorRect.hide()
-	$Breakfast.show()
-	$CloseButton.show()
-	$Finalbreakfast.show()
+	if get_tree().current_scene.scene_file_path == "res://game.tscn":
+		$Breakfast.show()
+		$CloseButton.show()
+		$Finalbreakfast.show()
 
 func _on_close_button_pressed():
-	$Breakfast.hide()
-	$CloseButton.hide()
-	$Finalbreakfast.hide()
-	$NotebookManager.show()
+	if get_tree().current_scene.scene_file_path == "res://game.tscn":
+		$Breakfast.hide()
+		$CloseButton.hide()
+		$Finalbreakfast.hide()
+		$NotebookManager.show()
 
 func _on_prep_station_button_pressed():
 	$PrepStation.show()

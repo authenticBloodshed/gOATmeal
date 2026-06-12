@@ -189,7 +189,11 @@ func _on_main_menu_button_pressed():
 	get_tree().change_scene_to_file("res://MainMenu.tscn")
 
 func _on_replay_button_pressed():
-	get_tree().change_scene_to_file("res://game.tscn")
+	if get_tree().current_scene.scene_file_path == "res://game.tscn":
+		get_tree().change_scene_to_file("res://game.tscn")
+	
+	if get_tree().current_scene.scene_file_path == "res://freeplay.tscn":
+		get_tree().change_scene_to_file("res://freeplay.tscn")
 
 func _on_recipebook_button_pressed():
 	get_tree().change_scene_to_file("res://recipebook.tscn")
@@ -209,6 +213,11 @@ func _check_inventory():
 		
 		
 func check_win():
+	if get_tree().current_scene.scene_file_path == "res://freeplay.tscn":
+		print("freeplay win")
+		$"../WinScreen".show()
+		$"../Button".hide()
+		return
 	var isCorrect = true
 	
 	for item in requiredItems:
